@@ -323,6 +323,17 @@ main:focus{outline:none}
   body.print-back .sheet-box:nth-child(2){page-break-after:auto}
   main:has(.sheets-wrap)>.cert-ui,main:has(.sheets-wrap)>.page-hero{display:none!important}
 }
+/* back page: single descriptive career list */
+.back .careers h3 small{font-family:var(--body);font-weight:400;color:#6b7590;font-size:8pt}
+.back .cl2{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:2mm 5mm}
+.back .cl2 li{display:grid;grid-template-columns:7mm 1fr;gap:2mm;align-items:start;break-inside:avoid}
+.back .cl2 b{display:block;font-size:9.4pt;color:#16233f;line-height:1.25}
+.back .cl2 em{font-style:normal;font-weight:700;color:#a96a05;font-size:7.6pt;white-space:nowrap}
+.back .cl2 p{margin:.4mm 0 .5mm;font-size:7.7pt;line-height:1.3;color:#333}
+.back .extra{display:grid;gap:1.4mm}.back .extra p{margin:0}.back .extra small{color:#6b7590}
+.back .careers~.bfoot,.back .inner:has(.careers){gap:3.2mm}
+.back .inner:has(.careers) .strm{padding:1.8mm 4mm}
+.back .cl2 small{display:block;font-size:7.2pt;color:#55607a;line-height:1.3}
 /* print: always exactly 2 pages. Each sheet shrinks to fit the printable area, so Letter paper,
    printer margins or a scale above 100% no longer spill a strip onto extra pages.
    Media queries in print measure the page, so --zh / --zw step down with its height / width. */
@@ -3035,9 +3046,16 @@ window.PROFILE_FIELDS = [
     return '<div class="pb"><span>' + esc(label) + '</span><i><u style="width:' + (lvl * 33) + '%;background:' + col + '"></u></i><b>' + esc(t(b)) + '</b></div>';
   }
   function fitWord(v) { return esc(t(v >= 70 ? 'fit_great' : v >= 52 ? 'fit_good' : 'fit_poss')); }
-  function careerRow(s, kind) {
-    var c = s.c, v = Math.round(kind === 'prac' ? s.prac : s.dream);
-    return '<li><span class="ci">' + c.ico + '</span><div><b>' + esc(L(c.name)) + '</b><small>' + esc(L(c.dur)) + ' · ' + ['', '₹', '₹₹', '₹₹₹'][c.cost] + '</small></div><em>' + fitWord(v) + '</em></li>';
+  /* one list, no dream / practical split: every suggested career with what it is, how long, cost and how to get in */
+  function careerList(R) {
+    var seen = {}, all = R.dream.concat(R.prac, R.more || []).filter(function (s) { return seen[s.c.id] ? false : (seen[s.c.id] = 1); });
+    all.sort(function (a, b) { return (b.dream + b.prac) - (a.dream + a.prac); });
+    return all.slice(0, 8);
+  }
+  function careerRow(s) {
+    var c = s.c, v = Math.round((s.dream + s.prac) / 2);
+    return '<li><span class="ci">' + c.ico + '</span><div><b>' + esc(L(c.name)) + ' <em>' + fitWord(v) + '</em></b><p>' + esc(L(c.about)) + '</p>' +
+      '<small>⏱ ' + esc(L(c.dur)) + ' · ' + ['', '₹ ' + t('c_low'), '₹₹ ' + t('c_mid'), '₹₹₹ ' + t('c_high')][c.cost] + (c.exams ? ' · 📝 ' + esc(L(c.exams)) : '') + '</small></div></li>';
   }
   function back(c, R) {
     var r = R.r, ls = R.ls, cls = c.cls || R.cls;
@@ -3046,10 +3064,9 @@ window.PROFILE_FIELDS = [
       return '<div class="t3"><b style="background:' + RIASEC[x].c + '">' + x + '</b><div><strong>' + esc(L(RIASEC[x].name)) + '</strong><span>' + esc(L(RIASEC[x].d)) + '</span></div></div>';
     }).join('');
     var apt = Object.keys(r.apt).map(function (k) { return bar(L(APTITUDE_NAMES[k]), r.apt[k], '#2b6cd4'); }).join('');
-    var steps = R.steps.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
     var vals = R.topVals.map(function (k) { return esc(L(VALUE_NAMES[k])); }).join(' · ');
     var subs = R.subs.map(function (x) { return esc(L(x.name)) + ' ' + (x.band != null ? esc(L(MARK_BANDS[x.band][1])) : '—'); }).join(' · ');
-    var sch = R.sch.slice(0, 3).map(function (x) { return '<li>' + esc(L(x.s.name)) + (x.s.site ? ' <small>(' + esc(x.s.site) + ')</small>' : '') + '</li>'; }).join('');
+    var sch = R.sch.slice(0, 3).map(function (x) { return esc(L(x.s.name)) + (x.s.site ? ' <small>(' + esc(x.s.site) + ')</small>' : ''); }).join(' · ');
     var streamLine = R.cls === '10' && R.streams && R.streams.length ? '<div class="strm">🛤️ <b>' + esc(t('res_stream')) + ':</b> ' + esc(t('st_' + R.streams[0])) + (R.streams[1] ? ' / ' + esc(t('st_' + R.streams[1])) : '') + '</div>' : '';
     var sites = ['scholarships.gov.in', 'nta.ac.in', 'ncs.gov.in', 'swayam.gov.in', 'digilocker.gov.in', 'vidyalakshmi.co.in'];
     return '<div class="sheet back"><div class="inner">' +
@@ -3059,13 +3076,9 @@ window.PROFILE_FIELDS = [
       '<section class="bx"><h3>🧬 ' + esc(t('res_int')) + '</h3><div class="rw"><div class="rdr">' + App.radarSvg(r) + '</div><div class="t3s">' + top3 + '</div></div></section>' +
       '<section class="bx"><h3>🧮 ' + esc(t('res_apt')) + '</h3>' + apt + '<p class="sm"><b>📘 ' + esc(t('res_sub')) + ':</b> ' + subs + '</p><p class="sm"><b>⚖️ ' + esc(t('res_val')) + ':</b> ' + vals + '</p><h3 class="mt">' + ls.ico + ' ' + esc(t('res_learn')) + ': ' + esc(L(ls.name)) + '</h3><p class="sm">' + esc(L(ls.tip)) + '</p></section>' +
       '</div>' + streamLine +
-      '<div class="b-grid">' +
-      '<section class="bx"><h3>⭐ ' + esc(t('res_dream')) + '</h3><ul class="cl">' + R.dream.map(function (s) { return careerRow(s, 'dream'); }).join('') + '</ul></section>' +
-      '<section class="bx"><h3>🎯 ' + esc(t('res_prac')) + '</h3><ul class="cl">' + R.prac.map(function (s) { return careerRow(s, 'prac'); }).join('') + '</ul></section>' +
-      '</div><div class="b-grid">' +
-      '<section class="bx"><h3>✅ ' + esc(t('res_next')) + ' <small>(' + esc(L(R.stage)) + ')</small></h3><ol class="sm-l">' + steps + '</ol></section>' +
-      '<section class="bx"><h3>🎁 ' + esc(t('res_sch')) + '</h3><ul class="sm-l">' + (sch || '<li>' + esc(t('sch_hint')) + '</li>') + '</ul><h3 class="mt">🔗 ' + esc(t('nav_links')) + '</h3><p class="sites">' + sites.join(' · ') + '</p></section>' +
-      '</div><p class="bfoot">' + esc(t('res_disc')) + '</p></div></div>';
+      '<section class="bx careers"><h3>🧭 ' + esc(L({ en: 'Careers that suit you', hi: 'आपके लिए उपयुक्त करियर' })) + ' <small>' + esc(L({ en: '— best match first', hi: '— सबसे उपयुक्त पहले' })) + '</small></h3><ul class="cl2">' + careerList(R).map(careerRow).join('') + '</ul></section>' +
+      '<section class="bx extra"><p class="sm"><b>🎁 ' + esc(t('res_sch')) + ':</b> ' + (sch || esc(t('sch_hint'))) + '</p><p class="sites"><b>🔗 ' + esc(t('nav_links')) + ':</b> ' + sites.join(' · ') + '</p></section>' +
+      '<p class="bfoot">' + esc(t('res_disc')) + '</p></div></div>';
   }
 
   /* ---------------------------- page ---------------------------- */
