@@ -1,0 +1,16 @@
+{
+  "name": "mera-bhavishya-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mera Bhavishya – Mera Nirnay career guidance portal: static page + zero-dependency Node backend (online mode).",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "seed": "node scripts/import.js seed-colleges",
+    "import:schools": "node scripts/import.js schools",
+    "import:colleges": "node scripts/import.js colleges",
+    "test": "node test/smoke.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}
