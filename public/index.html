@@ -3593,7 +3593,7 @@ window.FAM_FIELDS = {
     hm_sub: 'Free career guidance from the Government of Haryana for students of Class 10 and 12, and their parents.',
     hm_sch_p: 'Plan a counselling period for a whole class on one computer or tablet. Each student takes the assessment in turn, results stay on that device, and you print every report card at the end.',
     hm_cls: 'Run a class session', hm_cls_p: 'Add students, run the assessment one by one, print all report cards.',
-    hm_pick: 'I am in', hm_road_alt: 'Two students in school uniform outside their school, with a scientist, doctor, engineer and officer behind them',
+    hm_pick: 'I am in', hm_road_alt: 'Two students in school uniform outside their school, with a doctor, an officer and an engineer standing behind them',
     st1: 'First, tell us about you.', st1d: 'Your class, your subjects and what your family can manage: 11 quick choices.',
     st2: 'Then answer 54 questions.', st2d: 'Interests, aptitude and work style. About 15 minutes, and there are no wrong answers.',
     st3: 'We match you to careers.', st3d: 'Two honest lists: what suits you, and what suits you and your family’s situation.',
@@ -3609,7 +3609,7 @@ window.FAM_FIELDS = {
     hm_sub: 'हरियाणा सरकार की ओर से कक्षा 10 व 12 के विद्यार्थियों और उनके अभिभावकों के लिए निःशुल्क करियर मार्गदर्शन।',
     hm_sch_p: 'एक कंप्यूटर या टैबलेट पर पूरी कक्षा के लिए करियर परामर्श का पीरियड चलाएँ। हर विद्यार्थी बारी-बारी से आकलन करता है, परिणाम उसी उपकरण पर रहते हैं, और अंत में आप सभी रिपोर्ट कार्ड प्रिंट करते हैं।',
     hm_cls: 'कक्षा सत्र चलाएँ', hm_cls_p: 'विद्यार्थी जोड़ें, एक-एक करके आकलन कराएँ, सभी रिपोर्ट कार्ड प्रिंट करें।',
-    hm_pick: 'मैं हूँ', hm_road_alt: 'विद्यालय के बाहर स्कूल यूनिफ़ॉर्म में दो विद्यार्थी, पीछे वैज्ञानिक, डॉक्टर, इंजीनियर और अधिकारी',
+    hm_pick: 'मैं हूँ', hm_road_alt: 'विद्यालय के बाहर स्कूल यूनिफ़ॉर्म में दो विद्यार्थी, पीछे डॉक्टर, अधिकारी और इंजीनियर खड़े हैं',
     st1: 'पहले, अपने बारे में बताइए।', st1d: 'आपकी कक्षा, विषय और परिवार क्या कर सकता है: 11 छोटे सवाल।',
     st2: 'फिर 54 प्रश्नों के उत्तर दीजिए।', st2d: 'रुचि, अभिरुचि और काम करने का ढंग। लगभग 15 मिनट, कोई उत्तर गलत नहीं।',
     st3: 'हम आपको करियर से मिलाते हैं।', st3d: 'दो ईमानदार सूचियाँ: जो आपको जँचे, और जो आपको व आपके परिवार की स्थिति को जँचे।',
@@ -3653,7 +3653,7 @@ window.FAM_FIELDS = {
     var MON = App.lang === 'hi' ? ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'] : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var rows = [['tree', 'nav_tree', 'hm_t2', 'cycle'], ['careers', 'nav_careers', 'hm_t4', 'nursing'], ['colleges', 'nav_colleges', 'hm_t5', 'iti'], ['scholarships', 'nav_sch', 'hm_t6', 'classroom']];
     var signs = function () { return '<a class="sign2" href="#/tree" data-act="tree_go" data-v="10"><b>' + t('cls_10') + '</b><small>' + t('hm_c10d') + '</small></a><a class="sign2" href="#/tree" data-act="tree_go" data-v="12"><b>' + t('cls_12') + '</b><small>' + t('hm_c12d') + '</small></a>'; };
-    return '<section class="hero3"><div class="wrap hero3-in"><div><h1 class="name"><span class="l">' + esc(nm[0]) + '</span><span class="l"><span class="slot shut">' + '<picture><source media="(min-width:641px)" srcset="img/students-tight.webp" width="306" height="104"><img src="img/students-wide.webp" width="512" height="230" alt="' + esc(t('hm_road_alt')) + '" fetchpriority="high"></picture>' + '</span><span>' + esc(nm[1] || '') + '</span></span></h1>' +
+    return '<section class="hero3"><div class="wrap hero3-in"><div><h1 class="name"><span class="l">' + esc(nm[0]) + '</span><span class="l"><span class="slot shut">' + '<picture><source media="(min-width:641px)" srcset="img/students-tight.webp" width="300" height="102"><img src="img/students-wide.webp" width="512" height="230" alt="' + esc(t('hm_road_alt')) + '" fetchpriority="high"></picture>' + '</span><span>' + esc(nm[1] || '') + '</span></span></h1>' +
       '<p class="lead">' + t('hm_sub') + '</p>' +
       (ask ? '' : '<div class="cta-row"><a class="btn btn-lg" href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a><a class="btn btn-ghost btn-lg" href="#/careers">' + t('hm_cta2') + '</a></div>') + '</div>' +
       '<div>' + ((ask || started) ? resume(ask) : '<div class="wchart"><h2>' + t('chart_t') + '</h2><ol>' + TREE['10'].kids.map(function (n) { return '<li><a href="#/branch/' + n.id + '/10"><b>' + esc(L(n.name)) + '</b>' + icon('arrow') + '</a></li>'; }).join('') + '</ol></div>') + '</div></div></section>' +
