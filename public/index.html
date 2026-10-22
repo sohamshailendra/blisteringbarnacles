@@ -132,7 +132,7 @@ main:focus{outline:none}
 .empty{text-align:center;padding:2.5rem}
 .notice{background:var(--amber-l);border-left:5px solid var(--amber);border-radius:10px;padding:.9rem 1.1rem;margin:1.6rem 0;font-size:.92rem}
 .notice.warn{background:#fdecea;border-left-color:var(--red)}
-.subrow{display:grid;grid-template-columns:7.5rem 1fr auto;align-items:center;gap:.6rem;margin:.45rem 0;font-size:.88rem}.sub-band{font-weight:700;font-size:.82rem}.sub-band.b3{color:var(--green)}.sub-band.b2{color:var(--blue)}.sub-band.b1{color:var(--amber-d)}.sub-band.b0{color:var(--mut)}
+.sty .sm,.ori{margin:.6rem 0 0;font-size:.9rem}.ori{margin-bottom:.6rem}.fam .rec.slim{display:flex;gap:.8rem;align-items:center;padding:.8rem 1rem;margin:.6rem 0;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:inherit}.fam .rec.slim h4{margin:0 0 .2rem}.subrow{display:grid;grid-template-columns:7.5rem 1fr auto;align-items:center;gap:.6rem;margin:.45rem 0;font-size:.88rem}.sub-band{font-weight:700;font-size:.82rem}.sub-band.b3{color:var(--green)}.sub-band.b2{color:var(--blue)}.sub-band.b1{color:var(--amber-d)}.sub-band.b0{color:var(--mut)}
 .dots i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#e8ecf4;margin-left:3px}.dots i.on{background:var(--amber)}
 .valrow{display:grid;grid-template-columns:1.6rem 1fr;gap:.2rem .6rem;align-items:center;margin:.5rem 0}.valrow b{display:grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--navy);color:#fff;font-size:.8rem;grid-row:span 2}.valrow span{font-weight:700}.valrow small{color:var(--mut);font-size:.8rem}
 .bar .lvl{font-size:.78rem;white-space:nowrap;text-align:right}.bar .lvl.b3{color:var(--green)}.bar .lvl.b2{color:var(--blue)}.bar .lvl.b1{color:var(--amber-d)}.bar .lvl.b0{color:var(--mut)}
@@ -338,6 +338,33 @@ main:focus{outline:none}
   .tiles.collapsed .tile:nth-child(n+7){display:none}.tiles-more{display:block}
   .stats div:last-child{grid-column:1/-1}
 }
+/* 18 ── retention: hero art, welcome panel, journey, career of the day, save box, toast, reveal ── */
+.hero::after{display:none}.hero-art{position:absolute;right:-30px;bottom:-24px;width:min(44vw,520px);opacity:.14;pointer-events:none;animation:float 9s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hero-side.welcome .gate{padding:.65rem .9rem;margin-bottom:.5rem}.hero-side.welcome .gate .ico-tile{width:2.4rem;height:2.4rem;font-size:1.25rem;background:#eef1f7}.hero-side.welcome .gate b{font-size:.95rem;line-height:1.2}
+.wb-code{display:flex;align-items:center;gap:.3rem;color:#d6def3;margin:0 0 .8rem;font-size:.9rem}.wb-code b{display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;color:#fff;font-size:.8rem;margin-left:.15rem}
+.wb-top{color:#ffd58a;font-weight:700;margin:0 0 .5rem;font-size:.86rem;text-transform:uppercase;letter-spacing:.05em}
+.hero-side.welcome .cta-row{margin-top:.9rem}.linkbtn.light{color:#c9d3ec;margin-top:.6rem;font-size:.85rem}
+.progress.light{background:rgba(255,255,255,.2);margin:.6rem 0 .4rem}
+.jr-wrap{margin-top:1.6rem}.journey .jr-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}.journey h3{margin:0}
+.jr-bar{height:8px;background:#e8ecf4;border-radius:99px;overflow:hidden;margin:.7rem 0 1rem}.jr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),var(--green));border-radius:99px;transition:width .6s}
+.jr{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem}
+.jr a{display:flex;flex-direction:column;align-items:center;gap:.4rem;text-align:center;text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:600;padding:.75rem .4rem;border-radius:14px;border:1.5px solid var(--line);background:#fff;transition:.15s;height:100%}
+.jr a:hover{border-color:var(--amber);transform:translateY(-2px)}.jr-n{display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#eef1f7;color:var(--navy);font-weight:800;flex:none}
+.jr .done a{background:#e1f5e8;border-color:#b6dfc4}.jr .done .jr-n{background:var(--green);color:#fff}
+.jr .next a{border-color:var(--amber);background:var(--amber-l);box-shadow:0 0 0 3px rgba(226,154,31,.22)}.jr .next .jr-n{background:var(--amber);color:#1b1200}
+.journey .cta-row{margin-top:1rem}
+.cod{display:flex;gap:1rem;align-items:center;background:linear-gradient(135deg,#fff,#eef4ff);border-color:#c9d8f6;padding:1.1rem 1.3rem}.cod .ico-tile{width:3.6rem;height:3.6rem;font-size:1.9rem;flex:none}.cod h3{margin:0 0 .25rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.cod p{margin:0;font-size:.92rem;color:var(--mut)}
+.savebox{margin-top:1.1rem}.savebox textarea{width:100%;font:inherit;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86rem;letter-spacing:.05em;line-height:1.5;padding:.7rem .8rem;border:1px solid #b8c0d2;border-radius:10px;background:#f6f8fc;resize:none}
+.restore{margin-top:1.2rem}.restore .frow{flex-wrap:nowrap}.rinput{flex:1;min-width:0;font:inherit;font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:.05em;padding:.65rem .8rem;border:1px solid #b8c0d2;border-radius:10px}.rinput.bad{border-color:var(--red);box-shadow:0 0 0 3px #f6c8c2}
+.toast{position:fixed;left:50%;bottom:1.4rem;transform:translateX(-50%);background:var(--navy);color:#fff;padding:.8rem 1.3rem;border-radius:999px;font-weight:700;box-shadow:0 10px 30px rgba(22,35,63,.35);z-index:80;animation:toast 4.5s ease forwards;white-space:nowrap;max-width:calc(100vw - 2rem)}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,20px)}10%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,10px);visibility:hidden}}
+.meter i,.bar-t i{transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.radar{animation:pop .7s cubic-bezier(.2,.7,.2,1) both;transform-origin:center}@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+.btn:active,.chip:active,.opt:active,.face:active,.gate:active,.tile:active{transform:scale(.97)}
+@media (max-width:640px){.jr{gap:.35rem}.jr a{font-size:.68rem;padding:.55rem .15rem;gap:.3rem}.jr-n{width:1.7rem;height:1.7rem;font-size:.8rem}.restore .frow{flex-wrap:wrap}.rinput{flex:1 1 100%}.hero-art{width:70vw;right:-20vw;bottom:-6vw;opacity:.1}.cod{align-items:flex-start}}
+@media (prefers-reduced-motion:reduce){.toast,.meter i,.bar-t i,.radar,.hero-art{animation:none}}
+@media print{.toast,.savebox,.restore{display:none!important}}
 /* 16 ── plan, compare, wellbeing, listen ── */
 .plan-form{margin-bottom:1.2rem}.ff .fld{min-width:0}.ff .fld select,.ff .fld input{width:100%;min-width:0}.plan-sheet{display:grid;gap:1.1rem}.plan-head h2{margin:0}
 .plan-c{border-top:5px solid var(--amber)}.plan-c.backup{border-top-color:var(--teal)}
@@ -520,7 +547,7 @@ window.UI = {
 en: {
  site_title:'Mera Bhavishya – Mera Nirnay', site_sub:'Career Guidance Portal', topbar:'Government of Haryana • Career Guidance for Class 10 & 12 students',
  nav_label:'Main menu', nav_assess:'Career Assessment', nav_tree:'Career Tree', nav_streams:'Choose Stream', nav_careers:'Courses & Careers', nav_colleges:'Colleges',
- nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More', filters:'Filters', more_tools:'More tools', fewer_tools:'Show fewer', min_left:'about {n} min left', min_less:'less than a minute left', cg_health:'Health & medicine', cg_eng:'Engineering, technology & transport', cg_sci:'Science, research & agriculture', cg_biz:'Commerce, finance & business', cg_soc:'Law, society, languages & teaching', cg_cre:'Creative arts, media, sports & hospitality', cg_uni:'Defence, police & government jobs', cg_skill:'Skills & quick jobs', n_careers:'careers', install:'Install app', installed:'Added to your home screen',
+ nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More', wb_back:'Welcome back!', wb_code:'Your interest code', wb_top:'Your top matches', wb_cont:'Continue your assessment', wb_pct:'{n}% done', wb_notyou:'Not you? Start fresh', wb_res:'See my results', jr_t:'Your journey', jr_1:'Take the assessment', jr_2:'Explore 3 careers', jr_3:'Compare 2 careers', jr_4:'Make my plan', jr_5:'Print my certificate', jr_done:'{n} of 5 done', jr_next:'Next step', jr_all:'All done — share it with a friend!', cod_t:'Career of the day', cod_fit:'Your fit', share:'Share', share_wa:'Send on WhatsApp', share_res:'My career profile on Mera Bhavishya – Mera Nirnay 🧭\nInterest code: {code}\nTop matches: {list}\nTake the free assessment: {url}', share_cert:'I completed the career assessment on Mera Bhavishya – Mera Nirnay 🎓 Interest code: {code}. Try it free: {url}', share_plan:'My career plan on Mera Bhavishya – Mera Nirnay 🗺️\n{list}\nMake yours: {url}', share_site:'Free career guidance for Class 10 & 12 students of Haryana — careers, colleges, scholarships, exams: {url}', share_code:'My results code for Mera Bhavishya – Mera Nirnay (open Assessment → “Have a results code?”):\n{code}\n{url}', save_t:'Save my results', save_btn:'💾 Save code', save_p:'This code holds your answers. Copy it or send it to yourself on WhatsApp. On any phone or computer, open the Assessment page and enter it to get your results back — even after this device is cleared.', copy:'Copy', copied:'Copied ✓', restore_t:'Have a results code?', restore_p:'Enter the code you saved earlier to get your results back on this device.', restore_ph:'MB4-XXXXX-XXXXX…', restore_btn:'Restore', restore_err:'That code is not valid — check it and try again.', done_toast:'🎉 Your career profile is ready!', ori_risk:'Security vs. risk', ori_r0:'prefers a secure, fixed income', ori_r1:'wants a balance of security and growth', ori_r2:'ready to take risks for a bigger upside', ori_stay:'Long preparation', ori_s0:'can stay with one goal for years', ori_s1:'can, with support', ori_s2:'prefers to start earning soon', why_long:'needs 2–3 years of preparation — you said you would rather start soon', fam_t:'What your family hopes for', fam_p:'You said your family hopes for a career in {f}. Of those careers, this one fits you best:', fam_same:'Good news — your own top match is in the same field.', fam_diff:'Your own top match is {c}. If the two differ, that is normal — show this page to your parents and talk it through, or book time with your school counsellor.', rs_10:'Grit (Duckworth et al., 2007): staying with one goal for years predicts who completes long courses, so long roads are tempered by your own answer on persistence.', rs_11:'Risk attitude (Dohmen et al., 2011): people who accept income risk choose self-employment and performance careers more often, so one choice separates secure from high-upside roads.', as_per:'Your work style', as_perd:'10 statements about how you usually behave — curious, organised, outgoing, caring, calm.', as_ctx:'Work conditions', as_ctxd:'5 yes/no questions on conditions some jobs involve — hospitals, outdoor work, night shifts, uniform, desk work.', q_per:'How much do you agree?', q_ctx:'Be honest — there is no wrong answer.', ag1:'Strongly disagree', ag2:'Disagree', ag3:'Not sure', ag4:'Agree', ag5:'Strongly agree', cx_y:'Yes, that is fine', cx_m:'Maybe / not sure', cx_n:'No, I would not like that', res_sty:'Your work style', res_sty_h:'How you like to work. Used to match careers that suit your nature — not a test of right or wrong.', sty_b1:'Less', sty_b2:'Medium', sty_b3:'Strong', res_ctx_no:'You said no to:', why_sty:'suits your work style:', why_ctx:'involves {s}, which you said no to', rs_8:'Big Five personality (Costa & McCrae; Barrick & Mount, 1991): traits such as conscientiousness and emotional stability relate to success and satisfaction across jobs; we use a 10-item screener in the spirit of Gosling et al. (2003).', rs_9:'Person–environment fit (Dawis & Lofquist’s Theory of Work Adjustment; O*NET work context): people stay longer and do better when a job’s daily conditions suit them, so we ask about deal-breakers.', q_pick3:'Which 3 of these matter most to you in a job? Pick three.', pick_n:'{n} of 3 chosen', filters:'Filters', more_tools:'More tools', fewer_tools:'Show fewer', min_left:'about {n} min left', min_less:'less than a minute left', cg_health:'Health & medicine', cg_eng:'Engineering, technology & transport', cg_sci:'Science, research & agriculture', cg_biz:'Commerce, finance & business', cg_soc:'Law, society, languages & teaching', cg_cre:'Creative arts, media, sports & hospitality', cg_uni:'Defence, police & government jobs', cg_skill:'Skills & quick jobs', n_careers:'careers', install:'Install app', installed:'Added to your home screen',
  smaller:'Smaller text', normal:'Normal text', larger:'Larger text', newtab:'opens in new tab',
  back:'Back', next:'Next', all:'All', search:'Search', none:'Nothing found. Try different filters.', see_all:'See all', visit:'Official website', skip:'Skip this question',
  after:'After Class', level:'Level', stream:'Stream', filter:'Show', region:'Region', hry:'Haryana', india:'Rest of India', yrs:'yrs', print:'Print / Save as PDF', retake:'Retake', question:'Question',
@@ -538,14 +565,14 @@ en: {
  hm_t3:'Science, Commerce or Arts? Four questions to decide.', hm_t4:'Course details, eligibility, exams, cost and roadmap.', hm_t5:'Haryana and national institutes with entrance exams.',
  hm_t6:'Money should never stop studies — find schemes and loans.', hm_t7:'Month-wise exam and application timeline.', hm_t8:'Direct links to the official websites.',
  hm_how:'A different kind of assessment', hm_how_p:'Most tests only ask what you like. We look at interests, aptitude, school subjects, what you want from work, and your family situation — because a good career must fit the student, and the family.',
- hw1:'Interests', hw1d:'30 statements based on Holland’s RIASEC model — the research behind most career-interest tests.', hw2:'Aptitude', hw2d:'16 reasoning questions, plus your marks and confidence in your school subjects.',
+ hw1:'Interests', hw1d:'20 statements based on Holland’s RIASEC model — the research behind most career-interest tests.', hw2:'Aptitude', hw2d:'8 reasoning questions, plus your marks in your school subjects.',
  hw3:'Your situation', hw3d:'Family budget, loan comfort, time to start earning, distance from home, internet access.', hw4:'Two answers', hw4d:'“Dream” careers that suit you, and “Practical” careers that suit you and your situation.',
  hm_new:'New-age careers 2026', hm_up:'Coming up', hm_money:'Don’t let fees stop you', hm_money_p:'NSP, Haryana post-matric, INSPIRE, AICTE Pragati, PM Vidyalaxmi and more — see which ones fit you and how to apply.',
  /* assessment */
- as_title:'Find your direction in about 20 minutes', as_lead:'This is a guidance tool, not an exam. There are no “right” answers about interests — be honest, and think of what you enjoy, not what others expect.',
- as_s1:'About you', as_s1d:'10 quick choices: class, stream, family budget, loan comfort. Used only to tailor advice.', as_s2:'Interests', as_s2d:'30 statements — how much would you enjoy each activity?',
- as_s3:'Aptitude', as_s3d:'16 short reasoning questions on numbers, logic, language and spatial thinking.', as_s4:'Learning style', as_s4d:'4 questions on how you learn best — for study tips.',
- as_begin:'Begin assessment', as_restart:'Start again', as_resume:'Continue where I stopped', as_see_res:'See my results', as_time:'About 20–25 minutes', as_priv:'Stays on your device', as_step:'Step', as_finish:'See my results',
+ as_title:'Find your direction in about 15 minutes', as_lead:'This is a guidance tool, not an exam. There are no “right” answers about interests — be honest, and think of what you enjoy, not what others expect.',
+ as_s1:'About you', as_s1d:'11 quick choices: class, stream, family budget, what your family hopes for. Used only to tailor advice.', as_s2:'Interests', as_s2d:'20 statements — how much would you enjoy each activity?',
+ as_s3:'Aptitude', as_s3d:'8 short reasoning questions on numbers, logic, language and spatial thinking.', as_s4:'Learning style', as_s4d:'2 questions on how you learn best — for study tips.',
+ as_begin:'Begin assessment', as_restart:'Start again', as_resume:'Continue where I stopped', as_see_res:'See my results', as_time:'About 12–15 minutes · 54 questions', as_priv:'Stays on your device', as_step:'Step', as_finish:'See my results',
  rs_t:'The research behind it', rs_p:'The assessment combines well-known ideas from career psychology:',
  rs_1:'Holland’s RIASEC theory (J. Holland, 1959/1997): people and careers can be described by six interest types. The U.S. O*NET Interest Profiler is built on it.',
  rs_2:'Super’s life-span theory (D. Super, 1990): career choice develops over time, so we show routes after Class 10 and Class 12 separately.',
@@ -570,8 +597,8 @@ en: {
  ns10_1:'Discuss these results with your parents and the school career-guidance teacher.', ns10_2:'Open the “Career Tree” and read two roads that interest you — checking eligibility and cost.', ns10_3:'Note the entrance exams and dates in the Exam Calendar.', ns10_4:'Apply for scholarships on time and keep documents ready (income / caste certificate, Aadhaar-linked bank account).',
  ns12_1:'Open the top 3 careers above and check eligibility, entrance exam and last date to apply.', ns12_2:'Shortlist 5 colleges (including a safe option near home) and visit their official websites.', ns12_3:'Register on the exam and scholarship portals now; keep documents ready.', ns12_4:'Keep a Plan B — a second route (diploma, skill course, another city) — so one result never stops you.',
  res_disc:'These results are indicative and based only on your answers today. Interests grow and change — you can retake the assessment anytime. Always verify exam rules, fees and dates on the official websites before applying.',
- as_sub:'Your subjects', as_subd:'Marks band and confidence in 4 core subjects — so advice matches where you stand today.', as_val:'What matters to you', as_vald:'8 things people want from work — security, income, helping, independence… — rated by importance.',
- as_rd:'Where you are', as_rdd:'3 questions on how far your thinking has come; they choose your next steps.',
+ as_sub:'Your subjects', as_subd:'Your marks band in 4 core subjects — so advice matches where you stand today.', as_val:'What matters to you', as_vald:'Pick your top 3 from work — security, income, helping… — plus two choices: security vs. risk, and long preparation.',
+ as_rd:'Where you are', as_rdd:'2 questions on how far your thinking has come; they choose your next steps.',
  q_marks:'Your marks in {s} in the last exam', q_conf:'How confident do you feel in {s}?', cf1:'Very weak', cf2:'Weak', cf3:'Okay', cf4:'Good', cf5:'Very confident',
  q_val:'How important is this to you?', im1:'Not at all', im2:'A little', im3:'Somewhat', im4:'Important', im5:'Very important',
  res_sub:'Your subjects', res_sub_h:'Marks band and confidence — used to check whether a career’s subjects are a strength or need support.',
@@ -581,7 +608,7 @@ en: {
  res_stream_marks:'Your current marks in {s} are below what this stream usually needs. It is still possible with extra support — discuss with your teacher, and look at the second stream too.',
  res_stage:'Your stage:', res_stage_0:'you are still exploring, so these steps are about seeing options, not deciding.', res_stage_1:'you have a few ideas, so these steps help you narrow down.', res_stage_2:'you know your goal, so these steps are about executing it.',
  rs_6:'Super’s work values: what a person wants from work (security, income, helping, independence…) separates careers with the same interest code — so we ask 8 value questions.',
- rs_7:'Self-efficacy (Bandura; Lent et al.): confidence and current performance in the school subjects behind a career predict persistence in it — so we ask for marks and confidence, and show where support is needed.',
+ rs_7:'Self-efficacy (Bandura; Lent et al.): confidence and current performance in the school subjects behind a career predict persistence in it — so we ask for your marks, and show where support is needed.',
  res_flat:'Your answers were very similar for all six interest types, so the career ranking below is less reliable. Try retaking the assessment and use the whole scale — “Hate it” to “Love it”.',
  apt_b3:'Strong', apt_b2:'Developing', apt_b1:'Needs practice', apt_b0:'Not attempted', apt_note:'This is a 4-question-per-area screener, not a test score — treat it as a hint, and ask your teacher for a fuller aptitude test if you are unsure.', skipped:'skipped',
  not_found:'This page does not exist', not_found_p:'The link may be old or mistyped. Choose from the menu or go back to the list.', clear_data:'Delete my answers', clear_confirm:'Delete all your answers and results from this device? (Do this before another student uses this computer.)',
@@ -622,7 +649,7 @@ en: {
 hi: {
  site_title:'मेरा भविष्य – मेरा निर्णय', site_sub:'करियर मार्गदर्शन पोर्टल', topbar:'हरियाणा सरकार • कक्षा 10वीं व 12वीं के विद्यार्थियों हेतु करियर मार्गदर्शन',
  nav_label:'मुख्य मेनू', nav_assess:'करियर आकलन', nav_tree:'करियर ट्री', nav_streams:'स्ट्रीम चुनें', nav_careers:'कोर्स व करियर', nav_colleges:'कॉलेज',
- nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें', filters:'फ़िल्टर', more_tools:'और सुविधाएँ', fewer_tools:'कम दिखाएँ', min_left:'लगभग {n} मिनट बाकी', min_less:'एक मिनट से कम बाकी', cg_health:'स्वास्थ्य व चिकित्सा', cg_eng:'इंजीनियरिंग, तकनीक व परिवहन', cg_sci:'विज्ञान, अनुसंधान व कृषि', cg_biz:'वाणिज्य, वित्त व व्यवसाय', cg_soc:'विधि, समाज, भाषाएँ व शिक्षण', cg_cre:'रचनात्मक कला, मीडिया, खेल व आतिथ्य', cg_uni:'रक्षा, पुलिस व सरकारी नौकरियाँ', cg_skill:'कौशल व जल्दी रोज़गार', n_careers:'करियर', install:'ऐप इंस्टॉल करें', installed:'होम स्क्रीन पर जोड़ा गया',
+ nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें', wb_back:'फिर से स्वागत है!', wb_code:'आपका रुचि-कोड', wb_top:'आपके सबसे अच्छे मेल', wb_cont:'अपना आकलन जारी रखें', wb_pct:'{n}% पूरा', wb_notyou:'आप नहीं? नए सिरे से शुरू करें', wb_res:'मेरे परिणाम देखें', jr_t:'आपकी यात्रा', jr_1:'आकलन करें', jr_2:'3 करियर देखें', jr_3:'2 करियर की तुलना करें', jr_4:'मेरी योजना बनाएँ', jr_5:'प्रमाण-पत्र प्रिंट करें', jr_done:'5 में से {n} पूरे', jr_next:'अगला क़दम', jr_all:'सब पूरा — किसी दोस्त के साथ साझा करें!', cod_t:'आज का करियर', cod_fit:'आपका मेल', share:'साझा करें', share_wa:'WhatsApp पर भेजें', share_res:'मेरा भविष्य – मेरा निर्णय पर मेरी करियर प्रोफ़ाइल 🧭\nरुचि-कोड: {code}\nसबसे अच्छे मेल: {list}\nमुफ़्त आकलन करें: {url}', share_cert:'मैंने मेरा भविष्य – मेरा निर्णय पर करियर आकलन पूरा किया 🎓 रुचि-कोड: {code}। आप भी करें: {url}', share_plan:'मेरा भविष्य – मेरा निर्णय पर मेरी करियर योजना 🗺️\n{list}\nअपनी बनाएँ: {url}', share_site:'हरियाणा के 10वीं व 12वीं के विद्यार्थियों के लिए मुफ़्त करियर मार्गदर्शन — करियर, कॉलेज, छात्रवृत्तियाँ, परीक्षाएँ: {url}', share_code:'मेरा भविष्य – मेरा निर्णय के लिए मेरा परिणाम-कोड (आकलन → “परिणाम-कोड है?” खोलें):\n{code}\n{url}', save_t:'मेरे परिणाम सहेजें', save_btn:'💾 कोड सहेजें', save_p:'इस कोड में आपके सभी उत्तर हैं। इसे कॉपी करें या WhatsApp पर ख़ुद को भेज दें। किसी भी फ़ोन या कंप्यूटर पर आकलन पृष्ठ खोलकर यह कोड डालें — आपके परिणाम वापस आ जाएँगे, इस डिवाइस के साफ़ होने के बाद भी।', copy:'कॉपी करें', copied:'कॉपी हो गया ✓', restore_t:'परिणाम-कोड है?', restore_p:'पहले सहेजा कोड डालें — आपके परिणाम इस डिवाइस पर वापस आ जाएँगे।', restore_ph:'MB4-XXXXX-XXXXX…', restore_btn:'वापस लाएँ', restore_err:'यह कोड सही नहीं है — जाँचकर फिर से कोशिश करें।', done_toast:'🎉 आपकी करियर प्रोफ़ाइल तैयार है!', ori_risk:'सुरक्षा बनाम जोखिम', ori_r0:'सुरक्षित, निश्चित आय पसंद', ori_r1:'सुरक्षा और विकास का संतुलन चाहते हैं', ori_r2:'बड़े अवसर के लिए जोखिम लेने को तैयार', ori_stay:'लंबी तैयारी', ori_s0:'सालों तक एक लक्ष्य पर टिक सकते हैं', ori_s1:'सहयोग मिले तो टिक सकते हैं', ori_s2:'जल्दी कमाई शुरू करना पसंद', why_long:'2–3 साल की तैयारी चाहिए — आपने कहा कि आप जल्दी शुरू करना चाहेंगे', fam_t:'आपका परिवार क्या चाहता है', fam_p:'आपने बताया कि आपका परिवार {f} क्षेत्र में करियर चाहता है। उन करियरों में यह आप पर सबसे अच्छा जँचता है:', fam_same:'अच्छी ख़बर — आपका अपना सबसे अच्छा मेल भी इसी क्षेत्र में है।', fam_diff:'आपका अपना सबसे अच्छा मेल {c} है। दोनों अलग हों तो यह सामान्य है — यह पृष्ठ माता-पिता को दिखाएँ और बात करें, या स्कूल के करियर-शिक्षक से समय लें।', rs_10:'ग्रिट (डकवर्थ व अन्य, 2007): सालों तक एक लक्ष्य पर टिके रहना बताता है कि लंबे कोर्स कौन पूरे करता है — इसलिए लंबे रास्तों को आपके अपने उत्तर से तौला जाता है।', rs_11:'जोखिम-प्रवृत्ति (डोमेन व अन्य, 2011): जो आय का जोखिम स्वीकार करते हैं, वे स्वरोज़गार व प्रदर्शन-आधारित करियर अधिक चुनते हैं — इसलिए एक प्रश्न सुरक्षित और ऊँचे-अवसर वाले रास्तों को अलग करता है।', as_per:'आपकी कार्य-शैली', as_perd:'आप आमतौर पर कैसे व्यवहार करते हैं, इस पर 10 कथन — जिज्ञासु, व्यवस्थित, मिलनसार, संवेदनशील, शांत।', as_ctx:'काम की परिस्थितियाँ', as_ctxd:'कुछ नौकरियों की परिस्थितियों पर 5 हाँ/ना प्रश्न — अस्पताल, बाहर का काम, रात की शिफ़्ट, वर्दी, डेस्क का काम।', q_per:'आप कितने सहमत हैं?', q_ctx:'ईमानदारी से बताएँ — कोई उत्तर ग़लत नहीं है।', ag1:'बिल्कुल असहमत', ag2:'असहमत', ag3:'पता नहीं', ag4:'सहमत', ag5:'पूरी तरह सहमत', cx_y:'हाँ, ठीक है', cx_m:'शायद / पता नहीं', cx_n:'नहीं, मुझे यह पसंद नहीं', res_sty:'आपकी कार्य-शैली', res_sty_h:'आप कैसे काम करना पसंद करते हैं। आपके स्वभाव से मेल खाते करियर चुनने में उपयोग — सही या ग़लत की परीक्षा नहीं।', sty_b1:'कम', sty_b2:'मध्यम', sty_b3:'मज़बूत', res_ctx_no:'आपने इनके लिए मना किया:', why_sty:'आपकी कार्य-शैली से मेल:', why_ctx:'इसमें {s} शामिल है, जिसके लिए आपने मना किया', rs_8:'बिग फ़ाइव व्यक्तित्व (कोस्टा व मैक्क्रे; बैरिक व माउंट, 1991): कर्तव्यनिष्ठा व भावनात्मक स्थिरता जैसे गुण लगभग हर नौकरी में सफलता व संतुष्टि से जुड़े हैं; हम गॉसलिंग व अन्य (2003) की तर्ज़ पर 10 प्रश्नों का संक्षिप्त स्क्रीनर उपयोग करते हैं।', rs_9:'व्यक्ति–परिवेश मेल (डॉविस व लॉफ़क्विस्ट का कार्य-समायोजन सिद्धांत; O*NET कार्य-संदर्भ): जब नौकरी की रोज़ की परिस्थितियाँ व्यक्ति के अनुकूल हों, तो वह टिकता है और बेहतर करता है — इसलिए हम “डील-ब्रेकर” पूछते हैं।', q_pick3:'नौकरी में आपके लिए इनमें से कौन-सी 3 बातें सबसे ज़रूरी हैं? तीन चुनें।', pick_n:'3 में से {n} चुने', filters:'फ़िल्टर', more_tools:'और सुविधाएँ', fewer_tools:'कम दिखाएँ', min_left:'लगभग {n} मिनट बाकी', min_less:'एक मिनट से कम बाकी', cg_health:'स्वास्थ्य व चिकित्सा', cg_eng:'इंजीनियरिंग, तकनीक व परिवहन', cg_sci:'विज्ञान, अनुसंधान व कृषि', cg_biz:'वाणिज्य, वित्त व व्यवसाय', cg_soc:'विधि, समाज, भाषाएँ व शिक्षण', cg_cre:'रचनात्मक कला, मीडिया, खेल व आतिथ्य', cg_uni:'रक्षा, पुलिस व सरकारी नौकरियाँ', cg_skill:'कौशल व जल्दी रोज़गार', n_careers:'करियर', install:'ऐप इंस्टॉल करें', installed:'होम स्क्रीन पर जोड़ा गया',
  smaller:'छोटा अक्षर', normal:'सामान्य अक्षर', larger:'बड़ा अक्षर', newtab:'नए टैब में खुलता है',
  back:'पीछे', next:'आगे', all:'सभी', search:'खोजें', none:'कुछ नहीं मिला। फ़िल्टर बदलकर देखें।', see_all:'सभी देखें', visit:'आधिकारिक वेबसाइट', skip:'यह प्रश्न छोड़ें',
  after:'कक्षा', level:'स्तर', stream:'स्ट्रीम', filter:'दिखाएँ', region:'क्षेत्र', hry:'हरियाणा', india:'शेष भारत', yrs:'वर्ष', print:'प्रिंट / PDF सहेजें', retake:'दोबारा करें', question:'प्रश्न',
@@ -639,13 +666,13 @@ hi: {
  hm_t3:'विज्ञान, वाणिज्य या कला? फ़ैसले के लिए चार सवाल।', hm_t4:'कोर्स की जानकारी, पात्रता, परीक्षा, ख़र्च व रोडमैप।', hm_t5:'हरियाणा व देश के संस्थान, प्रवेश-परीक्षा सहित।',
  hm_t6:'पैसा पढ़ाई न रोके — योजनाएँ व ऋण खोजें।', hm_t7:'माह-वार परीक्षा व आवेदन समय-रेखा।', hm_t8:'आधिकारिक वेबसाइटों के सीधे लिंक।',
  hm_how:'एक अलग तरह का आकलन', hm_how_p:'अधिकतर टेस्ट केवल पसंद पूछते हैं। हम रुचि, क्षमता, स्कूली विषय, काम से आपकी चाह और पारिवारिक परिस्थिति — सब देखते हैं, क्योंकि अच्छा करियर विद्यार्थी और परिवार दोनों के अनुकूल होना चाहिए।',
- hw1:'रुचियाँ', hw1d:'हॉलैंड के RIASEC मॉडल पर आधारित 30 कथन — अधिकतर करियर-रुचि टेस्टों का शोध-आधार।', hw2:'क्षमता', hw2d:'16 तर्क-प्रश्न, साथ में आपके स्कूली विषयों के अंक व आत्मविश्वास।',
+ hw1:'रुचियाँ', hw1d:'हॉलैंड के RIASEC मॉडल पर आधारित 20 कथन — अधिकतर करियर-रुचि टेस्टों का शोध-आधार।', hw2:'क्षमता', hw2d:'8 तर्क-प्रश्न, साथ में आपके स्कूली विषयों के अंक।',
  hw3:'आपकी परिस्थिति', hw3d:'पारिवारिक बजट, ऋण पर सहमति, कमाई शुरू करने का समय, घर से दूरी, इंटरनेट।', hw4:'दो उत्तर', hw4d:'“सपनों” के करियर जो आप पर फबते हैं, और “व्यावहारिक” करियर जो आप व आपकी परिस्थिति दोनों के अनुकूल हैं।',
  hm_new:'नए ज़माने के करियर 2026', hm_up:'आने वाली परीक्षाएँ', hm_money:'फ़ीस आपको रोके नहीं', hm_money_p:'NSP, हरियाणा पोस्ट-मैट्रिक, INSPIRE, AICTE प्रगति, PM विद्यालक्ष्मी व अन्य — देखें कौन-सी आपके लिए है और आवेदन कैसे करें।',
- as_title:'लगभग 20 मिनट में अपनी दिशा खोजें', as_lead:'यह मार्गदर्शन का साधन है, परीक्षा नहीं। रुचियों के “सही” या “ग़लत” उत्तर नहीं होते — ईमानदारी से बताइए कि आपको क्या पसंद है, दूसरों की अपेक्षा नहीं।',
- as_s1:'आपके बारे में', as_s1d:'10 छोटे चुनाव: कक्षा, स्ट्रीम, पारिवारिक बजट, ऋण पर सहमति। केवल सलाह को आपके अनुकूल बनाने हेतु।', as_s2:'रुचियाँ', as_s2d:'30 कथन — हर गतिविधि आपको कितनी पसंद आएगी?',
- as_s3:'क्षमता', as_s3d:'संख्या, तर्क, भाषा व स्थान-बोध पर 16 छोटे तर्क-प्रश्न।', as_s4:'सीखने का तरीक़ा', as_s4d:'आप कैसे सबसे अच्छा सीखते हैं — पढ़ाई के सुझावों हेतु 4 प्रश्न।',
- as_begin:'आकलन शुरू करें', as_restart:'फिर से शुरू करें', as_resume:'जहाँ छोड़ा था वहाँ से जारी रखें', as_see_res:'मेरे परिणाम देखें', as_time:'लगभग 20–25 मिनट', as_priv:'आपके डिवाइस पर ही रहता है', as_step:'चरण', as_finish:'परिणाम देखें',
+ as_title:'लगभग 15 मिनट में अपनी दिशा खोजें', as_lead:'यह मार्गदर्शन का साधन है, परीक्षा नहीं। रुचियों के “सही” या “ग़लत” उत्तर नहीं होते — ईमानदारी से बताइए कि आपको क्या पसंद है, दूसरों की अपेक्षा नहीं।',
+ as_s1:'आपके बारे में', as_s1d:'11 छोटे चुनाव: कक्षा, स्ट्रीम, पारिवारिक बजट, परिवार की आशा। केवल सलाह को आपके अनुकूल बनाने हेतु।', as_s2:'रुचियाँ', as_s2d:'20 कथन — हर गतिविधि आपको कितनी पसंद आएगी?',
+ as_s3:'क्षमता', as_s3d:'संख्या, तर्क, भाषा व स्थान-बोध पर 8 छोटे तर्क-प्रश्न।', as_s4:'सीखने का तरीक़ा', as_s4d:'आप कैसे सबसे अच्छा सीखते हैं — पढ़ाई के सुझावों हेतु 2 प्रश्न।',
+ as_begin:'आकलन शुरू करें', as_restart:'फिर से शुरू करें', as_resume:'जहाँ छोड़ा था वहाँ से जारी रखें', as_see_res:'मेरे परिणाम देखें', as_time:'लगभग 12–15 मिनट · 54 प्रश्न', as_priv:'आपके डिवाइस पर ही रहता है', as_step:'चरण', as_finish:'परिणाम देखें',
  rs_t:'इसके पीछे का शोध', rs_p:'यह आकलन करियर-मनोविज्ञान के जाने-माने विचारों को जोड़ता है:',
  rs_1:'हॉलैंड का RIASEC सिद्धांत (जे. हॉलैंड, 1959/1997): लोगों व करियर को छह रुचि-प्रकारों से समझा जा सकता है। अमेरिका का O*NET Interest Profiler इसी पर बना है।',
  rs_2:'सुपर का जीवन-अवधि सिद्धांत (डी. सुपर, 1990): करियर का चुनाव समय के साथ विकसित होता है, इसलिए हम 10वीं व 12वीं के बाद के रास्ते अलग-अलग दिखाते हैं।',
@@ -669,8 +696,8 @@ hi: {
  ns10_1:'इन परिणामों पर माता-पिता और स्कूल के करियर-मार्गदर्शक शिक्षक से चर्चा करें।', ns10_2:'“करियर ट्री” खोलकर अपनी पसंद के दो रास्ते पढ़ें — पात्रता व ख़र्च देखें।', ns10_3:'परीक्षा कैलेंडर में प्रवेश-परीक्षाएँ व तिथियाँ नोट करें।', ns10_4:'छात्रवृत्ति के लिए समय पर आवेदन करें और दस्तावेज़ तैयार रखें (आय/जाति प्रमाणपत्र, आधार-लिंक बैंक खाता)।',
  ns12_1:'ऊपर के शीर्ष 3 करियर खोलकर पात्रता, प्रवेश-परीक्षा व आवेदन की अंतिम तिथि देखें।', ns12_2:'5 कॉलेज चुनें (एक सुरक्षित विकल्प घर के पास भी) और उनकी आधिकारिक वेबसाइट देखें।', ns12_3:'परीक्षा व छात्रवृत्ति पोर्टलों पर अभी पंजीकरण करें; दस्तावेज़ तैयार रखें।', ns12_4:'प्लान B रखें — दूसरा रास्ता (डिप्लोमा, कौशल कोर्स, दूसरा शहर) — ताकि एक परिणाम आपको रोक न सके।',
  res_disc:'ये परिणाम सांकेतिक हैं और केवल आज के आपके उत्तरों पर आधारित हैं। रुचियाँ बदलती-बढ़ती हैं — आप कभी भी आकलन दोबारा कर सकते हैं। आवेदन से पहले परीक्षा-नियम, शुल्क व तिथियाँ आधिकारिक वेबसाइट पर अवश्य जाँचें।',
- as_sub:'आपके विषय', as_subd:'4 मुख्य विषयों में अंक-स्तर व आत्मविश्वास — ताकि सलाह आपकी आज की स्थिति से मेल खाए।', as_val:'आपके लिए क्या मायने रखता है', as_vald:'काम से लोग जो 8 चीज़ें चाहते हैं — सुरक्षा, कमाई, मदद, स्वतंत्रता… — महत्व के अनुसार।',
- as_rd:'आप कहाँ हैं', as_rdd:'आपकी सोच कितनी आगे बढ़ी है, इस पर 3 प्रश्न; ये आपके अगले क़दम तय करते हैं।',
+ as_sub:'आपके विषय', as_subd:'4 मुख्य विषयों में आपका अंक-स्तर — ताकि सलाह आपकी आज की स्थिति से मेल खाए।', as_val:'आपके लिए क्या मायने रखता है', as_vald:'काम से अपनी 3 सबसे ज़रूरी चीज़ें चुनें — सुरक्षा, कमाई, मदद… — और दो चुनाव: सुरक्षा बनाम जोखिम, व लंबी तैयारी।',
+ as_rd:'आप कहाँ हैं', as_rdd:'आपकी सोच कितनी आगे बढ़ी है, इस पर 2 प्रश्न; ये आपके अगले क़दम तय करते हैं।',
  q_marks:'पिछली परीक्षा में {s} में आपके अंक', q_conf:'{s} में आप कितना आत्मविश्वास महसूस करते हैं?', cf1:'बहुत कमज़ोर', cf2:'कमज़ोर', cf3:'ठीक-ठाक', cf4:'अच्छा', cf5:'पूरा भरोसा',
  q_val:'यह आपके लिए कितना महत्वपूर्ण है?', im1:'बिल्कुल नहीं', im2:'थोड़ा', im3:'कुछ हद तक', im4:'महत्वपूर्ण', im5:'बहुत महत्वपूर्ण',
  res_sub:'आपके विषय', res_sub_h:'अंक-स्तर व आत्मविश्वास — इससे देखा जाता है कि किसी करियर के विषय आपकी ताक़त हैं या सहारे की ज़रूरत है।',
@@ -680,7 +707,7 @@ hi: {
  res_stream_marks:'{s} में आपके वर्तमान अंक इस स्ट्रीम की सामान्य ज़रूरत से कम हैं। अतिरिक्त सहयोग से यह फिर भी संभव है — शिक्षक से चर्चा करें और दूसरी स्ट्रीम भी देखें।',
  res_stage:'आपका चरण:', res_stage_0:'आप अभी खोज रहे हैं, इसलिए ये क़दम विकल्प देखने के लिए हैं, फ़ैसला करने के लिए नहीं।', res_stage_1:'आपके पास कुछ विचार हैं, इसलिए ये क़दम उन्हें छाँटने में मदद करेंगे।', res_stage_2:'आप अपना लक्ष्य जानते हैं, इसलिए ये क़दम उसे पूरा करने के लिए हैं।',
  rs_6:'सुपर के कार्य-मूल्य: व्यक्ति काम से क्या चाहता है (सुरक्षा, कमाई, मदद, स्वतंत्रता…) — यह एक जैसे रुचि-कोड वाले करियर को अलग करता है, इसलिए हम मूल्यों के 8 प्रश्न पूछते हैं।',
- rs_7:'आत्म-प्रभावकारिता (बंडूरा; लेंट व अन्य): किसी करियर के पीछे के स्कूली विषयों में आत्मविश्वास व वर्तमान प्रदर्शन उसमें टिके रहने का संकेत देते हैं — इसलिए हम अंक व आत्मविश्वास पूछते हैं और बताते हैं कि कहाँ सहयोग चाहिए।',
+ rs_7:'आत्म-प्रभावकारिता (बंडूरा; लेंट व अन्य): किसी करियर के पीछे के स्कूली विषयों में आत्मविश्वास व वर्तमान प्रदर्शन उसमें टिके रहने का संकेत देते हैं — इसलिए हम आपके अंक पूछते हैं और बताते हैं कि कहाँ सहयोग चाहिए।',
  res_flat:'आपके उत्तर सभी छह रुचि-प्रकारों के लिए लगभग एक जैसे थे, इसलिए नीचे की करियर-सूची कम भरोसेमंद है। आकलन दोबारा करें और पूरे पैमाने का उपयोग करें — “बिल्कुल नहीं” से “बहुत पसंद” तक।',
  apt_b3:'मज़बूत', apt_b2:'विकसित हो रही', apt_b1:'अभ्यास चाहिए', apt_b0:'प्रयास नहीं किया', apt_note:'यह हर क्षेत्र में 4 प्रश्नों की त्वरित जाँच है, परीक्षा-अंक नहीं — इसे संकेत मानें और संदेह हो तो शिक्षक से विस्तृत अभिक्षमता-परीक्षण की बात करें।', skipped:'छोड़े गए',
  not_found:'यह पेज मौजूद नहीं है', not_found_p:'लिंक पुराना या ग़लत हो सकता है। मेनू से चुनें या सूची पर वापस जाएँ।', clear_data:'मेरे उत्तर मिटाएँ', clear_confirm:'इस डिवाइस से आपके सभी उत्तर व परिणाम मिटा दें? (दूसरा विद्यार्थी इस कंप्यूटर का उपयोग करे, उससे पहले यह अवश्य करें।)',
@@ -1251,7 +1278,7 @@ window.CAREERS = [
   national:{en:['IHM Pusa (New Delhi)', 'IHM Mumbai (Mumbai)', 'IHM Kolkata (Kolkata)', 'IHM Chennai (Chennai)', 'IHM Bengaluru (Bengaluru)', 'IHM Hyderabad (Hyderabad)', 'IHM Chandigarh (Chandigarh)', 'IHM Jaipur (Jaipur)', 'OCLD – Oberoi (Delhi)', 'IHM Aurangabad – Taj Group (Aurangabad)'], hi:['IHM पूसा (नई दिल्ली)', 'IHM मुंबई (मुंबई)', 'IHM कोलकाता (कोलकाता)', 'IHM चेन्नई (चेन्नई)', 'IHM बेंगलुरु (बेंगलुरु)', 'IHM हैदराबाद (हैदराबाद)', 'IHM चंडीगढ़ (चंडीगढ़)', 'IHM जयपुर (जयपुर)', 'OCLD – ओबेरॉय (दिल्ली)', 'IHM औरंगाबाद – ताज समूह (औरंगाबाद)']} },
 
 /* ------------------------- AFTER CLASS 12 • ARTS / HUMANITIES (and open to all) ------------------------- */
-{ id:'civil-services', ico:'🏛️', lv:['12'], st:['any'], rs:'arts', ri:'SEI', ap:['verb','log'], cost:1, earn:5, reloc:1,
+{ id:'civil-services', ico:'🏛️', lv:['12'], st:['any'], rs:'arts', ri:'ESI', ap:['verb','log'], cost:1, earn:5, reloc:1,
   name:{en:'Civil Services (UPSC / HCS)', hi:'सिविल सेवा (UPSC / HCS)'},
   dur:{en:'Graduation + 2–3 yrs preparation', hi:'स्नातक + 2–3 वर्ष तैयारी'},
   about:{en:'IAS, IPS, IFS and Haryana Civil Service (HCS). Any graduate can sit the exam; an Arts foundation (History, Polity, Geography, Economics) is a strong start.', hi:'IAS, IPS, IFS व हरियाणा सिविल सेवा (HCS)। कोई भी स्नातक परीक्षा दे सकता है; कला (इतिहास, राजनीति, भूगोल, अर्थशास्त्र) की मज़बूत नींव अच्छी शुरुआत।'},
@@ -2178,8 +2205,83 @@ window.PROFILE_FIELDS = [
  { id:'earn', q:{en:'How soon do you need to start earning?',hi:'आपको कमाई कब तक शुरू करनी है?'}, o:[['soon',{en:'Within 1–2 years',hi:'1–2 वर्ष में'}],['mid',{en:'In 3–4 years',hi:'3–4 वर्ष में'}],['long',{en:'I can study 5+ years',hi:'मैं 5+ वर्ष पढ़ सकता/सकती हूँ'}]] },
  { id:'away', q:{en:'Can you study away from home?',hi:'क्या आप घर से दूर पढ़ सकते हैं?'}, o:[['yes',{en:'Yes, anywhere in India',hi:'हाँ, भारत में कहीं भी'}],['state',{en:'Within Haryana / nearby',hi:'हरियाणा / आसपास'}],['no',{en:'Only near home',hi:'केवल घर के पास'}]] },
  { id:'loan', q:{en:'If needed, are you open to an education loan?',hi:'ज़रूरत हो तो क्या आप शिक्षा-ऋण लेने को तैयार हैं?'}, o:[['yes',{en:'Yes',hi:'हाँ'}],['maybe',{en:'Maybe',hi:'शायद'}],['no',{en:'No',hi:'नहीं'}]] },
+ { id:'fam', q:{en:'Which field does your family hope you will choose?',hi:'आपका परिवार चाहता है कि आप कौन-सा क्षेत्र चुनें?'}, hint:{en:'We will show how that field fits you — it does not change your results.',hi:'हम दिखाएँगे कि वह क्षेत्र आप पर कितना जँचता है — इससे आपके परिणाम नहीं बदलते।'},
+   o:[['health',{en:'Doctor / health',hi:'डॉक्टर / स्वास्थ्य'}],['eng',{en:'Engineering / IT',hi:'इंजीनियरिंग / IT'}],['govt',{en:'Government job / forces',hi:'सरकारी नौकरी / सेना'}],['biz',{en:'Business / commerce',hi:'व्यवसाय / वाणिज्य'}],['teach',{en:'Teaching',hi:'शिक्षण'}],['arts',{en:'Arts / creative',hi:'कला / रचनात्मक'}],['none',{en:'No preference / not discussed yet',hi:'कोई पसंद नहीं / अभी बात नहीं हुई'}]] },
  { id:'net', q:{en:'Internet & device at home',hi:'घर पर इंटरनेट व उपकरण'}, o:[['pc',{en:'Computer / laptop + internet',hi:'कंप्यूटर/लैपटॉप + इंटरनेट'}],['phone',{en:'Smartphone only',hi:'केवल स्मार्टफ़ोन'}],['none',{en:'Limited / none',hi:'सीमित / नहीं'}]] }
 ];
+
+/* WORK STYLE — a short Big Five screener (Goldberg; Costa & McCrae; brief-scale approach of Gosling et al. 2003, TIPI).
+   Two statements per trait, the second reverse-scored (r:1) so agreeing with everything cancels out.
+   Traits get plain names: O curious · C organised · E outgoing · A caring · S calm under pressure (emotional stability). */
+window.PERSONALITY_ITEMS = [
+ { k:'O', r:0, q:{en:'I enjoy trying new ideas and new ways of doing things.',hi:'मुझे नए विचार और काम करने के नए तरीक़े आज़माना अच्छा लगता है।'} },
+ { k:'C', r:0, q:{en:'I finish my work on time and keep my things organised.',hi:'मैं अपना काम समय पर पूरा करता/करती हूँ और अपनी चीज़ें व्यवस्थित रखता/रखती हूँ।'} },
+ { k:'E', r:0, q:{en:'I enjoy meeting new people and speaking in front of a group.',hi:'मुझे नए लोगों से मिलना और समूह के सामने बोलना अच्छा लगता है।'} },
+ { k:'A', r:0, q:{en:'I like helping others, even when it takes my own time.',hi:'मुझे दूसरों की मदद करना अच्छा लगता है, भले ही उसमें मेरा समय लगे।'} },
+ { k:'S', r:0, q:{en:'I stay calm when things go wrong or when I am under pressure.',hi:'जब कुछ ग़लत हो जाए या दबाव हो, तब भी मैं शांत रहता/रहती हूँ।'} },
+ { k:'O', r:1, q:{en:'I prefer doing things the way they have always been done.',hi:'मुझे काम उसी तरह करना पसंद है जैसे हमेशा से होता आया है।'} },
+ { k:'C', r:1, q:{en:'I often leave work half-done or start it at the last minute.',hi:'मैं अक्सर काम अधूरा छोड़ देता/देती हूँ या आख़िरी समय पर शुरू करता/करती हूँ।'} },
+ { k:'E', r:1, q:{en:'I prefer to stay quiet and work on my own.',hi:'मुझे चुप रहकर अकेले काम करना पसंद है।'} },
+ { k:'A', r:1, q:{en:'I lose patience with other people quickly.',hi:'मैं दूसरों के साथ जल्दी धैर्य खो देता/देती हूँ।'} },
+ { k:'S', r:1, q:{en:'I get nervous or upset easily in stressful situations.',hi:'तनाव की स्थिति में मैं जल्दी घबरा जाता/जाती हूँ या परेशान हो जाता/जाती हूँ।'} }
+];
+window.TRAIT_NAMES = {
+ O:{en:'Curious',hi:'जिज्ञासु',d:{en:'open to new ideas, likes to explore and create',hi:'नए विचारों के लिए खुले, खोजना व रचना पसंद'}},
+ C:{en:'Organised',hi:'व्यवस्थित',d:{en:'careful, disciplined, finishes what you start',hi:'सावधान, अनुशासित, शुरू किया काम पूरा करते हैं'}},
+ E:{en:'Outgoing',hi:'मिलनसार',d:{en:'energised by people, comfortable speaking up',hi:'लोगों से ऊर्जा मिलती है, बोलने में सहज'}},
+ A:{en:'Caring',hi:'संवेदनशील',d:{en:'patient, helpful, works well with others',hi:'धैर्यवान, मददगार, दूसरों के साथ अच्छा काम'}},
+ S:{en:'Calm under pressure',hi:'दबाव में शांत',d:{en:'steady when things get tough',hi:'कठिन समय में भी स्थिर'}}
+};
+/* WORK CONDITIONS — practical deal-breakers. Answer: 0 yes · 1 maybe · 2 no */
+window.WORK_CONTEXT_ITEMS = [
+ { k:'blood',   q:{en:'Would you be comfortable seeing blood, injuries or very sick people at work?',hi:'क्या आप काम पर ख़ून, चोट या बहुत बीमार लोगों को देखकर सहज रहेंगे?'}, n:{en:'blood & hospitals',hi:'ख़ून व अस्पताल'} },
+ { k:'field',   q:{en:'Are you fine with physical work outdoors — in sun, rain or dust — for long hours?',hi:'क्या आप लंबे समय तक बाहर — धूप, बारिश या धूल में — शारीरिक काम के लिए तैयार हैं?'}, n:{en:'outdoor physical work',hi:'बाहर शारीरिक काम'} },
+ { k:'shift',   q:{en:'Are you okay with night shifts or irregular working hours?',hi:'क्या आप रात की शिफ़्ट या अनियमित कामकाजी घंटों के लिए तैयार हैं?'}, n:{en:'night shifts / odd hours',hi:'रात की शिफ़्ट / अनियमित घंटे'} },
+ { k:'uniform', q:{en:'Would you like a job with a uniform, strict discipline and physical fitness tests?',hi:'क्या आप वर्दी, कड़े अनुशासन और शारीरिक फ़िटनेस टेस्ट वाली नौकरी चाहेंगे?'}, n:{en:'uniform & strict discipline',hi:'वर्दी व कड़ा अनुशासन'} },
+ { k:'desk',    q:{en:'Are you happy sitting at a desk or computer for most of the day?',hi:'क्या आप दिन का ज़्यादातर समय डेस्क या कंप्यूटर पर बैठकर काम करने में ख़ुश हैं?'}, n:{en:'desk / computer all day',hi:'पूरा दिन डेस्क / कंप्यूटर'} }
+];
+/* what each career asks of you: key traits (O C E A S, most important first) and the work conditions it involves.
+   Based on O*NET “work styles” and “work context” for comparable occupations. Moving away from home is handled by reloc. */
+window.CAREER_TRAITS = {
+ polytechnic:['CO',[]], iti:['C',['field']], paramedical:['CAS',['blood','shift']], shortterm:['C',[]], govjobs:['C',['desk']],
+ agniveer:['SC',['uniform','field']], drone:['OC',['field']], 'ev-green':['CO',['field']], avgc:['O',['desk']], sports:['ES',['field']],
+ entrepreneur:['EOS',[]], engineering:['CO',[]], 'cs-ai':['OC',['desk']], cyber:['CO',['desk','shift']], space:['OC',[]],
+ architecture:['OC',['desk']], nda:['SCE',['uniform','field']], 'science-research':['OC',[]], medicine:['CSA',['blood','shift']],
+ nursing:['ACS',['blood','shift']], pharma:['CA',[]], 'agri-dairy':['C',['field']], 'ca-cs':['C',['desk']], 'commerce-fin':['C',['desk']],
+ management:['ECS',[]], hotel:['EA',['shift']], 'civil-services':['CSE',[]], law:['ESC',[]], teaching:['AEC',[]], media:['EO',['shift','field']],
+ 'psych-social':['AS',[]], 'design-arts':['O',[]], police:['SCE',['uniform','shift','field']], veterinary:['CA',['blood','field']],
+ 'physio-allied':['AC',[]], 'biotech-forensic':['CO',[]], 'economics-stats':['CO',['desk']], aviation:['SC',['uniform','shift']],
+ 'merchant-navy':['SC',['uniform','shift','field']], 'logistics-retail':['CE',['shift','field']], 'ites-bpo':['AE',['desk','shift']],
+ 'fashion-textile':['O',[]], 'humanities-lang':['O',['desk']], 'banking-insurance':['CE',['desk']], 'music-performing':['OE',['shift']]
+};
+
+/* ORIENTATION — two single-item choices that interests and values miss:
+   risk: security vs. upside (Dohmen et al. 2011: risk attitude predicts self-employment and occupational choice)
+   stay: persistence for a multi-year goal (Duckworth et al. 2007, grit; used only for long roads) */
+window.ORIENT_ITEMS = [
+ { k:'risk', q:{en:'If you had to choose one, which job would you take?',hi:'अगर एक ही चुनना हो, तो आप कौन-सी नौकरी लेंगे?'},
+   o:[['sec',{en:'A secure job with a fixed salary, even if it pays less',hi:'निश्चित वेतन वाली सुरक्षित नौकरी, भले ही कमाई कम हो'}],
+      ['mix',{en:'A balance — some security, some chance to grow',hi:'संतुलन — कुछ सुरक्षा, कुछ आगे बढ़ने का मौक़ा'}],
+      ['risk',{en:'Uncertain income, but a real chance to earn much more or be my own boss',hi:'अनिश्चित आय, पर बहुत ज़्यादा कमाने या अपना मालिक बनने का असली मौक़ा'}]] },
+ { k:'stay', q:{en:'Could you keep preparing for 2–3 years for one big goal (like NEET, JEE, CA or UPSC) without giving up?',hi:'क्या आप किसी एक बड़े लक्ष्य (जैसे NEET, JEE, CA या UPSC) के लिए 2–3 साल बिना हार माने तैयारी कर सकते हैं?'},
+   o:[['yes',{en:'Yes — I can stay with a goal for years',hi:'हाँ — मैं सालों तक एक लक्ष्य पर टिक सकता/सकती हूँ'}],
+      ['maybe',{en:'Maybe, with support from family and teachers',hi:'शायद, परिवार व शिक्षकों के सहयोग से'}],
+      ['no',{en:'No — I want to start working and earning soon',hi:'नहीं — मैं जल्दी काम और कमाई शुरू करना चाहता/चाहती हूँ'}]] }
+];
+/* careers whose income is mostly secure (govt / salaried) or mostly at risk (own venture, freelance, performance) */
+window.CAREER_RISK = {
+ govjobs:'sec', 'banking-insurance':'sec', teaching:'sec', nda:'sec', police:'sec', 'civil-services':'sec', 'commerce-fin':'sec', 'ca-cs':'sec',
+ entrepreneur:'risk', sports:'risk', 'music-performing':'risk', 'design-arts':'risk', avgc:'risk', media:'risk', 'fashion-textile':'risk'
+};
+/* fields a family may hope for → the careers that belong to them (used only to show how that hope fits the student) */
+window.FAM_FIELDS = {
+ health:{ n:{en:'Doctor / health',hi:'डॉक्टर / स्वास्थ्य'}, ids:['medicine','nursing','pharma','paramedical','veterinary','physio-allied'] },
+ eng:{ n:{en:'Engineering / IT',hi:'इंजीनियरिंग / IT'}, ids:['engineering','cs-ai','cyber','space','architecture','ev-green','drone','polytechnic','aviation'] },
+ govt:{ n:{en:'Government job / forces',hi:'सरकारी नौकरी / सेना'}, ids:['govjobs','civil-services','police','nda','agniveer','banking-insurance','teaching'] },
+ biz:{ n:{en:'Business / commerce',hi:'व्यवसाय / वाणिज्य'}, ids:['ca-cs','commerce-fin','management','banking-insurance','entrepreneur','economics-stats','logistics-retail'] },
+ teach:{ n:{en:'Teaching',hi:'शिक्षण'}, ids:['teaching','humanities-lang','psych-social'] },
+ arts:{ n:{en:'Arts / creative',hi:'कला / रचनात्मक'}, ids:['design-arts','avgc','fashion-textile','music-performing','media'] }
+};
 
 </script>
   <script>
@@ -2414,7 +2516,7 @@ window.PROFILE_FIELDS = [
   'use strict';
   /* Saved answers expire after 24 h: on a shared school computer the next student must not inherit
      the previous one's category / income / disability answers. */
-  var TTL = 24 * 60 * 60 * 1000, VER = 2;
+  var TTL = 30 * 24 * 60 * 60 * 1000, VER = 4;   // results stay 30 days on this device; a new version restarts half-done runs
   function fresh() { return { v: VER, step: 'intro', i: 0, profile: {}, ans: {}, ts: Date.now() }; }
   var A = App.A = App.Store.get('assess', null) || fresh();
   if (A.v !== VER || !A.ts || Date.now() - A.ts > TTL) { App.Store.del('assess'); A = App.A = fresh(); }
@@ -2424,23 +2526,28 @@ window.PROFILE_FIELDS = [
   var FACES = [['😖', 'sc1'], ['🙁', 'sc2'], ['😐', 'sc3'], ['🙂', 'sc4'], ['😍', 'sc5']];
   var CONF = [['😟', 'cf1'], ['😕', 'cf2'], ['😐', 'cf3'], ['🙂', 'cf4'], ['💪', 'cf5']];
   var IMP = [['1', 'im1'], ['2', 'im2'], ['3', 'im3'], ['4', 'im4'], ['5', 'im5']];
-  var SEC = { sub: 'as_sub', int: 'as_s2', val: 'as_val', apt: 'as_s3', lrn: 'as_s4', rd: 'as_rd' };
-  var SEC_ORDER = ['sub', 'int', 'val', 'apt', 'lrn', 'rd'];
+  var SEC = { sub: 'as_sub', int: 'as_s2', val: 'as_val', per: 'as_per', ctx: 'as_ctx', apt: 'as_s3', lrn: 'as_s4', rd: 'as_rd' };
+  var SEC_ORDER = ['sub', 'int', 'val', 'per', 'ctx', 'apt', 'lrn', 'rd'];
+  var AGR = [['😣', 'ag1'], ['🙁', 'ag2'], ['😐', 'ag3'], ['🙂', 'ag4'], ['😄', 'ag5']];
 
   /* ------------------------------ question queue ------------------------------ */
   function track() { var p = A.profile; return p.cls === '12' ? (p.stream || 'pcm') : '10'; }
   function subjects() { return SUBJECT_SETS[track()]; }
+  /* the assessment asks a chosen subset of each item bank, plus work style and work conditions (54 questions in all):
+     3 interest statements per Holland type, 2 aptitude items per area, values as one “pick 3” screen */
+  var INT_ASK = [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 21, 24, 27];   // 24 & 27 repeat 0 & 3 in other words → careless check
+  var APT_ASK = [1, 2, 4, 6, 9, 10, 13, 14], LRN_ASK = [0, 3], RD_ASK = [0, 2];
   function queue() {
     var q = [];
-    subjects().forEach(function (s) {
-      q.push({ sec: 'sub', type: 'marks', key: 'sub:' + s[0] + ':m', subj: s });
-      q.push({ sec: 'sub', type: 'conf', key: 'sub:' + s[0] + ':c', subj: s });
-    });
-    INTEREST_ITEMS.forEach(function (it, i) { q.push({ sec: 'int', type: 'scale', key: 'int:' + i, item: it }); });
-    VALUES_ITEMS.forEach(function (it) { q.push({ sec: 'val', type: 'imp', key: 'val:' + it[0], item: it }); });
-    APTITUDE_ITEMS.forEach(function (it, i) { q.push({ sec: 'apt', type: 'mc', key: 'apt:' + i, item: it, skip: true }); });
-    LEARN_ITEMS.forEach(function (it, i) { q.push({ sec: 'lrn', type: 'mc', key: 'lrn:' + i, item: it }); });
-    READINESS_ITEMS.forEach(function (it, i) { q.push({ sec: 'rd', type: 'mc', key: 'rd:' + i, item: it }); });
+    subjects().forEach(function (s) { q.push({ sec: 'sub', type: 'marks', key: 'sub:' + s[0] + ':m', subj: s }); });
+    INT_ASK.forEach(function (i) { q.push({ sec: 'int', type: 'scale', key: 'int:' + i, item: INTEREST_ITEMS[i] }); });
+    q.push({ sec: 'val', type: 'pick3', key: 'valpick' });
+    ORIENT_ITEMS.forEach(function (it) { q.push({ sec: 'val', type: 'mc', key: 'ori:' + it.k, item: it }); });
+    PERSONALITY_ITEMS.forEach(function (it, i) { q.push({ sec: 'per', type: 'agree', key: 'per:' + i, item: it }); });
+    WORK_CONTEXT_ITEMS.forEach(function (it) { q.push({ sec: 'ctx', type: 'ctx', key: 'ctx:' + it.k, item: it }); });
+    APT_ASK.forEach(function (i) { q.push({ sec: 'apt', type: 'mc', key: 'apt:' + i, item: APTITUDE_ITEMS[i], skip: true }); });
+    LRN_ASK.forEach(function (i) { q.push({ sec: 'lrn', type: 'mc', key: 'lrn:' + i, item: LEARN_ITEMS[i] }); });
+    RD_ASK.forEach(function (i) { q.push({ sec: 'rd', type: 'mc', key: 'rd:' + i, item: READINESS_ITEMS[i] }); });
     var cnt = {}, seen = {};
     q.forEach(function (x) { cnt[x.sec] = (cnt[x.sec] || 0) + 1; });
     q.forEach(function (x) { seen[x.sec] = (seen[x.sec] || 0) + 1; x.n = seen[x.sec]; x.tot = cnt[x.sec]; });
@@ -2458,7 +2565,7 @@ window.PROFILE_FIELDS = [
 
   function introView() {
     var started = A.step !== 'intro' || Object.keys(A.ans).length;
-    var steps = [['👤', 'as_s1', 'as_s1d'], ['📘', 'as_sub', 'as_subd'], ['❤️', 'as_s2', 'as_s2d'], ['⚖️', 'as_val', 'as_vald'], ['🧮', 'as_s3', 'as_s3d'], ['📖', 'as_s4', 'as_s4d'], ['🧭', 'as_rd', 'as_rdd']];
+    var steps = [['👤', 'as_s1', 'as_s1d'], ['📘', 'as_sub', 'as_subd'], ['❤️', 'as_s2', 'as_s2d'], ['⚖️', 'as_val', 'as_vald'], ['🧩', 'as_per', 'as_perd'], ['🏗️', 'as_ctx', 'as_ctxd'], ['🧮', 'as_s3', 'as_s3d'], ['📖', 'as_s4', 'as_s4d'], ['🧭', 'as_rd', 'as_rdd']];
     return '<section class="page-hero"><div class="wrap"><span class="eyebrow">' + t('nav_assess') + '</span><h1>' + t('as_title') + '</h1><p class="lead">' + t('as_lead') + '</p></div></section>' +
       '<div class="wrap section"><div class="grid g4 steps">' + steps.map(function (s, i) {
         return '<div class="card step"><span class="step-n">' + (i + 1) + '</span><div class="ico-tile">' + s[0] + '</div><h3>' + t(s[1]) + '</h3><p>' + t(s[2]) + '</p></div>';
@@ -2467,15 +2574,15 @@ window.PROFILE_FIELDS = [
       (started && A.step !== 'done' && A.step !== 'intro' ? '<button class="btn btn-ghost btn-lg" data-act="a_resume">' + t('as_resume') + '</button>' : '') +
       (A.step === 'done' ? '<a class="btn btn-ghost btn-lg" href="#/results">' + t('as_see_res') + '</a>' : '') +
       (started ? '<button class="btn btn-ghost btn-lg" data-act="a_clear">🗑 ' + t('clear_data') + '</button>' : '') +
-      '<span class="muted">⏱ ' + t('as_time') + ' · 🔒 ' + t('as_priv') + '</span></div>' +
+      '<span class="muted">⏱ ' + t('as_time') + ' · 🔒 ' + t('as_priv') + '</span></div>' + restoreCard() +
       '<div class="card research"><h3>🔬 ' + t('rs_t') + '</h3><p>' + t('rs_p') + '</p><ul>' +
-      ['rs_1', 'rs_2', 'rs_3', 'rs_6', 'rs_4', 'rs_5', 'rs_7'].map(function (k) { return '<li>' + t(k) + '</li>'; }).join('') + '</ul>' +
+      ['rs_1', 'rs_2', 'rs_3', 'rs_6', 'rs_4', 'rs_5', 'rs_7', 'rs_8', 'rs_9', 'rs_10', 'rs_11'].map(function (k) { return '<li>' + t(k) + '</li>'; }).join('') + '</ul>' +
       '<p class="note">' + t('rs_note') + '</p></div></div>';
   }
 
   function profileView() {
     var p = A.profile;
-    var html = '<section class="page-hero slim"><div class="wrap"><span class="eyebrow">' + t('as_step') + ' 1 / 7</span><h1>' + t('pf_title') + '</h1><p class="lead">' + t('pf_lead') + '</p></div></section><div class="wrap section"><div class="card form">';
+    var html = '<section class="page-hero slim"><div class="wrap"><span class="eyebrow">' + t('as_step') + ' 1 / ' + (SEC_ORDER.length + 1) + '</span><h1>' + t('pf_title') + '</h1><p class="lead">' + t('pf_lead') + '</p></div></section><div class="wrap section"><div class="card form">';
     PROFILE_FIELDS.forEach(function (f) {
       if (f.only) { for (var k in f.only) if (p[k] !== f.only[k]) return; }
       html += '<fieldset><legend>' + L(f.q) + '</legend>' + (f.hint ? '<p class="hint">' + L(f.hint) + '</p>' : '') + '<div class="chips" role="radiogroup">' +
@@ -2501,13 +2608,14 @@ window.PROFILE_FIELDS = [
 
   /* rough seconds per question type → “about N min left” */
   function timeLeft(Q, i) {
-    var sec = { sub: 8, int: 10, val: 10, apt: 45, lrn: 12, rd: 12 }, s = 0;
-    for (var k = i; k < Q.length; k++) s += sec[Q[k].sec] || 10;
+    var sec = { sub: 8, int: 10, val: 12, per: 8, ctx: 9, apt: 45, lrn: 12, rd: 12 }, s = 0;
+    for (var k = i; k < Q.length; k++) s += Q[k].type === 'pick3' ? 30 : (sec[Q[k].sec] || 10);
     var m = Math.round(s / 60);
     return m < 1 ? t('min_less') : t('min_left').replace('{n}', m);
   }
   function questionView() {
     var Q = queue(), i = A.i, q = Q[i], cur = A.ans[q.key], nq = Q.length, pct = Math.round(i / nq * 100);
+    A.shownAt = Date.now();
     var stepNo = SEC_ORDER.indexOf(q.sec) + 2, body = '';
     if (q.type === 'marks') {
       body = '<p class="q-pre">' + t('as_sub') + '</p><h2 class="q">' + t('q_marks').replace('{s}', L(q.subj[1])) + '</h2>' + optRows(cur, MARK_BANDS.map(function (b) { return L(b[1]); }));
@@ -2515,6 +2623,16 @@ window.PROFILE_FIELDS = [
       body = '<p class="q-pre">' + t('as_sub') + '</p><h2 class="q">' + t('q_conf').replace('{s}', L(q.subj[1])) + '</h2>' + scaleRow(cur, CONF, t('q_conf'));
     } else if (q.type === 'scale') {
       body = '<p class="q-pre">' + t('q_int') + '</p><h2 class="q">' + L(q.item[1]) + '</h2>' + scaleRow(cur, FACES, t('q_int'));
+    } else if (q.type === 'agree') {
+      body = '<p class="q-pre">' + t('q_per') + '</p><h2 class="q">' + L(q.item.q) + '</h2>' + scaleRow(cur, AGR, t('q_per'));
+    } else if (q.type === 'ctx') {
+      body = '<p class="q-pre">' + t('q_ctx') + '</p><h2 class="q">' + L(q.item.q) + '</h2>' + optRows(cur, [t('cx_y'), t('cx_m'), t('cx_n')]);
+    } else if (q.type === 'pick3') {
+      var pk = cur || [];
+      body = '<p class="q-pre">' + t('as_val') + '</p><h2 class="q">' + t('q_pick3') + '</h2><div class="opts pick3" role="group">' + VALUES_ITEMS.map(function (it) {
+        var on = pk.indexOf(it[0]) > -1;
+        return '<button type="button" class="opt' + (on ? ' on' : '') + '" data-act="a_pick" data-v="' + it[0] + '" aria-pressed="' + on + '"><b>' + (on ? '✓' : '') + '</b>' + esc(L(it[1])) + '</button>';
+      }).join('') + '</div><p class="hint pick-n">' + t('pick_n').replace('{n}', pk.length) + '</p>';
     } else if (q.type === 'imp') {
       body = '<p class="q-pre">' + t('q_val') + '</p><h2 class="q">' + L(q.item[1]) + '</h2>' + scaleRow(cur, IMP, t('q_val'));
     } else if (q.sec === 'apt') {
@@ -2525,18 +2643,99 @@ window.PROFILE_FIELDS = [
       body = '<h2 class="q">' + L(q.item.q) + '</h2>' + optRows(cur, q.item.o.map(function (o) { return L(o[1]); }));
     }
     return '<div class="wrap section qwrap"><div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '"><i style="width:' + pct + '%"></i></div>' +
-      '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/7 · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + ' · ' + timeLeft(Q, i) + '</span></div>' +
+      '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/' + (SEC_ORDER.length + 1) + ' · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + ' · ' + timeLeft(Q, i) + '</span></div>' +
       '<div class="card qcard">' + body + '</div>' +
       '<div class="cta-row between"><button class="btn btn-ghost" data-act="a_back">← ' + t('back') + '</button>' +
-      (cur != null ? '<button class="btn" data-act="a_next">' + (i === nq - 1 ? t('as_finish') : t('next')) + ' →</button>' : '<span class="muted">' + t('pick_one') + '</span>') + '</div></div>';
+      (cur != null && (q.type !== 'pick3' || cur.length === 3) ? '<button class="btn" data-act="a_next">' + (i === nq - 1 ? t('as_finish') : t('next')) + ' →</button>' : '<span class="muted">' + t('pick_one') + '</span>') + '</div></div>';
   }
 
   /* ----------------------------- actions ----------------------------- */
   var ac = App.actions;
   ac.a_start = function () { A.step = 'profile'; A.i = 0; A.ans = {}; save(); App.rerender(); window.scrollTo(0, 0); };
   ac.a_resume = function () { App.rerender(); window.scrollTo(0, 0); };
-  ac.a_clear = function () { if (window.confirm(t('clear_confirm'))) { wipe(); App.go('assess'); App.render(); window.scrollTo(0, 0); } };
+  ac.a_clear = function () { if (window.confirm(t('clear_confirm'))) { wipe(); if (App.resetAll) App.resetAll(); App.go('assess'); App.render(); window.scrollTo(0, 0); } };
   ac.a_home = function () { A.step = 'intro'; save(); App.rerender(); };
+  App.progress = function () { return A.step === 'q' ? Math.round(A.i / NQ() * 100) : A.step === 'profile' ? 4 : A.step === 'done' ? 100 : 0; };
+  function toastOnce() {                                 // shown for a few seconds after finishing, however many times the page re-renders
+    if (!A.justDone || Date.now() - A.justDone > 8000) { if (A.justDone) { A.justDone = 0; save(); } return ''; }
+    setTimeout(function () { A.justDone = 0; save(); }, 8000);
+    return '<div class="toast" role="status">' + t('done_toast') + '</div>';
+  }
+  function restoreCard() {
+    return '<div class="card restore no-print"><h3>🔑 ' + t('restore_t') + '</h3><p class="hint">' + t('restore_p') + '</p><div class="frow"><input id="rcode" class="rinput" placeholder="' + t('restore_ph') + '" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-label="' + t('restore_t') + '"><button type="button" class="btn btn-ghost" data-act="restore_code">' + t('restore_btn') + '</button></div><p id="rmsg" class="form-msg" aria-live="polite"></p></div>';
+  }
+
+  /* ---- results code: every answer in about 95 characters, so results survive a cleared lab computer or a new phone ---- */
+  var B36 = '0123456789abcdefghijklmnopqrstuvwxyz';
+  function enc1(v) { return v == null ? 'x' : v < 0 ? 's' : B36[v]; }
+  function sumOf(str) { var sum = 0; for (var c = 0; c < str.length; c++) sum = (sum + str.charCodeAt(c) * (c + 1)) % 36; return B36[sum]; }
+  App.encodeResults = function () {
+    var p = A.profile, out = '';
+    PROFILE_FIELDS.forEach(function (f) { var i = -1; f.o.forEach(function (o, k) { if (o[0] === p[f.id]) i = k; }); out += i < 0 ? 'x' : B36[i]; });
+    var subs = subjects(); out += B36[subs.length]; subs.forEach(function (s) { out += enc1(A.ans['sub:' + s[0] + ':m']); });
+    INTEREST_ITEMS.forEach(function (_, i) { out += enc1(A.ans['int:' + i]); });
+    var vk = VALUES_ITEMS.map(function (x) { return x[0]; }), pk = A.ans.valpick || [];
+    for (var k = 0; k < 3; k++) out += pk[k] ? B36[vk.indexOf(pk[k])] : 'x';
+    ORIENT_ITEMS.forEach(function (it) { out += enc1(A.ans['ori:' + it.k]); });
+    PERSONALITY_ITEMS.forEach(function (_, i) { out += enc1(A.ans['per:' + i]); });
+    WORK_CONTEXT_ITEMS.forEach(function (it) { out += enc1(A.ans['ctx:' + it.k]); });
+    APTITUDE_ITEMS.forEach(function (_, i) { out += enc1(A.ans['apt:' + i]); });
+    LEARN_ITEMS.forEach(function (_, i) { out += enc1(A.ans['lrn:' + i]); });
+    READINESS_ITEMS.forEach(function (_, i) { out += enc1(A.ans['rd:' + i]); });
+    return ('mb' + VER + sumOf(out) + out).toUpperCase().replace(/(.{5})/g, '$1-').replace(/-$/, '');
+  };
+  App.decodeResults = function (str) {
+    var raw = String(str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (raw.slice(0, 2) !== 'mb' || raw[2] !== String(VER)) return false;
+    var out = raw.slice(4); if (sumOf(out) !== raw[3]) return false;
+    var pos = 0, rd = function () { return out[pos++]; }, val = function (ch) { return ch == null || ch === 'x' ? null : ch === 's' ? -1 : B36.indexOf(ch); };
+    var f = fresh(), prof = {}, ans = {};
+    PROFILE_FIELDS.forEach(function (fld) { var i = val(rd()); if (i != null && fld.o[i]) prof[fld.id] = fld.o[i][0]; });
+    if (!prof.cls) return false;
+    var subs = SUBJECT_SETS[prof.cls === '12' ? (prof.stream || 'pcm') : '10'];
+    if (val(rd()) !== subs.length) return false;
+    subs.forEach(function (s) { var v = val(rd()); if (v != null) ans['sub:' + s[0] + ':m'] = v; });
+    INTEREST_ITEMS.forEach(function (_, i) { var v = val(rd()); if (v != null) ans['int:' + i] = v; });
+    var vk = VALUES_ITEMS.map(function (x) { return x[0]; }), pk = [];
+    for (var k = 0; k < 3; k++) { var v = val(rd()); if (v != null && vk[v]) pk.push(vk[v]); }
+    if (pk.length) ans.valpick = pk;
+    ORIENT_ITEMS.forEach(function (it) { var v = val(rd()); if (v != null) ans['ori:' + it.k] = v; });
+    PERSONALITY_ITEMS.forEach(function (_, i) { var v = val(rd()); if (v != null) ans['per:' + i] = v; });
+    WORK_CONTEXT_ITEMS.forEach(function (it) { var v = val(rd()); if (v != null) ans['ctx:' + it.k] = v; });
+    APTITUDE_ITEMS.forEach(function (_, i) { var v = val(rd()); if (v != null) ans['apt:' + i] = v; });
+    LEARN_ITEMS.forEach(function (_, i) { var v = val(rd()); if (v != null) ans['lrn:' + i] = v; });
+    READINESS_ITEMS.forEach(function (_, i) { var v = val(rd()); if (v != null) ans['rd:' + i] = v; });
+    if (pos !== out.length) return false;
+    for (var key in f) A[key] = f[key];
+    A.profile = prof; A.ans = ans; A.nAns = 0; A.fast = 0;
+    var Q = queue(), first = -1;
+    Q.forEach(function (q, i) { if (first < 0 && (A.ans[q.key] == null || (q.type === 'pick3' && A.ans[q.key].length < 3))) first = i; });
+    A.step = first < 0 ? 'done' : 'q'; A.i = first < 0 ? 0 : first; save();
+    return A.step;
+  };
+  ac.save_code = function () {
+    var box = document.getElementById('savebox'); if (!box) return;
+    box.hidden = !box.hidden;
+    if (!box.hidden) { var ta = box.querySelector('textarea'); ta.value = App.encodeResults(); box.scrollIntoView({ behavior: 'smooth', block: 'center' }); ta.focus(); ta.select(); }
+  };
+  ac.copy_code = function (el) {
+    var ta = document.querySelector('#savebox textarea'); if (!ta) return;
+    ta.select(); try { document.execCommand('copy'); } catch (e) {}
+    if (navigator.clipboard) navigator.clipboard.writeText(ta.value).catch(function () {});
+    el.textContent = t('copied'); setTimeout(function () { el.textContent = t('copy'); }, 1800);
+  };
+  ac.share_code = function () {
+    var text = t('share_code').replace('{code}', App.encodeResults()).replace('{url}', location.origin + location.pathname);
+    if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
+    window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  };
+  ac.restore_code = function () {
+    var inp = document.getElementById('rcode'), msg = document.getElementById('rmsg'); if (!inp) return;
+    var st = App.decodeResults(inp.value);
+    if (!st) { msg.textContent = t('restore_err'); inp.classList.add('bad'); inp.focus(); return; }
+    if (st === 'done') App.go('results'); else App.rerender();
+    window.scrollTo(0, 0);
+  };
   ac.a_prof = function (el) {
     A.profile[el.getAttribute('data-f')] = el.getAttribute('data-v');
     if (A.profile.cls === '10') delete A.profile.stream;
@@ -2548,20 +2747,27 @@ window.PROFILE_FIELDS = [
     A.step = 'q'; A.i = Math.min(A.i, NQ() - 1); save(); App.rerender(); window.scrollTo(0, 0);
   };
   ac.a_ans = function (el) {
-    var q = queue()[A.i];
+    var q = queue()[A.i], dt = Date.now() - (A.shownAt || 0);
+    if (A.ans[q.key] == null && dt > 0) { A.nAns = (A.nAns || 0) + 1; if (dt < 900) A.fast = (A.fast || 0) + 1; }   // under 0.9 s = no time to read
     A.ans[q.key] = +el.getAttribute('data-v'); save(); App.rerender(true);
     setTimeout(function () { if (A.step === 'q') ac.a_next(); }, 280);
   };
+  ac.a_pick = function (el) {                            // values: choose exactly three (a fourth tap replaces the oldest)
+    var k = el.getAttribute('data-v'), pk = (A.ans.valpick || []).slice(), at = pk.indexOf(k);
+    if (at > -1) pk.splice(at, 1); else { pk.push(k); if (pk.length > 3) pk.shift(); }
+    if (pk.length) A.ans.valpick = pk; else delete A.ans.valpick;
+    save(); App.rerender(true);
+  };
   ac.a_next = function () {
-    var Q = queue();
-    if (A.ans[Q[A.i].key] == null) return;
-    if (A.i >= Q.length - 1) { A.step = 'done'; save(); App.go('results'); App.render(); window.scrollTo(0, 0); return; }
+    var Q = queue(), v = A.ans[Q[A.i].key];
+    if (v == null || (Q[A.i].type === 'pick3' && v.length < 3)) return;
+    if (A.i >= Q.length - 1) { A.step = 'done'; A.justDone = Date.now(); save(); App.go('results'); App.render(); window.scrollTo(0, 0); return; }
     A.i++; save(); App.rerender(); window.scrollTo(0, 0);
   };
   ac.a_back = function () { if (A.i === 0) { A.step = 'profile'; } else A.i--; save(); App.rerender(); window.scrollTo(0, 0); };
 
   /* ------------------------------ scoring ------------------------------ */
-  var DEF = { income: '3', earn: 'mid', away: 'yes', loan: 'maybe', net: 'phone', gender: 'o', cat: 'gen', dis: 'n' };
+  var DEF = { income: '3', earn: 'mid', away: 'yes', loan: 'maybe', net: 'phone', gender: 'o', cat: 'gen', dis: 'n', fam: 'none' };
   function P(k) { return A.profile[k] != null ? A.profile[k] : DEF[k]; }
   function centre(obj, keys) {                       // person-centred scores: 50 = this student's own average
     var mean = 0, n = 0, varc = 0, out = {};
@@ -2574,11 +2780,13 @@ window.PROFILE_FIELDS = [
   function compute() {
     var types = 'RIASEC'.split(''), sum = {}, cnt = {};
     types.forEach(function (x) { sum[x] = 0; cnt[x] = 0; });
-    INTEREST_ITEMS.forEach(function (it, i) { var v = A.ans['int:' + i]; sum[it[0]] += (v || 3); cnt[it[0]]++; });
-    var ri = {}; types.forEach(function (x) { ri[x] = Math.round((sum[x] / cnt[x] - 1) / 4 * 100); });
+    INTEREST_ITEMS.forEach(function (it, i) { var v = A.ans['int:' + i]; if (v != null) { sum[it[0]] += v; cnt[it[0]]++; } });   // only statements asked
+    var ri = {}; types.forEach(function (x) { ri[x] = cnt[x] ? Math.round((sum[x] / cnt[x] - 1) / 4 * 100) : 50; });
     var c = centre(ri, types);
     var order = types.slice().sort(function (a, b) { return ri[b] - ri[a] || types.indexOf(a) - types.indexOf(b); });
-    var careless = CONSISTENCY_PAIRS.some(function (pr) { var a = A.ans['int:' + pr[0]], b = A.ans['int:' + pr[1]]; return a != null && b != null && Math.abs(a - b) >= 3; });
+    var careless = CONSISTENCY_PAIRS.some(function (pr) { var a = A.ans['int:' + pr[0]], b = A.ans['int:' + pr[1]]; return a != null && b != null && Math.abs(a - b) >= 3; }) ||
+      ((A.nAns || 0) >= 20 && (A.fast || 0) / A.nAns > 0.5);   // or more than half the answers came faster than anyone can read
+    var ori = { risk: A.ans['ori:risk'], stay: A.ans['ori:stay'] };
 
     var ap = { num: [0, 0], log: [0, 0], verb: [0, 0], spa: [0, 0] }, right = 0, attempted = 0;
     APTITUDE_ITEMS.forEach(function (it, i) {
@@ -2596,7 +2804,8 @@ window.PROFILE_FIELDS = [
       sub[s[0]] = { name: s[1], band: mi, m: m, c: ci, score: score };
     });
 
-    var vals = {}; VALUES_ITEMS.forEach(function (it) { var v = A.ans['val:' + it[0]]; vals[it[0]] = v != null ? Math.round((v - 1) / 4 * 100) : null; });
+    var vals = {}, picked = A.ans.valpick;                // short form: the 3 values picked count high, the rest low
+    VALUES_ITEMS.forEach(function (it) { var v = A.ans['val:' + it[0]]; vals[it[0]] = picked ? (picked.indexOf(it[0]) > -1 ? 100 : 25) : v != null ? Math.round((v - 1) / 4 * 100) : null; });
     var vc = centre(vals, VALUES_ITEMS.map(function (x) { return x[0]; }));
     var vorder = VALUES_ITEMS.map(function (x) { return x[0]; }).sort(function (a, b) { return (vals[b] || 0) - (vals[a] || 0) || vc.rel[b] - vc.rel[a]; });
 
@@ -2606,11 +2815,17 @@ window.PROFILE_FIELDS = [
 
     var rdSum = 0, rdN = 0;
     READINESS_ITEMS.forEach(function (it, i) { var v = A.ans['rd:' + i]; if (v != null && it.o[v]) { rdSum += it.o[v][0]; rdN++; } });
-    var rdLevel = !rdN ? 1 : rdSum <= 1 ? 0 : rdSum <= 4 ? 1 : 2;
+    /* work style: each trait 0–100 from its two statements (second one reversed); null if not answered */
+    var trait = {}; 'OCEAS'.split('').forEach(function (k) {
+      var vs = []; PERSONALITY_ITEMS.forEach(function (it, i) { var v = A.ans['per:' + i]; if (it.k === k && v != null) vs.push(it.r ? 6 - v : v); });
+      trait[k] = vs.length ? Math.round((vs.reduce(function (a, b) { return a + b; }, 0) / vs.length - 1) / 4 * 100) : null;
+    });
+    var ctx = {}; WORK_CONTEXT_ITEMS.forEach(function (it) { var v = A.ans['ctx:' + it.k]; ctx[it.k] = v == null ? null : v; });
+    var rdAvg = rdN ? rdSum / rdN : 1, rdLevel = !rdN ? 1 : rdAvg <= 1 / 3 ? 0 : rdAvg <= 4 / 3 ? 1 : 2;   // same cut-offs as 3 items, any count
 
     return { ri: ri, rel: c.rel, flat: c.sd < 8, careless: careless, order: order, code: order.slice(0, 3).join(''),
       apt: apt, aptRight: right, aptTried: attempted, sub: sub, subList: subList, vals: vals, vrel: vc.rel, vorder: vorder,
-      lc: lc, lstyle: lorder[0], lstyle2: lc[lorder[1]] === lc[lorder[0]] ? lorder[1] : null, rd: rdLevel };
+      trait: trait, ctx: ctx, ori: ori, lc: lc, lstyle: lorder[0], lstyle2: lc[lorder[1]] === lc[lorder[0]] ? lorder[1] : null, rd: rdLevel };
   }
 
   function interestFit(c, r) {
@@ -2633,8 +2848,22 @@ window.PROFILE_FIELDS = [
     var ks = (CAREER_VALUES[c.id] || []).slice(); if (!c.reloc && ks.indexOf('near') < 0) ks.push('near');
     if (!ks.length) return { v: 50, hits: [] };
     var s = 0; ks.forEach(function (k) { s += r.vrel[k]; });
-    var hits = ks.filter(function (k) { return r.vrel[k] >= 62 && (r.vals[k] || 0) >= 75; });
-    return { v: s / ks.length, hits: hits };
+    var hits = ks.filter(function (k) { return r.vrel[k] >= 62 && (r.vals[k] || 0) >= 75; }), v = s / ks.length;
+    var tag = CAREER_RISK[c.id], ch = r.ori ? r.ori.risk : null;                 // security ↔ risk preference, where the career clearly leans one way
+    if (tag && ch != null) v = 0.75 * v + 0.25 * (tag === 'sec' ? [100, 70, 35][ch] : [25, 65, 100][ch]);
+    return { v: v, hits: hits };
+  }
+  /* work-style fit: average of the student’s scores on the traits this career leans on (60 = neutral when unknown) */
+  function persFit(c, r) {
+    var ks = ((CAREER_TRAITS[c.id] || [''])[0] || '').split('').filter(Boolean), w = [3, 2, 1], s = 0, ws = 0;
+    ks.forEach(function (k, i) { if (r.trait && r.trait[k] != null) { s += w[i] * r.trait[k]; ws += w[i]; } });
+    return ws ? s / ws : 60;
+  }
+  /* work conditions: yes 100 · maybe 65 · no 15 for each condition the career involves (100 if it involves none) */
+  function ctxFit(c, r) {
+    var ks = (CAREER_TRAITS[c.id] || ['', []])[1] || [], s = 0, n = 0, no = [];
+    ks.forEach(function (k) { var v = r.ctx ? r.ctx[k] : null; if (v == null) { s += 75; } else { s += [100, 65, 15][v]; if (v === 2) no.push(k); } n++; });
+    return { v: n ? s / n : 100, no: no };
   }
   function feasibility(c) {
     var f = 100, why = [];
@@ -2648,12 +2877,15 @@ window.PROFILE_FIELDS = [
   }
   function scoreAll(list, r) {
     return list.map(function (c) {
-      var i = interestFit(c, r), a = aptFit(c, r), rd = readiness(c, r), vf = valuesFit(c, r), fe = feasibility(c);
-      var why = fe.why.slice(), weakK = rd.known && rd.v < 40; if (weakK) why.push('marks');
+      var i = interestFit(c, r), a = aptFit(c, r), rd = readiness(c, r), vf = valuesFit(c, r), fe = feasibility(c), p = persFit(c, r), cx = ctxFit(c, r);
+      var why = fe.why.slice(), weakK = rd.known && rd.v < 40; if (weakK) why.push('marks'); if (cx.no.length) why.push('ctx');
+      var feas = 0.65 * fe.v + 0.35 * cx.v, ctxD = Math.pow(0.8, cx.no.length);   // each clear “no” to a condition the career involves also lowers the dream score
+      var longRoad = c.earn >= 5 || c.id === 'ca-cs', st = r.ori ? r.ori.stay : null;   // long preparation × the student’s own staying power
+      var stayD = longRoad && st != null ? [1, 0.96, 0.88][st] : 1; if (longRoad && st === 2) why.push('long');
       /* weak marks in the subjects behind a career cap how "great" the fit can look, on top of the readiness term */
-      return { c: c, i: i, a: a, rd: rd.v, weak: rd.weak, v: vf.v, hits: vf.hits, f: fe.v, why: why,
-        dream: (0.55 * i + 0.15 * a + 0.15 * rd.v + 0.15 * vf.v) * (weakK ? 0.9 : 1),
-        prac: (0.40 * i + 0.10 * a + 0.10 * rd.v + 0.10 * vf.v + 0.30 * fe.v) * (weakK ? 0.85 : 1) };
+      return { c: c, i: i, a: a, rd: rd.v, weak: rd.weak, v: vf.v, hits: vf.hits, f: feas, p: p, no: cx.no, why: why,
+        dream: (0.45 * i + 0.13 * a + 0.12 * rd.v + 0.12 * vf.v + 0.18 * p) * (weakK ? 0.9 : 1) * ctxD * stayD,
+        prac: (0.32 * i + 0.08 * a + 0.08 * rd.v + 0.08 * vf.v + 0.14 * p + 0.30 * feas) * (weakK ? 0.85 : 1) * stayD };
     });
   }
   function pool() {
@@ -2751,7 +2983,7 @@ window.PROFILE_FIELDS = [
   }
   function subRow(s) {
     var band = s.band != null ? L(MARK_BANDS[s.band][1]) : '—', dots = '';
-    for (var k = 1; k <= 5; k++) dots += '<i class="' + (s.c != null && k <= s.c ? 'on' : '') + '"></i>';
+    if (s.c != null) for (var k = 1; k <= 5; k++) dots += '<i class="' + (k <= s.c ? 'on' : '') + '"></i>';
     var lvl = s.score == null ? 'b0' : s.score >= 65 ? 'b3' : s.score >= 45 ? 'b2' : 'b1';
     return '<div class="subrow"><span class="bar-l">' + esc(L(s.name)) + '</span><span class="sub-band ' + lvl + '">' + esc(band) + '</span><span class="dots" title="' + esc(t('q_conf').replace('{s}', L(s.name))) + '">' + dots + '</span></div>';
   }
@@ -2768,13 +3000,32 @@ window.PROFILE_FIELDS = [
     var notes = [];
     if (match.length) notes.push(t('why_int') + ' ' + match.map(function (x) { return L(RIASEC[x].name).split(' — ')[0]; }).join(' + '));
     if (s.hits.length) notes.push('💛 ' + t('why_val') + ' ' + s.hits.map(function (k) { return L(VALUE_NAMES[k]); }).join(', '));
-    var wmap = { cost: 'why_cost', time: 'why_time', away: 'why_away', net: 'why_net', marks: 'why_marks' };
-    var warn = s.why.filter(function (w) { return kind === 'prac' || w === 'marks'; });
-    if (warn.length) notes.push('⚠ ' + warn.map(function (w) { return t(wmap[w]).replace('{s}', s.weak.join(', ')); }).join(' · '));
+    var wmap = { cost: 'why_cost', time: 'why_time', away: 'why_away', net: 'why_net', marks: 'why_marks', ctx: 'why_ctx', long: 'why_long' };
+    var cxn = function () { return (s.no || []).map(function (k) { var it = WORK_CONTEXT_ITEMS.filter(function (x) { return x.k === k; })[0]; return it ? L(it.n) : k; }).join(', '); };
+    var warn = s.why.filter(function (w) { return kind === 'prac' || w === 'marks' || w === 'ctx' || w === 'long'; });
+    if (s.p >= 70) { var tk = ((CAREER_TRAITS[c.id] || [''])[0] || '').split('').filter(function (k) { return compute().trait[k] >= 70; }); if (tk.length) notes.push('🧩 ' + t('why_sty') + ' ' + tk.map(function (k) { return L(TRAIT_NAMES[k]); }).join(', ')); }
+    if (warn.length) notes.push('⚠ ' + warn.map(function (w) { return w === 'ctx' ? t('why_ctx').replace('{s}', cxn()) : t(wmap[w]).replace('{s}', s.weak.join(', ')); }).join(' · '));
     return '<a class="card rec" href="#/career/' + c.id + '"><div class="rec-h"><span class="ico-tile">' + c.ico + '</span><div><h4>' + L(c.name) + '</h4><span class="fit f' + (val >= 70 ? 3 : val >= 52 ? 2 : 1) + '">' + label + ' · ' + val + '%</span></div></div>' +
       '<div class="meter"><i style="width:' + val + '%"></i></div><p class="why">' + notes.join('<br>') + '</p><div class="minis">' + chips(s) + '</div></a>';
   }
 
+  function oriLine(r) {
+    var o = r.ori || {}, out = [];
+    if (o.risk != null) out.push('🎲 <b>' + t('ori_risk') + ':</b> ' + t(['ori_r0', 'ori_r1', 'ori_r2'][o.risk]));
+    if (o.stay != null) out.push('⏳ <b>' + t('ori_stay') + ':</b> ' + t(['ori_s0', 'ori_s1', 'ori_s2'][o.stay]));
+    return out.length ? '<p class="sm ori">' + out.join('<br>') + '</p>' : '';
+  }
+  /* how the field the family hopes for fits this student — shown, never scored */
+  function famCard(R) {
+    var f = FAM_FIELDS[P('fam')]; if (!f || !R.sc) return '';
+    var mine = R.sc.filter(function (s) { return f.ids.indexOf(s.c.id) > -1; }).sort(function (a, b) { return b.prac - a.prac; });
+    if (!mine.length) return '';
+    var best = mine[0], v = Math.round(best.prac), top = R.prac[0] && R.prac[0].c, same = top && f.ids.indexOf(top.id) > -1;
+    var lbl = v >= 70 ? t('fit_great') : v >= 52 ? t('fit_good') : t('fit_poss');
+    return '<div class="card fam"><h3>👨‍👩‍👧 ' + t('fam_t') + '</h3><p>' + t('fam_p').replace('{f}', '<b>' + esc(L(f.n)) + '</b>') + '</p>' +
+      '<a class="rec slim" href="#/career/' + best.c.id + '"><span class="ico-tile">' + best.c.ico + '</span><div><h4>' + esc(L(best.c.name)) + '</h4><span class="fit f' + (v >= 70 ? 3 : v >= 52 ? 2 : 1) + '">' + lbl + ' · ' + v + '%</span></div></a>' +
+      '<p class="hint">' + (same ? '✅ ' + t('fam_same') : t('fam_diff').replace('{c}', top ? '<b>' + esc(L(top.name)) + '</b>' : '')) + '</p></div>';
+  }
   App.radarSvg = function (r) { return radar(r); };
   App.fitFor = function (c) {
     if (A.step !== 'done') return null;
@@ -2785,13 +3036,15 @@ window.PROFILE_FIELDS = [
   App.views.results = function () {
     if (A.step !== 'done') return '<div class="wrap section"><div class="card empty"><h2>' + t('res_none') + '</h2><p>' + t('res_none_p') + '</p><a class="btn" href="#/assess">' + t('as_begin') + ' →</a></div></div>';
     var R = App.report(), r = R.r, cls = R.cls, html = '';
-    var ls = R.ls, NA = APTITUDE_ITEMS.length;
+    var ls = R.ls, NA = APT_ASK.length;           // aptitude items actually asked
     var P1 = { income: ['', t('inc1'), t('inc2'), t('inc3'), t('inc4')][+P('income')] };
 
     html += '<section class="page-hero results-hero"><div class="wrap"><span class="eyebrow">' + t('res_eyebrow') + '</span><h1>' + t('res_title') + '</h1>' +
       '<div class="code-line"><span>' + t('res_code') + '</span>' + r.code.split('').map(function (x) { return '<b style="background:' + RIASEC[x].c + '">' + x + '</b>'; }).join('') + '</div>' +
-      '<div class="cta-row no-print"><button class="btn btn-light" data-act="print">🖨 ' + t('print') + '</button><a class="btn btn-light" href="#/certificate">🎓 ' + t('cert_btn') + '</a><a class="btn btn-ghost-light" href="#/assess">↺ ' + t('retake') + '</a><button class="btn btn-ghost-light" data-act="a_clear">🗑 ' + t('clear_data') + '</button></div></div></section>';
+      '<div class="cta-row no-print"><button class="btn btn-light" data-act="print">🖨 ' + t('print') + '</button><a class="btn btn-light" href="#/certificate">🎓 ' + t('cert_btn') + '</a><button class="btn btn-light" data-act="save_code">' + t('save_btn') + '</button>' + (App.shareButtons ? App.shareButtons('res', true) : '') + '<a class="btn btn-ghost-light" href="#/assess">↺ ' + t('retake') + '</a><button class="btn btn-ghost-light" data-act="a_clear">🗑 ' + t('clear_data') + '</button></div></div></section>';
 
+    html += toastOnce() + '<div class="wrap"><div id="savebox" class="card savebox no-print" hidden><h3>💾 ' + t('save_t') + '</h3><p class="hint">' + t('save_p') + '</p>' +
+      '<textarea readonly rows="3" aria-label="' + t('save_t') + '"></textarea><div class="cta-row"><button class="btn sm" data-act="copy_code">' + t('copy') + '</button><button class="btn btn-ghost sm" data-act="share_code">📤 ' + t('share_wa') + '</button></div></div></div>';
     html += '<div class="wrap section">' +
       (r.flat ? '<div class="notice warn no-print">⚠️ ' + t('res_flat') + '</div>' : '') +
       (r.careless ? '<div class="notice warn no-print">⚠️ ' + t('res_careless') + '</div>' : '') +
@@ -2801,13 +3054,23 @@ window.PROFILE_FIELDS = [
         return '<div class="type"><b class="tdot" style="background:' + RIASEC[x].c + '">' + x + '</b><div><h4>' + L(RIASEC[x].name) + '</h4><p>' + L(RIASEC[x].d) + '</p></div></div>';
       }).join('') + '</div>' +
       '<div class="card"><h3>📘 ' + t('res_sub') + '</h3><p class="hint">' + t('res_sub_h') + '</p>' + R.subs.map(subRow).join('') + '</div>' +
-      '<div class="card"><h3>⚖️ ' + t('res_val') + '</h3><p class="hint">' + t('res_val_h') + '</p><div class="vals">' + R.topVals.map(function (k, i) {
+      '<div class="card"><h3>⚖️ ' + t('res_val') + '</h3><p class="hint">' + t('res_val_h') + '</p>' + oriLine(r) + '<div class="vals">' + R.topVals.map(function (k, i) {
         return '<div class="valrow"><b>' + (i + 1) + '</b><span>' + esc(L(VALUE_NAMES[k])) + '</span><small>' + esc(L(VALUES_ITEMS.filter(function (x) { return x[0] === k; })[0][1])) + '</small></div>';
       }).join('') + '</div></div>' +
       '<div class="card"><h3>' + t('res_apt') + '</h3><p class="hint">' + t('res_apt_h') + ' ' + r.aptRight + ' / ' + r.aptTried + (r.aptTried < NA ? ' (' + (NA - r.aptTried) + ' ' + t('skipped') + ')' : '') + '</p>' +
       Object.keys(r.apt).map(function (k) { return aptRow(L(APTITUDE_NAMES[k]), r.apt[k]); }).join('') + '<p class="hint">' + t('apt_note') + '</p></div>' +
+      famCard(R) + '<div class="card sty"><h3>🧩 ' + t('res_sty') + '</h3><p class="hint">' + t('res_sty_h') + '</p>' + 'OCEAS'.split('').map(function (k) {
+        var v = r.trait[k]; if (v == null) return '';
+        var lvl = v >= 70 ? 3 : v >= 45 ? 2 : 1;
+        return '<div class="bar"><span class="bar-l">' + esc(L(TRAIT_NAMES[k])) + '</span><span class="bar-t"><i style="width:' + Math.max(8, v) + '%;background:#16947f"></i></span><b class="lvl b' + lvl + '">' + t('sty_b' + lvl) + '</b></div>';
+      }).join('') + (function () {
+        var tops = 'OCEAS'.split('').filter(function (k) { return r.trait[k] != null && r.trait[k] >= 70; });
+        var nos = WORK_CONTEXT_ITEMS.filter(function (it) { return r.ctx[it.k] === 2; });
+        return (tops.length ? '<p class="sm">' + tops.map(function (k) { return '<b>' + esc(L(TRAIT_NAMES[k])) + ':</b> ' + esc(L(TRAIT_NAMES[k].d)); }).join('<br>') + '</p>' : '') +
+          (nos.length ? '<p class="hint">🚫 ' + t('res_ctx_no') + ' ' + nos.map(function (it) { return esc(L(it.n)); }).join(', ') + '</p>' : '');
+      })() + '</div>' +
       '<div class="card"><h3>' + ls.ico + ' ' + t('res_learn') + ': ' + L(ls.name) + (r.lstyle2 ? ' + ' + L(LEARN_STYLES[r.lstyle2].name) : '') + '</h3><p>' + L(ls.tip) + (r.lstyle2 ? ' ' + L(LEARN_STYLES[r.lstyle2].tip) : '') + '</p><p class="hint">' + t('res_learn_h') + '</p>' +
-      '<p class="ctx"><b>' + t('res_ctx') + ':</b> ' + t('cls_' + cls) + (A.profile.stream ? ' · ' + t('st_' + A.profile.stream) : '') + ' · ' + P1.income + ' · ' + t('earn_' + P('earn')) + ' · ' + t('away_' + P('away')) + '</p></div></div>';
+      '<p class="ctx"><b>' + t('res_ctx') + ':</b> ' + t('cls_' + cls) + (A.profile.stream ? ' · ' + t('st_' + A.profile.stream) : '') + ' · ' + t('earn_' + P('earn')) + ' · ' + t('away_' + P('away')) + '</p></div></div>';
 
     if (cls === '10') {
       var sk = R.streams, direct = R.direct;
@@ -2863,6 +3126,26 @@ window.PROFILE_FIELDS = [
   function leafCount(n) { return Object.keys(leaves(n, {})).length; }
 
   /* ------------------------------ HOME ------------------------------ */
+  var HERO_ART = '<svg class="hero-art" viewBox="0 0 520 420" aria-hidden="true" focusable="false"><path d="M20 400 C 140 400, 160 250, 270 250 S 380 110, 500 80" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-dasharray="1 40"/><path d="M500 14 l16 34 37 5 -27 26 7 37 -33 -18 -33 18 7 -37 -27 -26 37 -5z" fill="#ffd58a"/><circle cx="20" cy="400" r="18" fill="#fff"/></svg>';
+  /* right-hand hero panel: class gates for a new visitor, “continue” while an assessment is open, top matches once it is done */
+  function heroSide(done) {
+    var A = App.A, lb = function (v) { return v >= 70 ? t('fit_great') : v >= 52 ? t('fit_good') : t('fit_poss'); };
+    if (done && App.report) {
+      var R = App.report();
+      return '<div class="hero-side welcome"><p class="side-h">👋 ' + t('wb_back') + '</p><p class="wb-code">' + t('wb_code') + ' ' + R.r.code.split('').map(function (x) { return '<b style="background:' + RIASEC[x].c + '">' + x + '</b>'; }).join('') + '</p><p class="wb-top">' + t('wb_top') + '</p>' +
+        R.prac.slice(0, 3).map(function (s) { var v = Math.round(s.prac); return '<a class="gate" href="#/career/' + s.c.id + '"><span class="ico-tile">' + s.c.ico + '</span><span><b>' + esc(L(s.c.name)) + '</b><small>' + lb(v) + ' · ' + v + '%</small></span><i>→</i></a>'; }).join('') +
+        '<div class="cta-row"><a class="btn btn-light" href="#/results">' + t('wb_res') + '</a><a class="btn btn-ghost-light" href="#/plan">🗺️ ' + t('nav_plan') + '</a></div><button type="button" class="linkbtn light" data-act="a_clear">' + t('wb_notyou') + '</button></div>';
+    }
+    if (A && (A.step === 'q' || A.step === 'profile')) {
+      var pct = App.progress ? App.progress() : 0;
+      return '<div class="hero-side welcome"><p class="side-h">👋 ' + t('wb_back') + '</p><p>' + t('wb_cont') + ' — <b>' + t('wb_pct').replace('{n}', pct) + '</b></p><div class="progress light" role="progressbar" aria-valuenow="' + pct + '" aria-valuemin="0" aria-valuemax="100"><i style="width:' + pct + '%"></i></div>' +
+        '<div class="cta-row"><a class="btn btn-light" href="#/assess">' + t('as_resume') + ' →</a></div><button type="button" class="linkbtn light" data-act="a_clear">' + t('wb_notyou') + '</button></div>';
+    }
+    return '<div class="hero-side"><p class="side-h">' + t('hm_where') + '</p>' +
+      '<a class="gate g10" href="#/tree" data-act="tree_go" data-v="10"><span class="gate-n">10</span><span><b>' + t('hm_c10') + '</b><small>' + t('hm_c10d') + '</small></span><i>→</i></a>' +
+      '<a class="gate g12" href="#/tree" data-act="tree_go" data-v="12"><span class="gate-n">12</span><span><b>' + t('hm_c12') + '</b><small>' + t('hm_c12d') + '</small></span><i>→</i></a>' +
+      '<p class="quote">“' + t('quote') + '” <small>— ' + t('quote_by') + '</small></p></div>';
+  }
   V.home = function () {
     var m = new Date().getMonth() + 1, n1 = (m % 12) + 1, n2 = (n1 % 12) + 1;
     var upcoming = CALENDAR.filter(function (r) { return r.m.length && (r.m.indexOf(m) > -1 || r.m.indexOf(n1) > -1 || r.m.indexOf(n2) > -1); }).slice(0, 3);
@@ -2871,19 +3154,18 @@ window.PROFILE_FIELDS = [
       ['streams', '🔀', 'nav_streams', 'hm_t3'], ['calendar', '🗓️', 'nav_cal', 'hm_t7'], ['links', '🔗', 'nav_links', 'hm_t8']];
     var emerg = CAREERS.filter(function (c) { return c.tag && c.tag.indexOf('emerging') > -1; });
     var ask = App.A && App.A.step === 'done';
-    return '<section class="hero"><div class="wrap hero-in"><div class="hero-copy"><span class="eyebrow">' + t('hm_eyebrow') + '</span>' +
+    var cod = CAREERS[Math.floor(Date.now() / 864e5) % CAREERS.length], codFit = ask && App.fitFor ? App.fitFor(cod) : null;
+    return '<section class="hero">' + HERO_ART + '<div class="wrap hero-in"><div class="hero-copy"><span class="eyebrow">' + t('hm_eyebrow') + '</span>' +
       '<h1>' + t('hm_h1') + '</h1><p class="lead">' + t('hm_lead') + '</p>' +
       '<div class="cta-row"><a class="btn btn-lg" href="#/assess">' + t('hm_cta1') + ' →</a>' + (ask ? '<a class="btn btn-ghost-light btn-lg" href="#/results">' + t('as_see_res') + '</a>' : '<a class="btn btn-ghost-light btn-lg" href="#/careers">' + t('hm_cta2') + '</a>') + '</div>' +
       '<ul class="trust"><li>✔ ' + t('hm_tr1') + '</li><li>✔ ' + t('hm_tr2') + '</li><li>✔ ' + t('hm_tr3') + '</li></ul></div>' +
-      '<div class="hero-side"><p class="side-h">' + t('hm_where') + '</p>' +
-      '<a class="gate g10" href="#/tree" data-act="tree_go" data-v="10"><span class="gate-n">10</span><span><b>' + t('hm_c10') + '</b><small>' + t('hm_c10d') + '</small></span><i>→</i></a>' +
-      '<a class="gate g12" href="#/tree" data-act="tree_go" data-v="12"><span class="gate-n">12</span><span><b>' + t('hm_c12') + '</b><small>' + t('hm_c12d') + '</small></span><i>→</i></a>' +
-      '<p class="quote">“' + t('quote') + '” <small>— ' + t('quote_by') + '</small></p></div></div></section>' +
+      heroSide(ask) + '</div></section>' +
 
       '<div class="wrap"><div class="stats">' +
       [[CAREERS.length, 'st_careers'], [(App.API.meta ? App.API.meta.counts.colleges : COLLEGES.length), 'st_colleges'], [SCHOLARSHIPS.length, 'st_sch'], [LINKS.length, 'st_links']].concat(App.API.meta ? [[App.API.meta.counts.schools, 'st_schools']] : [[2, 'st_langs']]).map(function (s) {
         return '<div><b>' + s[0] + (s[1] !== 'st_langs' ? '+' : '') + '</b><span>' + t(s[1]) + '</span></div>'; }).join('') + '</div></div>' +
 
+      '<section class="wrap jr-wrap">' + (App.journey ? App.journey.html() : '') + '</section>' +
       '<section class="wrap section"><h2 class="sec-t">' + t('hm_find') + '</h2><div class="grid g4 tiles' + (F.homeAll ? '' : ' collapsed') + '">' + tiles.map(function (x, i) {
         return '<a class="card tile t' + (i % 4) + '" href="#/' + x[0] + '"><span class="ico-tile">' + x[1] + '</span><h3>' + t(x[2]) + '</h3><p>' + t(x[3]) + '</p><span class="go">→</span></a>'; }).join('') + '</div><p class="tiles-more"><button type="button" class="btn btn-ghost" data-act="home_all" aria-expanded="' + !!F.homeAll + '">' + (F.homeAll ? t('fewer_tools') + ' ▴' : t('more_tools') + ' (' + (tiles.length - 6) + ') ▾') + '</button></p></section>' +
 
@@ -2898,6 +3180,8 @@ window.PROFILE_FIELDS = [
       '<section class="wrap section"><div class="sec-head"><h2 class="sec-t">🚀 ' + t('hm_new') + '</h2><a class="more" href="#/careers" data-act="car_tag">' + t('see_all') + ' →</a></div><div class="hscroll">' +
       emerg.map(function (c) { return '<a class="card mini-c" href="#/career/' + c.id + '"><span class="ico-tile">' + c.ico + '</span><h4>' + L(c.name) + '</h4><p>' + esc(L(c.about).split('. ')[0]) + '.</p></a>'; }).join('') + '</div></section>' +
 
+      '<section class="wrap section"><h2 class="sec-t">✨ ' + t('cod_t') + '</h2><a class="card cod tile" href="#/career/' + cod.id + '"><span class="ico-tile">' + cod.ico + '</span><div><h3>' + esc(L(cod.name)) +
+        (codFit ? ' <span class="fit f' + (codFit.prac >= 70 ? 3 : codFit.prac >= 52 ? 2 : 1) + '">' + t('cod_fit') + ' ' + codFit.prac + '%</span>' : '') + '</h3><p>' + esc(L(cod.about)) + '</p></div><span class="go">→</span></a></section>' +
       '<section class="wrap section"><div class="grid g2"><div class="card"><div class="sec-head"><h3>🗓️ ' + t('hm_up') + '</h3><a class="more" href="#/calendar">' + t('see_all') + ' →</a></div>' +
       upcoming.map(function (r) { return '<div class="up"><b>' + L(r.exam) + '</b><span>' + t('apply_by') + ': ' + L(r.apply) + '</span></div>'; }).join('') + '</div>' +
       '<div class="card goldcard"><h3>🎁 ' + t('hm_money') + '</h3><p>' + t('hm_money_p') + '</p><a class="btn btn-light" href="#/scholarships">' + t('nav_sch') + ' →</a></div></div></section>';
@@ -3026,6 +3310,7 @@ window.PROFILE_FIELDS = [
   V.career = function (a) {
     var c = byId(CAREERS, a[0]);
     if (!c) return '<div class="wrap section"><div class="card empty"><h2>' + t('not_found') + '</h2><p>' + t('not_found_p') + '</p><a class="btn" href="#/careers">' + t('nav_careers') + '</a></div></div>';
+    if (App.journey) App.journey.seen(c.id);
     var rel = CAREERS.filter(function (x) { return x.id !== c.id && x.ri[0] === c.ri[0]; }).slice(0, 4);
     var fit = App.fitFor ? App.fitFor(c) : null;
     var facts = [['🎓', 'f_elig', L(c.elig)], ['⏱️', 'f_dur', L(c.dur)], ['📝', 'f_exam', L(c.exams)], ['💰', 'f_cost', costTxt(c.cost)], ['⏳', 'f_earn', c.earn + ' ' + t('yrs')], ['📍', 'f_loc', c.reloc ? t('may_move') : t('local_ok')]];
@@ -3629,7 +3914,7 @@ window.PROFILE_FIELDS = [
       '<label class="fld"><span>' + t('cert_date') + '</span><input type="date" data-input="ct_f" data-k="date" value="' + esc(c.date) + '" max="' + today() + '"></label>' +
       '<p class="hint">🔒 ' + t('cert_priv') + '</p></form>' +
       '<div class="card print-help"><h2>🖨️ ' + t('cert_print_t') + '</h2><ol class="ticks num"><li>' + t('cert_p1') + '</li><li>' + t('cert_p2') + '</li><li>' + t('cert_p3') + '</li><li>' + t('cert_p4') + '</li></ol>' +
-      '<p class="cta-row"><button class="btn btn-lg" data-act="ct_print" data-v="both">🖨 ' + t('cert_print') + '</button></p>' +
+      '<p class="cta-row"><button class="btn btn-lg" data-act="ct_print" data-v="both">🖨 ' + t('cert_print') + '</button>' + (App.shareButtons ? App.shareButtons('cert') : '') + '</p>' +
       '<p class="hint">' + t('cert_single') + '</p><p class="cta-row"><button class="btn btn-ghost sm" data-act="ct_print" data-v="front">' + t('cert_only_f') + '</button><button class="btn btn-ghost sm" data-act="ct_print" data-v="back">' + t('cert_only_b') + '</button></p></div></div>' +
       '<h2 class="sec-t">👁 ' + t('cert_preview') + '</h2></div>' +
       '<div class="sheets-wrap"><div class="sheet-box"><div class="sheet-lbl no-print">' + t('cert_front') + '</div><div id="ct_front">' + front(c, R) + '</div></div>' +
@@ -3671,6 +3956,7 @@ window.PROFILE_FIELDS = [
   AC.ct_print = function (el) {
     var which = el.getAttribute('data-v'), c = F.cert;
     if (!c.name.trim()) { var n = document.getElementById('ct_name'); if (n) { n.focus(); n.classList.add('bad'); } return; }
+    if (App.journey) App.journey.cert();
     var cls = which === 'front' ? 'print-front' : which === 'back' ? 'print-back' : '';
     if (cls) document.body.classList.add(cls);
     document.body.classList.add('printing-cert');
@@ -3849,7 +4135,7 @@ window.PROFILE_FIELDS = [
     html += '<section class="card"><h3>🎁 ' + t('pl_sch') + '</h3>' + (sch.length ? '<ul class="ticks">' + sch.map(function (x) { return '<li>' + esc(L(x.s.name)) + (x.s.url ? ' — ' + ext(x.s.url, x.s.site) : '') + '</li>'; }).join('') + '</ul>' : '<p class="hint">' + t('pl_sch_take') + ' <a href="#/scholarships">' + t('nav_sch') + ' →</a></p>') + '</section>';
     html += '<section class="card"><h3>✅ ' + t('pl_todo') + '</h3><ul class="todo">' + ['pl_t1', 'pl_t2', 'pl_t3', 'pl_t4', 'pl_t5', 'pl_t6', 'pl_t7', 'pl_t8'].map(function (k) {
       return '<li><label><input type="checkbox" data-input="pl_done" data-k="' + k + '"' + (P.done[k] ? ' checked' : '') + '> <span>' + t(k) + '</span></label></li>'; }).join('') + '</ul></section></div>';
-    html += '<p class="cta-row no-print"><button class="btn" data-act="pl_print">🖨 ' + t('pl_print') + '</button>' +
+    html += '<p class="cta-row no-print"><button class="btn" data-act="pl_print">🖨 ' + t('pl_print') + '</button>' + App.shareButtons('plan') +
       (chosen.filter(Boolean).length > 1 ? '<a class="btn btn-ghost" href="#/compare" data-act="pl_cmp">⚖️ ' + t('pl_cmp') + '</a>' : '') +
       '<button class="btn btn-ghost" data-act="pl_clear">' + t('pl_clear') + '</button><span class="hint">💾 ' + t('pl_saved') + '</span></p></div>';
     return html;
@@ -3968,6 +4254,46 @@ window.PROFILE_FIELDS = [
   window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); installEvt = e; showInstall(); });
   window.addEventListener('appinstalled', function () { installEvt = null; showInstall(); });
   AC.install = function () { if (!installEvt) return; installEvt.prompt(); installEvt.userChoice.then(function () { installEvt = null; showInstall(); }); };
+  /* ================= JOURNEY — the five steps shown on the home page ================= */
+  var J = Store.get('journey', null) || { seen: {}, cert: 0 };
+  function saveJ() { Store.set('journey', J); }
+  App.journey = {
+    seen: function (id) { if (!J.seen[id]) { J.seen[id] = 1; saveJ(); } },
+    cert: function () { if (!J.cert) { J.cert = 1; saveJ(); } },
+    steps: function () {
+      return [['#/assess', !!(App.A && App.A.step === 'done')], ['#/careers', Object.keys(J.seen).length >= 3], ['#/compare', CMP.length >= 2],
+        ['#/plan', P.c.filter(Boolean).length > 0], ['#/certificate', !!J.cert]];
+    },
+    html: function () {
+      var st = App.journey.steps(), n = st.filter(function (x) { return x[1]; }).length, next = -1;
+      st.forEach(function (x, i) { if (next < 0 && !x[1]) next = i; });
+      return '<section class="card journey"><div class="jr-head"><h3>🧭 ' + t('jr_t') + '</h3><span class="mini' + (n === 5 ? ' ok' : '') + '">' + t('jr_done').replace('{n}', n) + '</span></div>' +
+        '<div class="jr-bar" role="progressbar" aria-valuenow="' + n + '" aria-valuemin="0" aria-valuemax="5"><i style="width:' + (n / 5 * 100) + '%"></i></div><ol class="jr">' +
+        st.map(function (x, i) { return '<li class="' + (x[1] ? 'done' : i === next ? 'next' : '') + '"><a href="' + x[0] + '"><span class="jr-n">' + (x[1] ? '✓' : i + 1) + '</span><span>' + t('jr_' + (i + 1)) + '</span></a></li>'; }).join('') + '</ol>' +
+        (next < 0 ? '<p class="cta-row"><span class="hint">🎉 ' + t('jr_all') + '</span>' + App.shareButtons('res') + '</p>'
+                  : '<p class="cta-row"><a class="btn sm" href="' + st[next][0] + '">' + t('jr_next') + ': ' + t('jr_' + (next + 1)) + ' →</a></p>') + '</section>';
+    }
+  };
+  App.resetAll = function () {                             // “clear my data”: plan, comparison and journey go with the answers
+    P = { name: '', cls: '', c: ['', '', ''], done: {} }; CMP = []; J = { seen: {}, cert: 0 };
+    ['plan', 'compare', 'journey'].forEach(function (k) { Store.del(k); });
+  };
+
+  /* ================= SHARE (Web Share API, WhatsApp link as fallback) ================= */
+  App.shareText = function (kind) {
+    var url = location.origin + location.pathname, R = App.report && App.A && App.A.step === 'done' ? App.report() : null;
+    if (kind === 'res' && R) return t('share_res').replace('{code}', R.r.code).replace('{list}', R.prac.slice(0, 3).map(function (s) { return L(s.c.name); }).join(', ')).replace('{url}', url);
+    if (kind === 'cert' && R) return t('share_cert').replace('{code}', R.r.code).replace('{url}', url);
+    if (kind === 'plan') { var cs = P.c.map(career).filter(Boolean); if (cs.length) return t('share_plan').replace('{list}', cs.map(function (c) { return (P.c.indexOf(c.id) === 2 ? '🛟 ' : '⭐ ') + L(c.name); }).join('\n')).replace('{url}', url); }
+    return t('share_site').replace('{url}', url);
+  };
+  AC.share = function (el) {
+    var text = App.shareText(el.getAttribute('data-v'));
+    if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; }
+    window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  };
+  App.shareButtons = function (kind, light) { return '<button type="button" class="btn ' + (light ? 'btn-light' : 'btn-ghost') + '" data-act="share" data-v="' + kind + '">📤 ' + t('share') + '</button>'; };
+
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
