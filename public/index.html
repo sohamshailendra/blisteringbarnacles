@@ -716,16 +716,16 @@ body:not(.is-app) .foot-name{display:none}
 .progress::after{content:"";position:absolute;left:0;right:0;top:-5px;height:16px;background:repeating-linear-gradient(90deg,var(--ink) 0 3px,transparent 3px calc(100% / 9));pointer-events:none}
 .qwrap .progress::after{right:-3px}
 /* numbered lists on the wall: circles on a vertical ink line */
-ol.next,.plan-steps{counter-reset:nl;list-style:none;padding:0;margin:0;position:relative}
-ol.next::before,.plan-steps::before{content:"";position:absolute;left:.95rem;top:.6rem;bottom:.6rem;width:3px;background:var(--ink)}
+ol.next{counter-reset:nl;list-style:none;padding:0;margin:0;position:relative}.plan-steps{counter-reset:ps;position:relative}
+ol.next li:not(:last-child)::after,.plan-steps li:not(:last-child)::after{content:"";position:absolute;left:.95rem;top:2rem;bottom:-1rem;width:3px;background:var(--ink)}
 ol.next li{position:relative;padding:.25rem 0 .25rem 3rem;margin:.7rem 0;counter-increment:nl}
 ol.next li::before{content:counter(nl);position:absolute;left:0;top:0;width:2rem;height:2rem;border-radius:50%;background:var(--geru);color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:600;font-size:1.15rem;box-shadow:0 0 0 3px var(--wash)}
 .plan-steps li{position:relative}.plan-steps li::before{box-shadow:0 0 0 3px var(--wash);position:relative;z-index:1}
-ol.next.card{padding:1rem 1.4rem}ol.next.card::before{left:calc(1.4rem + .95rem);top:1.6rem;bottom:1.6rem}
+ol.next.card{padding:1rem 1.4rem}
 .card ol.next li::before,.card .plan-steps li::before{box-shadow:0 0 0 3px #fff}
 .nline li::before{transition:opacity .3s var(--ease)}.nline.wait li::before{opacity:0}
 /* spacing */
-.side-nav{display:grid;gap:.9rem}
+.side-nav{display:grid;gap:.9rem}.side .side-tools{margin-top:-.4rem;padding-top:0}
 .side .navg>span{padding-top:.2rem}
 .wrap.section>h2.sec-t:not(:first-child),.wrap.section>.sec-t:not(:first-child){margin-top:2.4rem}
 .ledger.steps{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -2833,7 +2833,7 @@ window.FAM_FIELDS = {
     document.body.classList.toggle('is-app', !home);
     document.getElementById('hdr').innerHTML =
       (home ? '<div class="wrap topline">' + brand() + '<nav aria-label="' + t('nav_label') + '">' + TOP.map(link).join('') + '</nav>' + lang + menuBtn + '</div>'
-            : '<div class="side">' + brand() + lang + '<nav class="side-nav" aria-label="' + t('nav_label') + '">' + groups + '</nav>' + tools('listen') + '</div>' +
+            : '<div class="side">' + brand() + lang + tools('listen') + '<nav class="side-nav" aria-label="' + t('nav_label') + '">' + groups + '</nav></div>' +
               '<div class="appbar">' + brand() + menuBtn + '</div>') +
       '<div class="navsheet" id="navsheet" role="dialog" aria-modal="true" aria-label="' + t('menu') + '"><div class="navsheet-top">' + brand() + lang +
       '<button class="menu-btn" data-act="menu" aria-label="' + t('close') + '">' + t('close') + '</button></div>' +
@@ -3695,7 +3695,7 @@ window.FAM_FIELDS = {
     if (!line || still || !('IntersectionObserver' in window)) return;
     line.classList.add('wait');
     Array.prototype.forEach.call(line.querySelectorAll('.n'), function (n, i) { n.style.transitionDelay = (250 + i * 180) + 'ms'; });
-    var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { line.classList.remove('wait'); io.disconnect(); } }, { rootMargin: '0px 0px -15% 0px' });
+    var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { line.classList.remove('wait'); io.disconnect(); } }, { threshold: 0.01 });
     io.observe(line);
   };
   AC.tree_go = function (el) { F.tree = el.getAttribute('data-v'); };
