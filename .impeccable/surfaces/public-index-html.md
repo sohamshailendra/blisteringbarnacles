@@ -17,7 +17,7 @@ Imagery: six Figma-AI illustrations (labelled), provenance in public/img/*.json.
 
 THESIS: The portal is painted like the walls of the student's own government school: limewashed upper wall, geru dado, stencilled lettering, a painted number line. Refuses both the gov-design-system template and the colourless studio page the previous round shipped.
 
-OWN-WORLD: Yellow limewash #f3e7c6 walls with white notice panels, geru (brick red) #9b3a24 dado bands and primary buttons, ochre #e3a21a fields, leaf green #1e6a3b painted chrome (sidebar, data bars), blackboard #1d2a24 with chalk-white text, ink #1a1a1a. Khand (condensed, stencilled-sign voice) for headings in both scripts, Anek Devanagari for text. Square painted corners (3px), flat, no shadows.
+OWN-WORLD: Yellow limewash #f3e7c6 walls with white notice panels, geru (brick red) #9b3a24 dado bands and primary buttons, ochre #e3a21a fields, leaf green #1e6a3b painted chrome (sidebar, data bars), blackboard #1d2a24 with chalk-white text, ink #1a1a1a. Khand (condensed painted-sign lettering; no stencil-cut face with Devanagari exists on the font services the site can load, so "stencil-like" is carried by condensed sign lettering) for headings in both scripts, Anek Devanagari for text. Square painted corners (3px), flat, no shadows.
 
 STORY: The student sees the programme name painted on the wall, picks Class 10 or 12 on the dado or starts the assessment, reads the four steps on a painted number line, opens one of the four roads, checks exam dates on the blackboard, and counsellors find the class session on the green wall.
 

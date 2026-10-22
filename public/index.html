@@ -32,14 +32,14 @@
   --wash:#f3e7c6; --wash-2:#ecdcb2; --geru:#9b3a24; --geru-d:#7c2d1b; --ochre:#e3a21a; --green:#1e6a3b; --green-d:#155230; --green-t:#dfeadf;
   --board:#1d2a24; --chalk:#f4f1e6; --link:#8a3320;
   --ink:#1a1a1a; --mut:#5c5240; --soft:#7a705c; --line:#e2d6b6; --line-2:#c7b88f;
-  --bg:#f3e7c6; --ground:#f6eedb; --tint:#efe4c4; --tint-2:#e6dcc0; --card:#fff; --pill:#fff; --pill-h:#ecdcb2; --active:#e3a21a;
+  --bg:#f3e7c6; --ground:#f3e7c6; --tint:#efe4c4; --tint-2:#e6dcc0; --card:#fff; --pill:#fff; --pill-h:#ecdcb2; --active:#e3a21a;
   --acc:#1e6a3b; --acc-d:#155230; --acc-t:#dfeadf;
   --pri:#9b3a24; --pri-d:#7c2d1b; --pri-t:var(--acc-t);
   --focus:#1a1a1a;
   --ok:#137333; --ok-t:#e6f4ea; --warn:#8a5a00; --warn-t:#fdf3dc; --err:#c5221f; --err-t:#fce8e6;
   /* names older views and data still use */
   --navy:var(--ink); --navy2:var(--ink); --amber:var(--acc); --amber-d:var(--acc); --amber-l:var(--acc-t);
-  --blue:#2457a6; --teal:#0f766e; --orange:#b45309; --magenta:#9d2b6b; --red:var(--err); --road:var(--acc); --road-d:var(--acc-d);
+  --blue:#1e6a3b; --teal:#1d2a24; --orange:#9b3a24; --magenta:#6d4c2f; --red:var(--err); --road:var(--acc); --road-d:var(--acc-d);
   --r:3px; --r-s:3px; --sh:none;
   --head:'Khand','Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
   --body:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -98,12 +98,12 @@ svg.i{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em;fill:none;stroke:
 .topline nav a:hover{color:var(--acc)}
 .topline .lang{margin-left:.5rem}
 /* app sidebar */
-.side{display:flex;flex-direction:column;gap:1.4rem;padding:1.4rem 1rem 1.2rem;min-height:100%}
+.side{display:flex;flex-direction:column;gap:1.1rem;padding:1.1rem 1rem 1rem;min-height:100%}
 .side .brand{padding:0 .4rem}
 .side .lang{align-self:flex-start;margin-left:.4rem}
 .navg{display:grid;gap:2px}
 .navg>span{font-size:.875rem;color:var(--mut);padding:0 .75rem .3rem;font-weight:500}
-.navg a{display:flex;align-items:center;min-height:34px;padding:0 .75rem;border-radius:6px;color:var(--ink);text-decoration:none;font-size:.9375rem;transition:background-color .14s var(--ease)}
+.navg a{display:flex;align-items:center;min-height:32px;padding:0 .75rem;border-radius:6px;color:var(--ink);text-decoration:none;font-size:.9375rem;transition:background-color .14s var(--ease)}
 .navg a:hover{background:rgba(17,17,17,.05)}
 .navg a.on{background:var(--active);font-weight:600}
 .side-tools{margin-top:auto;display:flex;gap:.2rem;flex-wrap:wrap;padding:.8rem .4rem 0}
@@ -190,7 +190,7 @@ html[lang=en] body:not(.is-app) .foot-name{letter-spacing:-.04em}
 /* 6 ── home (page) ── */
 .hero2{min-height:calc(100svh - 76px);display:flex;flex-direction:column;justify-content:center;gap:clamp(2rem,6vh,4.5rem);padding:2rem 0 2.5rem}
 .name{font-family:var(--head);font-weight:600;font-size:clamp(3.4rem,1rem + 7.6vw,8.75rem);line-height:.95;margin:0;color:var(--ink);text-align:left}
-html[lang=en] .name{letter-spacing:-.045em}
+html[lang=en] .name{letter-spacing:-.04em}
 .name .l{display:flex;align-items:baseline;gap:0 .2em}
 .name .slot{display:inline-block;flex:none;width:2.1em;height:.72em;border-radius:.1em;overflow:hidden;align-self:baseline;position:relative;top:.02em;background:var(--tint)}
 .name .slot img{width:100%;height:100%;object-fit:cover;transform-origin:center}
@@ -309,7 +309,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .tree li,.kids li{position:relative;margin:.5rem 0}
 .tree li::before,.kids li::before{content:"";position:absolute;left:-1.2rem;top:1.6rem;width:1.2rem;border-top:1.5px solid var(--line-2)}
 .node{--acc2:var(--ink)}
-.c-blue{--acc2:var(--blue)}.c-orange{--acc2:var(--orange)}.c-teal{--acc2:var(--teal)}.c-green{--acc2:var(--ok)}.c-amber{--acc2:#8a6100}.c-magenta{--acc2:var(--magenta)}
+.c-blue{--acc2:var(--blue)}.c-orange{--acc2:var(--orange)}.c-teal{--acc2:var(--teal)}.c-green{--acc2:var(--ok)}.c-amber{--acc2:#8a5a00}.c-magenta{--acc2:var(--magenta)}
 .node-b{display:flex;align-items:center;gap:.8rem;width:100%;text-align:left;background:#fff;border:0;box-shadow:0 0 0 1px var(--line);border-radius:var(--r);padding:.75rem 1rem;cursor:pointer;transition:box-shadow .16s var(--ease)}
 .node-b::before{content:"";flex:none;width:.6rem;height:.6rem;border-radius:50%;background:var(--acc2)}
 .node-b:hover{box-shadow:0 0 0 1px var(--line-2)}.node.open>.node-b{box-shadow:0 0 0 1.5px var(--ink)}
@@ -705,7 +705,33 @@ body:not(.is-app) .foot-name{display:none}
   .board{border-width:8px}.board li{grid-template-columns:4.5rem minmax(0,1fr)}
   .ochrewall .sign2{min-width:0;flex:1 1 100%}
 }
-@media (prefers-reduced-motion:reduce){.nline.wait{--drawn:1}.nline.wait .n{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.nline.wait{--drawn:1}.nline.wait .n{transform:none;opacity:1}.nline.wait li::before{opacity:1}}
+/* review fixes: app content painted too */
+.bar-t,.bar-t i,.meter,.meter i,.jr-bar,.jr-bar i,.pb i,.pb u{border-radius:0}
+.notice.warn{background:#f7e2a8;color:var(--ink)}
+.car:hover,.rec:hover{box-shadow:none}
+/* the number line also carries progress: a thick ink track with a tick per section, geru fill */
+.progress{height:6px;background:var(--line-2);border-radius:0;overflow:visible;position:relative;margin:.9rem 0}
+.progress i{background:var(--geru);border-radius:0}
+.progress::after{content:"";position:absolute;left:0;right:0;top:-5px;height:16px;background:repeating-linear-gradient(90deg,var(--ink) 0 3px,transparent 3px calc(100% / 9));pointer-events:none}
+.qwrap .progress::after{right:-3px}
+/* numbered lists on the wall: circles on a vertical ink line */
+ol.next,.plan-steps{counter-reset:nl;list-style:none;padding:0;margin:0;position:relative}
+ol.next::before,.plan-steps::before{content:"";position:absolute;left:.95rem;top:.6rem;bottom:.6rem;width:3px;background:var(--ink)}
+ol.next li{position:relative;padding:.25rem 0 .25rem 3rem;margin:.7rem 0;counter-increment:nl}
+ol.next li::before{content:counter(nl);position:absolute;left:0;top:0;width:2rem;height:2rem;border-radius:50%;background:var(--geru);color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:600;font-size:1.15rem;box-shadow:0 0 0 3px var(--wash)}
+.plan-steps li{position:relative}.plan-steps li::before{box-shadow:0 0 0 3px var(--wash);position:relative;z-index:1}
+ol.next.card{padding:1rem 1.4rem}ol.next.card::before{left:calc(1.4rem + .95rem);top:1.6rem;bottom:1.6rem}
+.card ol.next li::before,.card .plan-steps li::before{box-shadow:0 0 0 3px #fff}
+.nline li::before{transition:opacity .3s var(--ease)}.nline.wait li::before{opacity:0}
+/* spacing */
+.side-nav{display:grid;gap:.9rem}
+.side .navg>span{padding-top:.2rem}
+.wrap.section>h2.sec-t:not(:first-child),.wrap.section>.sec-t:not(:first-child){margin-top:2.4rem}
+.ledger.steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:960px){.ledger.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.ledger.steps{grid-template-columns:1fr}}
+
 @media print{.page-hero{border-bottom:0}.page-hero::after{display:none}.site-footer{display:none}}
 
 /* ---- certificate sheets (A4 = 210 x 297 mm) ---- */
@@ -917,7 +943,7 @@ body:not(.is-app) .foot-name{display:none}
 .front .cschool{color:#9b3a24}
 .front .rc{border-radius:1.2mm}.front .rc b{border-radius:.8mm}
 .front .sigs i{border-bottom-color:#111}.front .seal{border-color:#8a94a6;color:#6b7385}
-.back .inner{border-top:4mm solid #111}
+.back .inner{border-top:1.2mm solid #111}
 .back .bh{border-bottom:.5mm solid #111}
 .back .bt h2,.back h3,.back .who b,.back .cl b,.back .cl2 b,.back .t3 strong,.back .sites{color:#111}
 .back .bx{background:#fff;border-color:#c9d0da;border-radius:1.2mm}
@@ -2445,12 +2471,12 @@ window.LINKS = [
    Every text is { en, hi }.  Adding an item = adding a row; no other code changes.
    ===================================================================== */
 window.RIASEC = {
- R:{ c:'#e0701b', name:{en:'Realistic — Doer',hi:'यथार्थवादी — करने वाला'}, d:{en:'You like hands-on work with tools, machines, nature or sports.',hi:'आपको औज़ारों, मशीनों, प्रकृति या खेल के साथ हाथ से काम करना पसंद है।'} },
- I:{ c:'#2b6cd4', name:{en:'Investigative — Thinker',hi:'अन्वेषी — सोचने वाला'}, d:{en:'You like to understand how things work, solve problems and research.',hi:'आपको चीज़ें कैसे काम करती हैं समझना, समस्याएँ सुलझाना और शोध करना पसंद है।'} },
- A:{ c:'#b0357d', name:{en:'Artistic — Creator',hi:'कलात्मक — रचनाकार'}, d:{en:'You like creating — art, writing, music, design, new ideas.',hi:'आपको कुछ रचना पसंद है — कला, लेखन, संगीत, डिज़ाइन, नए विचार।'} },
- S:{ c:'#16947f', name:{en:'Social — Helper',hi:'सामाजिक — मददगार'}, d:{en:'You like teaching, caring for and working with people.',hi:'आपको लोगों को सिखाना, उनकी देखभाल करना और उनके साथ काम करना पसंद है।'} },
- E:{ c:'#d89114', name:{en:'Enterprising — Leader',hi:'उद्यमी — नेतृत्वकर्ता'}, d:{en:'You like leading, persuading, taking risks and starting things.',hi:'आपको नेतृत्व करना, मनाना, जोखिम लेना और नई शुरुआत करना पसंद है।'} },
- C:{ c:'#5b6b8c', name:{en:'Conventional — Organiser',hi:'व्यवस्थित — संयोजक'}, d:{en:'You like order, numbers, records and clear procedures.',hi:'आपको व्यवस्था, संख्याएँ, रिकॉर्ड और स्पष्ट प्रक्रियाएँ पसंद हैं।'} }
+ R:{ c:'#9b3a24', name:{en:'Realistic — Doer',hi:'यथार्थवादी — करने वाला'}, d:{en:'You like hands-on work with tools, machines, nature or sports.',hi:'आपको औज़ारों, मशीनों, प्रकृति या खेल के साथ हाथ से काम करना पसंद है।'} },
+ I:{ c:'#1e6a3b', name:{en:'Investigative — Thinker',hi:'अन्वेषी — सोचने वाला'}, d:{en:'You like to understand how things work, solve problems and research.',hi:'आपको चीज़ें कैसे काम करती हैं समझना, समस्याएँ सुलझाना और शोध करना पसंद है।'} },
+ A:{ c:'#8a5a00', name:{en:'Artistic — Creator',hi:'कलात्मक — रचनाकार'}, d:{en:'You like creating — art, writing, music, design, new ideas.',hi:'आपको कुछ रचना पसंद है — कला, लेखन, संगीत, डिज़ाइन, नए विचार।'} },
+ S:{ c:'#1d2a24', name:{en:'Social — Helper',hi:'सामाजिक — मददगार'}, d:{en:'You like teaching, caring for and working with people.',hi:'आपको लोगों को सिखाना, उनकी देखभाल करना और उनके साथ काम करना पसंद है।'} },
+ E:{ c:'#6d4c2f', name:{en:'Enterprising — Leader',hi:'उद्यमी — नेतृत्वकर्ता'}, d:{en:'You like leading, persuading, taking risks and starting things.',hi:'आपको नेतृत्व करना, मनाना, जोखिम लेना और नई शुरुआत करना पसंद है।'} },
+ C:{ c:'#4a4f45', name:{en:'Conventional — Organiser',hi:'व्यवस्थित — संयोजक'}, d:{en:'You like order, numbers, records and clear procedures.',hi:'आपको व्यवस्था, संख्याएँ, रिकॉर्ड और स्पष्ट प्रक्रियाएँ पसंद हैं।'} }
 };
 
 /* 5 per type, covering three facets of each: R = machines / outdoors / physical; I = experiment / maths-logic / reading science;
@@ -2751,7 +2777,7 @@ window.FAM_FIELDS = {
   };
   window.byId = function (list, id) { for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i]; return null; };
   window.ext = function (url, label, cls) {       // external link (opens in new tab)
-    return '<a class="' + (cls || 'lnk') + '" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label) + ' <span aria-hidden="true">↗</span><span class="sr"> (' + t('newtab') + ')</span></a>';
+    return '<a class="' + (cls || 'lnk') + '" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label) + ' ' + icon('ext') + '<span class="sr"> (' + t('newtab') + ')</span></a>';
   };
 
   /* ---- navigation: grouped; the sidebar (app screens), the phone bar and the full-screen menu all read this ---- */
@@ -3006,7 +3032,7 @@ window.FAM_FIELDS = {
       '<div class="wrap section"><div class="ledger steps">' + steps.map(function (s, i) {
         return '<div class="step"><span class="step-n">' + (i + 1) + '</span><div class="ico-tile">' + s[0] + '</div><h3>' + t(s[1]) + '</h3><p>' + t(s[2]) + '</p></div>';
       }).join('') + '</div>' +
-      '<div class="cta-row"><button class="btn btn-lg" data-act="a_start">' + (started ? t('as_restart') : t('as_begin')) + ' →</button>' +
+      '<div class="cta-row"><button class="btn btn-lg" data-act="a_start">' + (started ? t('as_restart') : t('as_begin')) + ' ' + icon('arrow') + '</button>' +
       (started && A.step !== 'done' && A.step !== 'intro' ? '<button class="btn btn-ghost btn-lg" data-act="a_resume">' + t('as_resume') + '</button>' : '') +
       (A.step === 'done' ? '<a class="btn btn-ghost btn-lg" href="#/results">' + t('as_see_res') + '</a>' : '') +
       (started ? '<button class="btn btn-ghost btn-lg" data-act="a_clear">' + t('clear_data') + '</button>' : '') +
@@ -3027,7 +3053,7 @@ window.FAM_FIELDS = {
           return '<button type="button" role="radio" aria-checked="' + on + '" class="chip' + (on ? ' on' : '') + '" data-act="a_prof" data-f="' + f.id + '" data-v="' + o[0] + '">' + L(o[1]) + '</button>';
         }).join('') + '</div></fieldset>';
     });
-    html += '<p id="pf_err" class="err" role="alert" hidden>' + t('pf_err') + '</p><div class="cta-row"><button class="btn btn-ghost" data-act="a_home">← ' + t('back') + '</button><button class="btn btn-lg" data-act="a_prof_next">' + t('next') + ' →</button></div></div></div>';
+    html += '<p id="pf_err" class="err" role="alert" hidden>' + t('pf_err') + '</p><div class="cta-row"><button class="btn btn-ghost" data-act="a_home">' + icon('back') + ' ' + t('back') + '</button><button class="btn btn-lg" data-act="a_prof_next">' + t('next') + ' ' + icon('arrow') + '</button></div></div></div>';
     return html;
   }
 
@@ -3081,8 +3107,8 @@ window.FAM_FIELDS = {
     return '<div class="wrap section qwrap"><div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '"><i style="width:' + pct + '%"></i></div>' +
       '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/' + (SEC_ORDER.length + 1) + ' · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + ' · ' + timeLeft(Q, i) + '</span></div>' +
       '<div class="card qcard">' + body + '</div>' +
-      '<div class="cta-row between"><button class="btn btn-ghost" data-act="a_back">← ' + t('back') + '</button>' +
-      (cur != null && (q.type !== 'pick3' || cur.length === 3) ? '<button class="btn" data-act="a_next">' + (i === nq - 1 ? t('as_finish') : t('next')) + ' →</button>' : '<span class="muted">' + t('pick_one') + '</span>') + '</div></div>';
+      '<div class="cta-row between"><button class="btn btn-ghost" data-act="a_back">' + icon('back') + ' ' + t('back') + '</button>' +
+      (cur != null && (q.type !== 'pick3' || cur.length === 3) ? '<button class="btn" data-act="a_next">' + (i === nq - 1 ? t('as_finish') : t('next')) + ' ' + icon('arrow') + '</button>' : '<span class="muted">' + t('pick_one') + '</span>') + '</div></div>';
   }
 
   /* ----------------------------- actions ----------------------------- */
@@ -3470,7 +3496,7 @@ window.FAM_FIELDS = {
   };
 
   App.views.results = function () {
-    if (A.step !== 'done') return '<div class="wrap section"><div class="card empty"><h2>' + t('res_none') + '</h2><p>' + t('res_none_p') + '</p><a class="btn" href="#/assess">' + t('as_begin') + ' →</a></div></div>';
+    if (A.step !== 'done') return '<div class="wrap section"><div class="card empty"><h2>' + t('res_none') + '</h2><p>' + t('res_none_p') + '</p><a class="btn" href="#/assess">' + t('as_begin') + ' ' + icon('arrow') + '</a></div></div>';
     var R = App.report(), r = R.r, cls = R.cls, html = '';
     var ls = R.ls, NA = APT_ASK.length;           // aptitude items actually asked
     var P1 = { income: ['', t('inc1'), t('inc2'), t('inc3'), t('inc4')][+P('income')] };
@@ -3525,7 +3551,7 @@ window.FAM_FIELDS = {
     var ms = R.sch;
     html += '<h2 class="sec-t">' + t('res_sch') + '</h2><div class="grid g2">' + ms.map(function (x) {
       return '<div class="card sch-mini"><h4>' + L(x.s.name) + '</h4><p>' + L(x.s.who) + '</p><div class="minis">' + x.m.reasons.map(function (k) { return '<span class="mini ok">' + icon('check') + t(k) + '</span>'; }).join('') + (x.m.later ? '<span class="mini">' + t('sm_later') + '</span>' : '') + '</div>' + (x.s.url ? ext(x.s.url, x.s.site) : '') + '</div>';
-    }).join('') + '</div><p><a class="btn btn-ghost" href="#/scholarships">' + t('res_sch_all') + ' →</a></p>';
+    }).join('') + '</div><p><a class="btn btn-ghost" href="#/scholarships">' + t('res_sch_all') + ' ' + icon('arrow') + '</a></p>';
 
     /* next steps — chosen by readiness stage */
     html += '<h2 class="sec-t">' + t('res_next') + '</h2><p class="muted">' + t('res_stage') + ' <b>' + esc(L(R.stage)) + '</b> — ' + t('res_stage_' + r.rd) + '</p><ol class="next card">' + R.steps.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol>' +
@@ -3645,12 +3671,9 @@ window.FAM_FIELDS = {
       '<p style="margin:1.2rem 0 0"><a href="#/calendar">' + t('up_all') + ' ' + icon('arrow') + '</a></p></div></section>' +
 
       '<section class="greenwall" aria-labelledby="sch-h"><div class="wrap wsec"><div><h2 id="sch-h">' + t('hm_sch_t') + '</h2><p>' + t('hm_sch_p') + '</p>' +
-      '<div class="facts3"><span><b>' + t('f1') + '</b>' + t('f1d') + '</span><span><b>' + t('f2') + '</b>' + t('f2d') + '</span><span><b>' + t('f3') + '</b>' + t('f3d') + '</span></div>' +
       '<p style="font-size:.9375rem">' + t('sch_p2') + '</p>' +
       '<p class="cta-row"><a class="btn" href="#/class">' + icon('users') + t('hm_cls') + '</a><a class="btn btn-ghost" href="#/school">' + t('hm_school') + '</a></p></div>' +
-      '<figure style="margin:0">' + pic('computers', '', '(max-width:960px) 100vw, 40vw') + '</figure></div></section>' +
-
-      '<section class="ochrewall" aria-labelledby="ask-h"><div class="wrap wsec"><h2 id="ask-h">' + t('ask_q') + '</h2><div class="pair">' + signs() + '</div><p>' + t('ask_p') + '</p></div></section>';
+      '<figure style="margin:0">' + pic('computers', '', '(max-width:960px) 100vw, 40vw') + '</figure></div></section>';
   };
   /* home motion: the road opens inside the name like a shutter; the number line paints itself once in view.
      Classes are added by script only, so the page is complete if this never runs. */
@@ -3687,7 +3710,7 @@ window.FAM_FIELDS = {
     var key = tk + ':' + n.id, open = App.treeOpen[key], cc = n.c || col;
     return '<li class="node d' + depth + ' ' + (cc || '') + (open ? ' open' : '') + '"><div class="node-row"><button class="node-b" data-act="tnode" data-id="' + key + '" aria-expanded="' + !!open + '">' +
       '<span class="ico">' + n.ico + '</span><span class="nt"><b>' + L(n.name) + '</b>' + (n.note ? '<small>' + L(n.note) + '</small>' : '') + '</span><span class="cnt" title="' + t('tr_careers') + '">' + leafCount(n) + '</span><span class="chev" aria-hidden="true">' + icon('chev') + '</span></button>' +
-      '<a class="node-more" href="#/branch/' + n.id + '/' + tk + '" aria-label="' + t('tr_details') + ': ' + esc(L(n.name)) + '">' + t('tr_details') + ' →</a></div>' +
+      '<a class="node-more" href="#/branch/' + n.id + '/' + tk + '" aria-label="' + t('tr_details') + ': ' + esc(L(n.name)) + '">' + t('tr_details') + ' ' + icon('arrow') + '</a></div>' +
       (open ? '<ul class="kids">' + n.kids.map(function (k) { return treeNode(k, depth + 1, cc, tk); }).join('') + '</ul>' : '') + '</li>';
   }
   V.tree = function () {
@@ -3731,10 +3754,10 @@ window.FAM_FIELDS = {
     var qs = ['sq1', 'sq2', 'sq3', 'sq4'];
     return hero(t('nav_streams'), t('stm_title'), t('stm_lead')) + '<div class="wrap section"><div class="grid g2">' + STREAMS.map(function (s) {
       return '<article class="card stream ' + s.c + '"><h3><span class="ico-tile">' + s.ico + '</span>' + L(s.name) + '</h3><p>' + L(s.d) + '</p><ul>' + s.sub.map(function (x) { return '<li>' + L(x) + '</li>'; }).join('') + '</ul><div class="minis">' + s.tags.map(function (x) { return '<span class="mini">' + L(x) + '</span>'; }).join('') + '</div>' +
-        '<div class="card-actions">' + s.b.map(function (b) { return '<a class="btn btn-ghost sm" href="#/branch/' + b[0] + '/10">' + t('explore_branch') + (b[1] ? ' — ' + b[1] : '') + ' →</a>'; }).join('') + '</div></article>';
+        '<div class="card-actions">' + s.b.map(function (b) { return '<a class="btn btn-ghost sm" href="#/branch/' + b[0] + '/10">' + t('explore_branch') + (b[1] ? ' — ' + b[1] : '') + ' ' + icon('arrow') + '</a>'; }).join('') + '</div></article>';
     }).join('') + '</div>' +
       '<div class="card goldcard q4"><h3>' + t('stm_4q') + '</h3><div class="grid g2">' + qs.map(function (k, i) { return '<p><b>' + (i + 1) + '.</b> ' + t(k) + '</p>'; }).join('') + '</div></div>' +
-      '<div class="notice">' + t('stm_warn') + '</div><p class="cta-row"><a class="btn" href="#/assess">' + t('hm_cta1') + ' →</a><a class="btn btn-ghost" href="#/tree">' + t('nav_tree') + '</a></p></div>';
+      '<div class="notice">' + t('stm_warn') + '</div><p class="cta-row"><a class="btn" href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a><a class="btn btn-ghost" href="#/tree">' + t('nav_tree') + '</a></p></div>';
   };
 
   /* ------------------------------ CAREERS ------------------------------ */
@@ -3803,7 +3826,7 @@ window.FAM_FIELDS = {
     var rel = CAREERS.filter(function (x) { return x.id !== c.id && x.ri[0] === c.ri[0]; }).slice(0, 4);
     var fit = App.fitFor ? App.fitFor(c) : null;
     var facts = [['', 'f_elig', L(c.elig)], ['', 'f_dur', L(c.dur)], ['', 'f_exam', L(c.exams)], ['', 'f_cost', costTxt(c.cost)], ['', 'f_earn', c.earn + ' ' + t('yrs')], ['', 'f_loc', c.reloc ? t('may_move') : t('local_ok')]];
-    return '<section class="page-hero career-hero"><div class="wrap"><a class="back" href="#/careers">← ' + t('nav_careers') + '</a><div class="ch"><span class="ico-tile xl">' + c.ico + '</span><div><h1>' + L(c.name) + '</h1><div class="minis light">' +
+    return '<section class="page-hero career-hero"><div class="wrap"><a class="back" href="#/careers">' + icon('back') + ' ' + t('nav_careers') + '</a><div class="ch"><span class="ico-tile xl">' + c.ico + '</span><div><h1>' + L(c.name) + '</h1><div class="minis light">' +
       c.lv.map(function (l) { return '<span class="mini">' + t('after') + ' ' + l + '</span>'; }).join('') + c.st.map(function (s) { return '<span class="mini">' + t('st_' + s) + '</span>'; }).join('') + (c.tag ? '<span class="mini">' + t('new26') + '</span>' : '') + '</div></div></div></div></section>' +
       '<div class="wrap section detail"><div class="main-col"><div class="card"><h2>' + t('overview') + '</h2><p class="big">' + L(c.about) + '</p></div>' +
       (has(c.detail) ? '<div class="card"><h2>' + t('c_detail') + '</h2>' + L(c.detail).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') + '</div>' : '') +
@@ -3834,10 +3857,10 @@ window.FAM_FIELDS = {
     list.sort(function (a, b) { return (b.m ? b.m.score : 0) - (a.m ? a.m.score : 0); });
     return hero(t('nav_sch'), t('sch_title'), t('sch_lead')) + '<div class="wrap section">' +
       (has ? '<div class="card tog"><span>' + t('sch_mine_t') + '</span>' + chipRow([[false, t('all')], [true, t('sch_mine')]].map(function (x) { return [String(x[0]), x[1]]; }), String(F.sch.mine), 'sch_tog') + '</div>' :
-        '<div class="notice">' + t('sch_hint') + ' <a href="#/assess">' + t('hm_cta1') + ' →</a></div>') +
+        '<div class="notice">' + t('sch_hint') + ' <a href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a></div>') +
       '<div class="grid g2">' + list.map(function (x) {
         var s = x.s, m = x.m;
-        return '<article class="card sch' + (m && m.score > 1 ? ' hi' : '') + '"><div class="sch-h"><h3>' + L(s.name) + '</h3>' + (m && m.score > 0 ? '<span class="badge">' + t('likely') + '</span>' : '') + '</div><p>' + L(s.who) + '</p>' +
+        return '<article class="card sch' + (m && m.score > 0 ? ' hi' : '') + '"><div class="sch-h"><h3>' + L(s.name) + '</h3>' + (m && m.score > 0 ? '<span class="badge">' + t('likely') + '</span>' : '') + '</div><p>' + L(s.who) + '</p>' +
           (m && m.reasons.length ? '<div class="minis">' + m.reasons.map(function (k) { return '<span class="mini ok">' + icon('check') + t(k) + '</span>'; }).join('') + (m.later ? '<span class="mini">' + t('sm_later') + '</span>' : '') + '</div>' : '') +
           (s.url ? '<p>' + ext(s.url, s.site) + '</p>' : '<p><small>' + t('ask_inst') + '</small></p>') + '</article>';
       }).join('') + '</div>' +
@@ -3867,7 +3890,7 @@ window.FAM_FIELDS = {
     return hero(t('nav_links'), t('lnk_title'), t('lnk_lead')) + '<div class="wrap section"><div class="filters card"><div class="frow">' + chipRow(groups, F.links, 'lnk_g') + '</div></div><div class="grid g3">' +
       list.map(function (l) {
         var host = l.url.replace(/^https?:\/\/(www\.)?/, '');
-        return '<a class="card linkcard" href="' + esc(l.url) + '" target="_blank" rel="noopener noreferrer"><span class="ico-tile">' + l.ico + '</span><div><b>' + L(l.name) + '</b><small>' + esc(host) + ' ↗</small></div><span class="sr">(' + t('newtab') + ')</span></a>';
+        return '<a class="card linkcard" href="' + esc(l.url) + '" target="_blank" rel="noopener noreferrer"><span class="ico-tile">' + l.ico + '</span><div><b>' + L(l.name) + '</b><small>' + esc(host) + ' ' + icon('ext') + '</small></div><span class="sr">(' + t('newtab') + ')</span></a>';
       }).join('') + '</div><div class="card rules"><h3>' + t('rules_t') + '</h3><ol>' + ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8', 'r9', 'r10'].map(function (k) { return '<li>' + t(k) + '</li>'; }).join('') + '</ol></div></div>';
   };
   AC.lnk_g = function (el) { F.links = el.getAttribute('data-v'); App.rerender(true); };
@@ -3951,7 +3974,7 @@ window.FAM_FIELDS = {
       var cnt = document.getElementById('dircount'); if (cnt) cnt.textContent = d.total.toLocaleString() + ' ' + t('results');
       box.innerHTML = d.items.length ? '<div class="grid g3">' + d.items.map(onS ? schoolCard : collegeCard).join('') + '</div>' : '<div class="card empty"><h3>' + t('none') + '</h3></div>';
       var pg = document.getElementById('dirpg');
-      if (pg) pg.innerHTML = d.pages > 1 ? '<div class="pager"><button class="btn btn-ghost sm" data-act="dir_pg" data-v="' + (d.page - 1) + '"' + (d.page <= 1 ? ' disabled' : '') + '>← ' + t('prev') + '</button><span>' + t('page') + ' ' + d.page + ' / ' + d.pages + '</span><button class="btn btn-ghost sm" data-act="dir_pg" data-v="' + (d.page + 1) + '"' + (d.page >= d.pages ? ' disabled' : '') + '>' + t('next') + ' →</button></div>' : '';
+      if (pg) pg.innerHTML = d.pages > 1 ? '<div class="pager"><button class="btn btn-ghost sm" data-act="dir_pg" data-v="' + (d.page - 1) + '"' + (d.page <= 1 ? ' disabled' : '') + '>' + icon('back') + ' ' + t('prev') + '</button><span>' + t('page') + ' ' + d.page + ' / ' + d.pages + '</span><button class="btn btn-ghost sm" data-act="dir_pg" data-v="' + (d.page + 1) + '"' + (d.page >= d.pages ? ' disabled' : '') + '>' + t('next') + ' ' + icon('arrow') + '</button></div>' : '';
     }).catch(function () { if (my === token) { box.removeAttribute('aria-busy'); box.innerHTML = '<div class="card empty"><h3>' + t('dir_err') + '</h3></div>'; } });
   }
 
@@ -3984,7 +4007,7 @@ window.FAM_FIELDS = {
   function schoolCard(s) {
     var place = [s.village, s.block, s.district].filter(Boolean).join(', ') + (s.pincode ? ' – ' + s.pincode : '');
     var govt = !/private|unrecog/i.test(s.mgmt);
-    var map = s.lat && s.lon ? '<a class="lnk" href="https://www.openstreetmap.org/?mlat=' + esc(s.lat) + '&mlon=' + esc(s.lon) + '#map=16/' + esc(s.lat) + '/' + esc(s.lon) + '" target="_blank" rel="noopener noreferrer">' + t('map') + ' ↗</a>' : '';
+    var map = s.lat && s.lon ? '<a class="lnk" href="https://www.openstreetmap.org/?mlat=' + esc(s.lat) + '&mlon=' + esc(s.lon) + '#map=16/' + esc(s.lat) + '/' + esc(s.lon) + '" target="_blank" rel="noopener noreferrer">' + t('map') + ' ' + icon('ext') + '</a>' : '';
     return '<article class="card col sch-card"><div class="minis"><span class="mini ' + (govt ? 'ok' : '') + '">' + esc(s.mgmt) + '</span>' + (s.board ? '<span class="mini">' + esc(s.board) + '</span>' : '') + (s.location ? '<span class="mini">' + esc(s.location) + '</span>' : '') + '</div>' +
       '<h3>' + esc(s.name) + '</h3><p class="loc">' + esc(place) + '</p>' +
       row(t('udise'), '<b>' + esc(s.udise) + '</b>') + row(t('classes'), s.class_from ? esc(s.class_from + ' – ' + s.class_to) : '') + row(t('sch_cat'), esc(s.school_type)) +
@@ -4099,7 +4122,7 @@ window.FAM_FIELDS = {
         var kb = window.BRANCHES[k.id] || {}, cs = careersOf(k, {}, []);
         return '<a class="card branch-card ' + (k.c || path[0].c || '') + '" href="#/branch/' + k.id + '/' + tk + '"><div class="car-h"><span class="ico-tile">' + k.ico + '</span><div><h3>' + esc(L(k.name)) + '</h3><small>' + cs.length + ' ' + t('tr_careers') + '</small></div></div>' +
           '<p>' + esc(L(k.note || (kb.d ? { en: kb.d.en.split('. ')[0] + '.', hi: kb.d.hi.split('। ')[0] + '।' } : ''))) + '</p>' +
-          '<div class="pills">' + cs.slice(0, 4).map(function (c) { return '<span class="pill">' + esc(L(c.name)) + '</span>'; }).join('') + (cs.length > 4 ? '<span class="pill">+' + (cs.length - 4) + '</span>' : '') + '</div><span class="go">' + t('tr_details') + ' →</span></a>';
+          '<div class="pills">' + cs.slice(0, 4).map(function (c) { return '<span class="pill">' + esc(L(c.name)) + '</span>'; }).join('') + (cs.length > 4 ? '<span class="pill">+' + (cs.length - 4) + '</span>' : '') + '</div><span class="go">' + t('tr_details') + ' ' + icon('arrow') + '</span></a>';
       }).join('') + '</div>';
     }
 
@@ -4107,7 +4130,7 @@ window.FAM_FIELDS = {
       var fit = done ? App.fitFor(c) : null;
       return '<a class="card car" href="#/career/' + c.id + '"><div class="car-h"><span class="ico-tile">' + c.ico + '</span><div><h3>' + esc(L(c.name)) + '</h3><small>' + esc(L(c.dur)) + '</small></div></div><p>' + esc(L(c.about).split('. ')[0]) + '.</p>' +
         '<p class="mini-row"><small>' + t('f_elig') + '</small> ' + esc(L(c.elig)) + '</p><p class="mini-row"><small>' + t('f_exam') + '</small> ' + esc(L(c.exams)) + '</p>' +
-        '<div class="minis"><span class="mini">' + costTxt(c.cost) + '</span><span class="mini">' + (c.earn <= 1 ? '≤1' : c.earn) + ' ' + t('yrs') + '</span>' + (fit ? '<span class="mini ok">' + t('your_fit') + ' ' + fit.prac + '%</span>' : '') + '</div><span class="go">' + t('br_read') + ' →</span></a>';
+        '<div class="minis"><span class="mini">' + costTxt(c.cost) + '</span><span class="mini">' + (c.earn <= 1 ? '≤1' : c.earn) + ' ' + t('yrs') + '</span>' + (fit ? '<span class="mini ok">' + t('your_fit') + ' ' + fit.prac + '%</span>' : '') + '</div><span class="go">' + t('br_read') + ' ' + icon('arrow') + '</span></a>';
     }).join('') + '</div>';
 
     if (careers.length > 1) {
@@ -4394,7 +4417,7 @@ window.FAM_FIELDS = {
     if (!c.clsSet) c.cls = (App.A && App.A.profile && App.A.profile.cls) || c.cls || '10';
     if (!c.date) c.date = today();
     var html = '<section class="page-hero no-print"><div class="wrap">' + crumb(t('cert_eyebrow')) + '<h1>' + t('cert_title') + '</h1><p class="lead">' + t('cert_lead') + '</p></div></section>';
-    if (!R) return html + '<div class="wrap section no-print"><div class="card empty"><h2>' + t('res_none') + '</h2><p>' + t('cert_need') + '</p><a class="btn" href="#/assess">' + t('as_begin') + ' →</a></div></div>';
+    if (!R) return html + '<div class="wrap section no-print"><div class="card empty"><h2>' + t('res_none') + '</h2><p>' + t('cert_need') + '</p><a class="btn" href="#/assess">' + t('as_begin') + ' ' + icon('arrow') + '</a></div></div>';
     html += '<div class="wrap section cert-ui no-print"><div class="grid g2 cert-top"><form class="card" id="certform" autocomplete="off" onsubmit="return false">' +
       '<h2>' + t('cert_details') + '</h2>' +
       '<label class="fld"><span>' + t('cert_name') + ' *</span><input data-input="ct_f" data-k="name" maxlength="60" value="' + esc(c.name) + '" placeholder="' + esc(t('cert_ph_name')) + '" id="ct_name"></label>' +
@@ -4606,7 +4629,7 @@ window.FAM_FIELDS = {
       ['pl_c1', 'pl_c2', 'pl_c3'].map(function (k, i) {
         return '<label class="fld' + (i === 2 ? ' wide' : '') + '"><span>' + (i === 2 ? '' : '') + t(k) + '</span><select data-input="pl_c" data-i="' + i + '">' + careerOptions(P.c[i], sugg) + '</select></label>';
       }).join('') + '</div>' +
-      (sugg.length ? '' : '<p class="hint">' + t('pl_take') + ' <a href="#/assess">' + t('hm_cta1') + ' →</a></p>') + '</form>';
+      (sugg.length ? '' : '<p class="hint">' + t('pl_take') + ' <a href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a></p>') + '</form>';
     var chosen = P.c.map(career);
     if (!chosen.some(Boolean)) return html + '<div class="card empty"><p>' + t('pl_empty') + '</p></div></div>';
     html += '<div class="plan-sheet"><div class="plan-head"><h2>' + t('pl_title') + (P.name ? ' — ' + esc(P.name) : '') + '</h2><p class="hint">' + (P.cls === '12' ? t('cls_12') : t('cls_10')) + ' · ' + new Date().toLocaleDateString(App.lang === 'hi' ? 'hi-IN' : 'en-IN') + '</p></div>';
@@ -4622,7 +4645,7 @@ window.FAM_FIELDS = {
         '<p class="plan-links">' + c.links.slice(0, 3).map(function (l) { return ext(l[1], l[0]); }).join(' · ') + '</p></section>';
     });
     var R = App.report && App.report(), sch = R && R.sch ? R.sch.slice(0, 4) : [];
-    html += '<section class="card"><h3>' + t('pl_sch') + '</h3>' + (sch.length ? '<ul class="ticks">' + sch.map(function (x) { return '<li>' + esc(L(x.s.name)) + (x.s.url ? ' — ' + ext(x.s.url, x.s.site) : '') + '</li>'; }).join('') + '</ul>' : '<p class="hint">' + t('pl_sch_take') + ' <a href="#/scholarships">' + t('nav_sch') + ' →</a></p>') + '</section>';
+    html += '<section class="card"><h3>' + t('pl_sch') + '</h3>' + (sch.length ? '<ul class="ticks">' + sch.map(function (x) { return '<li>' + esc(L(x.s.name)) + (x.s.url ? ' — ' + ext(x.s.url, x.s.site) : '') + '</li>'; }).join('') + '</ul>' : '<p class="hint">' + t('pl_sch_take') + ' <a href="#/scholarships">' + t('nav_sch') + ' ' + icon('arrow') + '</a></p>') + '</section>';
     html += '<section class="card"><h3>' + t('pl_todo') + '</h3><ul class="todo">' + ['pl_t1', 'pl_t2', 'pl_t3', 'pl_t4', 'pl_t5', 'pl_t6', 'pl_t7', 'pl_t8'].map(function (k) {
       return '<li><label><input type="checkbox" data-input="pl_done" data-k="' + k + '"' + (P.done[k] ? ' checked' : '') + '> <span>' + t(k) + '</span></label></li>'; }).join('') + '</ul></section></div>';
     html += '<p class="cta-row no-print"><button class="btn" data-act="pl_print">' + t('pl_print') + '</button>' + App.shareButtons('plan') +
@@ -4762,7 +4785,7 @@ window.FAM_FIELDS = {
         '<div class="jr-bar" role="progressbar" aria-valuenow="' + n + '" aria-valuemin="0" aria-valuemax="5"><i style="width:' + (n / 5 * 100) + '%"></i></div><ol class="jr">' +
         st.map(function (x, i) { return '<li class="' + (x[1] ? 'done' : i === next ? 'next' : '') + '"><a href="' + x[0] + '"><span class="jr-n">' + (x[1] ? icon('check') : i + 1) + '</span><span>' + t('jr_' + (i + 1)) + '</span></a></li>'; }).join('') + '</ol>' +
         (next < 0 ? '<p class="cta-row"><span class="hint">' + t('jr_all') + '</span>' + App.shareButtons('res') + '</p>'
-                  : '<p class="cta-row"><a class="btn sm" href="' + st[next][0] + '">' + t('jr_next') + ': ' + t('jr_' + (next + 1)) + ' →</a></p>') + '</section>';
+                  : '<p class="cta-row"><a class="btn sm" href="' + st[next][0] + '">' + t('jr_next') + ': ' + t('jr_' + (next + 1)) + ' ' + icon('arrow') + '</a></p>') + '</section>';
     }
   };
   App.resetAll = function () {                             // “clear my data”: plan, comparison and journey go with the answers
