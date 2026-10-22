@@ -1,334 +1,431 @@
 ---
 name: Mera Bhavishya – Mera Nirnay
-description: The Government of Haryana's free, bilingual career guidance portal for Class 10 and 12 students; ink on white, one blue, the road inside the name.
+description: The Government of Haryana's free, bilingual career guidance portal for Class 10 and 12 students, painted like the wall of a government school.
 colors:
-  road-blue: "#1a4be0"
-  road-blue-deep: "#1239b3"
-  road-blue-tint: "#e8eefd"
-  ink: "#111111"
-  ink-hover: "#2b2b2b"
-  muted: "#5f6368"
-  soft: "#8a8f98"
-  line: "#e3e5e8"
-  line-strong: "#c9ccd1"
-  paper: "#ffffff"
-  ground: "#f2f4f7"
-  ground-deep: "#e8ebef"
-  pill: "#e6e7e9"
-  pill-hover: "#dadcdf"
-  active: "#e6e8ec"
-  ok: "#137333"
-  ok-tint: "#e6f4ea"
-  warn: "#8a5a00"
-  warn-tint: "#fdf3dc"
-  err: "#c5221f"
-  err-tint: "#fce8e6"
+  geru: "#9b3a24"
+  geru-deep: "#7c2d1b"
+  leaf-green: "#1e6a3b"
+  leaf-green-deep: "#155230"
+  leaf-green-tint: "#dfeadf"
+  ochre: "#e3a21a"
+  limewash: "#f3e7c6"
+  limewash-deep: "#ecdcb2"
+  limewash-tint: "#efe4c4"
+  bar-track: "#e6dcc0"
+  notice-white: "#ffffff"
+  wash-line: "#e2d6b6"
+  wash-line-strong: "#c7b88f"
+  blackboard: "#1d2a24"
+  chalk: "#f4f1e6"
+  chalk-dim: "#c9c4b2"
+  wood: "#6d4c2f"
+  ink: "#1a1a1a"
+  muted: "#5c5240"
+  soft: "#7a705c"
+  link: "#8a3320"
+  print-ink: "#111111"
+  interest-r: "#9b3a24"
+  interest-i: "#1e6a3b"
+  interest-a: "#8a5a00"
+  interest-s: "#1d2a24"
+  interest-e: "#6d4c2f"
+  interest-c: "#4a4f45"
+  status-ok: "#137333"
+  status-ok-tint: "#e6f4ea"
+  status-warn: "#8a5a00"
+  status-warn-tint: "#f7e2a8"
+  status-err: "#c5221f"
+  status-err-tint: "#fce8e6"
 typography:
   display:
-    fontFamily: "Anek Devanagari, Noto Sans Devanagari, Noto Sans, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "clamp(3.4rem, 1rem + 7.6vw, 8.75rem)"
+    fontFamily: "Khand, 'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
+    fontSize: "clamp(3.1rem, 1.2rem + 5.6vw, 6.75rem)"
     fontWeight: 600
-    lineHeight: 0.95
-    letterSpacing: "-0.045em"
-    fontVariation: "'wdth' 100"
+    lineHeight: 0.98
+    letterSpacing: "0"
   headline:
-    fontFamily: "Anek Devanagari, Noto Sans Devanagari, Noto Sans, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "clamp(2rem, 1.3rem + 3.2vw, 4rem)"
+    fontFamily: "Khand, 'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
+    fontSize: "clamp(2rem, 1.5rem + 1.4vw, 2.75rem)"
+    fontWeight: 600
+    lineHeight: 1.02
+    letterSpacing: "0"
+  section:
+    fontFamily: "Khand, 'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
+    fontSize: "clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem)"
+    fontWeight: 600
+    lineHeight: 1.02
+    letterSpacing: "0"
+  sign:
+    fontFamily: "Khand, 'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
+    fontSize: "1.5rem"
     fontWeight: 600
     lineHeight: 1
-    letterSpacing: "-0.035em"
-    fontVariation: "'wdth' 100"
+    letterSpacing: "0"
   title:
-    fontFamily: "Anek Devanagari, Noto Sans Devanagari, Noto Sans, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "clamp(1.6rem, 1.3rem + 0.9vw, 2rem)"
+    fontFamily: "'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
+    fontSize: "1.1875rem"
     fontWeight: 600
     lineHeight: 1.12
-    letterSpacing: "-0.02em"
-    fontVariation: "'wdth' 100"
   lead:
-    fontFamily: "Anek Devanagari, Noto Sans Devanagari, Noto Sans, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontFamily: "'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
     fontSize: "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)"
     fontWeight: 400
     lineHeight: 1.35
-    fontVariation: "'wdth' 100"
   body:
-    fontFamily: "Anek Devanagari, Noto Sans Devanagari, Noto Sans, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontFamily: "'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
     fontSize: "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)"
     fontWeight: 400
     lineHeight: 1.5
     fontVariation: "'wdth' 100"
   label:
-    fontFamily: "Anek Devanagari, Noto Sans Devanagari, Noto Sans, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontFamily: "'Anek Devanagari', 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif"
     fontSize: "clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem)"
     fontWeight: 500
     lineHeight: 1.4
-    fontVariation: "'wdth' 100"
 rounded:
-  picture: "4px"
-  control: "6px"
-  card: "8px"
-  pill: "999px"
+  none: "0"
+  paint: "3px"
+  stop: "50%"
 spacing:
-  tight: "0.4rem"
-  gap: "1rem"
-  card-pad: "1.25rem 1.4rem"
-  gutter-phone: "1rem"
-  gutter: "1.5rem"
+  gutter-phone: "16px"
+  gutter-desktop: "24px"
+  container: "1180px"
+  container-app: "1120px"
+  sidebar: "248px"
+  appbar: "56px"
   section: "2.5rem"
-  section-home: "clamp(4rem, 9vh, 7rem)"
+  wall-section: "clamp(2.75rem, 6vh, 4rem)"
+  panel: "1.25rem 1.4rem"
+  grid-gap: "1rem"
+  dado: "1.25rem 0 1.35rem"
 components:
   button-primary:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.pill}"
+    backgroundColor: "{colors.geru}"
+    textColor: "{colors.notice-white}"
+    rounded: "{rounded.paint}"
     padding: "0.5rem 1.25rem"
     height: "44px"
   button-primary-hover:
-    backgroundColor: "{colors.ink-hover}"
-    textColor: "{colors.paper}"
-  button-secondary:
-    backgroundColor: "{colors.pill}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    padding: "0.5rem 1.25rem"
-    height: "44px"
-  button-secondary-hover:
-    backgroundColor: "{colors.pill-hover}"
-  button-home-action:
-    backgroundColor: "{colors.road-blue}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.pill}"
+    backgroundColor: "{colors.geru-deep}"
+    textColor: "{colors.notice-white}"
+  button-primary-large:
+    backgroundColor: "{colors.geru}"
+    textColor: "{colors.notice-white}"
+    rounded: "{rounded.paint}"
     padding: "0.7rem 1.6rem"
     height: "52px"
-  button-home-action-hover:
-    backgroundColor: "{colors.road-blue-deep}"
-  button-on-ink:
-    backgroundColor: "{colors.paper}"
+  button-ghost:
+    backgroundColor: "{colors.notice-white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    height: "56px"
-  chip:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    padding: "0.35rem 0.9rem"
-    height: "38px"
-  chip-selected:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-  tag:
-    backgroundColor: "{colors.pill}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    padding: "0.1rem 0.6rem"
-  card:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.card}"
-    padding: "{spacing.card-pad}"
-  input:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.control}"
-    padding: "0.55rem 0.85rem"
+    rounded: "{rounded.paint}"
+    padding: "0.5rem 1.25rem"
     height: "44px"
-  answer-option:
-    backgroundColor: "{colors.paper}"
+  button-ghost-hover:
+    backgroundColor: "{colors.limewash-deep}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.card}"
+  button-on-green:
+    backgroundColor: "{colors.ochre}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.paint}"
+    padding: "0.5rem 1.25rem"
+    height: "44px"
+  painted-sign:
+    backgroundColor: "{colors.notice-white}"
+    textColor: "{colors.ink}"
+    typography: "{typography.sign}"
+    rounded: "{rounded.paint}"
+    padding: "0.55rem 1.1rem 0.6rem"
+    height: "56px"
+  painted-sign-hover:
+    backgroundColor: "{colors.limewash}"
+    textColor: "{colors.ink}"
+  dado-band:
+    backgroundColor: "{colors.geru}"
+    textColor: "{colors.notice-white}"
+    padding: "{spacing.dado}"
+  number-stop:
+    backgroundColor: "{colors.geru}"
+    textColor: "{colors.notice-white}"
+    rounded: "{rounded.stop}"
+    size: "2.6rem"
+  number-stop-list:
+    backgroundColor: "{colors.geru}"
+    textColor: "{colors.notice-white}"
+    rounded: "{rounded.stop}"
+    size: "2rem"
+  progress-track:
+    backgroundColor: "{colors.wash-line-strong}"
+    rounded: "{rounded.none}"
+    height: "6px"
+  progress-fill:
+    backgroundColor: "{colors.geru}"
+    rounded: "{rounded.none}"
+  data-bar:
+    backgroundColor: "{colors.leaf-green}"
+    rounded: "{rounded.none}"
+    height: "8px"
+  data-bar-track:
+    backgroundColor: "{colors.bar-track}"
+    rounded: "{rounded.none}"
+  notice-panel:
+    backgroundColor: "{colors.notice-white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.paint}"
+    padding: "{spacing.panel}"
+  notice-strip:
+    backgroundColor: "{colors.limewash-deep}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.paint}"
+    padding: "0.9rem 1.1rem"
+  notice-warning:
+    backgroundColor: "{colors.status-warn-tint}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.paint}"
+    padding: "0.9rem 1.1rem"
+  answer-option:
+    backgroundColor: "{colors.notice-white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.paint}"
     padding: "0.75rem 1rem"
     height: "3.25rem"
   answer-option-selected:
-    backgroundColor: "{colors.ground}"
+    backgroundColor: "{colors.leaf-green-tint}"
     textColor: "{colors.ink}"
-  nav-item:
+  scale-face-selected:
+    backgroundColor: "{colors.leaf-green}"
+    textColor: "{colors.notice-white}"
+  chip:
+    backgroundColor: "{colors.notice-white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.card}"
-    padding: "0 0.75rem"
-    height: "34px"
-  nav-item-active:
-    backgroundColor: "{colors.active}"
+    rounded: "{rounded.paint}"
+    padding: "0.35rem 0.9rem"
+    height: "38px"
+  chip-selected:
+    backgroundColor: "{colors.leaf-green}"
+    textColor: "{colors.notice-white}"
+  text-input:
+    backgroundColor: "{colors.notice-white}"
     textColor: "{colors.ink}"
+    rounded: "{rounded.paint}"
+    padding: "0.55rem 0.85rem"
+    height: "44px"
   sidebar:
-    backgroundColor: "{colors.ground}"
-    width: "248px"
-  app-bar:
-    backgroundColor: "{colors.ground}"
-    height: "56px"
-  progress-meter:
-    backgroundColor: "{colors.ground-deep}"
-    rounded: "{rounded.pill}"
-    height: "6px"
-  progress-meter-fill:
-    backgroundColor: "{colors.road-blue}"
+    backgroundColor: "{colors.leaf-green}"
+    textColor: "{colors.notice-white}"
+    width: "{spacing.sidebar}"
+  sidebar-item:
+    textColor: "{colors.notice-white}"
+    rounded: "{rounded.paint}"
+    padding: "0 0.75rem"
+    height: "30px"
+  sidebar-item-active:
+    backgroundColor: "{colors.ochre}"
+    textColor: "{colors.ink}"
+  phone-bar:
+    backgroundColor: "{colors.leaf-green}"
+    textColor: "{colors.notice-white}"
+    height: "{spacing.appbar}"
+  menu-sheet:
+    backgroundColor: "{colors.limewash}"
+    textColor: "{colors.ink}"
+  wall-chart-heading:
+    backgroundColor: "{colors.geru}"
+    textColor: "{colors.notice-white}"
+  wall-chart-number:
+    backgroundColor: "{colors.ochre}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.stop}"
+    size: "1.8rem"
+  blackboard:
+    backgroundColor: "{colors.blackboard}"
+    textColor: "{colors.chalk}"
+    padding: "clamp(1.5rem, 3vw, 2.5rem)"
+  green-wall:
+    backgroundColor: "{colors.leaf-green}"
+    textColor: "{colors.notice-white}"
+  class-bar:
+    backgroundColor: "{colors.blackboard}"
+    textColor: "{colors.chalk}"
+  toast:
+    backgroundColor: "{colors.blackboard}"
+    textColor: "{colors.chalk}"
+    rounded: "{rounded.paint}"
 ---
 
 # Design System: Mera Bhavishya – Mera Nirnay
 
 ## Overview
 
-**Creative North Star: "The Road Inside the Name"**
+**Creative North Star: "The Painted School Wall"**
 
-The programme's own name is the composition. On the home page "मेरा भविष्य / मेरा निर्णय" is set at poster scale on two lines, and a picture of a country road through mustard fields sits inside the second line where a letter would be. The rest of the home page repeats that grammar at smaller scale: a short sentence on the left, its evidence (a picture, a list of dates, a row of facts) beside it. Every app screen (assessment, results, career tree, directories, class session) drops the poster scale and becomes an achromatic ledger: ink figures on white cards over a pale blue-grey ground, with the one blue kept for the number or bar that matters most on that screen.
+The portal is painted like the wall of the student's own Haryana government school: a yellow limewash upper wall, a brick-red geru dado along the bottom with an ink stripe painted along its top edge, signboard lettering, a painted number line, a blackboard in a wooden frame, green painted woodwork. Every view, the chrome included, sits on that wall. Content goes on white notice panels pinned to the limewash. The student should recognise it as the wall they walk past every day, not as a website template.
 
-The look is neutral and official without borrowing the government-portal template. There is no utility bar, no row of blue buttons on white, no ruled link lists, no icon-card grids and no edtech gradient. Authority comes from the Haryana emblem, plain bilingual words and an even, quiet surface. Density is sparse on the home page (very large type, long vertical breaks) and moderate in the app (44px controls, 1rem gaps, white cards).
+This world was chosen by the user. It refuses two things by name: the gov-design-system template look (blue headers, grey cards), and the colourless "ink on white, one blue" studio page this portal shipped before. The paint is flat and matte. Corners are square, there are no shadows, and nothing is glass or a gradient. Depth comes from paint layers: a white panel on limewash, a geru band under the wall, a green frame around the app. Density is a school notice board: plain, legible, large type in Hindi first, every action a painted sign big enough for a thumb.
 
-The system is built for a student on a low-end Android phone, reading Hindi first, often offline, and for a teacher printing a whole class's report cards on an ordinary black-and-white A4 printer. Everything has to read in Hindi and English with the same face, survive missing web fonts, and print legibly without colour.
+Product truth keeps the world honest. The Haryana Government emblem stays, on a limewash plate where the chrome is green. Pictures are illustrations made with Figma AI, and the footer says so. They never pretend to show real students or schools. The printed report card has to survive an ordinary black-and-white school printer.
 
 **Key Characteristics:**
-- One face, Anek Devanagari, for Hindi and English alike.
-- Ink and greys everywhere; one blue, used on the home action and on each screen's main data element.
-- Near-black pill buttons for primary actions, grey pills for secondary ones.
-- White cards (8px corners) and controls (6px corners) defined by a hairline ring, not by shadow.
-- Home is a white page with a top line of links; app screens sit on a pale ground with a sidebar.
-- One signature motion: the road picture opens inside the name like a shutter.
-- The printed report card is a first-class product: two A4 sheets in the same ink look.
+- Limewash ground everywhere, with white notice panels and a 1px wash-line border.
+- Geru marks the one thing to do (the primary button) and the steps of a sequence (number-line stops). Leaf green paints the chrome, the data and the student's own choices. Ochre marks where you are.
+- Khand signboard lettering for headings and numbers in both scripts, Anek Devanagari for everything read.
+- Square painted corners (3px), flat paint, no shadows at rest.
+- The painted number line is the signature. Any numbered sequence or progress runs along it.
+- Wall devices: the geru dado with its ink stripe, the framed blackboard, the green wall, the six-roads wall chart.
 
 ## Colors
 
-An achromatic palette of ink and cool greys with exactly one saturated blue and three quiet status colours.
+A school-wall palette of earth pigments and painted woodwork: limewash, geru, ochre, leaf green, blackboard and wood, written in ink. No blue anywhere.
 
 ### Primary
-- **Road Blue** (#1a4be0): the only brand hue. Used on the home page's "Start the free assessment" pill and on the main data element of an app screen: the assessment progress bar, career fit meters, result bars, the radar outline, the journey bar. Also the keyboard focus ring and text selection.
-- **Road Blue Deep** (#1239b3): hover state of the blue action; text on Road Blue Tint.
-- **Road Blue Tint** (#e8eefd): the faint wash behind a "good fit" pill, a "new" tag and the current row of the exam calendar.
+- **Geru Brick Red** (`geru`): the dado bands (the hero band, the 12px foot of every app page header, the footer's top band), every primary button, number-line stops, the assessment progress fill, the wall-chart heading strip and the radar outline on results. It means "do this" or "this step". **Geru Deep** (`geru-deep`) is its hover and pressed paint.
+
+### Secondary
+- **Leaf Green** (`leaf-green`): painted chrome (the 248px desktop sidebar, the 56px phone bar, the browser theme colour), the counsellor "green wall" on home, the bars in results data, selected chips and scale faces, the completed steps of the journey and badges. **Leaf Green Deep** (`leaf-green-deep`) is used for text on its tint. **Leaf Green Tint** (`leaf-green-tint`) is the ground of a selected answer option and of the "good fit" chip.
+
+### Tertiary
+- **Ochre** (`ochre`): "you are here" and "look here". It paints the active sidebar or menu item, the numbered discs on the wall chart, the root node of the career tree, primary buttons on the green wall and the text-selection highlight. It is always a field with ink on it, never text.
 
 ### Neutral
-- **Ink** (#111111): all text, headings, primary buttons, selected chips and answers, step numbers, the home footer and the closing "Class 10 or 12?" band.
-- **Ink Hover** (#2b2b2b): hover state of the near-black button.
-- **Slate Grey** (#5f6368): secondary text: leads in the app, hints, captions, table headers, inactive language option.
-- **Soft Grey** (#8a8f98): placeholders, breadcrumb separators, picture credits.
-- **Hairline** (#e3e5e8): table rules and the ring around cards on the white home page.
-- **Strong Hairline** (#c9ccd1): borders of chips and answer options, tree connectors, card hover ring, input outline.
-- **Paper** (#ffffff): the home page background, cards, inputs, the full-screen menu.
-- **Ledger Ground** (#f2f4f7): the background of every app screen, the sidebar, the phone app bar, notices and quiet panels.
-- **Ledger Ground Deep** (#e8ebef): empty track of progress bars and meters; hover of journey steps.
-- **Pill Grey** (#e6e7e9) and **Pill Grey Hover** (#dadcdf): secondary buttons, tags, the language switch, the Menu button.
-- **Active Grey** (#e6e8ec): the current page in the sidebar.
+- **Limewash** (`limewash`): the page and app ground, the full-screen menu, and the plate behind the emblem on green.
+- **Limewash Deep** (`limewash-deep`): the second coat. Used for notice strips, the footer wall, hover on white controls, the open tree node, and picture placeholders.
+- **Limewash Tint** (`limewash-tint`) and **Bar Track** (`bar-track`): quiet fields for context boxes, fact tiles and count pills, and the unfilled track of data bars.
+- **Notice White** (`notice-white`): notice panels, answer options, inputs, painted signs, ghost buttons, the wall chart.
+- **Wash Line** (`wash-line`): the 1px border of every panel, and table rules. **Wash Line Strong** (`wash-line-strong`): the borders of chips, options and inputs, dashed rules in the wall chart, and the progress track.
+- **Ink** (`ink`): text, the number line itself, the dado stripe, the frame of the wall chart, ghost-button borders and the focus ring. **Muted** (`muted`) is used for secondary text. **Soft** (`soft`) is only for placeholders and breadcrumb separators.
+- **Link Red** (`link`): inline links, a darker geru so it reads as paint and not as a web-blue link.
+- **Blackboard** (`blackboard`) with **Chalk** (`chalk`) and **Chalk Dim** (`chalk-dim`): the exam-dates board, the class-session bar and the toast. **Wood** (`wood`) is only the frame of the blackboard.
+- **Print Ink** (`print-ink`): the frame, rules and text of the printed sheets.
+
+### Interest colours (RIASEC)
+The six interest types are painted from the wall palette, never from a chart library: Realistic `interest-r` (geru), Investigative `interest-i` (leaf green), Artistic `interest-a` (dark ochre), Social `interest-s` (blackboard), Enterprising `interest-e` (wood), Conventional `interest-c` (slate). They fill the letter tiles of a student's code, on screen and on the printed career profile. White text is used on all six.
 
 ### Status
-- **Done Green** (#137333) on **Done Tint** (#e6f4ea): completed, strong subject band, success.
-- **Caution Amber** (#8a5a00) on **Caution Tint** (#fdf3dc): weaker subject band, cautions.
-- **Error Red** (#c5221f) on **Error Tint** (#fce8e6): validation errors, destructive actions, warnings against agents and fake schemes.
+Status colours are a separate set and never stand in for the palette: `status-ok`, `status-warn` and `status-err`, each with a tint. Warnings in a notice use `status-warn-tint` with ink text.
 
 ### Named Rules
-**The One Blue Rule.** Road Blue appears on the home page's main action and on the single main data element of a screen. Nothing else in the chrome is coloured: navigation, headers, cards and secondary buttons stay ink and grey.
+**The No Blue Rule.** No blue is used anywhere: not in links, focus, charts, chrome or the theme colour. The world has no blue pigment. Blue is what the refused template and the previous direction were made of.
 
-**The Black-and-White Print Rule.** Anything that prints (results, plan, class list, report card) must still read when printed in greyscale; colour may reinforce meaning but never carry it alone.
+**The Three Pigments Rule.** Each pigment has one job. Geru: act, or a step in a sequence. Green: the frame and the student's own data and choices. Ochre: where you are. Do not swap them for variety.
 
 ## Typography
 
-**Display Font:** Anek Devanagari (with Noto Sans Devanagari, Noto Sans, system-ui)
-**Body Font:** Anek Devanagari (same stack)
+**Display Font:** Khand (with Anek Devanagari, then Noto Sans Devanagari, then system sans)
+**Body Font:** Anek Devanagari (with Noto Sans Devanagari, Noto Sans, system sans)
 
-**Character:** One variable face with real Devanagari and Latin, so a Hindi sentence and its English twin share weight, height and rhythm. Anek Devanagari stands in for the dealt Switzer, which has no Devanagari; it loads from Google Fonts at the normal width axis ('wdth' 100, weights 400 to 700) and the page stays usable on the Noto and system fallbacks when offline.
+**Character:** Khand is condensed painted-signboard lettering with true Devanagari, so headings read like the name painted over a school gate in both scripts. "Stencil-like" was requested, but no stencil-cut face with Devanagari can be loaded, so condensed sign lettering stands in for it. Anek Devanagari is a sturdy, open text face for long Hindi and English reading on cheap screens.
 
 ### Hierarchy
-- **Display** (600, clamp(3.4rem → 8.75rem), line-height 0.95): the programme name on the home hero only. On phones it drops to clamp(3rem, 15vw, 5rem) and the road picture moves to its own line. The closing "Class 10" (up to 10.5rem) and the footer name (up to 7.5rem) use the same treatment.
-- **Headline** (600, clamp(2rem → 4rem), line-height 1): home section statements ("Every road, one place.", the exam-dates title) and the four staircase steps (up to 4.6rem).
-- **Title** (600, clamp(1.6rem → 2rem), line-height 1.12): the h1 of each app screen. h2 runs clamp(1.4rem → 1.75rem), h3 1.1875rem, h4 1.0625rem.
-- **Lead** (400, clamp(1.25rem → 1.625rem), line-height 1.35, max 52ch): one supporting sentence under a heading. Slate Grey in the app, Ink on the home hero.
-- **Body** (400, clamp(1.0625rem → 1.1875rem), line-height 1.5): running text; paragraphs held to 36 to 52ch. Never below 1rem; inputs never below 16px so phones do not zoom.
-- **Label** (500, clamp(0.875rem → 0.9375rem)): hints, table headers, captions, nav group names, tags (0.8125rem, 600).
+- **Display** (Khand 600, `clamp(3.1rem, 1.2rem + 5.6vw, 6.75rem)`, line-height 0.98; on phones `clamp(2.9rem, 14vw, 4.2rem)`): the programme name painted on the home wall, with the road picture set inline in the line.
+- **Headline** (Khand 600, `clamp(2rem, 1.5rem + 1.4vw, 2.75rem)`, 1.02): the h1 of each app page, and home section titles (up to 3rem).
+- **Section** (Khand 600, `clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem)`, 1.02): the h2 inside app pages.
+- **Sign** (Khand 600, 1.5rem, 1): words on painted signs and number-line steps (up to 1.85rem), road names on home (1.6rem), and the numerals in stops (1.15–1.5rem).
+- **Title** (Anek Devanagari 600, 1.1875rem): h3/h4 in app content, card and option titles.
+- **Lead** (Anek Devanagari 400, `clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)`, 1.35, max 52ch): the one sentence under a page name. In app page headers it is 1.125rem/1.45.
+- **Body** (Anek Devanagari 400, `clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)`, 1.5): all running text, at width 100.
+- **Label** (Anek Devanagari 500, `clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem)`): hints, table heads, breadcrumbs and meta lines. Sidebar group names are set in Khand at 1.0625rem in limewash.
 
 ### Named Rules
-**The Same Voice Rule.** Hindi and English are set in the same face at the same size and weight. Negative tracking (−0.02em to −0.045em) is applied to large English headings only (`html[lang=en]`); Devanagari is never tracked, because tightening breaks its headline bar.
+**The Painted Letters Rule.** Khand is used only for things painted on the wall: h1 and h2, the programme name, signs, step names and numerals. Running text, h3/h4, buttons and form text stay in Anek Devanagari.
 
-**The Plain Weight Rule.** Headings are 600; emphasis inside text is 600; body is 400. No 800/900 weights, no italics for emphasis, no all-caps interface labels. The one exception is the printed certificate's spaced-caps "CERTIFICATE OF PARTICIPATION" line, a convention of the document form.
-
-**The Tabular Figures Rule.** Counts, percentages, dates and roll numbers use tabular figures so columns of numbers line up.
+**The Zero Tracking Rule.** Painted headings keep letter-spacing at 0 in both languages. Tightened tracking belonged to the previous direction and breaks Devanagari matras.
 
 ## Layout
 
-**Home (the page).** A white page with a top line: emblem and wordmark on the left, five text links, the हिं/EN pill and a Menu pill on the right. The content column is min(1180px, 100% − 3rem). The hero fills the first viewport: the name with the road inside it, one supporting sentence, and along the bottom "I am in [Class 10] [Class 12]" on the left and the blue start pill on the right. Below it the sections follow the same grammar on a 12-column grid with 1rem gutters and section padding of clamp(4rem, 9vh, 7rem): a four-step staircase of sentences (each step indented further), four road rows with a statement on the left and a picture on the right at differing sizes and ratios, an exam-date table pushed to the right columns beside a tall picture, a large paragraph with a small picture dropped in like a drop cap, and a full-height ink band asking "Class 10 or 12?" with two white pills. The footer is ink, at least 80svh tall, ending in the programme name at display scale.
+There are two kinds of wall. **Home** is a short public page on full-bleed limewash. It runs: a top line (emblem wordmark, five links that thin to three at 1100px and disappear at 760px, a language toggle and the menu); a hero that pairs the painted name with the six-roads wall chart in a 1.45 : 1 grid; a full-bleed geru dado holding the two class signs; the four-step number line; four roads in a four-column grid (two on phones) with the "also" pills; the blackboard of exam dates; and the full-bleed green wall for counsellors. Then the footer wall. **App screens** sit inside green chrome: a fixed 248px sidebar from 1024px, below that a sticky 56px green bar with a full-screen limewash menu. Every app page opens with a limewash header that ends in the dado stripe.
 
-**App screens (the ledger).** The ground is Ledger Ground. At 1024px and wider a fixed 248px sidebar holds the emblem wordmark, the language pill, grouped navigation and tools; content shifts right of it in a column of min(1120px, 100% − 4rem). Below 1024px the sidebar becomes a 56px sticky bar (translucent ground with blur) with the wordmark and a Menu pill; Menu opens one full-screen sheet with the navigation groups. Grids are 2, 3 or 4 columns with 1rem gaps and collapse to 2 at 960px and to 1 at 640px. Detail pages use a main column plus a 320px side column. Tables become stacked label/value rows on phones.
-
-**Responsive steps:** 1100px (top-line links reduce to three), 1024px (sidebar on/off), 960px (grids to two columns, detail to one), 760px (top-line links hidden), 640px (phone: 16px side gutter, single column, hero picture on its own line).
-
-**Pictures.** Six illustrations made with Figma AI (a road through mustard fields, a cycle, nursing, an ITI workshop, a classroom, computers), each in 640 and 1280px WebP with a provenance JSON beside it. They appear only on the home page and are labelled in the footer as illustrations, not real students or schools. No photographs of real students, schools or colleges are used.
-
-### Named Rules
-**The Statement and Proof Rule.** Each home section is a short sentence on the left with its evidence beside it. A section that needs an icon grid to explain itself is rewritten as a sentence instead.
+Content width is `min(1180px, 100% - 3rem)`, or `min(1120px, 100% - 4rem)` beside the sidebar. On phones (≤640px) it is `100% - 2rem`: a 16px gutter and no horizontal scroll. Sections breathe at 2.5rem, and home wall sections at `clamp(2.75rem, 6vh, 4rem)`. Panels are padded 1.25rem × 1.4rem, and grids gap at 1rem. Grids step down from 4 to 2 to 1 column at 960px and 640px. Tap targets are at least 44px (52px for the hero action and 56px for the class signs).
 
 ## Elevation & Depth
 
-The system is flat. Cards are separated from the ground by tone (white on #f2f4f7) and a hairline ring drawn with box-shadow (`0 0 0 1px rgba(17,17,17,.06)` in the app, a 1px Hairline ring on the white home page), not by drop shadows. Hover darkens the ring to Strong Hairline. Only two things lift: a career or recommendation card on hover (a 14px soft shadow under the ring) and the toast, which floats above the page.
-
-### Shadow Vocabulary
-- **Hairline ring** (`box-shadow: 0 0 0 1px rgba(17,17,17,.06)`): every app card, tree node, timeline cell, roster and compare table.
-- **Hover ring** (`box-shadow: 0 0 0 1px #c9ccd1`): hover on clickable cards and leaves.
-- **Hover lift** (`box-shadow: 0 0 0 1px #c9ccd1, 0 4px 14px rgba(17,17,17,.06)`): career and recommendation cards on hover only.
-- **Toast** (`box-shadow: 0 8px 28px rgba(0,0,0,.25)`): the ink toast at the bottom of the screen.
+The system is flat. Depth is shown only by layers of paint: white notice panels on limewash, the deeper wash for strips and the footer, green chrome framing the limewash. Panels carry a 1px wash-line border instead of a shadow. Hover darkens the border to ink or deepens the paint. Nothing lifts. Two box-shadow values exist, and both are paint, not elevation. One is a solid ring in the ground colour (`0 0 0 4px` limewash, or 3px on white) that knocks a number stop out of the ink line behind it. The other is the footer's inset 4px ink stripe under its geru band.
 
 ### Named Rules
-**The Flat-By-Default Rule.** Surfaces are flat at rest; depth comes from white on pale ground and a hairline. A shadow appears only on hover of a card that opens something, or on a transient toast.
+**The Flat Paint Rule.** No drop shadows, blurs, glass or gradients at rest or on hover. If something needs to stand forward, give it a different paint (white on wash, ochre on green, ink border on white).
 
 ## Shapes
 
-Small, consistent corners. Cards, answer options, tree nodes and quiet panels use 8px; inputs, inner panels, fact boxes and number badges use 6px; buttons, chips, tags, the language switch and progress bars are full pills. Pictures use 4px so they read as prints rather than UI. Selection is shown by filling a shape with Ink, never by a coloured outline. Circles mark step numbers, answer letters and the current journey step. The hero picture slot is an em-sized rounded rectangle that sits on the type baseline and scales with the name.
+Corners are square painted corners (`rounded.paint`, 3px) on every control and surface: buttons, chips, signs, panels, inputs, options, the toggle, nav items and badges. Only the number-line stops and the wall-chart numerals are true circles (`rounded.stop`). Bars, progress tracks and their fills are cut square (`rounded.none`), like paint along a ruler. Edges are drawn as painted lines: the 1px wash line around panels, the 2px ink border on ghost buttons and the menu button, the 3px ink frame of the wall chart, the 12px wood frame of the blackboard (8px on phones), and the dado's ink stripe (4–5px). Dashed 1px rules divide the lists on the wall chart and the blackboard, like chalk lines.
+
+### Named Rules
+**The No Pill Rule.** Nothing is pill-shaped. Square paint is used everywhere, and circles are kept for numbered stops.
 
 ## Components
 
 ### Buttons
-Confident, quiet and round.
-- **Shape:** full pill (999px), minimum 44px tall; large 52px, small 36px.
-- **Primary:** near-black Ink with white 600 text, padding 0.5rem 1.25rem. Hover goes to #2b2b2b.
-- **Secondary:** Pill Grey with Ink text; hover Pill Grey Hover.
-- **Home action:** the single blue pill (Road Blue, 52px) on the home hero, hover Road Blue Deep. It is the only blue button in the product.
-- **On ink:** white pills (56px, min 200px wide) on the closing ink band and the class-session bar.
-- **Press:** scale(0.97) on press, 120ms; disabled at 40% opacity.
-- **Focus:** a 2px Road Blue outline offset by 2px, on every focusable element.
+Signwriter's paint, solid and plain.
+- **Shape:** square painted corners (3px).
+- **Primary:** geru with white text, 600 weight, 44px minimum height (52px large for the hero "Start the free assessment"). Hover moves to geru-deep. Pressed scales to 0.97 over 120ms.
+- **Ghost:** white with ink text and a 2px ink border. Hover moves to limewash-deep.
+- **On the green wall:** the primary becomes ochre with ink text, and the ghost becomes transparent with a white border and white text.
+- **Focus:** a 3px ink outline offset 2px. On green, geru and blackboard grounds the outline turns white.
+- **Disabled:** 40% opacity, no press.
 
-### Chips
-- **Style:** white with a 1px Strong Hairline border, Ink text, pill shape, 38px tall.
-- **State:** hover darkens the border to Ink; selected fills with Ink and white 600 text. Tags are Pill Grey; badges are Ink with white text.
+### Painted signs (the dado)
+White painted boards on the geru dado: "I am in **Class 10** / **Class 12**", with the class in Khand at 1.5rem and a muted line under it. They are 56px high and at least 250px wide (full width stacked on phones). Hover paints them limewash. The dado is a full-bleed geru band with a 5px ink stripe painted along its top edge, and its label is set in Khand.
 
-### Cards / Containers
-- **Corner Style:** 8px.
-- **Background:** Paper on the Ledger Ground; quiet panels (notices, resume box, consent) are Ledger Ground on Paper.
-- **Shadow Strategy:** hairline ring only (see Elevation & Depth).
-- **Border:** none; the ring does the work.
-- **Internal Padding:** 1.25rem 1.4rem; the question card 2rem 1.8rem.
+### Cards / Containers (notice panels)
+- **Corner Style:** 3px.
+- **Background:** white on the limewash wall.
+- **Shadow Strategy:** none (see Elevation). There is a 1px wash-line border, and on hover over a link card the border turns ink.
+- **Internal Padding:** 1.25rem × 1.4rem.
+- **Notice strips** sit on limewash-deep (privacy notes, tips). A warning notice uses the warn tint with ink text.
 
 ### Inputs / Fields
-- **Style:** white, 6px corners, 44px tall, an inset 1px Strong Hairline ring, 16px minimum text.
-- **Focus:** the ring thickens to an inset 2px Ink ring.
-- **Error:** an inset 2px Error Red ring and a 600 red message.
-
-### Assessment answers
-- **Agree scale:** five equal faces in a row, 1.5px Strong Hairline border, 8px corners; selected fills Ink with white text.
-- **Options:** full-width rows with a lettered circle; selected takes a Ledger Ground fill, an Ink border, 600 text and an Ink-filled letter.
-- **Progress:** a 6px pill track in Ledger Ground Deep with a Road Blue fill.
+- **Style:** white field, 3px corners, an inset 1px wash-line-strong edge, 44px tall, and text at least 16px so phones don't zoom.
+- **Focus:** the edge thickens to a 2px ink inset.
+- **Answer options and scale faces:** white with a 1.5px wash-line-strong border, which turns ink on hover. A selected option fills leaf-green-tint with a green-filled letter disc. A selected scale face or chip fills solid leaf green with white text.
 
 ### Navigation
-- **Home:** a single top line of text links (Ink, 500, hover Road Blue), the language pill and a grey Menu pill.
-- **App, desktop:** a 248px sidebar on the ground; grouped links 34px tall with 8px corners, hover a 5% ink wash, current page Active Grey and 600.
-- **App, phone:** a 56px sticky bar with a translucent ground and blur, the wordmark and the Menu pill; Menu opens a full-screen white sheet with the groups in an auto-fit grid and 44px links.
-- **Language switch:** a Pill Grey track; the chosen language sits in a white pill.
+- **Home top line:** sits on limewash with no rule. Links are ink text at 1rem/500 and turn geru on hover. The language toggle is a white segmented control with the active language filled ink. The menu button is white with a 2px ink border.
+- **App sidebar (≥1024px):** 248px of leaf-green paint. The emblem sits on a limewash circle plate. Group names are in Khand in limewash, items are white 30px rows, hover is a 12% white wash, and the **active item is painted ochre with ink text**.
+- **Phones:** a sticky 56px green bar with the emblem plate and a limewash menu button, which opens a full-screen limewash menu with the same groups. The active item there is ochre too.
+- **Page header:** limewash with the h1 in Khand, ending in a 12px geru band with a 4px ink stripe at its foot: the dado stripe.
 
-### The road in the name (signature)
-The hero picture sits inside the programme name in an em-sized slot (2.1em × 0.72em). On load it starts clipped shut from the right and scaled to 1.12, then the clip opens over 1.1s on an in-out curve while the picture settles to scale 1 over 1.4s. Home sections then rise in once (16px, 0.5s, 70ms stagger) as they scroll into view. Classes are added by script, so the page is complete without it; under `prefers-reduced-motion` the picture is shown open and nothing moves, and print always shows everything.
+### The Painted Number Line (signature)
+A thick ink line (4px) with a 3px tick dropping to each numbered geru stop (2.6rem circle, numeral in Khand, knocked out of the line with a limewash ring). On home it carries the "four steps" across four columns. It turns into a vertical line on phones, and on tablets the stops stand alone. It draws once when it scrolls into view: the line scales out from the left over 0.9s, then the stops pop in at a stagger of 250ms + 180ms each and the ticks fade in. With reduced motion, or without script, it is simply drawn. The same device carries:
+- **Assessment progress:** a square 6px wash-line-strong track with a geru fill and an ink tick at every section.
+- **Results next steps, the class how-to and the plan:** 2rem geru stops on a vertical 3px ink line.
+- **Career roadmap:** geru stops joined by a 3px ink line.
+- **Journey:** done steps in green, the next step in geru with a 2px geru border.
 
-### Report card (printed)
-Two A4 sheets per student, printed as a set: a participation certificate (front) and a one-page career profile (back). The front has an ink double frame, the Haryana emblem with "हरियाणा सरकार / Government of Haryana", a 5% emblem watermark, the student's name over an ink rule, and signature lines with a dashed seal circle. The back has a 4mm ink top band, the emblem header, white boxes with light grey borders and 1.2mm corners, and the career list. Every line is bilingual. Each sheet shrinks to fit the printable area so a report card is always exactly two pages.
+### Wall chart (home hero)
+A white board with a 3px ink frame, a geru heading strip ("After Class 10: six roads") and six rows, each with an ochre numbered disc in Khand, the road name and a geru arrow, divided by dashed rules. It is hidden on phones, where the dado signs do the job.
+
+### Blackboard and green wall
+- **Blackboard:** blackboard paint with chalk text in a 12px wood frame. Exam dates run in two columns, with the months in Khand in chalk-dim and dashed chalk rules between rows.
+- **Green wall:** a full-bleed leaf-green section for counsellors, with white Khand headings, limewash text, an ochre primary button and an illustration.
+- **Class-session bar and toast:** blackboard paint with chalk text.
+
+### Data
+Results bars and meters are leaf green on the bar-track colour, cut square. The radar is drawn in geru with a 16% geru fill. A student's interest code is shown as letter tiles in the six RIASEC colours.
+
+### Pictures
+These are Figma-AI illustrations: a road through mustard fields, a cycle, nursing, an ITI workshop, a classroom and a computer lab, at 640 and 1280 widths in WebP. Each has a provenance sidecar (`*.webp.json`) and is credited in the footer as an illustration. They are cropped square-cornered (3px) on a limewash-deep placeholder. In the hero, the road opens inside the painted name like a shutter (a clip-path wipe over 1.1s). With reduced motion it is simply shown.
+
+### Report card sheets (print)
+Two A4 sheets printed as a set: the participation certificate and the career profile. They use the portal's own look, translated to paper. The certificate has an ink double frame (a 1.2mm border with a 0.35mm inner line), the emblem watermark at 5%, headings in Khand in print ink, and geru for the certificate's subtitle and the school name. The interest letter tiles are near-square (1.2mm corners). The profile has a 1.2mm ink rule at the head, white boxes with hairline borders, and career fit figures in geru. The sheets print exactly two pages: each sheet scales down to fit the printable area. Everything must stay legible in black and white.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep the chrome ink and grey: Ink (#111111) text, Pill Grey (#e6e7e9) secondaries, Ledger Ground (#f2f4f7) behind app screens.
-- **Do** give each screen at most one blue element: its main data (progress, fit meter, result bar) or, on home, the start pill.
-- **Do** set Hindi and English in Anek Devanagari at the same size and weight, with the Noto and system fallbacks in place.
-- **Do** use near-black pills for primary actions and grey pills for secondary ones, at least 44px tall.
-- **Do** use 8px corners for cards and 6px for controls and inner panels.
-- **Do** keep the Haryana emblem in the header and on both printed sheets.
-- **Do** label generated pictures as illustrations and keep their provenance file beside them.
-- **Do** provide a still state for every motion under `prefers-reduced-motion`.
+- **Do** paint every surface on limewash (`limewash`), and put readable content on white notice panels with a 1px wash-line border.
+- **Do** use geru for the primary action and for numbered stops; leaf green for the chrome, data bars and the student's selections; and ochre for "you are here" (the active nav item, wall-chart numerals), always with ink on it.
+- **Do** end every app page header with the dado stripe: a 12px geru band with a 4px ink stripe.
+- **Do** put any numbered sequence or progress on the painted number line: an ink line with geru stops.
+- **Do** keep corners at 3px everywhere, and circles only for number stops.
+- **Do** set h1/h2, signs and numerals in Khand with letter-spacing 0, and everything read in Anek Devanagari.
+- **Do** switch the focus outline to white on green, geru and blackboard grounds, and keep it a 3px ink outline elsewhere.
+- **Do** keep the Haryana emblem on a limewash plate wherever the chrome is green.
+- **Do** label every picture as a Figma-AI illustration and ship its provenance sidecar.
+- **Do** make printed sheets in print ink with geru accents, legible in black and white.
+- **Do** give every motion a reduced-motion state that shows the finished picture (line drawn, shutter open).
 
 ### Don't:
-- **Don't** add a utility bar, rows of blue buttons on white, ruled link lists or grids of icon cards.
-- **Don't** use gradients, tinted panels with coloured borders, or decorative shadows.
-- **Don't** colour navigation, headers, cards or secondary buttons.
-- **Don't** track Devanagari or set interface labels in all caps.
-- **Don't** use photographs of real students, schools or colleges, or invent testimonials or usage numbers.
-- **Don't** let colour alone carry meaning on anything that prints.
+- **Don't** use blue anywhere: links, focus, charts, chrome or the theme colour.
+- **Don't** use drop shadows, blur, backdrop-filter glass or gradients; the wall is flat paint.
+- **Don't** use pill or rounded shapes for buttons, chips, toggles or panels.
+- **Don't** set ochre as text, or put text in white on ochre; ochre is a field for ink.
+- **Don't** set running text, buttons or form text in Khand.
+- **Don't** apply negative letter-spacing to headings in either script.
+- **Don't** colour the RIASEC types or data from outside the wall palette.
+- **Don't** present illustrations as photographs of real students, schools or colleges.
