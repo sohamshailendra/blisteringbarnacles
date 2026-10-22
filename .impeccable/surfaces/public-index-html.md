@@ -8,21 +8,21 @@ related_targets: []
 # Surface: Mera Bhavishya portal (whole site, public/index.html)
 
 Scope: every view of the single-file portal, the counsellor class session and the printed report card set.
-Mode: home is a page (Persuade-light, Taste "page" run); everything else is an app screen (Operate/Read, Taste "app" run), sharing one face and palette.
+Mode: home is a short service start page; everything else is Operate/Read. One painted world covers both, chrome included.
 Audience and job: a Class 10/12 student on a low-end Android phone, Hindi first, often offline, finding a stream and next step; secondary, a school counsellor running a class on one shared device and printing every report card.
-Constraints: user asked for a neutral government look but ruled out UX4G and the gov-design-system look, then asked for the tools to set the direction. Haryana emblem kept; bilingual; offline; WCAG 2.1 AA; prints in black and white.
-Imagery: open collections blocked by the environment's network policy; six illustrations generated with Figma AI, labelled as illustrations in the footer, provenance in public/img/*.json.
+Constraints: user-pinned world "school wall paint" (Haryana government school walls, BaLA), chosen in the direction round and confirmed as a full redo; home must be compact (key actions in the first screen, about 4,000px on desktop). Haryana emblem kept; bilingual; offline; WCAG 2.1 AA; certificate prints in black and white.
+Imagery: six Figma-AI illustrations (labelled), provenance in public/img/*.json.
 
 ## Direction contract
 
-THESIS: The programme's own name is the layout: "मेरा भविष्य / [road] मेरा निर्णय", a picture of the road set inside the name like a letter. Refuses the government-portal template (utility bar, blue buttons on white, ruled link lists, icon card grids) and the edtech gradient.
+THESIS: The portal is painted like the walls of the student's own government school: limewashed upper wall, geru dado, stencilled lettering, a painted number line. Refuses both the gov-design-system template and the colourless studio page the previous round shipped.
 
-OWN-WORLD: White page and pale blue-grey #f2f4f7 app ground, ink #111 text, grey #5f6368 secondary, one blue #1a4be0 only on the home action and the main data element, near-black pill buttons with grey #e6e7e9 pill secondaries, white cards at radius 8, Anek Devanagari for Hindi and English alike, no colour in the chrome.
+OWN-WORLD: Yellow limewash #f3e7c6 walls with white notice panels, geru (brick red) #9b3a24 dado bands and primary buttons, ochre #e3a21a fields, leaf green #1e6a3b painted chrome (sidebar, data bars), blackboard #1d2a24 with chalk-white text, ink #1a1a1a. Khand (condensed, stencilled-sign voice) for headings in both scripts, Anek Devanagari for text. Square painted corners (3px), flat, no shadows.
 
-STORY: The visitor reads the name and one sentence saying what this is, picks Class 10 or 12 or starts the assessment, sees the four steps as a staircase of sentences, the four main roads beside pictures, the coming exam dates, what schools can do, and the closing question "Class 10 or 12?".
+STORY: The student sees the programme name painted on the wall, picks Class 10 or 12 on the dado or starts the assessment, reads the four steps on a painted number line, opens one of the four roads, checks exam dates on the blackboard, and counsellors find the class session on the green wall.
 
-FIRST VIEWPORT: Top line: emblem wordmark left, five links, Hindi/English pill, Menu. The name at about 8vw on two lines, the road picture inline before "मेरा निर्णय"; one supporting sentence under it; along the bottom, "I am in [Class 10] [Class 12]" on the left and the blue "Start the free assessment" pill on the right.
+FIRST VIEWPORT: Top line on limewash: emblem wordmark, five links, language, menu. The name in Khand at about 6vw with the road photo inline; one supporting sentence; the blue-free geru "Start the free assessment" button; the hero ends in a geru dado band (with its painted ink stripe) holding "I am in [Class 10] [Class 12]" as painted white signs. All of it inside 900px.
 
-FORM: Taste page direction "The sentence is the layout" (hero "Photograph for a letter", sections staircase / margin-photo rows / table pushed right / drop-cap paragraph / question at both edges / name footer), app style "Achromatic ledger" with the Open plane sidebar shell. Signature move: the road opens inside the name with a clip-path shutter. The Impeccable roll ran degraded (no catalog) and its assignment was superseded when the user asked for the tools to set the direction (Taste draw). seed:af3f76231c6ce404
+FORM: User-pinned world from the direction round ("School wall paint", Impeccable's pick card); seed reference from that roll: seed:af3f76231c6ce404. Signature move: the painted number line, a thick ink line with tick marks and numbered geru stops, drawn once as it scrolls in; it also carries assessment progress and the journey.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
