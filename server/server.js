@@ -95,7 +95,7 @@ const json = (res, code, obj, extra) => send(res, code, JSON.stringify(obj), nul
 
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json',
   '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.webp': 'image/webp',
-  '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8' };
+  '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8', '.webmanifest': 'application/manifest+json' };
 function serveStatic(req, res, pathname) {
   let rel;
   try { rel = decodeURIComponent(pathname); } catch (e) { return send(res, 400, 'Bad request', 'text/plain'); }
@@ -106,7 +106,7 @@ function serveStatic(req, res, pathname) {
     if (err || !st.isFile()) return send(res, 404, 'Not found', 'text/plain; charset=utf-8');
     const ext = path.extname(file).toLowerCase();
     res.writeHead(200, Object.assign({ 'Content-Type': MIME[ext] || 'application/octet-stream', 'Content-Length': st.size,
-      'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=86400' }, SEC_HEADERS));
+      'Cache-Control': ext === '.html' || /sw\.js$/.test(file) ? 'no-cache' : 'public, max-age=86400' }, SEC_HEADERS));
     if (req.method === 'HEAD') return res.end();
     fs.createReadStream(file).pipe(res);
   });
