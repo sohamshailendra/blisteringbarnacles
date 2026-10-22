@@ -98,12 +98,12 @@ svg.i{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em;fill:none;stroke:
 .topline nav a:hover{color:var(--acc)}
 .topline .lang{margin-left:.5rem}
 /* app sidebar */
-.side{display:flex;flex-direction:column;gap:1.1rem;padding:1.1rem 1rem 1rem;min-height:100%}
+.side{display:flex;flex-direction:column;gap:.9rem;padding:1rem 1rem 1rem;min-height:100%}
 .side .brand{padding:0 .4rem}
 .side .lang{align-self:flex-start;margin-left:.4rem}
 .navg{display:grid;gap:2px}
 .navg>span{font-size:.875rem;color:var(--mut);padding:0 .75rem .3rem;font-weight:500}
-.navg a{display:flex;align-items:center;min-height:32px;padding:0 .75rem;border-radius:6px;color:var(--ink);text-decoration:none;font-size:.9375rem;transition:background-color .14s var(--ease)}
+.navg a{display:flex;align-items:center;min-height:30px;padding:0 .75rem;border-radius:6px;color:var(--ink);text-decoration:none;font-size:.9375rem;transition:background-color .14s var(--ease)}
 .navg a:hover{background:rgba(17,17,17,.05)}
 .navg a.on{background:var(--active);font-weight:600}
 .side-tools{margin-top:auto;display:flex;gap:.2rem;flex-wrap:wrap;padding:.8rem .4rem 0}
@@ -725,7 +725,7 @@ ol.next.card{padding:1rem 1.4rem}
 .card ol.next li::before,.card .plan-steps li::before{box-shadow:0 0 0 3px #fff}
 .nline li::before{transition:opacity .3s var(--ease)}.nline.wait li::before{opacity:0}
 /* spacing */
-.side-nav{display:grid;gap:.9rem}.side .side-tools{margin-top:-.4rem;padding-top:0}
+.side-nav{display:grid;gap:.65rem}.side .side-tools{margin-top:-.4rem;padding-top:0}
 .side .navg>span{padding-top:.2rem}
 .wrap.section>h2.sec-t:not(:first-child),.wrap.section>.sec-t:not(:first-child){margin-top:2.4rem}
 .ledger.steps{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -3684,12 +3684,6 @@ window.FAM_FIELDS = {
     if (slot) {
       var img = slot.querySelector('img'), go = function () { requestAnimationFrame(function () { requestAnimationFrame(function () { slot.classList.add('open'); slot.classList.remove('shut'); }); }); };
       if (still || !img) { slot.classList.remove('shut'); } else if (img.complete) go(); else { img.addEventListener('load', go); img.addEventListener('error', go); setTimeout(go, 1500); }
-    }
-    if (!still && 'IntersectionObserver' in window) {
-      var rio = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
-      ['.wchart li', '.roads > div', '.board li', '.greenwall .wsec > *', '.ochrewall .wsec > *'].forEach(function (sel) {
-        Array.prototype.forEach.call(document.querySelectorAll(sel), function (el, i) { el.classList.add('rv'); el.style.transitionDelay = Math.min(i, 7) * 60 + 'ms'; rio.observe(el); });
-      });
     }
     var line = document.querySelector('.nline');
     if (!line || still || !('IntersectionObserver' in window)) return;
