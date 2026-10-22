@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Free bilingual career guidance for Class 10 and 12 students — assessment, career tree, courses, colleges, scholarships and official links.">
   <meta name="theme-color" content="#16233f">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Mera Bhavishya">
   <title>Mera Bhavishya – Mera Nirnay • Career Guidance Portal</title>
 
   <!-- Fonts: Devanagari + Latin. For a NIC server without internet access, download these
@@ -324,6 +330,14 @@ main:focus{outline:none}
   body.print-back .sheet-box:nth-child(2){page-break-after:auto}
   main:has(.sheets-wrap)>.cert-ui,main:has(.sheets-wrap)>.page-hero{display:none!important}
 }
+/* 17 ── careers groups, filter toggle, home tiles ── */
+.cgroup{margin-bottom:1.6rem}.cgroup-h{font-size:1.25rem;margin:1.2rem 0 .8rem;display:flex;align-items:center;gap:.4rem}
+.ftoggle{display:none}.tiles-more{display:none;margin:1rem 0 0;text-align:center}.frows{display:grid;gap:.9rem}
+@media (max-width:640px){
+  .ftoggle{display:inline-flex;justify-self:start}.frows{display:none}.frows.open{display:grid}
+  .tiles.collapsed .tile:nth-child(n+7){display:none}.tiles-more{display:block}
+  .stats div:last-child{grid-column:1/-1}
+}
 /* 16 ── plan, compare, wellbeing, listen ── */
 .plan-form{margin-bottom:1.2rem}.ff .fld{min-width:0}.ff .fld select,.ff .fld input{width:100%;min-width:0}.plan-sheet{display:grid;gap:1.1rem}.plan-head h2{margin:0}
 .plan-c{border-top:5px solid var(--amber)}.plan-c.backup{border-top-color:var(--teal)}
@@ -341,7 +355,7 @@ main:focus{outline:none}
 .chip-btn{min-height:32px;min-width:32px;padding:.15rem .55rem;display:inline-flex;align-items:center;justify-content:center;gap:.3rem}
 .chip-btn.listen{background:var(--amber);border-color:var(--amber);color:#1b1200;margin-left:.35rem;white-space:nowrap}.chip-btn.listen:hover{background:#f0b24a}
 .chip-btn.listen[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
-.foot-nav a{display:inline-block;padding:.45rem 0;min-height:32px}
+.foot-nav a{display:inline-block;padding:.45rem 0;min-height:32px}.install-btn{margin:0;color:#ffd58a;font-weight:700;text-decoration:underline;min-height:32px}
 .more{position:relative;display:flex}.more-btn{border:0;background:none;font:inherit;font-size:.84rem;font-weight:600;color:var(--ink);padding:.4rem .7rem;border-radius:999px;cursor:pointer;white-space:nowrap}
 .more-btn:hover{background:var(--amber-l)}.more-btn.on{background:var(--navy);color:#fff}
 .more-list{display:none;position:absolute;right:0;top:calc(100% + .4rem);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px rgba(22,35,63,.16);padding:.4rem;min-width:13rem;flex-direction:column;z-index:70}
@@ -506,7 +520,7 @@ window.UI = {
 en: {
  site_title:'Mera Bhavishya – Mera Nirnay', site_sub:'Career Guidance Portal', topbar:'Government of Haryana • Career Guidance for Class 10 & 12 students',
  nav_label:'Main menu', nav_assess:'Career Assessment', nav_tree:'Career Tree', nav_streams:'Choose Stream', nav_careers:'Courses & Careers', nav_colleges:'Colleges',
- nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More',
+ nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More', filters:'Filters', more_tools:'More tools', fewer_tools:'Show fewer', min_left:'about {n} min left', min_less:'less than a minute left', cg_health:'Health & medicine', cg_eng:'Engineering, technology & transport', cg_sci:'Science, research & agriculture', cg_biz:'Commerce, finance & business', cg_soc:'Law, society, languages & teaching', cg_cre:'Creative arts, media, sports & hospitality', cg_uni:'Defence, police & government jobs', cg_skill:'Skills & quick jobs', n_careers:'careers', install:'Install app', installed:'Added to your home screen',
  smaller:'Smaller text', normal:'Normal text', larger:'Larger text', newtab:'opens in new tab',
  back:'Back', next:'Next', all:'All', search:'Search', none:'Nothing found. Try different filters.', see_all:'See all', visit:'Official website', skip:'Skip this question',
  after:'After Class', level:'Level', stream:'Stream', filter:'Show', region:'Region', hry:'Haryana', india:'Rest of India', yrs:'yrs', print:'Print / Save as PDF', retake:'Retake', question:'Question',
@@ -608,7 +622,7 @@ en: {
 hi: {
  site_title:'मेरा भविष्य – मेरा निर्णय', site_sub:'करियर मार्गदर्शन पोर्टल', topbar:'हरियाणा सरकार • कक्षा 10वीं व 12वीं के विद्यार्थियों हेतु करियर मार्गदर्शन',
  nav_label:'मुख्य मेनू', nav_assess:'करियर आकलन', nav_tree:'करियर ट्री', nav_streams:'स्ट्रीम चुनें', nav_careers:'कोर्स व करियर', nav_colleges:'कॉलेज',
- nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें',
+ nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें', filters:'फ़िल्टर', more_tools:'और सुविधाएँ', fewer_tools:'कम दिखाएँ', min_left:'लगभग {n} मिनट बाकी', min_less:'एक मिनट से कम बाकी', cg_health:'स्वास्थ्य व चिकित्सा', cg_eng:'इंजीनियरिंग, तकनीक व परिवहन', cg_sci:'विज्ञान, अनुसंधान व कृषि', cg_biz:'वाणिज्य, वित्त व व्यवसाय', cg_soc:'विधि, समाज, भाषाएँ व शिक्षण', cg_cre:'रचनात्मक कला, मीडिया, खेल व आतिथ्य', cg_uni:'रक्षा, पुलिस व सरकारी नौकरियाँ', cg_skill:'कौशल व जल्दी रोज़गार', n_careers:'करियर', install:'ऐप इंस्टॉल करें', installed:'होम स्क्रीन पर जोड़ा गया',
  smaller:'छोटा अक्षर', normal:'सामान्य अक्षर', larger:'बड़ा अक्षर', newtab:'नए टैब में खुलता है',
  back:'पीछे', next:'आगे', all:'सभी', search:'खोजें', none:'कुछ नहीं मिला। फ़िल्टर बदलकर देखें।', see_all:'सभी देखें', visit:'आधिकारिक वेबसाइट', skip:'यह प्रश्न छोड़ें',
  after:'कक्षा', level:'स्तर', stream:'स्ट्रीम', filter:'दिखाएँ', region:'क्षेत्र', hry:'हरियाणा', india:'शेष भारत', yrs:'वर्ष', print:'प्रिंट / PDF सहेजें', retake:'दोबारा करें', question:'प्रश्न',
@@ -2280,7 +2294,7 @@ window.PROFILE_FIELDS = [
       '<div><b>' + t('site_title') + '</b><p>' + t('foot_about') + '</p></div>' +
       '<div><b>' + t('foot_links') + '</b><p>' + ext('https://india.gov.in', 'india.gov.in') + '<br>' + ext('https://haryana.gov.in', 'haryana.gov.in') + '<br>' + ext('https://www.ncs.gov.in', 'ncs.gov.in') + '</p></div>' +
       '<div class="disc"><b>' + t('disc_t') + '</b><p>' + t('disc') + '</p></div></div>' +
-      '<div class="wrap foot-b"><span>' + t('credit') + '</span><span class="foot-nav"><a href="#/school">' + t('hm_school') + '</a><a href="#/certificate">' + t('cert_btn') + '</a><a href="#/about">' + t('nav_about') + '</a></span></div>';
+      '<div class="wrap foot-b"><span>' + t('credit') + '</span><span class="foot-nav"><button type="button" class="linkbtn install-btn" data-act="install" hidden>📲 ' + t('install') + '</button><a href="#/school">' + t('hm_school') + '</a><a href="#/certificate">' + t('cert_btn') + '</a><a href="#/about">' + t('nav_about') + '</a></span></div>';
   };
 
   /* ---- global event delegation: any element with data-act="name" calls App.actions.name ---- */
@@ -2485,6 +2499,13 @@ window.PROFILE_FIELDS = [
     }).join('') + '</div>';
   }
 
+  /* rough seconds per question type → “about N min left” */
+  function timeLeft(Q, i) {
+    var sec = { sub: 8, int: 10, val: 10, apt: 45, lrn: 12, rd: 12 }, s = 0;
+    for (var k = i; k < Q.length; k++) s += sec[Q[k].sec] || 10;
+    var m = Math.round(s / 60);
+    return m < 1 ? t('min_less') : t('min_left').replace('{n}', m);
+  }
   function questionView() {
     var Q = queue(), i = A.i, q = Q[i], cur = A.ans[q.key], nq = Q.length, pct = Math.round(i / nq * 100);
     var stepNo = SEC_ORDER.indexOf(q.sec) + 2, body = '';
@@ -2504,7 +2525,7 @@ window.PROFILE_FIELDS = [
       body = '<h2 class="q">' + L(q.item.q) + '</h2>' + optRows(cur, q.item.o.map(function (o) { return L(o[1]); }));
     }
     return '<div class="wrap section qwrap"><div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '"><i style="width:' + pct + '%"></i></div>' +
-      '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/7 · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + '</span></div>' +
+      '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/7 · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + ' · ' + timeLeft(Q, i) + '</span></div>' +
       '<div class="card qcard">' + body + '</div>' +
       '<div class="cta-row between"><button class="btn btn-ghost" data-act="a_back">← ' + t('back') + '</button>' +
       (cur != null ? '<button class="btn" data-act="a_next">' + (i === nq - 1 ? t('as_finish') : t('next')) + ' →</button>' : '<span class="muted">' + t('pick_one') + '</span>') + '</div></div>';
@@ -2845,9 +2866,9 @@ window.PROFILE_FIELDS = [
   V.home = function () {
     var m = new Date().getMonth() + 1, n1 = (m % 12) + 1, n2 = (n1 % 12) + 1;
     var upcoming = CALENDAR.filter(function (r) { return r.m.length && (r.m.indexOf(m) > -1 || r.m.indexOf(n1) > -1 || r.m.indexOf(n2) > -1); }).slice(0, 3);
-    var tiles = [['assess', '🧭', 'nav_assess', 'hm_t1'], ['tree', '🌳', 'nav_tree', 'hm_t2'], ['streams', '🔀', 'nav_streams', 'hm_t3'], ['careers', '💼', 'nav_careers', 'hm_t4'],
-      ['colleges', '🏫', 'nav_colleges', 'hm_t5'], ['scholarships', '🎁', 'nav_sch', 'hm_t6'], ['calendar', '🗓️', 'nav_cal', 'hm_t7'], ['plan', '🗺️', 'nav_plan', 'hm_t9'],
-      ['compare', '⚖️', 'nav_compare', 'hm_t10'], ['wellbeing', '💚', 'nav_wellbeing', 'hm_t11'], ['links', '🔗', 'nav_links', 'hm_t8']];
+    var tiles = [['assess', '🧭', 'nav_assess', 'hm_t1'], ['careers', '💼', 'nav_careers', 'hm_t4'], ['tree', '🌳', 'nav_tree', 'hm_t2'], ['plan', '🗺️', 'nav_plan', 'hm_t9'],
+      ['colleges', '🏫', 'nav_colleges', 'hm_t5'], ['scholarships', '🎁', 'nav_sch', 'hm_t6'], ['compare', '⚖️', 'nav_compare', 'hm_t10'], ['wellbeing', '💚', 'nav_wellbeing', 'hm_t11'],
+      ['streams', '🔀', 'nav_streams', 'hm_t3'], ['calendar', '🗓️', 'nav_cal', 'hm_t7'], ['links', '🔗', 'nav_links', 'hm_t8']];
     var emerg = CAREERS.filter(function (c) { return c.tag && c.tag.indexOf('emerging') > -1; });
     var ask = App.A && App.A.step === 'done';
     return '<section class="hero"><div class="wrap hero-in"><div class="hero-copy"><span class="eyebrow">' + t('hm_eyebrow') + '</span>' +
@@ -2863,8 +2884,8 @@ window.PROFILE_FIELDS = [
       [[CAREERS.length, 'st_careers'], [(App.API.meta ? App.API.meta.counts.colleges : COLLEGES.length), 'st_colleges'], [SCHOLARSHIPS.length, 'st_sch'], [LINKS.length, 'st_links']].concat(App.API.meta ? [[App.API.meta.counts.schools, 'st_schools']] : [[2, 'st_langs']]).map(function (s) {
         return '<div><b>' + s[0] + (s[1] !== 'st_langs' ? '+' : '') + '</b><span>' + t(s[1]) + '</span></div>'; }).join('') + '</div></div>' +
 
-      '<section class="wrap section"><h2 class="sec-t">' + t('hm_find') + '</h2><div class="grid g4 tiles">' + tiles.map(function (x, i) {
-        return '<a class="card tile t' + (i % 4) + '" href="#/' + x[0] + '"><span class="ico-tile">' + x[1] + '</span><h3>' + t(x[2]) + '</h3><p>' + t(x[3]) + '</p><span class="go">→</span></a>'; }).join('') + '</div></section>' +
+      '<section class="wrap section"><h2 class="sec-t">' + t('hm_find') + '</h2><div class="grid g4 tiles' + (F.homeAll ? '' : ' collapsed') + '">' + tiles.map(function (x, i) {
+        return '<a class="card tile t' + (i % 4) + '" href="#/' + x[0] + '"><span class="ico-tile">' + x[1] + '</span><h3>' + t(x[2]) + '</h3><p>' + t(x[3]) + '</p><span class="go">→</span></a>'; }).join('') + '</div><p class="tiles-more"><button type="button" class="btn btn-ghost" data-act="home_all" aria-expanded="' + !!F.homeAll + '">' + (F.homeAll ? t('fewer_tools') + ' ▴' : t('more_tools') + ' (' + (tiles.length - 6) + ') ▾') + '</button></p></section>' +
 
       '<section class="wrap section"><div class="grid g2 school-band"><a class="card goldcard sb" href="#/certificate"><span class="ico-tile">🎓</span><div><h3>' + t('hm_cert') + '</h3><p>' + t('hm_cert_p') + '</p></div></a>' +
       '<a class="card sb" href="#/school"><span class="ico-tile">🏫</span><div><h3>' + t('hm_school') + '</h3><p>' + t('hm_school_p') + '</p></div></a></div></section>' +
@@ -2954,24 +2975,47 @@ window.PROFILE_FIELDS = [
       return true;
     });
     if (!list.length) return '<div class="card empty"><h3>' + t('none') + '</h3></div>';
-    return '<div class="grid g3">' + list.map(function (c) {
+    var card = function (c) {
       return '<a class="card car" href="#/career/' + c.id + '"><div class="car-h"><span class="ico-tile">' + c.ico + '</span><div><h3>' + L(c.name) + '</h3><small>' + L(c.dur) + '</small></div></div><p>' + L(c.about).split('. ')[0] + '.</p>' +
         '<div class="minis">' + c.lv.map(function (l) { return '<span class="mini lv">' + t('after') + ' ' + l + '</span>'; }).join('') + '<span class="mini">' + costTxt(c.cost) + '</span>' + (c.tag ? '<span class="mini new">🚀 ' + t('new26') + '</span>' : '') + '</div><div class="codes">' + code(c.ri) + '</div></a>';
-    }).join('') + '</div>';
+    };
+    return '<p class="muted dir-count">' + list.length + ' ' + t('n_careers') + '</p>' + CGROUPS.map(function (g) {
+      var mine = list.filter(function (c) { return (CGROUP_OF[c.id] || 'skill') === g[0]; });
+      return mine.length ? '<section class="cgroup"><h2 class="cgroup-h">' + g[1] + ' ' + t('cg_' + g[0]) + ' <span class="cnt-badge">' + mine.length + '</span></h2><div class="grid g3">' + mine.map(card).join('') + '</div></section>' : '';
+    }).join('');
   }
+  /* headings on the careers page — every career belongs to one group (unlisted ids fall into “skills”) */
+  var CGROUPS = [['health', '🏥'], ['eng', '⚙️'], ['sci', '🔬'], ['biz', '📈'], ['soc', '⚖️'], ['cre', '🎨'], ['uni', '🎖️'], ['skill', '🛠️']];
+  var CGROUP_OF = {};
+  [['health', 'medicine nursing pharma paramedical veterinary physio-allied'],
+   ['eng', 'engineering cs-ai cyber space architecture ev-green drone aviation merchant-navy polytechnic'],
+   ['sci', 'science-research biotech-forensic agri-dairy'],
+   ['biz', 'ca-cs commerce-fin management banking-insurance economics-stats entrepreneur logistics-retail'],
+   ['soc', 'law civil-services media psych-social teaching humanities-lang'],
+   ['cre', 'design-arts avgc fashion-textile music-performing hotel sports'],
+   ['uni', 'nda agniveer police govjobs'],
+   ['skill', 'iti shortterm ites-bpo']].forEach(function (g) { g[1].split(' ').forEach(function (id) { CGROUP_OF[id] = g[0]; }); });
+
   V.careers = function () {
     var f = F.careers;
     return hero(t('nav_careers'), t('car_title'), t('car_lead')) + '<div class="wrap section"><div class="filters card">' +
       '<label class="search"><span class="sr">' + t('search') + '</span><input type="search" id="cq" value="' + esc(f.q) + '" placeholder="🔍 ' + t('car_search') + '" data-input="car_q"></label>' +
-      '<div class="frow"><span>' + t('level') + '</span>' + chipRow([['all', t('all')], ['10', t('after') + ' 10'], ['12', t('after') + ' 12']], f.lv, 'car_lv') + '</div>' +
+      ftoggle(f) + '<div class="frows' + (f.open ? ' open' : '') + '"><div class="frow"><span>' + t('level') + '</span>' + chipRow([['all', t('all')], ['10', t('after') + ' 10'], ['12', t('after') + ' 12']], f.lv, 'car_lv') + '</div>' +
       '<div class="frow"><span>' + t('stream') + '</span>' + chipRow([['all', t('all')], ['pcm', t('st_pcm')], ['pcb', t('st_pcb')], ['commerce', t('st_commerce')], ['arts', t('st_arts')]], f.st, 'car_st') + '</div>' +
-      '<div class="frow"><span>' + t('filter') + '</span>' + chipRow([['', t('all')], ['emerging', '🚀 ' + t('new26')]], f.tag, 'car_tg') + '</div></div>' +
+      '<div class="frow"><span>' + t('filter') + '</span>' + chipRow([['', t('all')], ['emerging', '🚀 ' + t('new26')]], f.tag, 'car_tg') + '</div></div></div>' +
       '<div id="clist" aria-live="polite">' + careerList() + '</div></div>';
   };
   AC.car_q = function (el) { F.careers.q = el.value; document.getElementById('clist').innerHTML = careerList(); };
   AC.car_lv = function (el) { F.careers.lv = el.getAttribute('data-v'); App.rerender(true); };
   AC.car_st = function (el) { F.careers.st = el.getAttribute('data-v'); App.rerender(true); };
   AC.car_tg = function (el) { F.careers.tag = el.getAttribute('data-v'); App.rerender(true); };
+  /* phones: filters fold behind one button that shows how many are active */
+  function ftoggle(f) {
+    var n = (f.lv !== 'all' ? 1 : 0) + (f.st !== 'all' ? 1 : 0) + (f.tag ? 1 : 0);
+    return '<button type="button" class="btn btn-ghost sm ftoggle" data-act="car_ft" aria-expanded="' + !!f.open + '">⚙️ ' + t('filters') + (n ? ' <span class="cnt-badge">' + n + '</span>' : '') + ' ' + (f.open ? '▴' : '▾') + '</button>';
+  }
+  AC.car_ft = function () { F.careers.open = !F.careers.open; App.rerender(true); };
+  AC.home_all = function () { F.homeAll = !F.homeAll; App.rerender(true); };
 
   var CTYPE = { eng: ['engineering', 'cs-ai', 'cyber', 'space', 'architecture', 'ev-green', 'drone', 'polytechnic', 'aviation', 'merchant-navy'], med: ['medicine', 'nursing', 'pharma', 'paramedical', 'veterinary', 'physio-allied'], edu: ['teaching'], agri: ['agri-dairy'],
     mgmt: ['management', 'ca-cs', 'commerce-fin', 'entrepreneur', 'logistics-retail', 'banking-insurance'], law: ['law'], design: ['design-arts', 'avgc', 'media', 'hotel', 'fashion-textile', 'music-performing'], sci: ['science-research', 'biotech-forensic'], uni: ['civil-services', 'teaching', 'psych-social', 'commerce-fin', 'media', 'economics-stats', 'humanities-lang'], other: ['iti', 'shortterm', 'sports', 'polytechnic', 'ites-bpo'] };
@@ -3916,7 +3960,17 @@ window.PROFILE_FIELDS = [
   };
   if (synth && synth.onvoiceschanged !== undefined) synth.onvoiceschanged = function () {};   // warms up the voice list
   window.addEventListener('hashchange', stop);
-  var _chrome = App.chrome; App.chrome = function (a) { _chrome(a); setBtn(); };   // relabel when language changes
+  var _chrome = App.chrome; App.chrome = function (a) { _chrome(a); setBtn(); showInstall(); };   // relabel when language changes
+
+  /* ================= INSTALL & OFFLINE ================= */
+  var installEvt = null;
+  function showInstall() { var b = document.querySelector('.install-btn'); if (b) b.hidden = !installEvt; }
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); installEvt = e; showInstall(); });
+  window.addEventListener('appinstalled', function () { installEvt = null; showInstall(); });
+  AC.install = function () { if (!installEvt) return; installEvt.prompt(); installEvt.userChoice.then(function () { installEvt = null; showInstall(); }); };
+  if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+    window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+  }
 })();
 
 </script>
