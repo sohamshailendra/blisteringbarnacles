@@ -159,9 +159,9 @@ html[lang=en] body:not(.is-app) .foot-name{letter-spacing:-.04em}
 .chip.on{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:600}
 .chip:active{transform:scale(.97)}
 .tag,.badge{display:inline-block;font-size:.8125rem;font-weight:600;border-radius:999px;padding:.1rem .6rem}
-.tag{background:var(--pill);color:var(--ink)}.badge{background:var(--ok-t);color:var(--ok)}
+.tag{background:var(--pill);color:var(--ink)}.badge{background:var(--ink);color:#fff}
 .mini{display:inline-block;background:var(--tint);color:var(--mut);border-radius:999px;padding:.05rem .6rem;font-size:.8125rem;font-weight:500}
-.mini.ok{background:var(--ok-t);color:var(--ok)}.mini.new,.mini.lv{background:var(--acc-t);color:var(--acc-d)}
+.mini.ok{background:var(--pill);color:var(--ink)}.mini svg.i{margin-right:.2em;width:.95em;height:.95em}.mini.new,.mini.lv{background:var(--acc-t);color:var(--acc-d)}
 .minis{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.6rem}
 .cdot{display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:6px;color:#fff;font-size:.8125rem;font-weight:700;margin-right:.2rem}.codes{margin-top:.6rem}.codes.lg .cdot{width:2.4rem;height:2.4rem;font-size:1.1rem}
 .pills{display:flex;flex-wrap:wrap;gap:.4rem}
@@ -212,7 +212,7 @@ html[lang=en] .name{letter-spacing:-.045em}
 .stairs li:nth-child(1){--c:1}.stairs li:nth-child(2){--c:3}.stairs li:nth-child(3){--c:5}.stairs li:nth-child(4){--c:6}
 .stairs h2,.stairs b{display:block;font-family:var(--head);font-weight:600;font-size:clamp(2rem,1rem + 3.3vw,4.6rem);line-height:1;margin:0;color:var(--ink)}
 html[lang=en] .stairs h2,html[lang=en] .stairs b{letter-spacing:-.035em}
-.stairs li:last-child b{color:var(--acc)}
+
 .stairs p{margin:.75rem 0 0;max-width:36ch;color:var(--ink)}
 .rows-sec .axis{padding-left:calc((100% + 1rem) / 12 * 2)}
 .rows-sec .statement{display:flex;align-items:center;margin:0 0 3.5rem}
@@ -234,13 +234,13 @@ html[lang=en] .frow2 h3{letter-spacing:-.025em}
 .tbl-sec h2{font-size:var(--s-head);line-height:1;margin:0 0 clamp(3rem,8vh,6rem);max-width:14ch;padding-left:3vw}
 html[lang=en] .tbl-sec h2{letter-spacing:-.035em}
 .tbl-sec .tgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:0 1rem}
-.tbl-sec .tpic{grid-column:1 / span 4;grid-row:1 / span 2;align-self:end;margin:0}.tbl-sec .tpic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
-.tbl-sec .tname{grid-column:7 / span 1;grid-row:1;font-size:.875rem;color:var(--mut);padding-top:.15rem}
-.tbl-sec ol{grid-column:8 / span 5;grid-row:1;list-style:none;margin:0;padding:0}
+.tbl-sec .tpic{grid-column:1 / span 4;grid-row:1 / span 3;align-self:end;margin:0}.tbl-sec .tpic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.tbl-sec .tname{grid-column:8 / span 5;grid-row:1;margin-bottom:.4rem;font-size:.875rem;color:var(--mut);padding-top:.15rem}
+.tbl-sec ol{grid-column:8 / span 5;grid-row:2;list-style:none;margin:0;padding:0}
 .tbl-sec li{display:grid;grid-template-columns:5.5rem minmax(0,1fr) auto;gap:1rem;padding:.6rem 0;align-items:baseline;font-size:1rem}
 .tbl-sec li:nth-child(4n+1):not(:first-child){margin-top:1.4rem}
 .tbl-sec li span{color:var(--mut);font-variant-numeric:tabular-nums}.tbl-sec li em{font-style:normal;color:var(--mut);text-align:right;white-space:nowrap}
-.tbl-sec .tfoot{grid-column:8 / span 5;grid-row:2;margin-top:1.4rem}
+.tbl-sec .tfoot{grid-column:8 / span 5;grid-row:3;margin-top:1.4rem}
 .dropcap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:0 1rem}
 .dropcap .facts2{grid-column:1 / span 2;display:grid;gap:1rem;align-content:start;font-size:.875rem;color:var(--mut)}
 .dropcap .facts2 b{display:block;color:var(--ink);font-size:1rem;font-weight:600}
@@ -249,7 +249,7 @@ html[lang=en] .tbl-sec h2{letter-spacing:-.035em}
 .dropcap .txt p:first-child b{color:var(--ink);font-weight:600}
 .dropcap .txt img{float:left;width:3.6em;height:3.6em;object-fit:cover;margin:.12em .5em 0 0;border-radius:4px}
 .dropcap .cta-row{margin-top:.4rem}
-.ask{background:var(--ink);color:#fff;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;text-align:center;padding:2rem 0 1.5rem;overflow:hidden}
+.ask{background:var(--ink);color:#fff;min-height:min(100svh,820px);display:grid;grid-template-rows:auto 1fr auto;text-align:center;padding:2rem 0 1.5rem;overflow:hidden}
 .ask .askl{color:#fff;font-family:var(--head);font-weight:600;font-size:clamp(3.6rem,1rem + 9vw,10.5rem);line-height:1;margin:0}
 html[lang=en] .ask .askl{letter-spacing:-.045em}
 .ask .mid{display:grid;place-content:center;gap:1rem;padding:2rem 0}
@@ -280,9 +280,9 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .col h3{font-size:1.0625rem;margin:.5rem 0 .2rem}.col .loc{color:var(--mut);font-size:.9375rem}.col p{margin-bottom:.3rem;font-size:.9375rem}.col small{color:var(--mut);display:inline-block;min-width:4rem;font-weight:500;font-size:.875rem}
 .linkcard{display:flex;align-items:center;gap:.9rem;text-decoration:none;color:var(--ink)}.linkcard small{display:block;color:var(--acc);word-break:break-all}.linkcard:hover{box-shadow:0 0 0 1px var(--line-2)}
 .empty{text-align:center;padding:2.5rem}
-.notice{background:var(--warn-t);border-radius:var(--r);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.9375rem}
+.notice{background:var(--tint);border-radius:var(--r);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.9375rem}
 .notice.warn{background:var(--err-t)}
-.notice.priv{background:var(--ok-t)}
+.notice.priv{background:var(--tint)}
 .sty .sm,.ori{margin:.6rem 0 0;font-size:.9375rem}.ori{margin-bottom:.6rem}
 .fam .rec.slim{display:flex;gap:.8rem;align-items:center;padding:.8rem 1rem;margin:.6rem 0;background:var(--tint);border-radius:var(--r-s);text-decoration:none;color:inherit}.fam .rec.slim h4{margin:0 0 .2rem}
 .subrow{display:grid;grid-template-columns:7.5rem 1fr auto;align-items:center;gap:.6rem;margin:.45rem 0;font-size:.9375rem}
@@ -317,6 +317,8 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .leaf:hover{box-shadow:0 0 0 1px var(--line-2)}.lt{display:flex;flex-direction:column;line-height:1.3}.lt b{font-size:1rem;font-weight:600}.lt small{color:var(--mut);font-size:.875rem}
 .leaf-li::before{top:1.3rem!important}
 /* 10 ── assessment ── */
+.ledger{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 2rem;background:#fff;border-radius:var(--r);padding:.4rem 1.4rem;box-shadow:0 0 0 1px rgba(17,17,17,.06)}
+.ledger .step{padding:1rem 0;border-top:1px solid var(--line)}.ledger .step:nth-child(-n+3){border-top:0}
 .steps .step{position:relative}
 .step-n{display:none}.step p{color:var(--mut);font-size:.9375rem;margin:0}.step h3{font-size:1.0625rem;margin-bottom:.3rem}
 .research{margin-top:2rem}.research ul{padding-left:1.2rem;font-size:.9375rem}.research li{margin-bottom:.4rem}
@@ -347,7 +349,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .ctx{font-size:.9375rem;background:var(--tint);border-radius:var(--r-s);padding:.6rem .8rem}
 .stream-card{background:var(--card)}.stream-big{font-size:2.25rem;font-weight:600;color:var(--ink);line-height:1.1}
 .rec-h{display:flex;gap:.8rem;align-items:center}.rec h4{margin:0 0 .2rem}
-.fit{display:inline-block;font-size:.8125rem;font-weight:600;border-radius:999px;padding:.05rem .55rem;text-decoration:none}.f3{background:var(--ok-t);color:var(--ok)}.f2{background:var(--acc-t);color:var(--acc-d)}.f1{background:var(--tint);color:var(--mut)}
+.fit{display:inline-block;font-size:.8125rem;font-weight:600;border-radius:999px;padding:.05rem .55rem;text-decoration:none}.f3{background:var(--ink);color:#fff}.f2{background:var(--acc-t);color:var(--acc-d)}.f1{background:var(--tint);color:var(--mut)}
 .meter{height:6px;background:var(--tint-2);border-radius:999px;margin:.8rem 0 .5rem;overflow:hidden}.meter i{display:block;height:100%;background:var(--acc);border-radius:999px}
 .why{font-size:.9375rem;color:var(--mut);margin:0}
 .next{padding-left:1.4rem}.next li{margin:.55rem 0}.sch-mini p{font-size:.9375rem;color:var(--mut)}
@@ -373,7 +375,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .stream h3{display:flex;align-items:center;gap:.7rem}.stream{box-shadow:0 0 0 1px rgba(17,17,17,.06),inset 0 3px 0 var(--acc2,var(--ink))}
 .stream ul{padding-left:1.1rem;font-size:.9375rem}
 .q4 p{margin:.2rem 0}.ticks{padding-left:1.2rem}.ticks li{margin-bottom:.45rem;font-size:.9375rem}.sch-b{margin-top:1.4rem}
-.sch .sch-h{display:flex;justify-content:space-between;gap:.6rem;align-items:flex-start}.sch h3{font-size:1.0625rem}.sch.hi{box-shadow:0 0 0 1.5px var(--ok)}.sch p{font-size:.9375rem;color:var(--mut)}
+.sch .sch-h{display:flex;justify-content:space-between;gap:.6rem;align-items:flex-start}.sch h3{font-size:1.0625rem}.sch.hi{box-shadow:0 0 0 1.5px var(--ink)}.sch p{font-size:.9375rem;color:var(--mut)}
 .rules{margin-top:1.6rem}.rules ol{columns:2;column-gap:2rem;padding-left:1.2rem}.rules li{margin-bottom:.5rem;break-inside:avoid}
 /* 13 ── directory, branch pages, school corner ── */
 .node-row{display:flex;align-items:stretch;gap:.4rem}.node-row .node-b{flex:1;min-width:0}
@@ -447,7 +449,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .cmp{width:100%;border-collapse:collapse;min-width:640px}.cmp th,.cmp td{padding:.75rem .9rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;font-size:.9375rem}
 .cmp thead th{color:var(--ink);font-size:1.0625rem;font-weight:600}.cmp tbody th{color:var(--mut);width:11rem;font-size:.875rem;font-weight:500}
 .cmp .ticks{margin:0;padding-left:1rem}.cmp .ticks li{margin-bottom:.2rem}
-.helpline{background:var(--ok-t);margin-bottom:1.2rem}.helpline .grid{margin-top:.6rem}
+.helpline{background:var(--tint);margin-bottom:1.2rem}.helpline .grid{margin-top:.6rem}
 .hl{display:flex;flex-direction:column;gap:.2rem;background:#fff;border-radius:var(--r);padding:.9rem 1rem;text-decoration:none;color:var(--ink)}.hl b{font-size:1.75rem;color:var(--ink);line-height:1.1;font-variant-numeric:tabular-nums;font-weight:600}.hl small{color:var(--mut)}.hl:hover{box-shadow:0 0 0 1px var(--line-2)}
 .wb .card h3{margin-bottom:.6rem}.worries{margin-bottom:1.1rem}.worries li{margin-bottom:.55rem}
 /* 16 ── class session ── */
@@ -482,7 +484,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
   .g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.detail{grid-template-columns:1fr}
   .foot{grid-template-columns:1fr;gap:1.4rem}.timeline{grid-template-columns:repeat(2,1fr)}
   .radar-wrap{grid-template-columns:1fr}.radar{max-width:300px;margin:auto}
-  .steps{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}.ledger{grid-template-columns:1fr 1fr}.ledger .step:nth-child(3){border-top:1px solid var(--line)}
   .two-col{grid-template-columns:1fr;gap:2rem}
   .rows-sec .axis{padding-left:0}
   .tbl-sec .tname{display:none}.tbl-sec ol,.tbl-sec .tfoot{grid-column:1 / -1;grid-row:auto}.tbl-sec .tpic{grid-column:5 / -1;grid-row:auto;margin-top:2rem}
@@ -516,7 +518,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
   .qcard{padding:1.3rem 1rem}.frow>span{min-width:100%}.bar,.subrow{grid-template-columns:5.75rem 1fr auto}
   .tbl thead{display:none}.tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}.tbl tr{padding:.6rem 0;border-bottom:1px solid var(--line)}.tbl td{border:0;padding:.3rem 1rem}.tbl td::before{content:attr(data-l);display:block;font-size:.8125rem;font-weight:500;color:var(--mut)}
   .tree{margin-left:.2rem;padding-left:1.5rem}.tree li::before,.kids li::before{left:-.95rem;width:.95rem}.node-b{padding:.65rem .75rem}
-  .steps{grid-template-columns:1fr}.node-row{flex-wrap:wrap}.node-more{flex:1 0 100%;justify-content:center}
+  .steps,.ledger{grid-template-columns:1fr}.ledger .step:nth-child(2){border-top:1px solid var(--line)}.node-row{flex-wrap:wrap}.node-more{flex:1 0 100%;justify-content:center}
   .ftoggle{display:inline-flex;justify-self:start}.frows{display:none}.frows.open{display:grid}
   .jr{grid-template-columns:1fr;gap:.35rem}
   .restore .frow{flex-wrap:wrap}.rinput{flex:1 1 100%}.cod{align-items:flex-start}
@@ -2557,7 +2559,7 @@ window.FAM_FIELDS = {
     ext: '<path d="M14 5h5v5M19 5l-8 8M18 14v5H5V6h5"/>', speaker: '<path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M15.5 9a4 4 0 010 6M18 6.5a7.5 7.5 0 010 11"/>',
     stop: '<rect x="7" y="7" width="10" height="10" rx="1"/>', print: '<path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"/>',
     users: '<circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.4 3-5 6-5s5.4 1.6 6 5M16 11a2.8 2.8 0 100-5.6M17.5 14.2c2 .5 3.2 2 3.5 4.8"/>',
-    plus: '<path d="M12 5v14M5 12h14"/>', trash: '<path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/>', edit: '<path d="M4 20h4L19 9l-4-4L4 16z"/>'
+    plus: '<path d="M12 5v14M5 12h14"/>', close: '<path d="M6 6l12 12M18 6L6 18"/>', chev: '<path d="M6 9l6 6 6-6"/>', trash: '<path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/>', edit: '<path d="M4 20h4L19 9l-4-4L4 16z"/>'
   };
   window.icon = function (n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (IC[n] || '') + '</svg>'; };
   window.crumb = function (label, mid) {
@@ -2843,8 +2845,8 @@ window.FAM_FIELDS = {
     var started = A.step !== 'intro' || Object.keys(A.ans).length;
     var steps = [['', 'as_s1', 'as_s1d'], ['', 'as_sub', 'as_subd'], ['', 'as_s2', 'as_s2d'], ['', 'as_val', 'as_vald'], ['', 'as_per', 'as_perd'], ['', 'as_ctx', 'as_ctxd'], ['', 'as_s3', 'as_s3d'], ['', 'as_s4', 'as_s4d'], ['', 'as_rd', 'as_rdd']];
     return '<section class="page-hero"><div class="wrap">' + crumb(t('nav_assess')) + '<h1>' + t('as_title') + '</h1><p class="lead">' + t('as_lead') + '</p></div></section>' +
-      '<div class="wrap section"><div class="grid g4 steps">' + steps.map(function (s, i) {
-        return '<div class="card step"><span class="step-n">' + (i + 1) + '</span><div class="ico-tile">' + s[0] + '</div><h3>' + t(s[1]) + '</h3><p>' + t(s[2]) + '</p></div>';
+      '<div class="wrap section"><div class="ledger steps">' + steps.map(function (s, i) {
+        return '<div class="step"><span class="step-n">' + (i + 1) + '</span><div class="ico-tile">' + s[0] + '</div><h3>' + t(s[1]) + '</h3><p>' + t(s[2]) + '</p></div>';
       }).join('') + '</div>' +
       '<div class="cta-row"><button class="btn btn-lg" data-act="a_start">' + (started ? t('as_restart') : t('as_begin')) + ' →</button>' +
       (started && A.step !== 'done' && A.step !== 'intro' ? '<button class="btn btn-ghost btn-lg" data-act="a_resume">' + t('as_resume') + '</button>' : '') +
@@ -2907,7 +2909,7 @@ window.FAM_FIELDS = {
       var pk = cur || [];
       body = '<p class="q-pre">' + t('as_val') + '</p><h2 class="q">' + t('q_pick3') + '</h2><div class="opts pick3" role="group">' + VALUES_ITEMS.map(function (it) {
         var on = pk.indexOf(it[0]) > -1;
-        return '<button type="button" class="opt' + (on ? ' on' : '') + '" data-act="a_pick" data-v="' + it[0] + '" aria-pressed="' + on + '"><b>' + (on ? '✓' : '') + '</b>' + esc(L(it[1])) + '</button>';
+        return '<button type="button" class="opt' + (on ? ' on' : '') + '" data-act="a_pick" data-v="' + it[0] + '" aria-pressed="' + on + '"><b>' + (on ? icon('check') : '') + '</b>' + esc(L(it[1])) + '</button>';
       }).join('') + '</div><p class="hint pick-n">' + t('pick_n').replace('{n}', pk.length) + '</p>';
     } else if (q.type === 'imp') {
       body = '<p class="q-pre">' + t('q_val') + '</p><h2 class="q">' + L(q.item[1]) + '</h2>' + scaleRow(cur, IMP, t('q_val'));
@@ -3364,7 +3366,7 @@ window.FAM_FIELDS = {
     /* scholarships */
     var ms = R.sch;
     html += '<h2 class="sec-t">' + t('res_sch') + '</h2><div class="grid g2">' + ms.map(function (x) {
-      return '<div class="card sch-mini"><h4>' + L(x.s.name) + '</h4><p>' + L(x.s.who) + '</p><div class="minis">' + x.m.reasons.map(function (k) { return '<span class="mini ok">✓ ' + t(k) + '</span>'; }).join('') + (x.m.later ? '<span class="mini">' + t('sm_later') + '</span>' : '') + '</div>' + (x.s.url ? ext(x.s.url, x.s.site) : '') + '</div>';
+      return '<div class="card sch-mini"><h4>' + L(x.s.name) + '</h4><p>' + L(x.s.who) + '</p><div class="minis">' + x.m.reasons.map(function (k) { return '<span class="mini ok">' + icon('check') + t(k) + '</span>'; }).join('') + (x.m.later ? '<span class="mini">' + t('sm_later') + '</span>' : '') + '</div>' + (x.s.url ? ext(x.s.url, x.s.site) : '') + '</div>';
     }).join('') + '</div><p><a class="btn btn-ghost" href="#/scholarships">' + t('res_sch_all') + ' →</a></p>';
 
     /* next steps — chosen by readiness stage */
@@ -3413,7 +3415,7 @@ window.FAM_FIELDS = {
     st4: 'Print your report card.', st4d: 'A certificate and a one-page career profile to talk over at home and at school.',
     rows_t: 'Every road, in one place.', go_open: 'Open', also: 'Also here:',
     up_t: 'Exams and admissions coming up', up_word: 'Dates', up_all: 'Full exam calendar',
-    sch_lead: 'For schools and counsellors.', sch_p2: 'Names and answers stay on that device. Nothing is uploaded, and one tap deletes the class when you are done.',
+    hm_sch_lead: 'For schools and counsellors.', sch_p2: 'Names and answers stay on that device. Nothing is uploaded, and one tap deletes the class when you are done.',
     f1: '1 device', f1d: 'computer or tablet', f2: '54 questions', f2d: 'about 15 minutes each', f3: 'Report cards', f3d: 'printed in one go',
     ask1: 'Class 10', ask2: 'or 12?', ask_or: 'or', ask_p: 'Either way you see every road open to you, then take the assessment.',
     img_credit: 'Pictures are illustrations made with Figma AI, not real students or schools.'
@@ -3429,7 +3431,7 @@ window.FAM_FIELDS = {
     st4: 'अपना रिपोर्ट कार्ड प्रिंट करें।', st4d: 'एक प्रमाण-पत्र और एक पेज की करियर प्रोफ़ाइल, घर व स्कूल में बात करने के लिए।',
     rows_t: 'हर रास्ता, एक जगह।', go_open: 'खोलें', also: 'यहाँ और भी:',
     up_t: 'आने वाली परीक्षाएँ व दाख़िले', up_word: 'तिथियाँ', up_all: 'पूरा परीक्षा कैलेंडर',
-    sch_lead: 'स्कूलों व परामर्शदाताओं के लिए।', sch_p2: 'नाम व उत्तर उसी उपकरण पर रहते हैं। कुछ भी अपलोड नहीं होता, और काम पूरा होने पर एक टैप में पूरी कक्षा का डेटा मिट जाता है।',
+    hm_sch_lead: 'स्कूलों व परामर्शदाताओं के लिए।', sch_p2: 'नाम व उत्तर उसी उपकरण पर रहते हैं। कुछ भी अपलोड नहीं होता, और काम पूरा होने पर एक टैप में पूरी कक्षा का डेटा मिट जाता है।',
     f1: '1 उपकरण', f1d: 'कंप्यूटर या टैबलेट', f2: '54 प्रश्न', f2d: 'हर एक को लगभग 15 मिनट', f3: 'रिपोर्ट कार्ड', f3d: 'एक साथ प्रिंट',
     ask1: 'कक्षा 10', ask2: 'या 12?', ask_or: 'या', ask_p: 'दोनों में आप पहले अपने लिए खुले हर रास्ते को देखते हैं, फिर आकलन करते हैं।',
     img_credit: 'चित्र Figma AI से बने उदाहरण हैं, असली विद्यार्थी या विद्यालय नहीं।'
@@ -3444,7 +3446,7 @@ window.FAM_FIELDS = {
       var R = App.report();
       return '<div class="resume"><h2>' + t('wb_back') + '</h2><p class="wb-code">' + t('wb_code') + ' ' + R.r.code.split('').map(function (x) { return '<b style="background:' + RIASEC[x].c + '">' + x + '</b>'; }).join('') + '</p>' +
         R.prac.slice(0, 3).map(function (s) { var v = Math.round(s.prac); return '<a class="match" href="#/career/' + s.c.id + '"><b>' + esc(L(s.c.name)) + '</b><small>' + lb(v) + ' · ' + v + '%</small></a>'; }).join('') +
-        '<div class="cta-row"><a class="btn" href="#/results">' + t('wb_res') + '</a><a class="btn btn-ghost" href="#/plan">' + t('nav_plan') + '</a></div><button type="button" class="linkbtn" data-act="a_clear">' + t('wb_notyou') + '</button></div>';
+        '<div class="cta-row"><a class="btn" href="#/results">' + t('wb_res') + '</a><a class="btn btn-ghost" href="#/certificate">' + t('cert_btn') + '</a><a class="btn btn-ghost" href="#/plan">' + t('nav_plan') + '</a></div><button type="button" class="linkbtn" data-act="a_clear">' + t('wb_notyou') + '</button></div>';
     }
     if (A && (A.step === 'q' || A.step === 'profile')) {
       var pct = App.progress ? App.progress() : 0;
@@ -3467,7 +3469,7 @@ window.FAM_FIELDS = {
       '<p class="lead" style="margin-top:1.4rem">' + t('hm_sub') + '</p></div>' +
       '<div class="hero2-foot"><div>' + ((ask || started) ? resume(ask) :
         '<div class="class-pick"><span>' + t('hm_pick') + '</span><a href="#/tree" data-act="tree_go" data-v="10">' + t('cls_10') + '</a><a href="#/tree" data-act="tree_go" data-v="12">' + t('cls_12') + '</a></div>') + '</div>' +
-      '<div class="cta-row" style="margin:0">' + (ask ? '<a class="btn btn-ghost btn-lg" href="#/certificate">' + t('cert_btn') + '</a>' : '<a class="btn acc btn-lg" href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a>') + '</div></div></section>' +
+      (ask ? '' : '<div class="cta-row" style="margin:0"><a class="btn acc btn-lg" href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a></div>') + '</div></section>' +
 
       '<section class="hsec wrap" aria-labelledby="st-h"><ol class="stairs">' +
       [1, 2, 3, 4].map(function (i) { return '<li>' + (i === 1 ? '<h2 id="st-h">' + t('st1') + '</h2>' : '<b>' + t('st' + i) + '</b>') + '<p>' + t('st' + i + 'd') + '</p></li>'; }).join('') + '</ol></section>' +
@@ -3481,7 +3483,7 @@ window.FAM_FIELDS = {
       '<p class="tfoot"><a href="#/calendar">' + t('up_all') + ' ' + icon('arrow') + '</a></p></div></section>' +
 
       '<section class="hsec wrap dropcap" aria-labelledby="sch-h"><div class="facts2"><span><b>' + t('f1') + '</b>' + t('f1d') + '</span><span><b>' + t('f2') + '</b>' + t('f2d') + '</span><span><b>' + t('f3') + '</b>' + t('f3d') + '</span></div>' +
-      '<div class="txt"><p>' + pic('classroom', '', '120px') + '<b id="sch-h">' + t('sch_lead') + '</b> ' + t('hm_sch_p') + '</p><p>' + t('sch_p2') + '</p>' +
+      '<div class="txt"><p>' + pic('classroom', '', '120px') + '<b id="sch-h">' + t('hm_sch_lead') + '</b> ' + t('hm_sch_p') + '</p><p>' + t('sch_p2') + '</p>' +
       '<p class="cta-row" style="font-size:1rem"><a class="btn" href="#/class">' + icon('users') + t('hm_cls') + '</a><a class="btn btn-ghost" href="#/school">' + t('hm_school') + '</a></p></div></section>' +
 
       '<section class="ask" aria-labelledby="ask-h"><h2 class="sr" id="ask-h">' + t('ask1') + ' ' + t('ask2') + '</h2><p class="askl" aria-hidden="true">' + t('ask1') + '</p><div class="mid"><div class="pair"><a class="btn" href="#/tree" data-act="tree_go" data-v="10">' + t('hm_c10') + '</a><span>' + t('ask_or') + '</span><a class="btn" href="#/tree" data-act="tree_go" data-v="12">' + t('hm_c12') + '</a></div><p>' + t('ask_p') + '</p></div><p class="askl" aria-hidden="true">' + t('ask2') + '</p></section>';
@@ -3516,7 +3518,7 @@ window.FAM_FIELDS = {
     }
     var key = tk + ':' + n.id, open = App.treeOpen[key], cc = n.c || col;
     return '<li class="node d' + depth + ' ' + (cc || '') + (open ? ' open' : '') + '"><div class="node-row"><button class="node-b" data-act="tnode" data-id="' + key + '" aria-expanded="' + !!open + '">' +
-      '<span class="ico">' + n.ico + '</span><span class="nt"><b>' + L(n.name) + '</b>' + (n.note ? '<small>' + L(n.note) + '</small>' : '') + '</span><span class="cnt" title="' + t('tr_careers') + '">' + leafCount(n) + '</span><span class="chev" aria-hidden="true">▾</span></button>' +
+      '<span class="ico">' + n.ico + '</span><span class="nt"><b>' + L(n.name) + '</b>' + (n.note ? '<small>' + L(n.note) + '</small>' : '') + '</span><span class="cnt" title="' + t('tr_careers') + '">' + leafCount(n) + '</span><span class="chev" aria-hidden="true">' + icon('chev') + '</span></button>' +
       '<a class="node-more" href="#/branch/' + n.id + '/' + tk + '" aria-label="' + t('tr_details') + ': ' + esc(L(n.name)) + '">' + t('tr_details') + ' →</a></div>' +
       (open ? '<ul class="kids">' + n.kids.map(function (k) { return treeNode(k, depth + 1, cc, tk); }).join('') + '</ul>' : '') + '</li>';
   }
@@ -3615,7 +3617,7 @@ window.FAM_FIELDS = {
   /* phones: filters fold behind one button that shows how many are active */
   function ftoggle(f) {
     var n = (f.lv !== 'all' ? 1 : 0) + (f.st !== 'all' ? 1 : 0) + (f.tag ? 1 : 0);
-    return '<button type="button" class="btn btn-ghost sm ftoggle" data-act="car_ft" aria-expanded="' + !!f.open + '">' + t('filters') + (n ? ' <span class="cnt-badge">' + n + '</span>' : '') + ' ' + (f.open ? '▴' : '▾') + '</button>';
+    return '<button type="button" class="btn btn-ghost sm ftoggle" data-act="car_ft" aria-expanded="' + !!f.open + '">' + t('filters') + (n ? ' <span class="cnt-badge">' + n + '</span>' : '') + ' ' + icon('chev') + '</button>';
   }
   AC.car_ft = function () { F.careers.open = !F.careers.open; App.rerender(true); };
   AC.home_all = function () { F.homeAll = !F.homeAll; App.rerender(true); };
@@ -3644,11 +3646,11 @@ window.FAM_FIELDS = {
       (has(c.skills) ? '<div class="card"><h2>' + t('c_skills') + '</h2><div class="minis skills">' + L(c.skills).map(function (x) { return '<span class="mini">' + esc(x) + '</span>'; }).join('') + '</div></div>' : '') +
       '<div class="card"><h2>' + t('facts') + '</h2><div class="facts">' + facts.map(function (f) { return '<div><span class="fi">' + f[0] + '</span><small>' + t(f[1]) + '</small><b>' + esc(f[2]) + '</b></div>'; }).join('') + '</div></div>' +
       '</div>' +
-      '<aside class="side-col">' + (fit ? '<div class="card goldcard"><h3>' + t('your_fit') + '</h3><div class="bigfit">' + fit.prac + '%</div><p class="hint">' + t('fit_note') + '</p><div class="bar"><span class="bar-l">' + t('fit_int') + '</span><span class="bar-t"><i style="width:' + fit.i + '%"></i></span><b>' + fit.i + '%</b></div></div>' : '<div class="card"><h3>' + t('your_fit') + '</h3><p>' + t('fit_none') + '</p><a class="btn sm" href="#/assess">' + t('hm_cta1') + '</a></div>') +
+      '<aside class="side-col">' + (fit ? '<div class="card"><h3>' + t('your_fit') + '</h3><p class="big"><b>' + t(fit.prac >= 70 ? 'fit_great' : fit.prac >= 52 ? 'fit_good' : 'fit_poss') + '</b> · ' + fit.prac + '%</p><p class="hint">' + t('fit_note') + '</p><div class="bar"><span class="bar-l">' + t('fit_int') + '</span><span class="bar-t"><i style="width:' + fit.i + '%"></i></span><b>' + fit.i + '%</b></div></div>' : '<div class="card"><h3>' + t('your_fit') + '</h3><p>' + t('fit_none') + '</p><a class="btn sm" href="#/assess">' + t('hm_cta1') + '</a></div>') +
       '<div class="card"><h3>' + t('holland') + '</h3><div class="codes lg">' + code(c.ri) + '</div><p class="hint">' + c.ri.split('').map(function (x) { return L(RIASEC[x].name).split(' — ')[0]; }).join(' · ') + '</p></div>' +
       '<div class="card"><h3>' + t('official') + '</h3><ul class="linklist">' + c.links.map(function (l) { return '<li>' + ext(l[1], l[0]) + '</li>'; }).join('') + '</ul></div>' +
       (has(c.near) ? '<div class="card"><h3>' + t('c_near') + '</h3><ul class="ticks">' + L(c.near).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>' : '') +
-      (has(c.national) ? '<div class="card"><h3>🇮🇳 ' + t('c_nat') + '</h3><ul class="ticks">' + L(c.national).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>' : '') +
+      (has(c.national) ? '<div class="card"><h3>' + t('c_nat') + '</h3><ul class="ticks">' + L(c.national).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>' : '') +
       (has(c.tips) ? '<div class="card goldcard"><h3>' + t('c_tips') + '</h3><ul class="ticks">' + L(c.tips).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>' : '') +
       (App.branchesFor ? App.branchesFor(c.id) : '') + '<div class="card"><h3>' + t('explore') + '</h3><a class="btn btn-ghost block" href="#/colleges" data-act="col_for" data-v="' + collegeTypeFor(c.id) + '">' + t('nav_colleges') + '</a>' + (App.compareButton ? App.compareButton(c.id) : '') + '<a class="btn btn-ghost block" href="#/scholarships">' + t('nav_sch') + '</a><a class="btn btn-ghost block" href="#/calendar">' + t('nav_cal') + '</a></div></aside></div>' +
       (rel.length ? '<div class="wrap section"><h3 class="sec-s">' + t('related') + '</h3><div class="pills">' + rel.map(function (r) { return '<a class="pill" href="#/career/' + r.id + '">' + L(r.name) + '</a>'; }).join('') + '</div></div>' : '');
@@ -3668,7 +3670,7 @@ window.FAM_FIELDS = {
       '<div class="grid g2">' + list.map(function (x) {
         var s = x.s, m = x.m;
         return '<article class="card sch' + (m && m.score > 1 ? ' hi' : '') + '"><div class="sch-h"><h3>' + L(s.name) + '</h3>' + (m && m.score > 0 ? '<span class="badge">' + t('likely') + '</span>' : '') + '</div><p>' + L(s.who) + '</p>' +
-          (m && m.reasons.length ? '<div class="minis">' + m.reasons.map(function (k) { return '<span class="mini ok">✓ ' + t(k) + '</span>'; }).join('') + (m.later ? '<span class="mini">' + t('sm_later') + '</span>' : '') + '</div>' : '') +
+          (m && m.reasons.length ? '<div class="minis">' + m.reasons.map(function (k) { return '<span class="mini ok">' + icon('check') + t(k) + '</span>'; }).join('') + (m.later ? '<span class="mini">' + t('sm_later') + '</span>' : '') + '</div>' : '') +
           (s.url ? '<p>' + ext(s.url, s.site) + '</p>' : '<p><small>' + t('ask_inst') + '</small></p>') + '</article>';
       }).join('') + '</div>' +
       '<div class="grid g2 sch-b"><div class="card"><h3>' + t('sch_rules') + '</h3><ul class="ticks">' + SCH_RULES[App.lang].map(function (r) { return '<li>' + r + '</li>'; }).join('') + '</ul></div>' +
@@ -3988,7 +3990,7 @@ window.FAM_FIELDS = {
       return html + '<div class="card empty"><h3>' + (API.checked ? '' + t('sc_off_t') : '' + t('loading')) + '</h3>' + (API.checked ? '<p>' + t('sc_off_p') + '</p>' : '') + '</div></div>';
     }
     if (done) {
-      return html + '<div class="card success"><div class="ok-ico">✔</div><h2>' + t('sc_done') + '</h2><p>' + t('sc_ref') + '</p><div class="refid">' + esc(done) + '</div><p class="hint">' + t('sc_done_p') + '</p>' +
+      return html + '<div class="card success"><div class="ok-ico">' + icon('check') + '</div><h2>' + t('sc_done') + '</h2><p>' + t('sc_ref') + '</p><div class="refid">' + esc(done) + '</div><p class="hint">' + t('sc_done_p') + '</p>' +
         '<p class="cta-row"><button class="btn" data-act="sc_again">' + t('sc_again') + '</button><a class="btn btn-ghost" href="#/assess">' + t('hm_cta1') + '</a></p></div></div>';
     }
     var M = API.meta, max = M.maxPhotos || 5;
@@ -4036,7 +4038,7 @@ window.FAM_FIELDS = {
   function fillFrom(s) {
     F.school.udise = s.udise; F.school.school_name = s.name; F.school.district = s.district; F.school.block = s.block || ''; F.school.found = s.name;
     ['udise', 'school_name', 'district', 'block'].forEach(function (k) { var e = document.getElementById('f_' + k); if (e) e.value = F.school[k]; });
-    setFound('✔ ' + s.name + ' — ' + s.district, true);
+    setFound( s.name + ' — ' + s.district, true);
   }
   function setFound(txt, ok) { var b = document.getElementById('scfound'); if (b) { b.textContent = txt; b.className = 'found ' + (ok ? 'ok' : 'bad'); } }
 
@@ -4092,7 +4094,7 @@ window.FAM_FIELDS = {
     var max = (API.meta && API.meta.maxPhotos) || 5;
     if (cnt) cnt.textContent = photos.length + ' / ' + max;
     box.innerHTML = photos.map(function (p, i) {
-      return '<figure class="thumb"><img src="' + p.url + '" alt="' + t('sc_photo') + ' ' + (i + 1) + '"><button type="button" data-act="sc_rm" data-i="' + i + '" aria-label="' + t('sc_remove') + '">✕</button><figcaption>' + Math.round(p.blob.size / 1024) + ' KB</figcaption></figure>';
+      return '<figure class="thumb"><img src="' + p.url + '" alt="' + t('sc_photo') + ' ' + (i + 1) + '"><button type="button" data-act="sc_rm" data-i="' + i + '" aria-label="' + t('sc_remove') + '">' + icon('close') + '</button><figcaption>' + Math.round(p.blob.size / 1024) + ' KB</figcaption></figure>';
     }).join('');
   }
   AC.sc_rm = function (el) { var p = photos.splice(+el.getAttribute('data-i'), 1)[0]; if (p) URL.revokeObjectURL(p.url); drawThumbs(); };
@@ -4448,7 +4450,7 @@ window.FAM_FIELDS = {
         '<div><h4>' + t('pl_exams') + '</h4><p>' + esc(L(c.exams)) + '</p><h4>' + t('pl_need') + '</h4><p>' + esc(L(c.elig)) + '</p><h4>' + t('pl_cost') + '</h4><p>' + esc(L(c.dur)) + ' · ' + costTxt(c.cost) + '</p></div></div>' +
         '<h4>' + t('pl_when') + '</h4>' + (when.length ? '<table class="tbl plan-when"><thead><tr><th>' + t('f_exam') + '</th><th>' + t('pl_month') + '</th><th>' + t('pl_apply') + '</th></tr></thead><tbody>' +
           when.map(function (w) { return '<tr><td data-l="' + esc(t('f_exam')) + '">' + esc(w.exam) + '</td><td data-l="' + esc(t('pl_month')) + '">' + esc(w.month) + '</td><td data-l="' + esc(t('pl_apply')) + '">' + esc(w.apply) + '</td></tr>'; }).join('') + '</tbody></table>' : '<p class="hint">' + t('pl_when_none') + '</p>') +
-        '<div class="grid g2 plan-g"><div><h4>' + t('pl_hr') + '</h4>' + list(c.near, 5) + '</div><div><h4>🇮🇳 ' + t('pl_nat') + '</h4>' + list(c.national, 5) + '</div></div>' +
+        '<div class="grid g2 plan-g"><div><h4>' + t('pl_hr') + '</h4>' + list(c.near, 5) + '</div><div><h4>' + t('pl_nat') + '</h4>' + list(c.national, 5) + '</div></div>' +
         '<p class="plan-links">' + c.links.slice(0, 3).map(function (l) { return ext(l[1], l[0]); }).join(' · ') + '</p></section>';
     });
     var R = App.report && App.report(), sch = R && R.sch ? R.sch.slice(0, 4) : [];
@@ -4501,14 +4503,14 @@ window.FAM_FIELDS = {
   AC.cm_c = function (el) { var i = +el.getAttribute('data-i'), a = [0, 1, 2].map(function (j) { return CMP[j] || ''; }); a[i] = el.value; CMP = a.filter(Boolean); Store.set('compare', CMP); App.rerender(true); };
   AC.cm_add = function (el) {
     var id = el.getAttribute('data-v'); if (CMP.indexOf(id) < 0) { CMP.push(id); if (CMP.length > 3) CMP.shift(); Store.set('compare', CMP); }
-    el.textContent = '✔ ' + t('cm_added');
+    el.textContent =  t('cm_added');
   };
   AC.cm_plan = function (el) { App.addToPlan(el.getAttribute('data-v')); };
   App.compareButton = function (id) { return '<a class="btn btn-ghost block" href="#/compare" data-act="cm_add" data-v="' + id + '">' + t('cm_add') + '</a><a class="btn btn-ghost block" href="#/plan" data-act="cm_plan" data-v="' + id + '">' + t('cm_plan') + '</a>'; };
 
   /* ================= WELLBEING ================= */
   V.wellbeing = function () {
-    var sec = [['', 'wb_s1'], ['', 'wb_s2'], ['', 'wb_s3'], ['', 'wb_s4'], ['', 'wb_s5'], ['🆘', 'wb_s6']];
+    var sec = [['', 'wb_s1'], ['', 'wb_s2'], ['', 'wb_s3'], ['', 'wb_s4'], ['', 'wb_s5'], ['', 'wb_s6']];
     return pageHero('' + t('nav_wellbeing'), t('wb_title'), t('wb_lead')) + '<div class="wrap section">' +
       '<div class="card helpline"><h2>' + t('wb_help_t') + '</h2><p>' + t('wb_help_p') + '</p><div class="grid g3">' +
       '<a class="hl" href="tel:14416"><b>14416</b><span>' + t('wb_telemanas') + '</span><small>1-800-891-4416</small></a>' +
@@ -4590,7 +4592,7 @@ window.FAM_FIELDS = {
       st.forEach(function (x, i) { if (next < 0 && !x[1]) next = i; });
       return '<section class="card journey"><div class="jr-head"><h3>' + t('jr_t') + '</h3><span class="mini' + (n === 5 ? ' ok' : '') + '">' + t('jr_done').replace('{n}', n) + '</span></div>' +
         '<div class="jr-bar" role="progressbar" aria-valuenow="' + n + '" aria-valuemin="0" aria-valuemax="5"><i style="width:' + (n / 5 * 100) + '%"></i></div><ol class="jr">' +
-        st.map(function (x, i) { return '<li class="' + (x[1] ? 'done' : i === next ? 'next' : '') + '"><a href="' + x[0] + '"><span class="jr-n">' + (x[1] ? '✓' : i + 1) + '</span><span>' + t('jr_' + (i + 1)) + '</span></a></li>'; }).join('') + '</ol>' +
+        st.map(function (x, i) { return '<li class="' + (x[1] ? 'done' : i === next ? 'next' : '') + '"><a href="' + x[0] + '"><span class="jr-n">' + (x[1] ? icon('check') : i + 1) + '</span><span>' + t('jr_' + (i + 1)) + '</span></a></li>'; }).join('') + '</ol>' +
         (next < 0 ? '<p class="cta-row"><span class="hint">' + t('jr_all') + '</span>' + App.shareButtons('res') + '</p>'
                   : '<p class="cta-row"><a class="btn sm" href="' + st[next][0] + '">' + t('jr_next') + ': ' + t('jr_' + (next + 1)) + ' →</a></p>') + '</section>';
     }
@@ -4649,7 +4651,7 @@ window.FAM_FIELDS = {
     cl_end_q: 'This deletes every student’s answers from this device. Print the report cards first. Delete now?',
     cl_now: 'Class session', cl_taking: 'Now:', cl_back: 'Save and return to class list',
     cl_pr_title: 'Report cards', cl_pr_lead: 'One sheet per student: print double-sided (flip on long edge). Only students who completed the assessment are included.',
-    cl_pr_none: 'No student has completed the assessment yet.', cl_pr_btn: 'Print {n} report cards', cl_back_list: 'Back to class list',
+    cl_pr_none: 'No student has completed the assessment yet.', cl_pr_btn: 'Print {n} report cards', cl_pr_btn1: 'Print 1 report card', cl_back_list: 'Back to class list',
     cl_edit: 'Change class details', cl_save: 'Save', cl_status: 'Status'
   });
   Object.assign(window.UI.hi, {
@@ -4795,7 +4797,7 @@ window.FAM_FIELDS = {
         '<div class="sheet-box"><div class="sheet-lbl no-print">' + esc(s.name) + ' — ' + t('cert_back') + '</div><div>' + pg[1] + '</div></div>';
     });
     App.loadA(keep.step === 'intro' ? null : keep);
-    return html + '<div class="wrap section no-print cert-ui"><p class="cta-row"><button class="btn btn-lg" data-act="cl_print">' + icon('print') + t('cl_pr_btn').replace('{n}', list.length) + '</button><a class="btn btn-ghost btn-lg" href="#/class">' + t('cl_back_list') + '</a></p><p class="hint">' + t('cert_p2') + '</p></div>' +
+    return html + '<div class="wrap section no-print cert-ui"><p class="cta-row"><button class="btn btn-lg" data-act="cl_print">' + icon('print') + (list.length === 1 ? t('cl_pr_btn1') : t('cl_pr_btn').replace('{n}', list.length)) + '</button><a class="btn btn-ghost btn-lg" href="#/class">' + t('cl_back_list') + '</a></p><p class="hint">' + t('cert_p2') + '</p></div>' +
       '<div class="sheets-wrap">' + sheets + '</div>';
   }
   App.after = App.after || {};

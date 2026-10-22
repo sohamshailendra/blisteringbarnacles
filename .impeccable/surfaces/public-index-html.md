@@ -23,6 +23,6 @@ STORY: The visitor reads the name and one sentence saying what this is, picks Cl
 
 FIRST VIEWPORT: Top line: emblem wordmark left, five links, Hindi/English pill, Menu. The name at about 8vw on two lines, the road picture inline before "मेरा निर्णय"; one supporting sentence under it; along the bottom, "I am in [Class 10] [Class 12]" on the left and the blue "Start the free assessment" pill on the right.
 
-FORM: Taste page direction "The sentence is the layout" (hero "Photograph for a letter", sections staircase / margin-photo rows / table pushed right / drop-cap paragraph / question at both edges / name footer), app style "Achromatic ledger" with the Open plane sidebar shell. Signature move: the road opens inside the name with a clip-path shutter. seed: none (unavailable)
+FORM: Taste page direction "The sentence is the layout" (hero "Photograph for a letter", sections staircase / margin-photo rows / table pushed right / drop-cap paragraph / question at both edges / name footer), app style "Achromatic ledger" with the Open plane sidebar shell. Signature move: the road opens inside the name with a clip-path shutter. The Impeccable roll ran degraded (no catalog) and its assignment was superseded when the user asked for the tools to set the direction (Taste draw). seed:af3f76231c6ce404
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
