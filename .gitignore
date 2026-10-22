@@ -1,3 +1,7 @@
 node_modules/
 server/storage/
 .env
+.taste-skill/
+.impeccable/review/
+.impeccable/build/
+.impeccable/mocks/
