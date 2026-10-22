@@ -7,22 +7,22 @@ related_targets: []
 
 # Surface: Mera Bhavishya portal (whole site, public/index.html)
 
-Scope: every view of the single-file portal, plus the new counsellor class workflow and the printed report card set.
-Mode: Operate (assessment, class workflow, tools) with Read views (career pages, guides). Home is a restrained service start page, not a marketing page.
+Scope: every view of the single-file portal, the counsellor class session and the printed report card set.
+Mode: home is a page (Persuade-light, Taste "page" run); everything else is an app screen (Operate/Read, Taste "app" run), sharing one face and palette.
 Audience and job: a Class 10/12 student on a low-end Android phone, Hindi first, often offline, finding a stream and next step; secondary, a school counsellor running a class on one shared device and printing every report card.
-Constraints: brief-pinned neutral Government of Haryana look, no external design system (user ruled out UX4G); Haryana emblem kept; bilingual; offline single file; WCAG 2.1 AA / GIGW; prints in black and white.
-Unresolved: none blocking.
+Constraints: user asked for a neutral government look but ruled out UX4G and the gov-design-system look, then asked for the tools to set the direction. Haryana emblem kept; bilingual; offline; WCAG 2.1 AA; prints in black and white.
+Imagery: open collections blocked by the environment's network policy; six illustrations generated with Figma AI, labelled as illustrations in the footer, provenance in public/img/*.json.
 
 ## Direction contract
 
-THESIS: A state service you can trust at a glance: plain, official public-service clarity where every screen is the task itself. Refuses the template portal: navy gradient hero, gold pills, stat strip, emoji icon cards in identical grids.
+THESIS: The programme's own name is the layout: "मेरा भविष्य / [road] मेरा निर्णय", a picture of the road set inside the name like a letter. Refuses the government-portal template (utility bar, blue buttons on white, ruled link lists, icon card grids) and the edtech gradient.
 
-OWN-WORLD: White ground, ink #172033 text, one government blue #1F4E8C for every action and link, tone-step grey #F2F4F7 surfaces, road-sign green #0B6B3A reserved for routes. Noto Sans and Noto Sans Devanagari only, weight and size for hierarchy, 4px corners, no shadows at rest, yellow #FFD43B focus band. Drawn SVG line icons, no emoji.
+OWN-WORLD: White page and pale blue-grey #f2f4f7 app ground, ink #111 text, grey #5f6368 secondary, one blue #1a4be0 only on the home action and the main data element, near-black pill buttons with grey #e6e7e9 pill secondaries, white cards at radius 8, Anek Devanagari for Hindi and English alike, no colour in the chrome.
 
-STORY: The student sees what this is, picks Class 10 or 12, takes the assessment, gets two honest lists (dream and practical), and prints a report card set; a counsellor does the same for a whole class.
+STORY: The visitor reads the name and one sentence saying what this is, picks Class 10 or 12 or starts the assessment, sees the four steps as a staircase of sentences, the four main roads beside pictures, the coming exam dates, what schools can do, and the closing question "Class 10 or 12?".
 
-FIRST VIEWPORT: Ink utility bar (Government of Haryana, text size, listen, language); white header with emblem, name and plain nav; then the h1 and one sentence on the left, primary "Start the assessment" button; beside it two green direction signs, "After Class 10" and "After Class 12", each with an arrow. On phone, the signs stack under the button.
+FIRST VIEWPORT: Top line: emblem wordmark left, five links, Hindi/English pill, Menu. The name at about 8vw on two lines, the road picture inline before "मेरा निर्णय"; one supporting sentence under it; along the bottom, "I am in [Class 10] [Class 12]" on the left and the blue "Start the free assessment" pill on the right.
 
-FORM: Category standard (neutral state-government service), brief-pinned; signature move: career routes shown as highway direction signs (green panel, white type, arrow), used for the class gateway, career tree roads and next steps. seed: none (unavailable)
+FORM: Taste page direction "The sentence is the layout" (hero "Photograph for a letter", sections staircase / margin-photo rows / table pushed right / drop-cap paragraph / question at both edges / name footer), app style "Achromatic ledger" with the Open plane sidebar shell. Signature move: the road opens inside the name with a clip-path shutter. seed: none (unavailable)
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

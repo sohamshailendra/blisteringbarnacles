@@ -1,9 +1,10 @@
 /* Offline support: the site keeps working after one visit, even without internet.
    Pages: network first (always the latest when online), saved copy when offline.
-   Fonts and icons: saved copy first. The /api/ backend is never cached. */
+   Fonts, icons and pictures: saved copy first. The /api/ backend is never cached. */
 'use strict';
-var VERSION = 'mbmn-v1';
-var CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
+var VERSION = 'mbmn-v2';
+var CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png',
+  'img/road-640.webp', 'img/cycle-640.webp', 'img/nursing-640.webp', 'img/iti-640.webp', 'img/classroom-640.webp', 'img/computers-640.webp'];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(CORE); }).then(function () { return self.skipWaiting(); }));
