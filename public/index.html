@@ -132,7 +132,7 @@ main:focus{outline:none}
 .empty{text-align:center;padding:2.5rem}
 .notice{background:var(--amber-l);border-left:5px solid var(--amber);border-radius:10px;padding:.9rem 1.1rem;margin:1.6rem 0;font-size:.92rem}
 .notice.warn{background:#fdecea;border-left-color:var(--red)}
-.subrow{display:grid;grid-template-columns:7.5rem 1fr auto;align-items:center;gap:.6rem;margin:.45rem 0;font-size:.88rem}.sub-band{font-weight:700;font-size:.82rem}.sub-band.b3{color:var(--green)}.sub-band.b2{color:var(--blue)}.sub-band.b1{color:var(--amber-d)}.sub-band.b0{color:var(--mut)}
+.sty .sm{margin:.6rem 0 0;font-size:.9rem}.subrow{display:grid;grid-template-columns:7.5rem 1fr auto;align-items:center;gap:.6rem;margin:.45rem 0;font-size:.88rem}.sub-band{font-weight:700;font-size:.82rem}.sub-band.b3{color:var(--green)}.sub-band.b2{color:var(--blue)}.sub-band.b1{color:var(--amber-d)}.sub-band.b0{color:var(--mut)}
 .dots i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#e8ecf4;margin-left:3px}.dots i.on{background:var(--amber)}
 .valrow{display:grid;grid-template-columns:1.6rem 1fr;gap:.2rem .6rem;align-items:center;margin:.5rem 0}.valrow b{display:grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--navy);color:#fff;font-size:.8rem;grid-row:span 2}.valrow span{font-weight:700}.valrow small{color:var(--mut);font-size:.8rem}
 .bar .lvl{font-size:.78rem;white-space:nowrap;text-align:right}.bar .lvl.b3{color:var(--green)}.bar .lvl.b2{color:var(--blue)}.bar .lvl.b1{color:var(--amber-d)}.bar .lvl.b0{color:var(--mut)}
@@ -520,7 +520,7 @@ window.UI = {
 en: {
  site_title:'Mera Bhavishya – Mera Nirnay', site_sub:'Career Guidance Portal', topbar:'Government of Haryana • Career Guidance for Class 10 & 12 students',
  nav_label:'Main menu', nav_assess:'Career Assessment', nav_tree:'Career Tree', nav_streams:'Choose Stream', nav_careers:'Courses & Careers', nav_colleges:'Colleges',
- nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More', q_pick3:'Which 3 of these matter most to you in a job? Pick three.', pick_n:'{n} of 3 chosen', filters:'Filters', more_tools:'More tools', fewer_tools:'Show fewer', min_left:'about {n} min left', min_less:'less than a minute left', cg_health:'Health & medicine', cg_eng:'Engineering, technology & transport', cg_sci:'Science, research & agriculture', cg_biz:'Commerce, finance & business', cg_soc:'Law, society, languages & teaching', cg_cre:'Creative arts, media, sports & hospitality', cg_uni:'Defence, police & government jobs', cg_skill:'Skills & quick jobs', n_careers:'careers', install:'Install app', installed:'Added to your home screen',
+ nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More', as_per:'Your work style', as_perd:'10 statements about how you usually behave — curious, organised, outgoing, caring, calm.', as_ctx:'Work conditions', as_ctxd:'5 yes/no questions on conditions some jobs involve — hospitals, outdoor work, night shifts, uniform, desk work.', q_per:'How much do you agree?', q_ctx:'Be honest — there is no wrong answer.', ag1:'Strongly disagree', ag2:'Disagree', ag3:'Not sure', ag4:'Agree', ag5:'Strongly agree', cx_y:'Yes, that is fine', cx_m:'Maybe / not sure', cx_n:'No, I would not like that', res_sty:'Your work style', res_sty_h:'How you like to work. Used to match careers that suit your nature — not a test of right or wrong.', sty_b1:'Less', sty_b2:'Medium', sty_b3:'Strong', res_ctx_no:'You said no to:', why_sty:'suits your work style:', why_ctx:'involves {s}, which you said no to', rs_8:'Big Five personality (Costa & McCrae; Barrick & Mount, 1991): traits such as conscientiousness and emotional stability relate to success and satisfaction across jobs; we use a 10-item screener in the spirit of Gosling et al. (2003).', rs_9:'Person–environment fit (Dawis & Lofquist’s Theory of Work Adjustment; O*NET work context): people stay longer and do better when a job’s daily conditions suit them, so we ask about deal-breakers.', q_pick3:'Which 3 of these matter most to you in a job? Pick three.', pick_n:'{n} of 3 chosen', filters:'Filters', more_tools:'More tools', fewer_tools:'Show fewer', min_left:'about {n} min left', min_less:'less than a minute left', cg_health:'Health & medicine', cg_eng:'Engineering, technology & transport', cg_sci:'Science, research & agriculture', cg_biz:'Commerce, finance & business', cg_soc:'Law, society, languages & teaching', cg_cre:'Creative arts, media, sports & hospitality', cg_uni:'Defence, police & government jobs', cg_skill:'Skills & quick jobs', n_careers:'careers', install:'Install app', installed:'Added to your home screen',
  smaller:'Smaller text', normal:'Normal text', larger:'Larger text', newtab:'opens in new tab',
  back:'Back', next:'Next', all:'All', search:'Search', none:'Nothing found. Try different filters.', see_all:'See all', visit:'Official website', skip:'Skip this question',
  after:'After Class', level:'Level', stream:'Stream', filter:'Show', region:'Region', hry:'Haryana', india:'Rest of India', yrs:'yrs', print:'Print / Save as PDF', retake:'Retake', question:'Question',
@@ -542,10 +542,10 @@ en: {
  hw3:'Your situation', hw3d:'Family budget, loan comfort, time to start earning, distance from home, internet access.', hw4:'Two answers', hw4d:'“Dream” careers that suit you, and “Practical” careers that suit you and your situation.',
  hm_new:'New-age careers 2026', hm_up:'Coming up', hm_money:'Don’t let fees stop you', hm_money_p:'NSP, Haryana post-matric, INSPIRE, AICTE Pragati, PM Vidyalaxmi and more — see which ones fit you and how to apply.',
  /* assessment */
- as_title:'Find your direction in about 10 minutes', as_lead:'This is a guidance tool, not an exam. There are no “right” answers about interests — be honest, and think of what you enjoy, not what others expect.',
+ as_title:'Find your direction in about 15 minutes', as_lead:'This is a guidance tool, not an exam. There are no “right” answers about interests — be honest, and think of what you enjoy, not what others expect.',
  as_s1:'About you', as_s1d:'10 quick choices: class, stream, family budget, loan comfort. Used only to tailor advice.', as_s2:'Interests', as_s2d:'18 statements — how much would you enjoy each activity?',
  as_s3:'Aptitude', as_s3d:'8 short reasoning questions on numbers, logic, language and spatial thinking.', as_s4:'Learning style', as_s4d:'2 questions on how you learn best — for study tips.',
- as_begin:'Begin assessment', as_restart:'Start again', as_resume:'Continue where I stopped', as_see_res:'See my results', as_time:'About 10–12 minutes · 35 questions', as_priv:'Stays on your device', as_step:'Step', as_finish:'See my results',
+ as_begin:'Begin assessment', as_restart:'Start again', as_resume:'Continue where I stopped', as_see_res:'See my results', as_time:'About 12–15 minutes · 50 questions', as_priv:'Stays on your device', as_step:'Step', as_finish:'See my results',
  rs_t:'The research behind it', rs_p:'The assessment combines well-known ideas from career psychology:',
  rs_1:'Holland’s RIASEC theory (J. Holland, 1959/1997): people and careers can be described by six interest types. The U.S. O*NET Interest Profiler is built on it.',
  rs_2:'Super’s life-span theory (D. Super, 1990): career choice develops over time, so we show routes after Class 10 and Class 12 separately.',
@@ -622,7 +622,7 @@ en: {
 hi: {
  site_title:'मेरा भविष्य – मेरा निर्णय', site_sub:'करियर मार्गदर्शन पोर्टल', topbar:'हरियाणा सरकार • कक्षा 10वीं व 12वीं के विद्यार्थियों हेतु करियर मार्गदर्शन',
  nav_label:'मुख्य मेनू', nav_assess:'करियर आकलन', nav_tree:'करियर ट्री', nav_streams:'स्ट्रीम चुनें', nav_careers:'कोर्स व करियर', nav_colleges:'कॉलेज',
- nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें', q_pick3:'नौकरी में आपके लिए इनमें से कौन-सी 3 बातें सबसे ज़रूरी हैं? तीन चुनें।', pick_n:'3 में से {n} चुने', filters:'फ़िल्टर', more_tools:'और सुविधाएँ', fewer_tools:'कम दिखाएँ', min_left:'लगभग {n} मिनट बाकी', min_less:'एक मिनट से कम बाकी', cg_health:'स्वास्थ्य व चिकित्सा', cg_eng:'इंजीनियरिंग, तकनीक व परिवहन', cg_sci:'विज्ञान, अनुसंधान व कृषि', cg_biz:'वाणिज्य, वित्त व व्यवसाय', cg_soc:'विधि, समाज, भाषाएँ व शिक्षण', cg_cre:'रचनात्मक कला, मीडिया, खेल व आतिथ्य', cg_uni:'रक्षा, पुलिस व सरकारी नौकरियाँ', cg_skill:'कौशल व जल्दी रोज़गार', n_careers:'करियर', install:'ऐप इंस्टॉल करें', installed:'होम स्क्रीन पर जोड़ा गया',
+ nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें', as_per:'आपकी कार्य-शैली', as_perd:'आप आमतौर पर कैसे व्यवहार करते हैं, इस पर 10 कथन — जिज्ञासु, व्यवस्थित, मिलनसार, संवेदनशील, शांत।', as_ctx:'काम की परिस्थितियाँ', as_ctxd:'कुछ नौकरियों की परिस्थितियों पर 5 हाँ/ना प्रश्न — अस्पताल, बाहर का काम, रात की शिफ़्ट, वर्दी, डेस्क का काम।', q_per:'आप कितने सहमत हैं?', q_ctx:'ईमानदारी से बताएँ — कोई उत्तर ग़लत नहीं है।', ag1:'बिल्कुल असहमत', ag2:'असहमत', ag3:'पता नहीं', ag4:'सहमत', ag5:'पूरी तरह सहमत', cx_y:'हाँ, ठीक है', cx_m:'शायद / पता नहीं', cx_n:'नहीं, मुझे यह पसंद नहीं', res_sty:'आपकी कार्य-शैली', res_sty_h:'आप कैसे काम करना पसंद करते हैं। आपके स्वभाव से मेल खाते करियर चुनने में उपयोग — सही या ग़लत की परीक्षा नहीं।', sty_b1:'कम', sty_b2:'मध्यम', sty_b3:'मज़बूत', res_ctx_no:'आपने इनके लिए मना किया:', why_sty:'आपकी कार्य-शैली से मेल:', why_ctx:'इसमें {s} शामिल है, जिसके लिए आपने मना किया', rs_8:'बिग फ़ाइव व्यक्तित्व (कोस्टा व मैक्क्रे; बैरिक व माउंट, 1991): कर्तव्यनिष्ठा व भावनात्मक स्थिरता जैसे गुण लगभग हर नौकरी में सफलता व संतुष्टि से जुड़े हैं; हम गॉसलिंग व अन्य (2003) की तर्ज़ पर 10 प्रश्नों का संक्षिप्त स्क्रीनर उपयोग करते हैं।', rs_9:'व्यक्ति–परिवेश मेल (डॉविस व लॉफ़क्विस्ट का कार्य-समायोजन सिद्धांत; O*NET कार्य-संदर्भ): जब नौकरी की रोज़ की परिस्थितियाँ व्यक्ति के अनुकूल हों, तो वह टिकता है और बेहतर करता है — इसलिए हम “डील-ब्रेकर” पूछते हैं।', q_pick3:'नौकरी में आपके लिए इनमें से कौन-सी 3 बातें सबसे ज़रूरी हैं? तीन चुनें।', pick_n:'3 में से {n} चुने', filters:'फ़िल्टर', more_tools:'और सुविधाएँ', fewer_tools:'कम दिखाएँ', min_left:'लगभग {n} मिनट बाकी', min_less:'एक मिनट से कम बाकी', cg_health:'स्वास्थ्य व चिकित्सा', cg_eng:'इंजीनियरिंग, तकनीक व परिवहन', cg_sci:'विज्ञान, अनुसंधान व कृषि', cg_biz:'वाणिज्य, वित्त व व्यवसाय', cg_soc:'विधि, समाज, भाषाएँ व शिक्षण', cg_cre:'रचनात्मक कला, मीडिया, खेल व आतिथ्य', cg_uni:'रक्षा, पुलिस व सरकारी नौकरियाँ', cg_skill:'कौशल व जल्दी रोज़गार', n_careers:'करियर', install:'ऐप इंस्टॉल करें', installed:'होम स्क्रीन पर जोड़ा गया',
  smaller:'छोटा अक्षर', normal:'सामान्य अक्षर', larger:'बड़ा अक्षर', newtab:'नए टैब में खुलता है',
  back:'पीछे', next:'आगे', all:'सभी', search:'खोजें', none:'कुछ नहीं मिला। फ़िल्टर बदलकर देखें।', see_all:'सभी देखें', visit:'आधिकारिक वेबसाइट', skip:'यह प्रश्न छोड़ें',
  after:'कक्षा', level:'स्तर', stream:'स्ट्रीम', filter:'दिखाएँ', region:'क्षेत्र', hry:'हरियाणा', india:'शेष भारत', yrs:'वर्ष', print:'प्रिंट / PDF सहेजें', retake:'दोबारा करें', question:'प्रश्न',
@@ -642,10 +642,10 @@ hi: {
  hw1:'रुचियाँ', hw1d:'हॉलैंड के RIASEC मॉडल पर आधारित 18 कथन — अधिकतर करियर-रुचि टेस्टों का शोध-आधार।', hw2:'क्षमता', hw2d:'8 तर्क-प्रश्न, साथ में आपके स्कूली विषयों के अंक।',
  hw3:'आपकी परिस्थिति', hw3d:'पारिवारिक बजट, ऋण पर सहमति, कमाई शुरू करने का समय, घर से दूरी, इंटरनेट।', hw4:'दो उत्तर', hw4d:'“सपनों” के करियर जो आप पर फबते हैं, और “व्यावहारिक” करियर जो आप व आपकी परिस्थिति दोनों के अनुकूल हैं।',
  hm_new:'नए ज़माने के करियर 2026', hm_up:'आने वाली परीक्षाएँ', hm_money:'फ़ीस आपको रोके नहीं', hm_money_p:'NSP, हरियाणा पोस्ट-मैट्रिक, INSPIRE, AICTE प्रगति, PM विद्यालक्ष्मी व अन्य — देखें कौन-सी आपके लिए है और आवेदन कैसे करें।',
- as_title:'लगभग 10 मिनट में अपनी दिशा खोजें', as_lead:'यह मार्गदर्शन का साधन है, परीक्षा नहीं। रुचियों के “सही” या “ग़लत” उत्तर नहीं होते — ईमानदारी से बताइए कि आपको क्या पसंद है, दूसरों की अपेक्षा नहीं।',
+ as_title:'लगभग 15 मिनट में अपनी दिशा खोजें', as_lead:'यह मार्गदर्शन का साधन है, परीक्षा नहीं। रुचियों के “सही” या “ग़लत” उत्तर नहीं होते — ईमानदारी से बताइए कि आपको क्या पसंद है, दूसरों की अपेक्षा नहीं।',
  as_s1:'आपके बारे में', as_s1d:'10 छोटे चुनाव: कक्षा, स्ट्रीम, पारिवारिक बजट, ऋण पर सहमति। केवल सलाह को आपके अनुकूल बनाने हेतु।', as_s2:'रुचियाँ', as_s2d:'18 कथन — हर गतिविधि आपको कितनी पसंद आएगी?',
  as_s3:'क्षमता', as_s3d:'संख्या, तर्क, भाषा व स्थान-बोध पर 8 छोटे तर्क-प्रश्न।', as_s4:'सीखने का तरीक़ा', as_s4d:'आप कैसे सबसे अच्छा सीखते हैं — पढ़ाई के सुझावों हेतु 2 प्रश्न।',
- as_begin:'आकलन शुरू करें', as_restart:'फिर से शुरू करें', as_resume:'जहाँ छोड़ा था वहाँ से जारी रखें', as_see_res:'मेरे परिणाम देखें', as_time:'लगभग 10–12 मिनट · 35 प्रश्न', as_priv:'आपके डिवाइस पर ही रहता है', as_step:'चरण', as_finish:'परिणाम देखें',
+ as_begin:'आकलन शुरू करें', as_restart:'फिर से शुरू करें', as_resume:'जहाँ छोड़ा था वहाँ से जारी रखें', as_see_res:'मेरे परिणाम देखें', as_time:'लगभग 12–15 मिनट · 50 प्रश्न', as_priv:'आपके डिवाइस पर ही रहता है', as_step:'चरण', as_finish:'परिणाम देखें',
  rs_t:'इसके पीछे का शोध', rs_p:'यह आकलन करियर-मनोविज्ञान के जाने-माने विचारों को जोड़ता है:',
  rs_1:'हॉलैंड का RIASEC सिद्धांत (जे. हॉलैंड, 1959/1997): लोगों व करियर को छह रुचि-प्रकारों से समझा जा सकता है। अमेरिका का O*NET Interest Profiler इसी पर बना है।',
  rs_2:'सुपर का जीवन-अवधि सिद्धांत (डी. सुपर, 1990): करियर का चुनाव समय के साथ विकसित होता है, इसलिए हम 10वीं व 12वीं के बाद के रास्ते अलग-अलग दिखाते हैं।',
@@ -2181,6 +2181,51 @@ window.PROFILE_FIELDS = [
  { id:'net', q:{en:'Internet & device at home',hi:'घर पर इंटरनेट व उपकरण'}, o:[['pc',{en:'Computer / laptop + internet',hi:'कंप्यूटर/लैपटॉप + इंटरनेट'}],['phone',{en:'Smartphone only',hi:'केवल स्मार्टफ़ोन'}],['none',{en:'Limited / none',hi:'सीमित / नहीं'}]] }
 ];
 
+/* WORK STYLE — a short Big Five screener (Goldberg; Costa & McCrae; brief-scale approach of Gosling et al. 2003, TIPI).
+   Two statements per trait, the second reverse-scored (r:1) so agreeing with everything cancels out.
+   Traits get plain names: O curious · C organised · E outgoing · A caring · S calm under pressure (emotional stability). */
+window.PERSONALITY_ITEMS = [
+ { k:'O', r:0, q:{en:'I enjoy trying new ideas and new ways of doing things.',hi:'मुझे नए विचार और काम करने के नए तरीक़े आज़माना अच्छा लगता है।'} },
+ { k:'C', r:0, q:{en:'I finish my work on time and keep my things organised.',hi:'मैं अपना काम समय पर पूरा करता/करती हूँ और अपनी चीज़ें व्यवस्थित रखता/रखती हूँ।'} },
+ { k:'E', r:0, q:{en:'I enjoy meeting new people and speaking in front of a group.',hi:'मुझे नए लोगों से मिलना और समूह के सामने बोलना अच्छा लगता है।'} },
+ { k:'A', r:0, q:{en:'I like helping others, even when it takes my own time.',hi:'मुझे दूसरों की मदद करना अच्छा लगता है, भले ही उसमें मेरा समय लगे।'} },
+ { k:'S', r:0, q:{en:'I stay calm when things go wrong or when I am under pressure.',hi:'जब कुछ ग़लत हो जाए या दबाव हो, तब भी मैं शांत रहता/रहती हूँ।'} },
+ { k:'O', r:1, q:{en:'I prefer doing things the way they have always been done.',hi:'मुझे काम उसी तरह करना पसंद है जैसे हमेशा से होता आया है।'} },
+ { k:'C', r:1, q:{en:'I often leave work half-done or start it at the last minute.',hi:'मैं अक्सर काम अधूरा छोड़ देता/देती हूँ या आख़िरी समय पर शुरू करता/करती हूँ।'} },
+ { k:'E', r:1, q:{en:'I prefer to stay quiet and work on my own.',hi:'मुझे चुप रहकर अकेले काम करना पसंद है।'} },
+ { k:'A', r:1, q:{en:'I lose patience with other people quickly.',hi:'मैं दूसरों के साथ जल्दी धैर्य खो देता/देती हूँ।'} },
+ { k:'S', r:1, q:{en:'I get nervous or upset easily in stressful situations.',hi:'तनाव की स्थिति में मैं जल्दी घबरा जाता/जाती हूँ या परेशान हो जाता/जाती हूँ।'} }
+];
+window.TRAIT_NAMES = {
+ O:{en:'Curious',hi:'जिज्ञासु',d:{en:'open to new ideas, likes to explore and create',hi:'नए विचारों के लिए खुले, खोजना व रचना पसंद'}},
+ C:{en:'Organised',hi:'व्यवस्थित',d:{en:'careful, disciplined, finishes what you start',hi:'सावधान, अनुशासित, शुरू किया काम पूरा करते हैं'}},
+ E:{en:'Outgoing',hi:'मिलनसार',d:{en:'energised by people, comfortable speaking up',hi:'लोगों से ऊर्जा मिलती है, बोलने में सहज'}},
+ A:{en:'Caring',hi:'संवेदनशील',d:{en:'patient, helpful, works well with others',hi:'धैर्यवान, मददगार, दूसरों के साथ अच्छा काम'}},
+ S:{en:'Calm under pressure',hi:'दबाव में शांत',d:{en:'steady when things get tough',hi:'कठिन समय में भी स्थिर'}}
+};
+/* WORK CONDITIONS — practical deal-breakers. Answer: 0 yes · 1 maybe · 2 no */
+window.WORK_CONTEXT_ITEMS = [
+ { k:'blood',   q:{en:'Would you be comfortable seeing blood, injuries or very sick people at work?',hi:'क्या आप काम पर ख़ून, चोट या बहुत बीमार लोगों को देखकर सहज रहेंगे?'}, n:{en:'blood & hospitals',hi:'ख़ून व अस्पताल'} },
+ { k:'field',   q:{en:'Are you fine with physical work outdoors — in sun, rain or dust — for long hours?',hi:'क्या आप लंबे समय तक बाहर — धूप, बारिश या धूल में — शारीरिक काम के लिए तैयार हैं?'}, n:{en:'outdoor physical work',hi:'बाहर शारीरिक काम'} },
+ { k:'shift',   q:{en:'Are you okay with night shifts or irregular working hours?',hi:'क्या आप रात की शिफ़्ट या अनियमित कामकाजी घंटों के लिए तैयार हैं?'}, n:{en:'night shifts / odd hours',hi:'रात की शिफ़्ट / अनियमित घंटे'} },
+ { k:'uniform', q:{en:'Would you like a job with a uniform, strict discipline and physical fitness tests?',hi:'क्या आप वर्दी, कड़े अनुशासन और शारीरिक फ़िटनेस टेस्ट वाली नौकरी चाहेंगे?'}, n:{en:'uniform & strict discipline',hi:'वर्दी व कड़ा अनुशासन'} },
+ { k:'desk',    q:{en:'Are you happy sitting at a desk or computer for most of the day?',hi:'क्या आप दिन का ज़्यादातर समय डेस्क या कंप्यूटर पर बैठकर काम करने में ख़ुश हैं?'}, n:{en:'desk / computer all day',hi:'पूरा दिन डेस्क / कंप्यूटर'} }
+];
+/* what each career asks of you: key traits (O C E A S, most important first) and the work conditions it involves.
+   Based on O*NET “work styles” and “work context” for comparable occupations. Moving away from home is handled by reloc. */
+window.CAREER_TRAITS = {
+ polytechnic:['CO',[]], iti:['C',['field']], paramedical:['CAS',['blood','shift']], shortterm:['C',[]], govjobs:['C',['desk']],
+ agniveer:['SC',['uniform','field']], drone:['OC',['field']], 'ev-green':['CO',['field']], avgc:['O',['desk']], sports:['ES',['field']],
+ entrepreneur:['EOS',[]], engineering:['CO',[]], 'cs-ai':['OC',['desk']], cyber:['CO',['desk','shift']], space:['OC',[]],
+ architecture:['OC',['desk']], nda:['SCE',['uniform','field']], 'science-research':['OC',[]], medicine:['CSA',['blood','shift']],
+ nursing:['ACS',['blood','shift']], pharma:['CA',[]], 'agri-dairy':['C',['field']], 'ca-cs':['C',['desk']], 'commerce-fin':['C',['desk']],
+ management:['ECS',[]], hotel:['EA',['shift']], 'civil-services':['CSE',[]], law:['ESC',[]], teaching:['AEC',[]], media:['EO',['shift','field']],
+ 'psych-social':['AS',[]], 'design-arts':['O',[]], police:['SCE',['uniform','shift','field']], veterinary:['CA',['blood','field']],
+ 'physio-allied':['AC',[]], 'biotech-forensic':['CO',[]], 'economics-stats':['CO',['desk']], aviation:['SC',['uniform','shift']],
+ 'merchant-navy':['SC',['uniform','shift','field']], 'logistics-retail':['CE',['shift','field']], 'ites-bpo':['AE',['desk','shift']],
+ 'fashion-textile':['O',[]], 'humanities-lang':['O',['desk']], 'banking-insurance':['CE',['desk']], 'music-performing':['OE',['shift']]
+};
+
 </script>
   <script>
 /* =====================================================================
@@ -2424,13 +2469,14 @@ window.PROFILE_FIELDS = [
   var FACES = [['😖', 'sc1'], ['🙁', 'sc2'], ['😐', 'sc3'], ['🙂', 'sc4'], ['😍', 'sc5']];
   var CONF = [['😟', 'cf1'], ['😕', 'cf2'], ['😐', 'cf3'], ['🙂', 'cf4'], ['💪', 'cf5']];
   var IMP = [['1', 'im1'], ['2', 'im2'], ['3', 'im3'], ['4', 'im4'], ['5', 'im5']];
-  var SEC = { sub: 'as_sub', int: 'as_s2', val: 'as_val', apt: 'as_s3', lrn: 'as_s4', rd: 'as_rd' };
-  var SEC_ORDER = ['sub', 'int', 'val', 'apt', 'lrn', 'rd'];
+  var SEC = { sub: 'as_sub', int: 'as_s2', val: 'as_val', per: 'as_per', ctx: 'as_ctx', apt: 'as_s3', lrn: 'as_s4', rd: 'as_rd' };
+  var SEC_ORDER = ['sub', 'int', 'val', 'per', 'ctx', 'apt', 'lrn', 'rd'];
+  var AGR = [['😣', 'ag1'], ['🙁', 'ag2'], ['😐', 'ag3'], ['🙂', 'ag4'], ['😄', 'ag5']];
 
   /* ------------------------------ question queue ------------------------------ */
   function track() { var p = A.profile; return p.cls === '12' ? (p.stream || 'pcm') : '10'; }
   function subjects() { return SUBJECT_SETS[track()]; }
-  /* the short form asks a chosen subset of each item bank (35 questions in all):
+  /* the assessment asks a chosen subset of each item bank, plus work style and work conditions (50 questions in all):
      3 interest statements per Holland type, 2 aptitude items per area, values as one “pick 3” screen */
   var INT_ASK = [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 21];
   var APT_ASK = [1, 2, 4, 6, 9, 10, 13, 14], LRN_ASK = [0, 3], RD_ASK = [0, 2];
@@ -2439,6 +2485,8 @@ window.PROFILE_FIELDS = [
     subjects().forEach(function (s) { q.push({ sec: 'sub', type: 'marks', key: 'sub:' + s[0] + ':m', subj: s }); });
     INT_ASK.forEach(function (i) { q.push({ sec: 'int', type: 'scale', key: 'int:' + i, item: INTEREST_ITEMS[i] }); });
     q.push({ sec: 'val', type: 'pick3', key: 'valpick' });
+    PERSONALITY_ITEMS.forEach(function (it, i) { q.push({ sec: 'per', type: 'agree', key: 'per:' + i, item: it }); });
+    WORK_CONTEXT_ITEMS.forEach(function (it) { q.push({ sec: 'ctx', type: 'ctx', key: 'ctx:' + it.k, item: it }); });
     APT_ASK.forEach(function (i) { q.push({ sec: 'apt', type: 'mc', key: 'apt:' + i, item: APTITUDE_ITEMS[i], skip: true }); });
     LRN_ASK.forEach(function (i) { q.push({ sec: 'lrn', type: 'mc', key: 'lrn:' + i, item: LEARN_ITEMS[i] }); });
     RD_ASK.forEach(function (i) { q.push({ sec: 'rd', type: 'mc', key: 'rd:' + i, item: READINESS_ITEMS[i] }); });
@@ -2459,7 +2507,7 @@ window.PROFILE_FIELDS = [
 
   function introView() {
     var started = A.step !== 'intro' || Object.keys(A.ans).length;
-    var steps = [['👤', 'as_s1', 'as_s1d'], ['📘', 'as_sub', 'as_subd'], ['❤️', 'as_s2', 'as_s2d'], ['⚖️', 'as_val', 'as_vald'], ['🧮', 'as_s3', 'as_s3d'], ['📖', 'as_s4', 'as_s4d'], ['🧭', 'as_rd', 'as_rdd']];
+    var steps = [['👤', 'as_s1', 'as_s1d'], ['📘', 'as_sub', 'as_subd'], ['❤️', 'as_s2', 'as_s2d'], ['⚖️', 'as_val', 'as_vald'], ['🧩', 'as_per', 'as_perd'], ['🏗️', 'as_ctx', 'as_ctxd'], ['🧮', 'as_s3', 'as_s3d'], ['📖', 'as_s4', 'as_s4d'], ['🧭', 'as_rd', 'as_rdd']];
     return '<section class="page-hero"><div class="wrap"><span class="eyebrow">' + t('nav_assess') + '</span><h1>' + t('as_title') + '</h1><p class="lead">' + t('as_lead') + '</p></div></section>' +
       '<div class="wrap section"><div class="grid g4 steps">' + steps.map(function (s, i) {
         return '<div class="card step"><span class="step-n">' + (i + 1) + '</span><div class="ico-tile">' + s[0] + '</div><h3>' + t(s[1]) + '</h3><p>' + t(s[2]) + '</p></div>';
@@ -2470,7 +2518,7 @@ window.PROFILE_FIELDS = [
       (started ? '<button class="btn btn-ghost btn-lg" data-act="a_clear">🗑 ' + t('clear_data') + '</button>' : '') +
       '<span class="muted">⏱ ' + t('as_time') + ' · 🔒 ' + t('as_priv') + '</span></div>' +
       '<div class="card research"><h3>🔬 ' + t('rs_t') + '</h3><p>' + t('rs_p') + '</p><ul>' +
-      ['rs_1', 'rs_2', 'rs_3', 'rs_6', 'rs_4', 'rs_5', 'rs_7'].map(function (k) { return '<li>' + t(k) + '</li>'; }).join('') + '</ul>' +
+      ['rs_1', 'rs_2', 'rs_3', 'rs_6', 'rs_4', 'rs_5', 'rs_7', 'rs_8', 'rs_9'].map(function (k) { return '<li>' + t(k) + '</li>'; }).join('') + '</ul>' +
       '<p class="note">' + t('rs_note') + '</p></div></div>';
   }
 
@@ -2502,7 +2550,7 @@ window.PROFILE_FIELDS = [
 
   /* rough seconds per question type → “about N min left” */
   function timeLeft(Q, i) {
-    var sec = { sub: 8, int: 10, val: 30, apt: 45, lrn: 12, rd: 12 }, s = 0;
+    var sec = { sub: 8, int: 10, val: 30, per: 8, ctx: 9, apt: 45, lrn: 12, rd: 12 }, s = 0;
     for (var k = i; k < Q.length; k++) s += sec[Q[k].sec] || 10;
     var m = Math.round(s / 60);
     return m < 1 ? t('min_less') : t('min_left').replace('{n}', m);
@@ -2516,6 +2564,10 @@ window.PROFILE_FIELDS = [
       body = '<p class="q-pre">' + t('as_sub') + '</p><h2 class="q">' + t('q_conf').replace('{s}', L(q.subj[1])) + '</h2>' + scaleRow(cur, CONF, t('q_conf'));
     } else if (q.type === 'scale') {
       body = '<p class="q-pre">' + t('q_int') + '</p><h2 class="q">' + L(q.item[1]) + '</h2>' + scaleRow(cur, FACES, t('q_int'));
+    } else if (q.type === 'agree') {
+      body = '<p class="q-pre">' + t('q_per') + '</p><h2 class="q">' + L(q.item.q) + '</h2>' + scaleRow(cur, AGR, t('q_per'));
+    } else if (q.type === 'ctx') {
+      body = '<p class="q-pre">' + t('q_ctx') + '</p><h2 class="q">' + L(q.item.q) + '</h2>' + optRows(cur, [t('cx_y'), t('cx_m'), t('cx_n')]);
     } else if (q.type === 'pick3') {
       var pk = cur || [];
       body = '<p class="q-pre">' + t('as_val') + '</p><h2 class="q">' + t('q_pick3') + '</h2><div class="opts pick3" role="group">' + VALUES_ITEMS.map(function (it) {
@@ -2532,7 +2584,7 @@ window.PROFILE_FIELDS = [
       body = '<h2 class="q">' + L(q.item.q) + '</h2>' + optRows(cur, q.item.o.map(function (o) { return L(o[1]); }));
     }
     return '<div class="wrap section qwrap"><div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '"><i style="width:' + pct + '%"></i></div>' +
-      '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/7 · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + ' · ' + timeLeft(Q, i) + '</span></div>' +
+      '<div class="q-meta"><span class="tag">' + t('as_step') + ' ' + stepNo + '/' + (SEC_ORDER.length + 1) + ' · ' + t(SEC[q.sec]) + ' ' + q.n + '/' + q.tot + '</span><span>' + t('question') + ' ' + (i + 1) + ' / ' + nq + ' · ' + timeLeft(Q, i) + '</span></div>' +
       '<div class="card qcard">' + body + '</div>' +
       '<div class="cta-row between"><button class="btn btn-ghost" data-act="a_back">← ' + t('back') + '</button>' +
       (cur != null && (q.type !== 'pick3' || cur.length === 3) ? '<button class="btn" data-act="a_next">' + (i === nq - 1 ? t('as_finish') : t('next')) + ' →</button>' : '<span class="muted">' + t('pick_one') + '</span>') + '</div></div>';
@@ -2620,11 +2672,17 @@ window.PROFILE_FIELDS = [
 
     var rdSum = 0, rdN = 0;
     READINESS_ITEMS.forEach(function (it, i) { var v = A.ans['rd:' + i]; if (v != null && it.o[v]) { rdSum += it.o[v][0]; rdN++; } });
+    /* work style: each trait 0–100 from its two statements (second one reversed); null if not answered */
+    var trait = {}; 'OCEAS'.split('').forEach(function (k) {
+      var vs = []; PERSONALITY_ITEMS.forEach(function (it, i) { var v = A.ans['per:' + i]; if (it.k === k && v != null) vs.push(it.r ? 6 - v : v); });
+      trait[k] = vs.length ? Math.round((vs.reduce(function (a, b) { return a + b; }, 0) / vs.length - 1) / 4 * 100) : null;
+    });
+    var ctx = {}; WORK_CONTEXT_ITEMS.forEach(function (it) { var v = A.ans['ctx:' + it.k]; ctx[it.k] = v == null ? null : v; });
     var rdAvg = rdN ? rdSum / rdN : 1, rdLevel = !rdN ? 1 : rdAvg <= 1 / 3 ? 0 : rdAvg <= 4 / 3 ? 1 : 2;   // same cut-offs as 3 items, any count
 
     return { ri: ri, rel: c.rel, flat: c.sd < 8, careless: careless, order: order, code: order.slice(0, 3).join(''),
       apt: apt, aptRight: right, aptTried: attempted, sub: sub, subList: subList, vals: vals, vrel: vc.rel, vorder: vorder,
-      lc: lc, lstyle: lorder[0], lstyle2: lc[lorder[1]] === lc[lorder[0]] ? lorder[1] : null, rd: rdLevel };
+      trait: trait, ctx: ctx, lc: lc, lstyle: lorder[0], lstyle2: lc[lorder[1]] === lc[lorder[0]] ? lorder[1] : null, rd: rdLevel };
   }
 
   function interestFit(c, r) {
@@ -2650,6 +2708,18 @@ window.PROFILE_FIELDS = [
     var hits = ks.filter(function (k) { return r.vrel[k] >= 62 && (r.vals[k] || 0) >= 75; });
     return { v: s / ks.length, hits: hits };
   }
+  /* work-style fit: average of the student’s scores on the traits this career leans on (60 = neutral when unknown) */
+  function persFit(c, r) {
+    var ks = ((CAREER_TRAITS[c.id] || [''])[0] || '').split('').filter(Boolean), w = [3, 2, 1], s = 0, ws = 0;
+    ks.forEach(function (k, i) { if (r.trait && r.trait[k] != null) { s += w[i] * r.trait[k]; ws += w[i]; } });
+    return ws ? s / ws : 60;
+  }
+  /* work conditions: yes 100 · maybe 65 · no 15 for each condition the career involves (100 if it involves none) */
+  function ctxFit(c, r) {
+    var ks = (CAREER_TRAITS[c.id] || ['', []])[1] || [], s = 0, n = 0, no = [];
+    ks.forEach(function (k) { var v = r.ctx ? r.ctx[k] : null; if (v == null) { s += 75; } else { s += [100, 65, 15][v]; if (v === 2) no.push(k); } n++; });
+    return { v: n ? s / n : 100, no: no };
+  }
   function feasibility(c) {
     var f = 100, why = [];
     var a = { '1': 0, '2': 1, '3': 2, '4': 3 }[P('income')] + (P('loan') === 'yes' ? 1 : P('loan') === 'maybe' ? 0.5 : 0);
@@ -2662,12 +2732,13 @@ window.PROFILE_FIELDS = [
   }
   function scoreAll(list, r) {
     return list.map(function (c) {
-      var i = interestFit(c, r), a = aptFit(c, r), rd = readiness(c, r), vf = valuesFit(c, r), fe = feasibility(c);
-      var why = fe.why.slice(), weakK = rd.known && rd.v < 40; if (weakK) why.push('marks');
+      var i = interestFit(c, r), a = aptFit(c, r), rd = readiness(c, r), vf = valuesFit(c, r), fe = feasibility(c), p = persFit(c, r), cx = ctxFit(c, r);
+      var why = fe.why.slice(), weakK = rd.known && rd.v < 40; if (weakK) why.push('marks'); if (cx.no.length) why.push('ctx');
+      var feas = 0.65 * fe.v + 0.35 * cx.v, ctxD = Math.pow(0.8, cx.no.length);   // each clear “no” to a condition the career involves also lowers the dream score
       /* weak marks in the subjects behind a career cap how "great" the fit can look, on top of the readiness term */
-      return { c: c, i: i, a: a, rd: rd.v, weak: rd.weak, v: vf.v, hits: vf.hits, f: fe.v, why: why,
-        dream: (0.55 * i + 0.15 * a + 0.15 * rd.v + 0.15 * vf.v) * (weakK ? 0.9 : 1),
-        prac: (0.40 * i + 0.10 * a + 0.10 * rd.v + 0.10 * vf.v + 0.30 * fe.v) * (weakK ? 0.85 : 1) };
+      return { c: c, i: i, a: a, rd: rd.v, weak: rd.weak, v: vf.v, hits: vf.hits, f: feas, p: p, no: cx.no, why: why,
+        dream: (0.45 * i + 0.13 * a + 0.12 * rd.v + 0.12 * vf.v + 0.18 * p) * (weakK ? 0.9 : 1) * ctxD,
+        prac: (0.32 * i + 0.08 * a + 0.08 * rd.v + 0.08 * vf.v + 0.14 * p + 0.30 * feas) * (weakK ? 0.85 : 1) };
     });
   }
   function pool() {
@@ -2782,9 +2853,11 @@ window.PROFILE_FIELDS = [
     var notes = [];
     if (match.length) notes.push(t('why_int') + ' ' + match.map(function (x) { return L(RIASEC[x].name).split(' — ')[0]; }).join(' + '));
     if (s.hits.length) notes.push('💛 ' + t('why_val') + ' ' + s.hits.map(function (k) { return L(VALUE_NAMES[k]); }).join(', '));
-    var wmap = { cost: 'why_cost', time: 'why_time', away: 'why_away', net: 'why_net', marks: 'why_marks' };
-    var warn = s.why.filter(function (w) { return kind === 'prac' || w === 'marks'; });
-    if (warn.length) notes.push('⚠ ' + warn.map(function (w) { return t(wmap[w]).replace('{s}', s.weak.join(', ')); }).join(' · '));
+    var wmap = { cost: 'why_cost', time: 'why_time', away: 'why_away', net: 'why_net', marks: 'why_marks', ctx: 'why_ctx' };
+    var cxn = function () { return (s.no || []).map(function (k) { var it = WORK_CONTEXT_ITEMS.filter(function (x) { return x.k === k; })[0]; return it ? L(it.n) : k; }).join(', '); };
+    var warn = s.why.filter(function (w) { return kind === 'prac' || w === 'marks' || w === 'ctx'; });
+    if (s.p >= 70) { var tk = ((CAREER_TRAITS[c.id] || [''])[0] || '').split('').filter(function (k) { return compute().trait[k] >= 70; }); if (tk.length) notes.push('🧩 ' + t('why_sty') + ' ' + tk.map(function (k) { return L(TRAIT_NAMES[k]); }).join(', ')); }
+    if (warn.length) notes.push('⚠ ' + warn.map(function (w) { return w === 'ctx' ? t('why_ctx').replace('{s}', cxn()) : t(wmap[w]).replace('{s}', s.weak.join(', ')); }).join(' · '));
     return '<a class="card rec" href="#/career/' + c.id + '"><div class="rec-h"><span class="ico-tile">' + c.ico + '</span><div><h4>' + L(c.name) + '</h4><span class="fit f' + (val >= 70 ? 3 : val >= 52 ? 2 : 1) + '">' + label + ' · ' + val + '%</span></div></div>' +
       '<div class="meter"><i style="width:' + val + '%"></i></div><p class="why">' + notes.join('<br>') + '</p><div class="minis">' + chips(s) + '</div></a>';
   }
@@ -2820,6 +2893,16 @@ window.PROFILE_FIELDS = [
       }).join('') + '</div></div>' +
       '<div class="card"><h3>' + t('res_apt') + '</h3><p class="hint">' + t('res_apt_h') + ' ' + r.aptRight + ' / ' + r.aptTried + (r.aptTried < NA ? ' (' + (NA - r.aptTried) + ' ' + t('skipped') + ')' : '') + '</p>' +
       Object.keys(r.apt).map(function (k) { return aptRow(L(APTITUDE_NAMES[k]), r.apt[k]); }).join('') + '<p class="hint">' + t('apt_note') + '</p></div>' +
+      '<div class="card sty"><h3>🧩 ' + t('res_sty') + '</h3><p class="hint">' + t('res_sty_h') + '</p>' + 'OCEAS'.split('').map(function (k) {
+        var v = r.trait[k]; if (v == null) return '';
+        var lvl = v >= 70 ? 3 : v >= 45 ? 2 : 1;
+        return '<div class="bar"><span class="bar-l">' + esc(L(TRAIT_NAMES[k])) + '</span><span class="bar-t"><i style="width:' + Math.max(8, v) + '%;background:#16947f"></i></span><b class="lvl b' + lvl + '">' + t('sty_b' + lvl) + '</b></div>';
+      }).join('') + (function () {
+        var tops = 'OCEAS'.split('').filter(function (k) { return r.trait[k] != null && r.trait[k] >= 70; });
+        var nos = WORK_CONTEXT_ITEMS.filter(function (it) { return r.ctx[it.k] === 2; });
+        return (tops.length ? '<p class="sm">' + tops.map(function (k) { return '<b>' + esc(L(TRAIT_NAMES[k])) + ':</b> ' + esc(L(TRAIT_NAMES[k].d)); }).join('<br>') + '</p>' : '') +
+          (nos.length ? '<p class="hint">🚫 ' + t('res_ctx_no') + ' ' + nos.map(function (it) { return esc(L(it.n)); }).join(', ') + '</p>' : '');
+      })() + '</div>' +
       '<div class="card"><h3>' + ls.ico + ' ' + t('res_learn') + ': ' + L(ls.name) + (r.lstyle2 ? ' + ' + L(LEARN_STYLES[r.lstyle2].name) : '') + '</h3><p>' + L(ls.tip) + (r.lstyle2 ? ' ' + L(LEARN_STYLES[r.lstyle2].tip) : '') + '</p><p class="hint">' + t('res_learn_h') + '</p>' +
       '<p class="ctx"><b>' + t('res_ctx') + ':</b> ' + t('cls_' + cls) + (A.profile.stream ? ' · ' + t('st_' + A.profile.stream) : '') + ' · ' + P1.income + ' · ' + t('earn_' + P('earn')) + ' · ' + t('away_' + P('away')) + '</p></div></div>';
 
