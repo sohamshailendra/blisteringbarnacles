@@ -21,8 +21,10 @@
   <style>
 /* =====================================================================
    STYLES — organised top to bottom:
-   1 tokens  2 base  3 header/footer  4 buttons & chips  5 hero  6 cards & grids
-   7 forms/filters  8 tree  9 assessment  10 results  11 tables  12 misc  13 responsive  14 print
+   1 tokens  2 base  3 chrome (top line, sidebar, menu, footer)  4 buttons & chips  5 app page header
+   6 home  7 cards  8 forms  9 tree  10 assessment  11 results  12 tables & detail  13 directory & school corner
+   14 journey & toast  15 plan/compare/wellbeing  16 class session  17 motion  18 responsive  19 print
+   then: certificate sheets (A4), print scaling
    ===================================================================== */
 /* 1 ── design tokens. Page (home) and app screens share one face and one palette:
    ink on white / pale blue-grey, one blue for the action and the main data element, no colour in the chrome. ── */
@@ -72,7 +74,7 @@ input,select,textarea{accent-color:var(--ink)}
 main:focus{outline:none}
 .ico-tile,.ico,.ci,.cmp-ico,.facts .fi,.big-ico,.root-node>span:first-child,.face .em,.gate .ico-tile{display:none!important}
 svg.i{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-/* 3 ── chrome: home has a top line; app screens have a sidebar (a 52px bar on phones); one full-screen menu for both ── */
+/* 3 ── chrome: home has a top line; app screens have a sidebar (a 56px bar on phones); one full-screen menu for both ── */
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);min-width:0}
 .brand:hover{color:var(--ink)}
 .brand img{height:40px;width:auto;flex:none}
@@ -100,7 +102,7 @@ svg.i{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em;fill:none;stroke:
 .side .lang{align-self:flex-start;margin-left:.4rem}
 .navg{display:grid;gap:2px}
 .navg>span{font-size:.875rem;color:var(--mut);padding:0 .75rem .3rem;font-weight:500}
-.navg a{display:flex;align-items:center;min-height:34px;padding:0 .75rem;border-radius:8px;color:var(--ink);text-decoration:none;font-size:.9375rem;transition:background-color .14s var(--ease)}
+.navg a{display:flex;align-items:center;min-height:34px;padding:0 .75rem;border-radius:6px;color:var(--ink);text-decoration:none;font-size:.9375rem;transition:background-color .14s var(--ease)}
 .navg a:hover{background:rgba(17,17,17,.05)}
 .navg a.on{background:var(--active);font-weight:600}
 .side-tools{margin-top:auto;display:flex;gap:.2rem;flex-wrap:wrap;padding:.8rem .4rem 0}
@@ -747,7 +749,7 @@ body:not(.is-app) .card{box-shadow:0 0 0 1px var(--line)}
 .back .inner{gap:4.2mm;padding-top:10mm;padding-bottom:8mm}.back .b-grid{gap:4mm}.back .bx{padding:3.6mm 4mm}
 .back .rw{grid-template-columns:42mm 1fr}.back .t3{font-size:7.9pt}
 
-/* certificate & career profile in the portal's own look: ink frame, road-green accents, prints well in black and white */
+/* certificate & career profile in the portal's own look: ink frame, blue accents, prints well in black and white */
 .front .frame{border:1.2mm solid #111;outline:.35mm solid #111;outline-offset:-3mm}
 .front .cn,.front .rule span{display:none}
 .front .wm{opacity:.05}
@@ -3257,7 +3259,7 @@ window.FAM_FIELDS = {
   }
   function aptRow(label, pct) {
     var b = App.aptBand(pct), lvl = b === 'apt_b3' ? 3 : b === 'apt_b2' ? 2 : b === 'apt_b1' ? 1 : 0;
-    return '<div class="bar"><span class="bar-l">' + label + '</span><span class="bar-t"><i style="width:' + (lvl * 33) + '%;background:#2b6cd4"></i></span><b class="lvl b' + lvl + '">' + t(b) + '</b></div>';
+    return '<div class="bar"><span class="bar-l">' + label + '</span><span class="bar-t"><i style="width:' + (lvl * 33) + '%;background:var(--acc)"></i></span><b class="lvl b' + lvl + '">' + t(b) + '</b></div>';
   }
   function subRow(s) {
     var band = s.band != null ? L(MARK_BANDS[s.band][1]) : '—', dots = '';
@@ -3340,7 +3342,7 @@ window.FAM_FIELDS = {
       famCard(R) + '<div class="card sty"><h3>' + t('res_sty') + '</h3><p class="hint">' + t('res_sty_h') + '</p>' + 'OCEAS'.split('').map(function (k) {
         var v = r.trait[k]; if (v == null) return '';
         var lvl = v >= 70 ? 3 : v >= 45 ? 2 : 1;
-        return '<div class="bar"><span class="bar-l">' + esc(L(TRAIT_NAMES[k])) + '</span><span class="bar-t"><i style="width:' + Math.max(8, v) + '%;background:#16947f"></i></span><b class="lvl b' + lvl + '">' + t('sty_b' + lvl) + '</b></div>';
+        return '<div class="bar"><span class="bar-l">' + esc(L(TRAIT_NAMES[k])) + '</span><span class="bar-t"><i style="width:' + Math.max(8, v) + '%;background:var(--acc)"></i></span><b class="lvl b' + lvl + '">' + t('sty_b' + lvl) + '</b></div>';
       }).join('') + (function () {
         var tops = 'OCEAS'.split('').filter(function (k) { return r.trait[k] != null && r.trait[k] >= 70; });
         var nos = WORK_CONTEXT_ITEMS.filter(function (it) { return r.ctx[it.k] === 2; });

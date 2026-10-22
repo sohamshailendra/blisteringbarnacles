@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T21:58:46+00:00",
+  "title": "Design System: Mera Bhavishya – Mera Nirnay",
+  "extensions": {
+    "colorMeta": {
+      "road-blue": {
+        "role": "primary",
+        "displayName": "Road Blue",
+        "canonical": "oklch(49.0% 0.231 265)",
+        "tonalRamp": [
+          "#06004d",
+          "#02007c",
+          "#072aad",
+          "#1b4ce1",
+          "#4277fc",
+          "#6b9fff",
+          "#95c6ff",
+          "#c1edff"
+        ]
+      },
+      "road-blue-deep": {
+        "role": "primary",
+        "displayName": "Road Blue Deep",
+        "canonical": "oklch(41.2% 0.197 265)",
+        "tonalRamp": [
+          "#050049",
+          "#010976",
+          "#0c2fa5",
+          "#2b56c7",
+          "#517ce2",
+          "#78a2fe",
+          "#a2c8ff",
+          "#cdeeff"
+        ]
+      },
+      "road-blue-tint": {
+        "role": "primary",
+        "displayName": "Road Blue Tint",
+        "canonical": "oklch(94.9% 0.021 268)",
+        "tonalRamp": [
+          "#06004d",
+          "#02007c",
+          "#072aad",
+          "#1b4ce1",
+          "#4277fc",
+          "#6b9fff",
+          "#95c6ff",
+          "#c1edff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(17.8% 0 0)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink-hover": {
+        "role": "neutral",
+        "displayName": "Ink Hover",
+        "canonical": "oklch(28.9% 0 0)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate Grey",
+        "canonical": "oklch(49.8% 0.009 254)",
+        "tonalRamp": [
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6267",
+          "#7e8388",
+          "#a1a5ab",
+          "#c5cacf",
+          "#eaeff5"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Grey",
+        "canonical": "oklch(64.9% 0.015 262)",
+        "tonalRamp": [
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6267",
+          "#7e8388",
+          "#a1a5ab",
+          "#c5cacf",
+          "#eaeff5"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(92.1% 0.005 258)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "oklch(84.4% 0.008 261)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ledger Ground",
+        "canonical": "oklch(96.6% 0.005 258)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "ground-deep": {
+        "role": "neutral",
+        "displayName": "Ledger Ground Deep",
+        "canonical": "oklch(93.9% 0.006 255)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "pill": {
+        "role": "neutral",
+        "displayName": "Pill Grey",
+        "canonical": "oklch(92.8% 0.003 265)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "pill-hover": {
+        "role": "neutral",
+        "displayName": "Pill Grey Hover",
+        "canonical": "oklch(89.4% 0.005 258)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "active": {
+        "role": "neutral",
+        "displayName": "Active Grey",
+        "canonical": "oklch(93.1% 0.006 265)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#242527",
+          "#404244",
+          "#606164",
+          "#818285",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeff2"
+        ]
+      },
+      "ok": {
+        "role": "status",
+        "displayName": "Done Green",
+        "canonical": "oklch(48.8% 0.130 149)",
+        "tonalRamp": [
+          "#001300",
+          "#003101",
+          "#00521a",
+          "#167435",
+          "#4b955b",
+          "#76b781",
+          "#a1daaa",
+          "#ccfdd3"
+        ]
+      },
+      "ok-tint": {
+        "role": "status",
+        "displayName": "Done Tint",
+        "canonical": "oklch(95.4% 0.020 155)",
+        "tonalRamp": [
+          "#001300",
+          "#003101",
+          "#00521a",
+          "#167435",
+          "#4b955b",
+          "#76b781",
+          "#a1daaa",
+          "#ccfdd3"
+        ]
+      },
+      "warn": {
+        "role": "status",
+        "displayName": "Caution Amber",
+        "canonical": "oklch(50.8% 0.108 73)",
+        "tonalRamp": [
+          "#1c0300",
+          "#3c1c00",
+          "#603800",
+          "#855600",
+          "#a67939",
+          "#c69d66",
+          "#e8c292",
+          "#ffe9bf"
+        ]
+      },
+      "warn-tint": {
+        "role": "status",
+        "displayName": "Caution Tint",
+        "canonical": "oklch(96.6% 0.032 87)",
+        "tonalRamp": [
+          "#1c0300",
+          "#3c1c00",
+          "#603800",
+          "#855600",
+          "#a67939",
+          "#c69d66",
+          "#e8c292",
+          "#ffe9bf"
+        ]
+      },
+      "err": {
+        "role": "status",
+        "displayName": "Error Red",
+        "canonical": "oklch(53.2% 0.198 28)",
+        "tonalRamp": [
+          "#300000",
+          "#590000",
+          "#860000",
+          "#b51516",
+          "#db493e",
+          "#fb7769",
+          "#ffa394",
+          "#ffcfc0"
+        ]
+      },
+      "err-tint": {
+        "role": "status",
+        "displayName": "Error Tint",
+        "canonical": "oklch(94.6% 0.022 24)",
+        "tonalRamp": [
+          "#300000",
+          "#590000",
+          "#860000",
+          "#b51516",
+          "#db493e",
+          "#fb7769",
+          "#ffa394",
+          "#ffcfc0"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The programme name on the home hero; also the closing 'Class 10' line and the footer name. English only gets the negative tracking."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Home section statements and the four staircase steps."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "The h1 of each app screen; h2 to h4 step down from it."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "One supporting sentence under a heading, max 52ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text in Hindi and English; never below 1rem, inputs never below 16px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Hints, captions, table headers, nav group names, tags."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hairline-ring",
+        "value": "0 0 0 1px rgba(17,17,17,.06)",
+        "purpose": "Every app card, tree node, timeline cell, roster and compare table; replaces borders."
+      },
+      {
+        "name": "hairline-ring-home",
+        "value": "0 0 0 1px #e3e5e8",
+        "purpose": "Cards on the white home page."
+      },
+      {
+        "name": "hover-ring",
+        "value": "0 0 0 1px #c9ccd1",
+        "purpose": "Hover on clickable cards and tree leaves."
+      },
+      {
+        "name": "hover-lift",
+        "value": "0 0 0 1px #c9ccd1, 0 4px 14px rgba(17,17,17,.06)",
+        "purpose": "Career and recommendation cards on hover only."
+      },
+      {
+        "name": "input-ring",
+        "value": "inset 0 0 0 1px #c9ccd1",
+        "purpose": "Input outline at rest; becomes inset 0 0 0 2px #111 on focus."
+      },
+      {
+        "name": "toast",
+        "value": "0 8px 28px rgba(0,0,0,.25)",
+        "purpose": "The ink toast floating at the bottom of the screen."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #1a4be0; outline-offset: 2px",
+        "purpose": "Keyboard focus on every focusable element."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.23,1,.32,1)",
+        "purpose": "Default ease-out for state changes, entrances and the picture settle."
+      },
+      {
+        "name": "ease-io",
+        "value": "cubic-bezier(.77,0,.175,1)",
+        "purpose": "The hero shutter only."
+      },
+      {
+        "name": "press",
+        "value": "transform scale(.97), 120ms ease",
+        "purpose": "Buttons, chips, answers and Menu on press."
+      },
+      {
+        "name": "state",
+        "value": "140–160ms ease",
+        "purpose": "Background, border and ring changes on hover/selection."
+      },
+      {
+        "name": "sheet-in",
+        "value": "opacity 0→1, translateY(-8px)→0, 220ms ease",
+        "purpose": "Full-screen menu opening."
+      },
+      {
+        "name": "hero-shutter",
+        "value": "clip-path inset(0 100% 0 0)→inset(0), 1.1s ease-io; image scale 1.12→1 over 1.4s ease",
+        "purpose": "Signature: the road opens inside the programme name once the image has loaded."
+      },
+      {
+        "name": "rise-in",
+        "value": "opacity 0→1, translateY(16px)→0, 500ms ease, 70ms stagger (max 8 steps)",
+        "purpose": "One-time entrance of home section parts as they scroll in (IntersectionObserver)."
+      },
+      {
+        "name": "meter-grow",
+        "value": "scaleX(0)→1, 600ms ease, 40ms stagger",
+        "purpose": "Fit meters and result bars filling on first render."
+      },
+      {
+        "name": "toast",
+        "value": "4.5s in-hold-out",
+        "purpose": "Toast lifetime; becomes a plain fade under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion: reduce)",
+        "purpose": "Transitions limited to colour/opacity; no press scale, no shutter (picture shown open), no rise, no bar growth, no menu slide. Print always shows everything."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "640px",
+        "purpose": "max-width: single column, 16px gutter, hero picture on its own line"
+      },
+      {
+        "name": "topline-links-off",
+        "value": "760px",
+        "purpose": "max-width: home top-line links hidden (Menu remains)"
+      },
+      {
+        "name": "tablet",
+        "value": "960px",
+        "purpose": "max-width: grids to two columns, detail pages to one"
+      },
+      {
+        "name": "sidebar",
+        "value": "1024px",
+        "purpose": "min-width: fixed 248px app sidebar; below it a 56px app bar and full-screen menu"
+      },
+      {
+        "name": "topline-compact",
+        "value": "1100px",
+        "purpose": "max-width: home top line shows three links"
+      }
+    ],
+    "layout": {
+      "homeContainer": "min(1180px, 100% - 3rem)",
+      "appContainer": "min(1120px, 100% - 4rem) beside the 248px sidebar",
+      "phoneContainer": "calc(100% - 2rem)",
+      "grid": "12 columns, 1rem gutter on home sections",
+      "sidebarWidth": "248px",
+      "appBarHeight": "56px",
+      "detailSideColumn": "320px"
+    },
+    "print": {
+      "reportCard": "Two A4 portrait sheets per student (certificate front + career profile back), @page margin 0, each sheet zoomed to fit the printable area so the set is always exactly two pages.",
+      "certificateFront": "Ink double frame (1.2mm solid + 0.35mm outline offset -3mm), Haryana emblem header and 5% emblem watermark, name over an ink rule, signature lines and a dashed seal circle.",
+      "profileBack": "4mm ink top band, emblem header over an ink rule, white boxes with #c9d0da borders and 1.2mm corners.",
+      "screens": "Results, plan and class lists print at 11pt on white with cards as 1px #999 boxes and links in black."
+    },
+    "imagery": {
+      "source": "Six Figma AI illustrations (road, cycle, nursing, iti, classroom, computers) in public/img as 640/1280 WebP, each with a .webp.json provenance sidecar.",
+      "labelling": "Footer on the home page states the pictures are illustrations made with Figma AI, not real students or schools.",
+      "radius": "4px"
+    },
+    "brandAssets": [
+      {
+        "name": "Haryana Government emblem",
+        "use": "Sidebar/top-line wordmark, menu sheet, both printed sheets; kept as a binding brand asset."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Near-black pill for the main action on any app screen.",
+      "html": "<button class=\"ds-btn\" type=\"button\">See my results</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;background:var(--pri,#111);color:#fff;border:0;min-height:44px;padding:.5rem 1.25rem;border-radius:999px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;font-weight:600;line-height:1.25;cursor:pointer;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-btn:hover{background:#2b2b2b}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Grey pill for secondary actions beside a primary one.",
+      "html": "<button class=\"ds-btn-2\" type=\"button\">Print report card</button>",
+      "css": ".ds-btn-2{display:inline-flex;align-items:center;justify-content:center;background:var(--pill,#e6e7e9);color:var(--ink,#111);border:0;min-height:44px;padding:.5rem 1.25rem;border-radius:999px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;font-weight:600;line-height:1.25;cursor:pointer;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-btn-2:hover{background:var(--pill-h,#dadcdf)}.ds-btn-2:active{transform:scale(.97)}.ds-btn-2:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+    },
+    {
+      "name": "Home Start Action",
+      "kind": "button",
+      "refersTo": "button-home-action",
+      "description": "The single blue pill on the home hero: Start the free assessment. Used nowhere else.",
+      "html": "<a class=\"ds-btn-acc\" href=\"#\">Start the free assessment <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn-acc{display:inline-flex;align-items:center;gap:.45rem;background:var(--acc,#1a4be0);color:#fff;min-height:52px;padding:.7rem 1.6rem;border-radius:999px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;font-weight:600;text-decoration:none;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-btn-acc:hover{background:var(--acc-d,#1239b3)}.ds-btn-acc:active{transform:scale(.97)}.ds-btn-acc:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "White pill with a hairline border; selected fills with ink.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip ds-on\" type=\"button\">All</button><button class=\"ds-chip\" type=\"button\">After Class 10</button><button class=\"ds-chip\" type=\"button\">After Class 12</button></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:.4rem}.ds-chip{border:1px solid var(--line-2,#c9ccd1);background:#fff;color:var(--ink,#111);border-radius:999px;padding:.35rem .9rem;min-height:38px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:.9375rem;cursor:pointer;transition:background-color .14s cubic-bezier(.23,1,.32,1),border-color .14s cubic-bezier(.23,1,.32,1)}.ds-chip:hover{border-color:var(--ink,#111)}.ds-chip.ds-on{background:var(--ink,#111);border-color:var(--ink,#111);color:#fff;font-weight:600}.ds-chip:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field, 6px corners, inset hairline ring that turns to a 2px ink ring on focus.",
+      "html": "<label class=\"ds-fld\">Search careers<input class=\"ds-input\" type=\"search\" placeholder=\"e.g. nursing, ITI electrician\"></label>",
+      "css": ".ds-fld{display:flex;flex-direction:column;gap:.35rem;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:.9375rem;font-weight:500;color:var(--ink,#111)}.ds-input{width:100%;min-height:44px;padding:.55rem .85rem;border:0;box-shadow:inset 0 0 0 1px var(--line-2,#c9ccd1);border-radius:6px;background:#fff;font:inherit;font-size:max(16px,1rem);font-weight:400;transition:box-shadow .14s cubic-bezier(.23,1,.32,1)}.ds-input::placeholder{color:var(--soft,#8a8f98)}.ds-input:focus{outline:0;box-shadow:inset 0 0 0 2px var(--ink,#111)}"
+    },
+    {
+      "name": "Career Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card on the ledger ground with a hairline ring, a blue fit meter as its one data element.",
+      "html": "<a class=\"ds-card\" href=\"#\"><h3>ITI Electrician</h3><p>2 years · after Class 10</p><span class=\"ds-meter\"><i style=\"width:78%\"></i></span><span class=\"ds-fit\">Great fit · 78%</span></a>",
+      "css": ".ds-card{display:block;background:#fff;border-radius:8px;padding:1.25rem 1.4rem;box-shadow:0 0 0 1px rgba(17,17,17,.06);color:var(--ink,#111);text-decoration:none;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;max-width:320px;transition:box-shadow .16s cubic-bezier(.23,1,.32,1)}.ds-card:hover{box-shadow:0 0 0 1px var(--line-2,#c9ccd1),0 4px 14px rgba(17,17,17,.06)}.ds-card:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}.ds-card h3{margin:0 0 .2rem;font-size:1.125rem;font-weight:600;line-height:1.12}.ds-card p{margin:0;color:var(--mut,#5f6368);font-size:.9375rem}.ds-meter{display:block;height:6px;background:var(--tint-2,#e8ebef);border-radius:999px;margin:.8rem 0 .5rem;overflow:hidden}.ds-meter i{display:block;height:100%;background:var(--acc,#1a4be0);border-radius:999px}.ds-fit{display:inline-block;font-size:.8125rem;font-weight:600;border-radius:999px;padding:.05rem .55rem;background:var(--ink,#111);color:#fff}"
+    },
+    {
+      "name": "Answer Option",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "Full-width assessment option with a lettered circle; selected takes the ground fill and an ink border.",
+      "html": "<div class=\"ds-opts\"><button class=\"ds-opt\" type=\"button\"><b>A</b>Fix a broken cycle</button><button class=\"ds-opt ds-on\" type=\"button\"><b>B</b>Explain a lesson to a friend</button></div>",
+      "css": ".ds-opts{display:grid;gap:.5rem;max-width:520px}.ds-opt{display:flex;align-items:center;gap:.9rem;text-align:left;border:1.5px solid var(--line-2,#c9ccd1);background:#fff;border-radius:8px;padding:.75rem 1rem;min-height:3.25rem;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;color:var(--ink,#111);cursor:pointer;transition:background-color .14s cubic-bezier(.23,1,.32,1),border-color .14s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-opt b{display:grid;place-items:center;width:1.8rem;height:1.8rem;border-radius:50%;border:1.5px solid var(--line-2,#c9ccd1);background:#fff;color:var(--mut,#5f6368);flex:none;font-size:.875rem}.ds-opt:hover{border-color:var(--ink,#111)}.ds-opt:active{transform:scale(.97)}.ds-opt:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}.ds-opt.ds-on{border-color:var(--ink,#111);background:var(--tint,#f2f4f7);font-weight:600}.ds-opt.ds-on b{background:var(--ink,#111);border-color:var(--ink,#111);color:#fff}"
+    },
+    {
+      "name": "Sidebar Navigation",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "App navigation on the ledger ground (248px at 1024px and up): grouped 34px links, current page in active grey.",
+      "html": "<nav class=\"ds-side\"><div class=\"ds-navg\"><span>Find your road</span><a href=\"#\" class=\"ds-on\">Assessment</a><a href=\"#\">Career tree</a><a href=\"#\">Careers</a><a href=\"#\">Colleges</a></div><div class=\"ds-lang\"><button type=\"button\" class=\"ds-on\">हिं</button><button type=\"button\">EN</button></div></nav>",
+      "css": ".ds-side{width:248px;background:var(--ground,#f2f4f7);padding:1.4rem 1rem;display:flex;flex-direction:column;gap:1.4rem;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif}.ds-navg{display:grid;gap:2px}.ds-navg>span{font-size:.875rem;color:var(--mut,#5f6368);padding:0 .75rem .3rem;font-weight:500}.ds-navg a{display:flex;align-items:center;min-height:34px;padding:0 .75rem;border-radius:8px;color:var(--ink,#111);text-decoration:none;font-size:.9375rem;transition:background-color .14s cubic-bezier(.23,1,.32,1)}.ds-navg a:hover{background:rgba(17,17,17,.05)}.ds-navg a.ds-on{background:var(--active,#e6e8ec);font-weight:600}.ds-navg a:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}.ds-lang{display:inline-flex;align-self:flex-start;background:var(--pill,#e6e7e9);border-radius:999px;padding:3px}.ds-lang button{border:0;background:transparent;border-radius:999px;padding:.3rem .8rem;font:inherit;font-weight:500;color:var(--mut,#5f6368);min-height:34px;cursor:pointer}.ds-lang button.ds-on{background:#fff;color:var(--ink,#111)}"
+    },
+    {
+      "name": "Road in the Name",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Signature hero: the road picture sits inside the programme name and opens with a clip-path shutter; reduced motion shows it open.",
+      "html": "<h1 class=\"ds-name\"><span class=\"ds-l\">मेरा भविष्य</span><span class=\"ds-l\"><span class=\"ds-slot\"></span><span>मेरा निर्णय</span></span></h1>",
+      "css": ".ds-name{font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:clamp(2.6rem,1rem + 6vw,6rem);line-height:.95;margin:0;color:var(--ink,#111)}.ds-l{display:flex;align-items:baseline;gap:0 .2em}.ds-slot{display:inline-block;flex:none;width:2.1em;height:.72em;border-radius:.1em;overflow:hidden;position:relative;top:.02em;background:linear-gradient(#e9c64a,#e9c64a) bottom/100% 55% no-repeat,#cfd8e4;animation:ds-shutter 1.1s cubic-bezier(.77,0,.175,1) both}@keyframes ds-shutter{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}@media (prefers-reduced-motion:reduce){.ds-slot{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Road Inside the Name",
+    "overview": "The programme's own name is the composition. On the home page \"मेरा भविष्य / मेरा निर्णय\" is set at poster scale on two lines, and a picture of a country road through mustard fields sits inside the second line where a letter would be. The rest of the home page repeats that grammar at smaller scale: a short sentence on the left, its evidence (a picture, a list of dates, a row of facts) beside it. Every app screen (assessment, results, career tree, directories, class session) drops the poster scale and becomes an achromatic ledger: ink figures on white cards over a pale blue-grey ground, with the one blue kept for the number or bar that matters most on that screen.\n\nThe look is neutral and official without borrowing the government-portal template. There is no utility bar, no row of blue buttons on white, no ruled link lists, no icon-card grids and no edtech gradient. Authority comes from the Haryana emblem, plain bilingual words and an even, quiet surface. Density is sparse on the home page (very large type, long vertical breaks) and moderate in the app (44px controls, 1rem gaps, white cards).\n\nThe system is built for a student on a low-end Android phone, reading Hindi first, often offline, and for a teacher printing a whole class's report cards on an ordinary black-and-white A4 printer. Everything has to read in Hindi and English with the same face, survive missing web fonts, and print legibly without colour.",
+    "keyCharacteristics": [
+      "One face, Anek Devanagari, for Hindi and English alike.",
+      "Ink and greys everywhere; one blue, used on the home action and on each screen's main data element.",
+      "Near-black pill buttons for primary actions, grey pills for secondary ones.",
+      "White cards (8px corners) and controls (6px corners) defined by a hairline ring, not by shadow.",
+      "Home is a white page with a top line of links; app screens sit on a pale ground with a sidebar.",
+      "One signature motion: the road picture opens inside the name like a shutter.",
+      "The printed report card is a first-class product: two A4 sheets in the same ink look."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Road Blue appears on the home page's main action and on the single main data element of a screen. Nothing else in the chrome is coloured: navigation, headers, cards and secondary buttons stay ink and grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The Black-and-White Print Rule",
+        "body": "Anything that prints (results, plan, class list, report card) must still read when printed in greyscale; colour may reinforce meaning but never carry it alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Same Voice Rule",
+        "body": "Hindi and English are set in the same face at the same size and weight. Negative tracking (−0.02em to −0.045em) is applied to large English headings only (`html[lang=en]`); Devanagari is never tracked, because tightening breaks its headline bar.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plain Weight Rule",
+        "body": "Headings are 600; emphasis inside text is 600; body is 400. No 800/900 weights, no italics for emphasis, no all-caps interface labels. The one exception is the printed certificate's spaced-caps \"CERTIFICATE OF PARTICIPATION\" line, a convention of the document form.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Counts, percentages, dates and roll numbers use tabular figures so columns of numbers line up.",
+        "section": "typography"
+      },
+      {
+        "name": "The Statement and Proof Rule",
+        "body": "Each home section is a short sentence on the left with its evidence beside it. A section that needs an icon grid to explain itself is rewritten as a sentence instead.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Surfaces are flat at rest; depth comes from white on pale ground and a hairline. A shadow appears only on hover of a card that opens something, or on a transient toast.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the chrome ink and grey: Ink (#111111) text, Pill Grey (#e6e7e9) secondaries, Ledger Ground (#f2f4f7) behind app screens.",
+      "Do give each screen at most one blue element: its main data (progress, fit meter, result bar) or, on home, the start pill.",
+      "Do set Hindi and English in Anek Devanagari at the same size and weight, with the Noto and system fallbacks in place.",
+      "Do use near-black pills for primary actions and grey pills for secondary ones, at least 44px tall.",
+      "Do use 8px corners for cards and 6px for controls and inner panels.",
+      "Do keep the Haryana emblem in the header and on both printed sheets.",
+      "Do label generated pictures as illustrations and keep their provenance file beside them.",
+      "Do provide a still state for every motion under `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "Don't add a utility bar, rows of blue buttons on white, ruled link lists or grids of icon cards.",
+      "Don't use gradients, tinted panels with coloured borders, or decorative shadows.",
+      "Don't colour navigation, headers, cards or secondary buttons.",
+      "Don't track Devanagari or set interface labels in all caps.",
+      "Don't use photographs of real students, schools or colleges, or invent testimonials or usage numbers.",
+      "Don't let colour alone carry meaning on anything that prints."
+    ]
+  }
+}
