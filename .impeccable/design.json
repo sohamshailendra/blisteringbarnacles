@@ -1,58 +1,301 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-22T21:58:46+00:00",
+  "generatedAt": "2026-10-22T22:47:18+00:00",
   "title": "Design System: Mera Bhavishya – Mera Nirnay",
   "extensions": {
     "colorMeta": {
-      "road-blue": {
+      "geru": {
         "role": "primary",
-        "displayName": "Road Blue",
-        "canonical": "oklch(49.0% 0.231 265)",
+        "displayName": "Geru Brick Red",
+        "canonical": "#9b3a24",
+        "oklch": "oklch(48.1% 0.135 34.2)",
         "tonalRamp": [
-          "#06004d",
-          "#02007c",
-          "#072aad",
-          "#1b4ce1",
-          "#4277fc",
-          "#6b9fff",
-          "#95c6ff",
-          "#c1edff"
+          "#200000",
+          "#490900",
+          "#791901",
+          "#9f3e28",
+          "#c56049",
+          "#ed836b",
+          "#feb4a2",
+          "#ffe9e4"
+        ],
+        "cssVar": "--geru"
+      },
+      "geru-deep": {
+        "role": "primary",
+        "displayName": "Geru Deep",
+        "canonical": "#7c2d1b",
+        "oklch": "oklch(40.9% 0.114 34.3)",
+        "tonalRamp": [
+          "#200000",
+          "#4a0800",
+          "#722412",
+          "#974533",
+          "#bc6753",
+          "#e38a74",
+          "#ffb4a1",
+          "#fee9e4"
+        ],
+        "cssVar": "--geru-d"
+      },
+      "leaf-green": {
+        "role": "secondary",
+        "displayName": "Leaf Green",
+        "canonical": "#1e6a3b",
+        "oklch": "oklch(46.6% 0.105 152.2)",
+        "tonalRamp": [
+          "#001003",
+          "#002e13",
+          "#005026",
+          "#287242",
+          "#4c9463",
+          "#6fb884",
+          "#93dda8",
+          "#c6ffd4"
+        ],
+        "cssVar": "--green"
+      },
+      "leaf-green-deep": {
+        "role": "secondary",
+        "displayName": "Leaf Green Deep",
+        "canonical": "#155230",
+        "oklch": "oklch(39.0% 0.084 154.6)",
+        "tonalRamp": [
+          "#001004",
+          "#002e16",
+          "#114f2d",
+          "#356f4b",
+          "#57916c",
+          "#7ab58e",
+          "#9ddab1",
+          "#c6ffd7"
+        ],
+        "cssVar": "--green-d"
+      },
+      "leaf-green-tint": {
+        "role": "secondary",
+        "displayName": "Leaf Green Tint",
+        "canonical": "#dfeadf",
+        "oklch": "oklch(92.6% 0.019 145.4)",
+        "tonalRamp": [
+          "#060d07",
+          "#1f2820",
+          "#3c453c",
+          "#5b645b",
+          "#7c867c",
+          "#9ea89e",
+          "#c2cdc2",
+          "#e7f2e7"
+        ],
+        "cssVar": "--green-t"
+      },
+      "ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre",
+        "canonical": "#e3a21a",
+        "oklch": "oklch(75.5% 0.152 78.6)",
+        "tonalRamp": [
+          "#140900",
+          "#332100",
+          "#583c01",
+          "#805902",
+          "#ab7702",
+          "#d79801",
+          "#febc42",
+          "#ffecce"
+        ],
+        "cssVar": "--ochre"
+      },
+      "limewash": {
+        "role": "neutral",
+        "displayName": "Limewash",
+        "canonical": "#f3e7c6",
+        "oklch": "oklch(92.9% 0.045 90.4)",
+        "tonalRamp": [
+          "#110a00",
+          "#2d2407",
+          "#4b4125",
+          "#6b6043",
+          "#8d8263",
+          "#b0a485",
+          "#d4c9a8",
+          "#faeecd"
+        ],
+        "cssVar": "--wash"
+      },
+      "limewash-deep": {
+        "role": "neutral",
+        "displayName": "Limewash Deep",
+        "canonical": "#ecdcb2",
+        "oklch": "oklch(89.7% 0.058 89.7)",
+        "tonalRamp": [
+          "#110a00",
+          "#302300",
+          "#4e401b",
+          "#6e603a",
+          "#90815a",
+          "#b3a47c",
+          "#d8c89f",
+          "#feeec3"
+        ],
+        "cssVar": "--wash-2"
+      },
+      "limewash-tint": {
+        "role": "neutral",
+        "displayName": "Limewash Tint",
+        "canonical": "#efe4c4",
+        "oklch": "oklch(91.9% 0.044 91.3)",
+        "tonalRamp": [
+          "#110a00",
+          "#2d2409",
+          "#4b4126",
+          "#6a6144",
+          "#8c8265",
+          "#afa586",
+          "#d4c9a9",
+          "#f9eece"
+        ],
+        "cssVar": "--tint"
+      },
+      "bar-track": {
+        "role": "neutral",
+        "displayName": "Bar Track",
+        "canonical": "#e6dcc0",
+        "oklch": "oklch(89.5% 0.039 90.7)",
+        "tonalRamp": [
+          "#110a00",
+          "#2c240d",
+          "#4a412a",
+          "#696148",
+          "#8b8268",
+          "#aea58a",
+          "#d3c9ad",
+          "#f8eed2"
+        ],
+        "cssVar": "--tint-2"
+      },
+      "notice-white": {
+        "role": "neutral",
+        "displayName": "Notice White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ],
+        "cssVar": "--card"
+      },
+      "wash-line": {
+        "role": "neutral",
+        "displayName": "Wash Line",
+        "canonical": "#e2d6b6",
+        "oklch": "oklch(87.8% 0.045 89.9)",
+        "tonalRamp": [
+          "#110a00",
+          "#2d2408",
+          "#4b4126",
+          "#6b6044",
+          "#8d8264",
+          "#b0a486",
+          "#d4c8a9",
+          "#faeecd"
+        ],
+        "cssVar": "--line"
+      },
+      "wash-line-strong": {
+        "role": "neutral",
+        "displayName": "Wash Line Strong",
+        "canonical": "#87774f",
+        "oklch": "oklch(78.5% 0.058 90.3)",
+        "tonalRamp": [
+          "#110a00",
+          "#2f2300",
+          "#4e411b",
+          "#6e603a",
+          "#90815a",
+          "#b3a47c",
+          "#d7c89f",
+          "#fdeec3"
+        ],
+        "cssVar": "--line-2"
+      },
+      "blackboard": {
+        "role": "neutral",
+        "displayName": "Blackboard",
+        "canonical": "#1d2a24",
+        "oklch": "oklch(27.1% 0.021 164.8)",
+        "tonalRamp": [
+          "#040e09",
+          "#1b2822",
+          "#38463f",
+          "#57655e",
+          "#77877f",
+          "#9aa9a2",
+          "#bdcec6",
+          "#e2f3eb"
+        ],
+        "cssVar": "--board"
+      },
+      "chalk": {
+        "role": "neutral",
+        "displayName": "Chalk",
+        "canonical": "#f4f1e6",
+        "oklch": "oklch(95.7% 0.015 94.2)",
+        "tonalRamp": [
+          "#0d0b05",
+          "#27251d",
+          "#444239",
+          "#646158",
+          "#858278",
+          "#a8a59b",
+          "#ccc9bf",
+          "#f2efe4"
+        ],
+        "cssVar": "--chalk"
+      },
+      "chalk-dim": {
+        "role": "neutral",
+        "displayName": "Chalk Dim",
+        "canonical": "#c9c4b2",
+        "oklch": "oklch(81.9% 0.025 94.1)",
+        "tonalRamp": [
+          "#0f0b02",
+          "#292517",
+          "#464233",
+          "#666151",
+          "#878272",
+          "#aaa594",
+          "#cec9b7",
+          "#f4efdc"
         ]
       },
-      "road-blue-deep": {
-        "role": "primary",
-        "displayName": "Road Blue Deep",
-        "canonical": "oklch(41.2% 0.197 265)",
+      "wood": {
+        "role": "neutral",
+        "displayName": "Wood Frame",
+        "canonical": "#6d4c2f",
+        "oklch": "oklch(44.6% 0.062 61.5)",
         "tonalRamp": [
-          "#050049",
-          "#010976",
-          "#0c2fa5",
-          "#2b56c7",
-          "#517ce2",
-          "#78a2fe",
-          "#a2c8ff",
-          "#cdeeff"
-        ]
-      },
-      "road-blue-tint": {
-        "role": "primary",
-        "displayName": "Road Blue Tint",
-        "canonical": "oklch(94.9% 0.021 268)",
-        "tonalRamp": [
-          "#06004d",
-          "#02007c",
-          "#072aad",
-          "#1b4ce1",
-          "#4277fc",
-          "#6b9fff",
-          "#95c6ff",
-          "#c1edff"
+          "#170600",
+          "#3a1d00",
+          "#5a3a1d",
+          "#7b593c",
+          "#9e7a5c",
+          "#c29d7e",
+          "#e7c1a1",
+          "#ffead9"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "oklch(17.8% 0 0)",
+        "canonical": "#1a1a1a",
+        "oklch": "oklch(21.8% 0.000 89.9)",
         "tonalRamp": [
           "#0b0b0b",
           "#252525",
@@ -62,87 +305,65 @@
           "#a5a5a5",
           "#c9c9c9",
           "#eeeeee"
-        ]
-      },
-      "ink-hover": {
-        "role": "neutral",
-        "displayName": "Ink Hover",
-        "canonical": "oklch(28.9% 0 0)",
-        "tonalRamp": [
-          "#0b0b0b",
-          "#252525",
-          "#424242",
-          "#616161",
-          "#828282",
-          "#a5a5a5",
-          "#c9c9c9",
-          "#eeeeee"
-        ]
+        ],
+        "cssVar": "--ink"
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Slate Grey",
-        "canonical": "oklch(49.8% 0.009 254)",
+        "displayName": "Muted Earth",
+        "canonical": "#5c5240",
+        "oklch": "oklch(44.3% 0.031 82.2)",
         "tonalRamp": [
-          "#090b0f",
-          "#22252a",
-          "#3f4247",
-          "#5e6267",
-          "#7e8388",
-          "#a1a5ab",
-          "#c5cacf",
-          "#eaeff5"
-        ]
+          "#120a00",
+          "#2d2413",
+          "#4a412f",
+          "#6a604d",
+          "#8c816e",
+          "#afa490",
+          "#d3c8b3",
+          "#f9edd8"
+        ],
+        "cssVar": "--mut"
       },
       "soft": {
         "role": "neutral",
-        "displayName": "Soft Grey",
-        "canonical": "oklch(64.9% 0.015 262)",
+        "displayName": "Soft Earth",
+        "canonical": "#7a705c",
+        "oklch": "oklch(54.9% 0.032 84.5)",
         "tonalRamp": [
-          "#090b0f",
-          "#22252a",
-          "#3f4247",
-          "#5e6267",
-          "#7e8388",
-          "#a1a5ab",
-          "#c5cacf",
-          "#eaeff5"
-        ]
+          "#110a00",
+          "#2c2412",
+          "#4a412e",
+          "#6a604c",
+          "#8b816d",
+          "#aea48f",
+          "#d3c8b2",
+          "#f9edd7"
+        ],
+        "cssVar": "--soft"
       },
-      "line": {
+      "link": {
         "role": "neutral",
-        "displayName": "Hairline",
-        "canonical": "oklch(92.1% 0.005 258)",
+        "displayName": "Link Red",
+        "canonical": "#8a3320",
+        "oklch": "oklch(44.2% 0.123 33.9)",
         "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
-        ]
+          "#200000",
+          "#4a0700",
+          "#751f0c",
+          "#9a422e",
+          "#c0644f",
+          "#e78771",
+          "#ffb4a2",
+          "#ffe9e4"
+        ],
+        "cssVar": "--link"
       },
-      "line-strong": {
+      "print-ink": {
         "role": "neutral",
-        "displayName": "Strong Hairline",
-        "canonical": "oklch(84.4% 0.008 261)",
-        "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
-        ]
-      },
-      "paper": {
-        "role": "neutral",
-        "displayName": "Paper",
-        "canonical": "oklch(100% 0 0)",
+        "displayName": "Print Ink",
+        "canonical": "#111111",
+        "oklch": "oklch(17.8% 0.000 89.9)",
         "tonalRamp": [
           "#0b0b0b",
           "#252525",
@@ -154,481 +375,472 @@
           "#eeeeee"
         ]
       },
-      "ground": {
-        "role": "neutral",
-        "displayName": "Ledger Ground",
-        "canonical": "oklch(96.6% 0.005 258)",
+      "interest-r": {
+        "role": "data",
+        "displayName": "Realistic (geru)",
+        "canonical": "#9b3a24",
+        "oklch": "oklch(48.1% 0.135 34.2)",
         "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
+          "#200000",
+          "#490900",
+          "#791901",
+          "#9f3e28",
+          "#c56049",
+          "#ed836b",
+          "#feb4a2",
+          "#ffe9e4"
         ]
       },
-      "ground-deep": {
-        "role": "neutral",
-        "displayName": "Ledger Ground Deep",
-        "canonical": "oklch(93.9% 0.006 255)",
+      "interest-i": {
+        "role": "data",
+        "displayName": "Investigative (leaf green)",
+        "canonical": "#1e6a3b",
+        "oklch": "oklch(46.6% 0.105 152.2)",
         "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
+          "#001003",
+          "#002e13",
+          "#005026",
+          "#287242",
+          "#4c9463",
+          "#6fb884",
+          "#93dda8",
+          "#c6ffd4"
         ]
       },
-      "pill": {
-        "role": "neutral",
-        "displayName": "Pill Grey",
-        "canonical": "oklch(92.8% 0.003 265)",
+      "interest-a": {
+        "role": "data",
+        "displayName": "Artistic (dark ochre)",
+        "canonical": "#8a5a00",
+        "oklch": "oklch(50.8% 0.108 73.3)",
         "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
+          "#140800",
+          "#362000",
+          "#5b3a01",
+          "#845602",
+          "#a9772e",
+          "#ce9a53",
+          "#f4be77",
+          "#ffebd3"
         ]
       },
-      "pill-hover": {
-        "role": "neutral",
-        "displayName": "Pill Grey Hover",
-        "canonical": "oklch(89.4% 0.005 258)",
+      "interest-s": {
+        "role": "data",
+        "displayName": "Social (blackboard)",
+        "canonical": "#1d2a24",
+        "oklch": "oklch(27.1% 0.021 164.8)",
         "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
+          "#040e09",
+          "#1b2822",
+          "#38463f",
+          "#57655e",
+          "#77877f",
+          "#9aa9a2",
+          "#bdcec6",
+          "#e2f3eb"
         ]
       },
-      "active": {
-        "role": "neutral",
-        "displayName": "Active Grey",
-        "canonical": "oklch(93.1% 0.006 265)",
+      "interest-e": {
+        "role": "data",
+        "displayName": "Enterprising (wood)",
+        "canonical": "#6d4c2f",
+        "oklch": "oklch(44.6% 0.062 61.5)",
         "tonalRamp": [
-          "#0a0b0d",
-          "#242527",
-          "#404244",
-          "#606164",
-          "#818285",
-          "#a3a5a8",
-          "#c7c9cc",
-          "#edeff2"
+          "#170600",
+          "#3a1d00",
+          "#5a3a1d",
+          "#7b593c",
+          "#9e7a5c",
+          "#c29d7e",
+          "#e7c1a1",
+          "#ffead9"
         ]
       },
-      "ok": {
+      "interest-c": {
+        "role": "data",
+        "displayName": "Conventional (slate)",
+        "canonical": "#4a4f45",
+        "oklch": "oklch(42.0% 0.017 128.9)",
+        "tonalRamp": [
+          "#090d05",
+          "#22271e",
+          "#3f443a",
+          "#5e6359",
+          "#7f857a",
+          "#a2a79c",
+          "#c6ccc0",
+          "#ebf1e5"
+        ]
+      },
+      "status-ok": {
         "role": "status",
-        "displayName": "Done Green",
-        "canonical": "oklch(48.8% 0.130 149)",
+        "displayName": "Status OK",
+        "canonical": "#137333",
+        "oklch": "oklch(48.8% 0.130 149.0)",
         "tonalRamp": [
-          "#001300",
-          "#003101",
-          "#00521a",
-          "#167435",
-          "#4b955b",
-          "#76b781",
-          "#a1daaa",
-          "#ccfdd3"
+          "#001002",
+          "#002e0e",
+          "#00511e",
+          "#157434",
+          "#409755",
+          "#65bb77",
+          "#8ae19a",
+          "#c8ffd0"
+        ],
+        "cssVar": "--ok"
+      },
+      "status-ok-tint": {
+        "role": "status",
+        "displayName": "Status OK Tint",
+        "canonical": "#e6f4ea",
+        "oklch": "oklch(95.4% 0.020 154.9)",
+        "tonalRamp": [
+          "#050e08",
+          "#1e2821",
+          "#3a453d",
+          "#59655c",
+          "#79867d",
+          "#9ca9a0",
+          "#c0cdc4",
+          "#e5f3e9"
+        ],
+        "cssVar": "--ok-t"
+      },
+      "status-warn": {
+        "role": "status",
+        "displayName": "Status Warning",
+        "canonical": "#8a5a00",
+        "oklch": "oklch(50.8% 0.108 73.3)",
+        "tonalRamp": [
+          "#140800",
+          "#362000",
+          "#5b3a01",
+          "#845602",
+          "#a9772e",
+          "#ce9a53",
+          "#f4be77",
+          "#ffebd3"
+        ],
+        "cssVar": "--warn"
+      },
+      "status-warn-tint": {
+        "role": "status",
+        "displayName": "Status Warning Tint",
+        "canonical": "#f7e2a8",
+        "oklch": "oklch(91.6% 0.078 90.5)",
+        "tonalRamp": [
+          "#110a00",
+          "#2f2300",
+          "#524000",
+          "#725f28",
+          "#94814a",
+          "#b8a36c",
+          "#dcc88f",
+          "#ffeebe"
         ]
       },
-      "ok-tint": {
+      "status-err": {
         "role": "status",
-        "displayName": "Done Tint",
-        "canonical": "oklch(95.4% 0.020 155)",
+        "displayName": "Status Error",
+        "canonical": "#c5221f",
+        "oklch": "oklch(53.2% 0.198 27.9)",
         "tonalRamp": [
-          "#001300",
-          "#003101",
-          "#00521a",
-          "#167435",
-          "#4b955b",
-          "#76b781",
-          "#a1daaa",
-          "#ccfdd3"
-        ]
+          "#210000",
+          "#4e0001",
+          "#810005",
+          "#b70910",
+          "#e04138",
+          "#fe7466",
+          "#feb3a9",
+          "#fee9e6"
+        ],
+        "cssVar": "--err"
       },
-      "warn": {
+      "status-err-tint": {
         "role": "status",
-        "displayName": "Caution Amber",
-        "canonical": "oklch(50.8% 0.108 73)",
+        "displayName": "Status Error Tint",
+        "canonical": "#fce8e6",
+        "oklch": "oklch(94.6% 0.022 24.4)",
         "tonalRamp": [
-          "#1c0300",
-          "#3c1c00",
-          "#603800",
-          "#855600",
-          "#a67939",
-          "#c69d66",
-          "#e8c292",
-          "#ffe9bf"
-        ]
-      },
-      "warn-tint": {
-        "role": "status",
-        "displayName": "Caution Tint",
-        "canonical": "oklch(96.6% 0.032 87)",
-        "tonalRamp": [
-          "#1c0300",
-          "#3c1c00",
-          "#603800",
-          "#855600",
-          "#a67939",
-          "#c69d66",
-          "#e8c292",
-          "#ffe9bf"
-        ]
-      },
-      "err": {
-        "role": "status",
-        "displayName": "Error Red",
-        "canonical": "oklch(53.2% 0.198 28)",
-        "tonalRamp": [
-          "#300000",
-          "#590000",
-          "#860000",
-          "#b51516",
-          "#db493e",
-          "#fb7769",
-          "#ffa394",
-          "#ffcfc0"
-        ]
-      },
-      "err-tint": {
-        "role": "status",
-        "displayName": "Error Tint",
-        "canonical": "oklch(94.6% 0.022 24)",
-        "tonalRamp": [
-          "#300000",
-          "#590000",
-          "#860000",
-          "#b51516",
-          "#db493e",
-          "#fb7769",
-          "#ffa394",
-          "#ffcfc0"
-        ]
+          "#130807",
+          "#2f2120",
+          "#4d3e3c",
+          "#6d5d5b",
+          "#8f7e7c",
+          "#b3a09e",
+          "#d7c4c2",
+          "#fde9e7"
+        ],
+        "cssVar": "--err-t"
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "The programme name on the home hero; also the closing 'Class 10' line and the footer name. English only gets the negative tracking."
+        "purpose": "The programme name painted on the home wall; road picture inline. Phones: clamp(2.9rem, 14vw, 4.2rem)."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Home section statements and the four staircase steps."
+        "purpose": "App page h1 and home section titles (to 3rem)."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "h2 inside app pages."
+      },
+      "sign": {
+        "displayName": "Sign",
+        "purpose": "Painted signs, number-line step names, road names, stop numerals."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "The h1 of each app screen; h2 to h4 step down from it."
+        "purpose": "h3/h4, card and option titles, in the text face."
       },
       "lead": {
         "displayName": "Lead",
-        "purpose": "One supporting sentence under a heading, max 52ch."
+        "purpose": "The one sentence under a page name (1.125rem in app page headers)."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text in Hindi and English; never below 1rem, inputs never below 16px."
+        "purpose": "All running text, Hindi and English."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Hints, captions, table headers, nav group names, tags."
+        "purpose": "Hints, table heads, breadcrumbs, meta lines."
       }
     },
     "shadows": [
       {
-        "name": "hairline-ring",
-        "value": "0 0 0 1px rgba(17,17,17,.06)",
-        "purpose": "Every app card, tree node, timeline cell, roster and compare table; replaces borders."
+        "name": "none",
+        "value": "none",
+        "purpose": "The system is flat: no elevation shadows at rest or on hover."
       },
       {
-        "name": "hairline-ring-home",
-        "value": "0 0 0 1px #e3e5e8",
-        "purpose": "Cards on the white home page."
+        "name": "stop-knockout",
+        "value": "0 0 0 4px var(--wash)",
+        "purpose": "Paint, not elevation: a solid ground-colour ring that knocks a number stop out of the ink line (3px, and #fff inside white panels)."
       },
       {
-        "name": "hover-ring",
-        "value": "0 0 0 1px #c9ccd1",
-        "purpose": "Hover on clickable cards and tree leaves."
-      },
-      {
-        "name": "hover-lift",
-        "value": "0 0 0 1px #c9ccd1, 0 4px 14px rgba(17,17,17,.06)",
-        "purpose": "Career and recommendation cards on hover only."
-      },
-      {
-        "name": "input-ring",
-        "value": "inset 0 0 0 1px #c9ccd1",
-        "purpose": "Input outline at rest; becomes inset 0 0 0 2px #111 on focus."
-      },
-      {
-        "name": "toast",
-        "value": "0 8px 28px rgba(0,0,0,.25)",
-        "purpose": "The ink toast floating at the bottom of the screen."
-      },
-      {
-        "name": "focus-ring",
-        "value": "outline: 2px solid #1a4be0; outline-offset: 2px",
-        "purpose": "Keyboard focus on every focusable element."
+        "name": "footer-stripe",
+        "value": "inset 0 4px 0 var(--ink)",
+        "purpose": "Paint, not elevation: the ink stripe under the footer's 12px geru dado."
       }
     ],
     "motion": [
       {
-        "name": "ease",
+        "name": "ease-out",
         "value": "cubic-bezier(.23,1,.32,1)",
-        "purpose": "Default ease-out for state changes, entrances and the picture settle."
+        "purpose": "Default for colour, press and pop-in transitions."
       },
       {
-        "name": "ease-io",
+        "name": "ease-in-out",
         "value": "cubic-bezier(.77,0,.175,1)",
-        "purpose": "The hero shutter only."
-      },
-      {
-        "name": "press",
-        "value": "transform scale(.97), 120ms ease",
-        "purpose": "Buttons, chips, answers and Menu on press."
+        "purpose": "Drawn movements: number-line stroke, hero shutter."
       },
       {
         "name": "state",
-        "value": "140–160ms ease",
-        "purpose": "Background, border and ring changes on hover/selection."
+        "value": "140-160ms ease-out",
+        "purpose": "Background and border colour changes on hover/selection."
       },
       {
-        "name": "sheet-in",
-        "value": "opacity 0→1, translateY(-8px)→0, 220ms ease",
-        "purpose": "Full-screen menu opening."
+        "name": "press",
+        "value": "scale(.97) 120ms ease-out",
+        "purpose": "Pressed buttons, chips, options (signs .98). Off under reduced motion."
+      },
+      {
+        "name": "number-line-draw",
+        "value": "line scaleX 0→1 900ms ease-in-out; stops scale .6→1 + fade 350ms, delay 250ms + 180ms × index; ticks fade 300ms",
+        "purpose": "Home four steps, drawn once on entering view (IntersectionObserver). Reduced motion or no script: fully drawn."
       },
       {
         "name": "hero-shutter",
-        "value": "clip-path inset(0 100% 0 0)→inset(0), 1.1s ease-io; image scale 1.12→1 over 1.4s ease",
-        "purpose": "Signature: the road opens inside the programme name once the image has loaded."
+        "value": "clip-path inset(0 100% 0 0)→0 1100ms ease-in-out; image scale 1.12→1 1400ms ease-out",
+        "purpose": "The road picture opening inside the painted name. Reduced motion: shown open."
       },
       {
-        "name": "rise-in",
-        "value": "opacity 0→1, translateY(16px)→0, 500ms ease, 70ms stagger (max 8 steps)",
-        "purpose": "One-time entrance of home section parts as they scroll in (IntersectionObserver)."
-      },
-      {
-        "name": "meter-grow",
-        "value": "scaleX(0)→1, 600ms ease, 40ms stagger",
-        "purpose": "Fit meters and result bars filling on first render."
-      },
-      {
-        "name": "toast",
-        "value": "4.5s in-hold-out",
-        "purpose": "Toast lifetime; becomes a plain fade under reduced motion."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "@media (prefers-reduced-motion: reduce)",
-        "purpose": "Transitions limited to colour/opacity; no press scale, no shutter (picture shown open), no rise, no bar growth, no menu slide. Print always shows everything."
+        "name": "menu-in",
+        "value": "opacity + translateY(-8px)→0 220ms ease-out",
+        "purpose": "Full-screen menu opening."
       }
     ],
     "breakpoints": [
       {
         "name": "phone",
         "value": "640px",
-        "purpose": "max-width: single column, 16px gutter, hero picture on its own line"
+        "purpose": "max-width: single column, 16px gutter, vertical number line, wall chart hidden."
       },
       {
-        "name": "topline-links-off",
+        "name": "top-nav-hidden",
         "value": "760px",
-        "purpose": "max-width: home top-line links hidden (Menu remains)"
+        "purpose": "max-width: home top-line links hide; menu carries navigation."
       },
       {
         "name": "tablet",
         "value": "960px",
-        "purpose": "max-width: grids to two columns, detail pages to one"
+        "purpose": "max-width: grids to two columns, hero stacks, number-line stroke hidden."
       },
       {
         "name": "sidebar",
         "value": "1024px",
-        "purpose": "min-width: fixed 248px app sidebar; below it a 56px app bar and full-screen menu"
+        "purpose": "min-width: green 248px sidebar; below it the 56px green phone bar."
       },
       {
-        "name": "topline-compact",
+        "name": "top-nav-trim",
         "value": "1100px",
-        "purpose": "max-width: home top line shows three links"
+        "purpose": "max-width: home top line shows three of five links."
       }
     ],
-    "layout": {
-      "homeContainer": "min(1180px, 100% - 3rem)",
-      "appContainer": "min(1120px, 100% - 4rem) beside the 248px sidebar",
-      "phoneContainer": "calc(100% - 2rem)",
-      "grid": "12 columns, 1rem gutter on home sections",
-      "sidebarWidth": "248px",
-      "appBarHeight": "56px",
-      "detailSideColumn": "320px"
-    },
     "print": {
-      "reportCard": "Two A4 portrait sheets per student (certificate front + career profile back), @page margin 0, each sheet zoomed to fit the printable area so the set is always exactly two pages.",
-      "certificateFront": "Ink double frame (1.2mm solid + 0.35mm outline offset -3mm), Haryana emblem header and 5% emblem watermark, name over an ink rule, signature lines and a dashed seal circle.",
-      "profileBack": "4mm ink top band, emblem header over an ink rule, white boxes with #c9d0da borders and 1.2mm corners.",
-      "screens": "Results, plan and class lists print at 11pt on white with cards as 1px #999 boxes and links in black."
-    },
-    "imagery": {
-      "source": "Six Figma AI illustrations (road, cycle, nursing, iti, classroom, computers) in public/img as 640/1280 WebP, each with a .webp.json provenance sidecar.",
-      "labelling": "Footer on the home page states the pictures are illustrations made with Figma AI, not real students or schools.",
-      "radius": "4px"
-    },
-    "brandAssets": [
-      {
-        "name": "Haryana Government emblem",
-        "use": "Sidebar/top-line wordmark, menu sheet, both printed sheets; kept as a binding brand asset."
-      }
-    ]
+      "sheets": "Two A4 portrait sheets per student, printed as a set: participation certificate + career profile. @page margin 0; each sheet zooms down to the printable area so the set is always exactly two pages.",
+      "palette": "print-ink #111 frame, rules and text; geru #9b3a24 accents (certificate subtitle, school name, fit figures); RIASEC tiles; legible in black and white.",
+      "type": "Khand headings, Anek Devanagari text, pt/mm units."
+    }
   },
   "components": [
     {
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Near-black pill for the main action on any app screen.",
-      "html": "<button class=\"ds-btn\" type=\"button\">See my results</button>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;background:var(--pri,#111);color:#fff;border:0;min-height:44px;padding:.5rem 1.25rem;border-radius:999px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;font-weight:600;line-height:1.25;cursor:pointer;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-btn:hover{background:#2b2b2b}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+      "description": "Geru paint, white text: the one thing to do on a screen.",
+      "html": "<button class=\"ds-btn\">शुरू करें · Start the free assessment</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.5rem 1.25rem;border:0;border-radius:3px;background:var(--geru, #9b3a24);color:#fff;font:600 1.0625rem/1.25 'Anek Devanagari','Noto Sans Devanagari',system-ui,sans-serif;cursor:pointer;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)} .ds-btn:hover{background:var(--geru-d, #7c2d1b)} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:3px solid var(--ink, #1a1a1a);outline-offset:2px}"
     },
     {
-      "name": "Secondary Button",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Grey pill for secondary actions beside a primary one.",
-      "html": "<button class=\"ds-btn-2\" type=\"button\">Print report card</button>",
-      "css": ".ds-btn-2{display:inline-flex;align-items:center;justify-content:center;background:var(--pill,#e6e7e9);color:var(--ink,#111);border:0;min-height:44px;padding:.5rem 1.25rem;border-radius:999px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;font-weight:600;line-height:1.25;cursor:pointer;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-btn-2:hover{background:var(--pill-h,#dadcdf)}.ds-btn-2:active{transform:scale(.97)}.ds-btn-2:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+      "refersTo": "button-ghost",
+      "description": "White board with a 2px ink border for the second action.",
+      "html": "<button class=\"ds-btn-ghost\">Explore careers</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:44px;padding:.5rem 1.25rem;border:2px solid var(--ink, #1a1a1a);border-radius:3px;background:#fff;color:var(--ink, #1a1a1a);font:600 1.0625rem/1.25 'Anek Devanagari',system-ui,sans-serif;cursor:pointer;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s} .ds-btn-ghost:hover{background:var(--wash-2, #ecdcb2)} .ds-btn-ghost:active{transform:scale(.97)} .ds-btn-ghost:focus-visible{outline:3px solid var(--ink, #1a1a1a);outline-offset:2px}"
     },
     {
-      "name": "Home Start Action",
-      "kind": "button",
-      "refersTo": "button-home-action",
-      "description": "The single blue pill on the home hero: Start the free assessment. Used nowhere else.",
-      "html": "<a class=\"ds-btn-acc\" href=\"#\">Start the free assessment <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
-      "css": ".ds-btn-acc{display:inline-flex;align-items:center;gap:.45rem;background:var(--acc,#1a4be0);color:#fff;min-height:52px;padding:.7rem 1.6rem;border-radius:999px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;font-weight:600;text-decoration:none;transition:background-color .16s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-btn-acc:hover{background:var(--acc-d,#1239b3)}.ds-btn-acc:active{transform:scale(.97)}.ds-btn-acc:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+      "name": "Dado with Painted Signs",
+      "kind": "custom",
+      "refersTo": "painted-sign",
+      "description": "Geru dado band with its ink stripe, holding white painted signs (class picker).",
+      "html": "<div class=\"ds-dado\"><b>मैं हूँ</b><a class=\"ds-sign\" href=\"#\"><b>कक्षा 10</b><small>Class 10</small></a><a class=\"ds-sign\" href=\"#\"><b>कक्षा 12</b><small>Class 12</small></a></div>",
+      "css": ".ds-dado{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;background:var(--geru, #9b3a24);color:#fff;padding:1.25rem 1rem 1.35rem} .ds-dado::before{content:\"\";position:absolute;left:0;right:0;top:0;height:5px;background:var(--ink, #1a1a1a)} .ds-dado>b{font:600 1.8rem/1 Khand,'Anek Devanagari',sans-serif} .ds-sign{display:flex;flex-direction:column;justify-content:center;min-height:56px;min-width:200px;padding:.55rem 1.1rem .6rem;background:#fff;color:var(--ink, #1a1a1a);border-radius:3px;text-decoration:none;transition:background-color .14s,transform .12s} .ds-sign:hover{background:var(--wash, #f3e7c6)} .ds-sign:active{transform:scale(.98)} .ds-sign:focus-visible{outline:3px solid #fff;outline-offset:2px} .ds-sign b{font:600 1.5rem/1 Khand,'Anek Devanagari',sans-serif} .ds-sign small{color:var(--mut, #5c5240);font-size:.9375rem;margin-top:.15rem}"
     },
     {
-      "name": "Filter Chip",
-      "kind": "chip",
-      "refersTo": "chip",
-      "description": "White pill with a hairline border; selected fills with ink.",
-      "html": "<div class=\"ds-chips\"><button class=\"ds-chip ds-on\" type=\"button\">All</button><button class=\"ds-chip\" type=\"button\">After Class 10</button><button class=\"ds-chip\" type=\"button\">After Class 12</button></div>",
-      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:.4rem}.ds-chip{border:1px solid var(--line-2,#c9ccd1);background:#fff;color:var(--ink,#111);border-radius:999px;padding:.35rem .9rem;min-height:38px;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:.9375rem;cursor:pointer;transition:background-color .14s cubic-bezier(.23,1,.32,1),border-color .14s cubic-bezier(.23,1,.32,1)}.ds-chip:hover{border-color:var(--ink,#111)}.ds-chip.ds-on{background:var(--ink,#111);border-color:var(--ink,#111);color:#fff;font-weight:600}.ds-chip:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}"
+      "name": "Painted Number Line",
+      "kind": "custom",
+      "refersTo": "number-stop",
+      "description": "Signature: thick ink line, ticks, numbered geru stops knocked out with a limewash ring.",
+      "html": "<ol class=\"ds-nline\"><li><span>1</span><b>Take the test</b></li><li><span>2</span><b>See your roads</b></li><li><span>3</span><b>Compare</b></li><li><span>4</span><b>Plan</b></li></ol>",
+      "css": ".ds-nline{list-style:none;margin:0;padding:1rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 1.5rem;position:relative;background:var(--wash, #f3e7c6)} .ds-nline::before{content:\"\";position:absolute;left:1rem;right:1rem;top:2.25rem;height:4px;background:var(--ink, #1a1a1a)} .ds-nline li{position:relative;padding-top:3.4rem} .ds-nline li::before{content:\"\";position:absolute;left:1.25rem;top:.55rem;width:3px;height:1.6rem;background:var(--ink, #1a1a1a)} .ds-nline span{position:absolute;left:0;top:0;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--geru, #9b3a24);color:#fff;display:grid;place-items:center;font:600 1.5rem/1 Khand,sans-serif;box-shadow:0 0 0 4px var(--wash, #f3e7c6)} .ds-nline b{font:600 1.5rem/1.05 Khand,'Anek Devanagari',sans-serif;color:var(--ink, #1a1a1a)}"
     },
     {
-      "name": "Search Input",
-      "kind": "input",
-      "refersTo": "input",
-      "description": "White field, 6px corners, inset hairline ring that turns to a 2px ink ring on focus.",
-      "html": "<label class=\"ds-fld\">Search careers<input class=\"ds-input\" type=\"search\" placeholder=\"e.g. nursing, ITI electrician\"></label>",
-      "css": ".ds-fld{display:flex;flex-direction:column;gap:.35rem;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:.9375rem;font-weight:500;color:var(--ink,#111)}.ds-input{width:100%;min-height:44px;padding:.55rem .85rem;border:0;box-shadow:inset 0 0 0 1px var(--line-2,#c9ccd1);border-radius:6px;background:#fff;font:inherit;font-size:max(16px,1rem);font-weight:400;transition:box-shadow .14s cubic-bezier(.23,1,.32,1)}.ds-input::placeholder{color:var(--soft,#8a8f98)}.ds-input:focus{outline:0;box-shadow:inset 0 0 0 2px var(--ink,#111)}"
-    },
-    {
-      "name": "Career Card",
-      "kind": "card",
-      "refersTo": "card",
-      "description": "White card on the ledger ground with a hairline ring, a blue fit meter as its one data element.",
-      "html": "<a class=\"ds-card\" href=\"#\"><h3>ITI Electrician</h3><p>2 years · after Class 10</p><span class=\"ds-meter\"><i style=\"width:78%\"></i></span><span class=\"ds-fit\">Great fit · 78%</span></a>",
-      "css": ".ds-card{display:block;background:#fff;border-radius:8px;padding:1.25rem 1.4rem;box-shadow:0 0 0 1px rgba(17,17,17,.06);color:var(--ink,#111);text-decoration:none;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;max-width:320px;transition:box-shadow .16s cubic-bezier(.23,1,.32,1)}.ds-card:hover{box-shadow:0 0 0 1px var(--line-2,#c9ccd1),0 4px 14px rgba(17,17,17,.06)}.ds-card:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}.ds-card h3{margin:0 0 .2rem;font-size:1.125rem;font-weight:600;line-height:1.12}.ds-card p{margin:0;color:var(--mut,#5f6368);font-size:.9375rem}.ds-meter{display:block;height:6px;background:var(--tint-2,#e8ebef);border-radius:999px;margin:.8rem 0 .5rem;overflow:hidden}.ds-meter i{display:block;height:100%;background:var(--acc,#1a4be0);border-radius:999px}.ds-fit{display:inline-block;font-size:.8125rem;font-weight:600;border-radius:999px;padding:.05rem .55rem;background:var(--ink,#111);color:#fff}"
+      "name": "Assessment Progress",
+      "kind": "custom",
+      "refersTo": "progress-track",
+      "description": "The number line as progress: square track, geru fill, an ink tick per section.",
+      "html": "<div class=\"ds-progress\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"><i style=\"width:40%\"></i></div>",
+      "css": ".ds-progress{position:relative;height:6px;margin:1rem 0;background:var(--line-2, #87774f)} .ds-progress i{display:block;height:100%;background:var(--geru, #9b3a24)} .ds-progress::after{content:\"\";position:absolute;left:0;right:0;top:-5px;height:16px;background:repeating-linear-gradient(90deg,var(--ink, #1a1a1a) 0 3px,transparent 3px calc(100% / 9));pointer-events:none}"
     },
     {
       "name": "Answer Option",
-      "kind": "custom",
+      "kind": "chip",
       "refersTo": "answer-option",
-      "description": "Full-width assessment option with a lettered circle; selected takes the ground fill and an ink border.",
-      "html": "<div class=\"ds-opts\"><button class=\"ds-opt\" type=\"button\"><b>A</b>Fix a broken cycle</button><button class=\"ds-opt ds-on\" type=\"button\"><b>B</b>Explain a lesson to a friend</button></div>",
-      "css": ".ds-opts{display:grid;gap:.5rem;max-width:520px}.ds-opt{display:flex;align-items:center;gap:.9rem;text-align:left;border:1.5px solid var(--line-2,#c9ccd1);background:#fff;border-radius:8px;padding:.75rem 1rem;min-height:3.25rem;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:1.0625rem;color:var(--ink,#111);cursor:pointer;transition:background-color .14s cubic-bezier(.23,1,.32,1),border-color .14s cubic-bezier(.23,1,.32,1),transform .12s cubic-bezier(.23,1,.32,1)}.ds-opt b{display:grid;place-items:center;width:1.8rem;height:1.8rem;border-radius:50%;border:1.5px solid var(--line-2,#c9ccd1);background:#fff;color:var(--mut,#5f6368);flex:none;font-size:.875rem}.ds-opt:hover{border-color:var(--ink,#111)}.ds-opt:active{transform:scale(.97)}.ds-opt:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}.ds-opt.ds-on{border-color:var(--ink,#111);background:var(--tint,#f2f4f7);font-weight:600}.ds-opt.ds-on b{background:var(--ink,#111);border-color:var(--ink,#111);color:#fff}"
+      "description": "Assessment choice; selected paints leaf-green tint with a green letter disc.",
+      "html": "<div class=\"ds-opts\"><button class=\"ds-opt\"><b>A</b>Fix a pump with my hands</button><button class=\"ds-opt on\" aria-pressed=\"true\"><b>B</b>Teach a younger child</button></div>",
+      "css": ".ds-opts{display:grid;gap:.5rem} .ds-opt{display:flex;align-items:center;gap:.9rem;min-height:3.25rem;padding:.75rem 1rem;text-align:left;border:1.5px solid var(--line-2, #87774f);border-radius:3px;background:#fff;color:var(--ink, #1a1a1a);font:400 1.0625rem/1.3 'Anek Devanagari',system-ui,sans-serif;cursor:pointer;transition:background-color .14s,border-color .14s,transform .12s} .ds-opt:hover{border-color:var(--ink, #1a1a1a)} .ds-opt:active{transform:scale(.97)} .ds-opt:focus-visible{outline:3px solid var(--ink, #1a1a1a);outline-offset:2px} .ds-opt b{display:grid;place-items:center;width:1.8rem;height:1.8rem;border-radius:50%;border:1.5px solid var(--line-2, #87774f);color:var(--mut, #5c5240);font-size:.875rem} .ds-opt.on{border-color:var(--green, #1e6a3b);background:var(--green-t, #dfeadf);font-weight:600} .ds-opt.on b{background:var(--green, #1e6a3b);border-color:var(--green, #1e6a3b);color:#fff}"
     },
     {
-      "name": "Sidebar Navigation",
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "text-input",
+      "description": "White field, square corners, inset edge that thickens to ink on focus.",
+      "html": "<input class=\"ds-input\" type=\"search\" placeholder=\"Search careers / करियर खोजें\">",
+      "css": ".ds-input{width:100%;min-height:44px;padding:.55rem .85rem;border:0;border-radius:3px;background:#fff;color:var(--ink, #1a1a1a);box-shadow:inset 0 0 0 1px var(--line-2, #87774f);font:400 max(16px,1rem)/1.4 'Anek Devanagari',system-ui,sans-serif;transition:box-shadow .14s} .ds-input::placeholder{color:var(--soft, #7a705c)} .ds-input:focus{outline:0;box-shadow:inset 0 0 0 2px var(--ink, #1a1a1a)}"
+    },
+    {
+      "name": "Green Sidebar Navigation",
       "kind": "nav",
-      "refersTo": "nav-item",
-      "description": "App navigation on the ledger ground (248px at 1024px and up): grouped 34px links, current page in active grey.",
-      "html": "<nav class=\"ds-side\"><div class=\"ds-navg\"><span>Find your road</span><a href=\"#\" class=\"ds-on\">Assessment</a><a href=\"#\">Career tree</a><a href=\"#\">Careers</a><a href=\"#\">Colleges</a></div><div class=\"ds-lang\"><button type=\"button\" class=\"ds-on\">हिं</button><button type=\"button\">EN</button></div></nav>",
-      "css": ".ds-side{width:248px;background:var(--ground,#f2f4f7);padding:1.4rem 1rem;display:flex;flex-direction:column;gap:1.4rem;font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif}.ds-navg{display:grid;gap:2px}.ds-navg>span{font-size:.875rem;color:var(--mut,#5f6368);padding:0 .75rem .3rem;font-weight:500}.ds-navg a{display:flex;align-items:center;min-height:34px;padding:0 .75rem;border-radius:8px;color:var(--ink,#111);text-decoration:none;font-size:.9375rem;transition:background-color .14s cubic-bezier(.23,1,.32,1)}.ds-navg a:hover{background:rgba(17,17,17,.05)}.ds-navg a.ds-on{background:var(--active,#e6e8ec);font-weight:600}.ds-navg a:focus-visible{outline:2px solid var(--focus,#1a4be0);outline-offset:2px}.ds-lang{display:inline-flex;align-self:flex-start;background:var(--pill,#e6e7e9);border-radius:999px;padding:3px}.ds-lang button{border:0;background:transparent;border-radius:999px;padding:.3rem .8rem;font:inherit;font-weight:500;color:var(--mut,#5f6368);min-height:34px;cursor:pointer}.ds-lang button.ds-on{background:#fff;color:var(--ink,#111)}"
+      "refersTo": "sidebar",
+      "description": "Painted green chrome; the active item is ochre with ink text.",
+      "html": "<nav class=\"ds-side\"><span>Find your road</span><a href=\"#\" class=\"on\" aria-current=\"page\">Assessment</a><a href=\"#\">Career tree</a><a href=\"#\">Colleges</a><a href=\"#\">Scholarships</a></nav>",
+      "css": ".ds-side{display:grid;gap:2px;width:248px;padding:1rem;background:var(--green, #1e6a3b);font-family:'Anek Devanagari',system-ui,sans-serif} .ds-side span{color:var(--wash, #f3e7c6);font:600 1.0625rem/1.2 Khand,'Anek Devanagari',sans-serif;padding:.2rem .75rem .3rem} .ds-side a{display:flex;align-items:center;min-height:30px;padding:0 .75rem;border-radius:3px;color:#fff;text-decoration:none;font-size:.9375rem;transition:background-color .14s} .ds-side a:hover{background:rgba(255,255,255,.12)} .ds-side a:focus-visible{outline:3px solid #fff;outline-offset:2px} .ds-side a.on{background:var(--ochre, #e3a21a);color:var(--ink, #1a1a1a);font-weight:600}"
     },
     {
-      "name": "Road in the Name",
-      "kind": "custom",
-      "refersTo": "",
-      "description": "Signature hero: the road picture sits inside the programme name and opens with a clip-path shutter; reduced motion shows it open.",
-      "html": "<h1 class=\"ds-name\"><span class=\"ds-l\">मेरा भविष्य</span><span class=\"ds-l\"><span class=\"ds-slot\"></span><span>मेरा निर्णय</span></span></h1>",
-      "css": ".ds-name{font-family:'Anek Devanagari','Noto Sans Devanagari','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:clamp(2.6rem,1rem + 6vw,6rem);line-height:.95;margin:0;color:var(--ink,#111)}.ds-l{display:flex;align-items:baseline;gap:0 .2em}.ds-slot{display:inline-block;flex:none;width:2.1em;height:.72em;border-radius:.1em;overflow:hidden;position:relative;top:.02em;background:linear-gradient(#e9c64a,#e9c64a) bottom/100% 55% no-repeat,#cfd8e4;animation:ds-shutter 1.1s cubic-bezier(.77,0,.175,1) both}@keyframes ds-shutter{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}@media (prefers-reduced-motion:reduce){.ds-slot{animation:none}}"
+      "name": "Notice Panel",
+      "kind": "card",
+      "refersTo": "notice-panel",
+      "description": "White notice pinned to the limewash wall; 1px wash-line border, no shadow.",
+      "html": "<div class=\"ds-wall\"><article class=\"ds-card\"><h3>ITI Electrician</h3><p>Two years after Class 10. Earning starts early.</p></article></div>",
+      "css": ".ds-wall{background:var(--wash, #f3e7c6);padding:1rem} .ds-card{background:#fff;border:1px solid var(--line, #e2d6b6);border-radius:3px;padding:1.25rem 1.4rem;color:var(--ink, #1a1a1a);font:400 1.0625rem/1.5 'Anek Devanagari',system-ui,sans-serif;transition:border-color .16s} .ds-card:hover{border-color:var(--ink, #1a1a1a)} .ds-card h3{margin:0 0 .4rem;font-size:1.1875rem;font-weight:600} .ds-card p{margin:0;color:var(--mut, #5c5240)}"
+    },
+    {
+      "name": "Blackboard",
+      "kind": "card",
+      "refersTo": "blackboard",
+      "description": "Exam dates in chalk on a blackboard in a 12px wood frame.",
+      "html": "<div class=\"ds-board\"><h2>Exam dates</h2><ol><li><span>March</span><b>JEE Main</b></li><li><span>May</span><b>NEET</b></li></ol></div>",
+      "css": ".ds-board{background:var(--board, #1d2a24);color:var(--chalk, #f4f1e6);border:12px solid #6d4c2f;border-radius:3px;padding:1.5rem} .ds-board h2{margin:0 0 1rem;font:600 2rem/1.02 Khand,'Anek Devanagari',sans-serif;color:var(--chalk, #f4f1e6)} .ds-board ol{list-style:none;margin:0;padding:0} .ds-board li{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.55rem 0;border-bottom:1px dashed rgba(244,241,230,.28)} .ds-board span{color:#c9c4b2;font:600 1.25rem/1.1 Khand,sans-serif} .ds-board b{font-weight:500}"
     }
   ],
   "narrative": {
-    "northStar": "The Road Inside the Name",
-    "overview": "The programme's own name is the composition. On the home page \"मेरा भविष्य / मेरा निर्णय\" is set at poster scale on two lines, and a picture of a country road through mustard fields sits inside the second line where a letter would be. The rest of the home page repeats that grammar at smaller scale: a short sentence on the left, its evidence (a picture, a list of dates, a row of facts) beside it. Every app screen (assessment, results, career tree, directories, class session) drops the poster scale and becomes an achromatic ledger: ink figures on white cards over a pale blue-grey ground, with the one blue kept for the number or bar that matters most on that screen.\n\nThe look is neutral and official without borrowing the government-portal template. There is no utility bar, no row of blue buttons on white, no ruled link lists, no icon-card grids and no edtech gradient. Authority comes from the Haryana emblem, plain bilingual words and an even, quiet surface. Density is sparse on the home page (very large type, long vertical breaks) and moderate in the app (44px controls, 1rem gaps, white cards).\n\nThe system is built for a student on a low-end Android phone, reading Hindi first, often offline, and for a teacher printing a whole class's report cards on an ordinary black-and-white A4 printer. Everything has to read in Hindi and English with the same face, survive missing web fonts, and print legibly without colour.",
+    "northStar": "The Painted School Wall",
+    "overview": "The portal is painted like the wall of the student's own Haryana government school: a yellow limewash upper wall, a brick-red geru dado along the bottom with an ink stripe painted along its top edge, signboard lettering, a painted number line, a blackboard in a wooden frame, green painted woodwork. Every view, the chrome included, sits on that wall. Content goes on white notice panels pinned to the limewash. The student should recognise it as the wall they walk past every day, not as a website template.\n\nThis world was chosen by the user. It refuses two things by name: the gov-design-system template look (blue headers, grey cards), and the colourless \"ink on white, one blue\" studio page this portal shipped before. The paint is flat and matte. Corners are square, there are no shadows, and nothing is glass or a gradient. Depth comes from paint layers: a white panel on limewash, a geru band under the wall, a green frame around the app. Density is a school notice board: plain, legible, large type in Hindi first, every action a painted sign big enough for a thumb.\n\nProduct truth keeps the world honest. The Haryana Government emblem stays, on a limewash plate where the chrome is green. Pictures are illustrations made with Figma AI, and the footer says so. They never pretend to show real students or schools. The printed report card has to survive an ordinary black-and-white school printer.",
     "keyCharacteristics": [
-      "One face, Anek Devanagari, for Hindi and English alike.",
-      "Ink and greys everywhere; one blue, used on the home action and on each screen's main data element.",
-      "Near-black pill buttons for primary actions, grey pills for secondary ones.",
-      "White cards (8px corners) and controls (6px corners) defined by a hairline ring, not by shadow.",
-      "Home is a white page with a top line of links; app screens sit on a pale ground with a sidebar.",
-      "One signature motion: the road picture opens inside the name like a shutter.",
-      "The printed report card is a first-class product: two A4 sheets in the same ink look."
+      "Limewash ground everywhere, with white notice panels and a 1px wash-line border.",
+      "Geru marks the one thing to do (the primary button) and the steps of a sequence (number-line stops). Leaf green paints the chrome, the data and the student's own choices. Ochre marks where you are.",
+      "Khand signboard lettering for headings and numbers in both scripts, Anek Devanagari for everything read.",
+      "Square painted corners (3px), flat paint, no shadows at rest.",
+      "The painted number line is the signature. Any numbered sequence or progress runs along it.",
+      "Wall devices: the geru dado with its ink stripe, the framed blackboard, the green wall, the six-roads wall chart."
     ],
     "rules": [
       {
-        "name": "The One Blue Rule",
-        "body": "Road Blue appears on the home page's main action and on the single main data element of a screen. Nothing else in the chrome is coloured: navigation, headers, cards and secondary buttons stay ink and grey.",
+        "name": "The No Blue Rule",
+        "body": "No blue is used anywhere: not in links, focus, charts, chrome or the theme colour. The world has no blue pigment. Blue is what the refused template and the previous direction were made of.",
         "section": "colors"
       },
       {
-        "name": "The Black-and-White Print Rule",
-        "body": "Anything that prints (results, plan, class list, report card) must still read when printed in greyscale; colour may reinforce meaning but never carry it alone.",
+        "name": "The Three Pigments Rule",
+        "body": "Each pigment has one job. Geru: act, or a step in a sequence. Green: the frame and the student's own data and choices. Ochre: where you are. Do not swap them for variety.",
         "section": "colors"
       },
       {
-        "name": "The Same Voice Rule",
-        "body": "Hindi and English are set in the same face at the same size and weight. Negative tracking (−0.02em to −0.045em) is applied to large English headings only (`html[lang=en]`); Devanagari is never tracked, because tightening breaks its headline bar.",
+        "name": "The Painted Letters Rule",
+        "body": "Khand is used only for things painted on the wall: h1 and h2, the programme name, signs, step names and numerals. Running text, h3/h4, buttons and form text stay in Anek Devanagari.",
         "section": "typography"
       },
       {
-        "name": "The Plain Weight Rule",
-        "body": "Headings are 600; emphasis inside text is 600; body is 400. No 800/900 weights, no italics for emphasis, no all-caps interface labels. The one exception is the printed certificate's spaced-caps \"CERTIFICATE OF PARTICIPATION\" line, a convention of the document form.",
+        "name": "The Zero Tracking Rule",
+        "body": "Painted headings keep letter-spacing at 0 in both languages. Tightened tracking belonged to the previous direction and breaks Devanagari matras.",
         "section": "typography"
       },
       {
-        "name": "The Tabular Figures Rule",
-        "body": "Counts, percentages, dates and roll numbers use tabular figures so columns of numbers line up.",
-        "section": "typography"
-      },
-      {
-        "name": "The Statement and Proof Rule",
-        "body": "Each home section is a short sentence on the left with its evidence beside it. A section that needs an icon grid to explain itself is rewritten as a sentence instead.",
-        "section": "layout"
-      },
-      {
-        "name": "The Flat-By-Default Rule",
-        "body": "Surfaces are flat at rest; depth comes from white on pale ground and a hairline. A shadow appears only on hover of a card that opens something, or on a transient toast.",
+        "name": "The Flat Paint Rule",
+        "body": "No drop shadows, blurs, glass or gradients at rest or on hover. If something needs to stand forward, give it a different paint (white on wash, ochre on green, ink border on white).",
         "section": "elevation"
+      },
+      {
+        "name": "The No Pill Rule",
+        "body": "Nothing is pill-shaped. Square paint is used everywhere, and circles are kept for numbered stops.",
+        "section": "shapes"
       }
     ],
     "dos": [
-      "Do keep the chrome ink and grey: Ink (#111111) text, Pill Grey (#e6e7e9) secondaries, Ledger Ground (#f2f4f7) behind app screens.",
-      "Do give each screen at most one blue element: its main data (progress, fit meter, result bar) or, on home, the start pill.",
-      "Do set Hindi and English in Anek Devanagari at the same size and weight, with the Noto and system fallbacks in place.",
-      "Do use near-black pills for primary actions and grey pills for secondary ones, at least 44px tall.",
-      "Do use 8px corners for cards and 6px for controls and inner panels.",
-      "Do keep the Haryana emblem in the header and on both printed sheets.",
-      "Do label generated pictures as illustrations and keep their provenance file beside them.",
-      "Do provide a still state for every motion under `prefers-reduced-motion`."
+      "**Do** paint every surface on limewash (`limewash`), and put readable content on white notice panels with a 1px wash-line border.",
+      "**Do** use geru for the primary action and for numbered stops; leaf green for the chrome, data bars and the student's selections; and ochre for \"you are here\" (the active nav item, wall-chart numerals), always with ink on it.",
+      "**Do** end every app page header with the dado stripe: a 12px geru band with a 4px ink stripe.",
+      "**Do** put any numbered sequence or progress on the painted number line: an ink line with geru stops.",
+      "**Do** keep corners at 3px everywhere, and circles only for number stops.",
+      "**Do** set h1/h2, signs and numerals in Khand with letter-spacing 0, and everything read in Anek Devanagari.",
+      "**Do** switch the focus outline to white on green, geru and blackboard grounds, and keep it a 3px ink outline elsewhere.",
+      "**Do** keep the Haryana emblem on a limewash plate wherever the chrome is green.",
+      "**Do** label every picture as a Figma-AI illustration and ship its provenance sidecar.",
+      "**Do** make printed sheets in print ink with geru accents, legible in black and white.",
+      "**Do** give every motion a reduced-motion state that shows the finished picture (line drawn, shutter open)."
     ],
     "donts": [
-      "Don't add a utility bar, rows of blue buttons on white, ruled link lists or grids of icon cards.",
-      "Don't use gradients, tinted panels with coloured borders, or decorative shadows.",
-      "Don't colour navigation, headers, cards or secondary buttons.",
-      "Don't track Devanagari or set interface labels in all caps.",
-      "Don't use photographs of real students, schools or colleges, or invent testimonials or usage numbers.",
-      "Don't let colour alone carry meaning on anything that prints."
+      "**Don't** use blue anywhere: links, focus, charts, chrome or the theme colour.",
+      "**Don't** use drop shadows, blur, backdrop-filter glass or gradients; the wall is flat paint.",
+      "**Don't** use pill or rounded shapes for buttons, chips, toggles or panels.",
+      "**Don't** set ochre as text, or put text in white on ochre; ochre is a field for ink.",
+      "**Don't** set running text, buttons or form text in Khand.",
+      "**Don't** apply negative letter-spacing to headings in either script.",
+      "**Don't** colour the RIASEC types or data from outside the wall palette.",
+      "**Don't** present illustrations as photographs of real students, schools or colleges."
     ]
   }
 }

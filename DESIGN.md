@@ -14,7 +14,7 @@ colors:
   bar-track: "#e6dcc0"
   notice-white: "#ffffff"
   wash-line: "#e2d6b6"
-  wash-line-strong: "#c7b88f"
+  wash-line-strong: "#87774f"
   blackboard: "#1d2a24"
   chalk: "#f4f1e6"
   chalk-dim: "#c9c4b2"
