@@ -190,7 +190,7 @@ main:focus{outline:none}
 .rules{margin-top:1.6rem}.rules ol{columns:2;column-gap:2rem;padding-left:1.2rem}.rules li{margin-bottom:.5rem;break-inside:avoid}
 /* 13 ── responsive ── */
 @media (max-width:1480px){.brand-t small{display:none}.nav a{padding:.4rem .4rem;font-size:.8rem}.hbar{gap:.6rem}}
-@media (max-width:1340px){
+@media (max-width:1179px){
   .burger{display:flex;margin-left:auto}.lang{order:2}.nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;padding:.6rem 1rem 1rem;box-shadow:0 14px 24px rgba(0,0,0,.12);border-top:1px solid var(--line)}
   .nav.open{display:flex}.nav a{padding:.7rem 1rem;font-size:1rem;border-radius:10px}.hbar{position:relative}
 }
@@ -338,10 +338,17 @@ main:focus{outline:none}
 .helpline{background:linear-gradient(135deg,#e7f6ef,#fff);border-color:#b6dfc4;margin-bottom:1.2rem}.helpline .grid{margin-top:.6rem}
 .hl{display:flex;flex-direction:column;gap:.2rem;background:#fff;border:1px solid #b6dfc4;border-radius:14px;padding:.9rem 1rem;text-decoration:none;color:var(--ink)}.hl b{font-family:var(--head);font-size:1.9rem;color:var(--green);line-height:1}.hl small{color:var(--mut)}.hl:hover{border-color:var(--green)}
 .wb .card h3{margin-bottom:.6rem}.worries{margin-bottom:1.1rem}.worries li{margin-bottom:.55rem}
-.listen-btn{position:fixed;right:1rem;bottom:1rem;z-index:60;display:flex;align-items:center;gap:.4rem;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:.75rem 1.1rem;font:inherit;font-weight:700;box-shadow:0 8px 24px rgba(22,35,63,.3);cursor:pointer}
-.listen-btn[aria-pressed="true"]{background:var(--red)}.listen-btn:hover{transform:translateY(-2px)}
-@media (max-width:640px){.listen-btn span{display:none}.listen-btn{padding:.8rem;font-size:1.2rem}.cmp tbody th{width:7rem}}
-@media print{.plan-c,.plan-sheet .card{break-inside:avoid}.listen-btn{display:none!important}}
+.chip-btn{min-height:32px;min-width:32px;padding:.15rem .55rem;display:inline-flex;align-items:center;justify-content:center;gap:.3rem}
+.chip-btn.listen{background:var(--amber);border-color:var(--amber);color:#1b1200;margin-left:.35rem;white-space:nowrap}.chip-btn.listen:hover{background:#f0b24a}
+.chip-btn.listen[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.foot-nav a{display:inline-block;padding:.45rem 0;min-height:32px}
+.more{position:relative;display:flex}.more-btn{border:0;background:none;font:inherit;font-size:.84rem;font-weight:600;color:var(--ink);padding:.4rem .7rem;border-radius:999px;cursor:pointer;white-space:nowrap}
+.more-btn:hover{background:var(--amber-l)}.more-btn.on{background:var(--navy);color:#fff}
+.more-list{display:none;position:absolute;right:0;top:calc(100% + .4rem);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px rgba(22,35,63,.16);padding:.4rem;min-width:13rem;flex-direction:column;z-index:70}
+.more.open .more-list{display:flex}.more-list a{border-radius:10px!important;padding:.55rem .8rem!important}
+@media (max-width:1179px){.more{display:block}.more-btn{display:none}.more-list{display:flex;position:static;border:0;box-shadow:none;padding:0;min-width:0}.more-list a{padding:.7rem 1rem!important;font-size:1rem}}
+@media (max-width:640px){.chip-btn.listen span{display:none}.chip-btn.listen{font-size:1rem}.cmp tbody th{width:7rem}.topbar-in{gap:.5rem}}
+@media print{.plan-c,.plan-sheet .card{break-inside:avoid}}
 /* back page: single descriptive career list */
 .back .careers h3 small{font-family:var(--body);font-weight:400;color:#6b7590;font-size:8pt}
 .back .cl2{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 5mm}
@@ -499,7 +506,7 @@ window.UI = {
 en: {
  site_title:'Mera Bhavishya – Mera Nirnay', site_sub:'Career Guidance Portal', topbar:'Government of Haryana • Career Guidance for Class 10 & 12 students',
  nav_label:'Main menu', nav_assess:'Career Assessment', nav_tree:'Career Tree', nav_streams:'Choose Stream', nav_careers:'Courses & Careers', nav_colleges:'Colleges',
- nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About',
+ nav_sch:'Scholarships', nav_cal:'Exam Calendar', nav_links:'Govt. Links', nav_about:'About', nav_more:'More',
  smaller:'Smaller text', normal:'Normal text', larger:'Larger text', newtab:'opens in new tab',
  back:'Back', next:'Next', all:'All', search:'Search', none:'Nothing found. Try different filters.', see_all:'See all', visit:'Official website', skip:'Skip this question',
  after:'After Class', level:'Level', stream:'Stream', filter:'Show', region:'Region', hry:'Haryana', india:'Rest of India', yrs:'yrs', print:'Print / Save as PDF', retake:'Retake', question:'Question',
@@ -601,7 +608,7 @@ en: {
 hi: {
  site_title:'मेरा भविष्य – मेरा निर्णय', site_sub:'करियर मार्गदर्शन पोर्टल', topbar:'हरियाणा सरकार • कक्षा 10वीं व 12वीं के विद्यार्थियों हेतु करियर मार्गदर्शन',
  nav_label:'मुख्य मेनू', nav_assess:'करियर आकलन', nav_tree:'करियर ट्री', nav_streams:'स्ट्रीम चुनें', nav_careers:'कोर्स व करियर', nav_colleges:'कॉलेज',
- nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय',
+ nav_sch:'छात्रवृत्तियाँ', nav_cal:'परीक्षा कैलेंडर', nav_links:'सरकारी लिंक', nav_about:'परिचय', nav_more:'और देखें',
  smaller:'छोटा अक्षर', normal:'सामान्य अक्षर', larger:'बड़ा अक्षर', newtab:'नए टैब में खुलता है',
  back:'पीछे', next:'आगे', all:'सभी', search:'खोजें', none:'कुछ नहीं मिला। फ़िल्टर बदलकर देखें।', see_all:'सभी देखें', visit:'आधिकारिक वेबसाइट', skip:'यह प्रश्न छोड़ें',
  after:'कक्षा', level:'स्तर', stream:'स्ट्रीम', filter:'दिखाएँ', region:'क्षेत्र', hry:'हरियाणा', india:'शेष भारत', yrs:'वर्ष', print:'प्रिंट / PDF सहेजें', retake:'दोबारा करें', question:'प्रश्न',
@@ -2215,10 +2222,12 @@ window.PROFILE_FIELDS = [
   };
 
   /* ---- navigation ---- */
-  var NAV = [
-    ['assess', 'nav_assess'], ['tree', 'nav_tree'], ['streams', 'nav_streams'], ['careers', 'nav_careers'],
-    ['colleges', 'nav_colleges'], ['scholarships', 'nav_sch'], ['calendar', 'nav_cal'], ['plan', 'nav_plan'], ['compare', 'nav_compare'],
-    ['wellbeing', 'nav_wellbeing'], ['links', 'nav_links']
+  var NAV = [                                      // shown in the bar
+    ['assess', 'nav_assess'], ['tree', 'nav_tree'], ['careers', 'nav_careers'], ['colleges', 'nav_colleges'],
+    ['scholarships', 'nav_sch'], ['plan', 'nav_plan']
+  ];
+  var NAV_MORE = [                                 // under “More” on desktop; listed in full in the phone menu
+    ['streams', 'nav_streams'], ['compare', 'nav_compare'], ['calendar', 'nav_cal'], ['wellbeing', 'nav_wellbeing'], ['links', 'nav_links']
   ];
 
   function route() {
@@ -2247,15 +2256,18 @@ window.PROFILE_FIELDS = [
   };
 
   App.chrome = function (active) {
-    var nav = NAV.map(function (n) {
-      var on = (active === n[0] || (active === 'results' && n[0] === 'assess') || (active === 'career' && n[0] === 'careers') || (active === 'branch' && n[0] === 'tree'));
-      return '<a href="#/' + n[0] + '"' + (on ? ' aria-current="page" class="on"' : '') + '>' + t(n[1]) + '</a>';
-    }).join('');
+    var isOn = function (n) { return active === n[0] || (active === 'results' && n[0] === 'assess') || (active === 'career' && n[0] === 'careers') || (active === 'branch' && n[0] === 'tree'); };
+    var link = function (n) { return '<a href="#/' + n[0] + '"' + (isOn(n) ? ' aria-current="page" class="on"' : '') + '>' + t(n[1]) + '</a>'; };
+    var moreOn = NAV_MORE.some(isOn);
+    var nav = NAV.map(link).join('') +
+      '<div class="more"><button type="button" class="more-btn' + (moreOn ? ' on' : '') + '" data-act="more" aria-expanded="false" aria-haspopup="true">' + t('nav_more') + ' <span aria-hidden="true">▾</span></button>' +
+      '<div class="more-list">' + NAV_MORE.map(link).join('') + '</div></div>';
     document.getElementById('hdr').innerHTML =
       '<div class="topbar"><div class="wrap topbar-in"><span>' + t('topbar') + '</span>' +
       '<span class="tools"><button class="chip-btn" data-act="fs" data-v="-1" aria-label="' + t('smaller') + '">A−</button>' +
       '<button class="chip-btn" data-act="fs" data-v="0" aria-label="' + t('normal') + '">A</button>' +
-      '<button class="chip-btn" data-act="fs" data-v="1" aria-label="' + t('larger') + '">A+</button></span></div></div>' +
+      '<button class="chip-btn" data-act="fs" data-v="1" aria-label="' + t('larger') + '">A+</button>' +
+      '<button id="listen" type="button" class="chip-btn listen" data-act="listen" lang="hi"></button></span></div></div>' +
       '<div class="wrap hbar">' +
       '<a class="brand" href="#/" aria-label="' + t('site_title') + '"><img src="' + window.EMBLEM + '" alt="" width="40" height="50"><span class="brand-t"><b>' + t('site_title') + '</b><small>' + t('site_sub') + '</small></span></a>' +
       '<nav id="nav" class="nav" aria-label="' + t('nav_label') + '">' + nav + '</nav>' +
@@ -2305,6 +2317,14 @@ window.PROFILE_FIELDS = [
     el.setAttribute('aria-expanded', open);
   };
   App.actions.print = function () { window.print(); };
+  App.actions.more = function (el) {
+    var box = el.parentNode, open = !box.classList.contains('open');
+    box.classList.toggle('open', open); el.setAttribute('aria-expanded', open);
+  };
+  document.addEventListener('click', function (e) {          // close “More” on any outside click or after choosing a link
+    var box = document.querySelector('.more.open');
+    if (box && (!box.contains(e.target) || e.target.closest('.more-list a'))) { box.classList.remove('open'); box.querySelector('.more-btn').setAttribute('aria-expanded', 'false'); }
+  });
 
   window.addEventListener('hashchange', function () { App.render(); window.scrollTo(0, 0); var m = document.getElementById('main'); if (m) m.focus({ preventScroll: true }); });
   document.addEventListener('DOMContentLoaded', function () { App.render(); });
@@ -3865,6 +3885,7 @@ window.PROFILE_FIELDS = [
   function setBtn() {
     var b = document.getElementById('listen'); if (!b) return;
     b.innerHTML = speaking ? '⏹ <span>' + t('ls_stop') + '</span>' : '🔊 <span>' + t('ls_btn') + '</span>';
+    b.setAttribute('aria-label', speaking ? t('ls_stop') : t('ls_btn'));
     b.setAttribute('aria-pressed', speaking);
   }
   function stop() { if (synth) synth.cancel(); speaking = false; setBtn(); }
@@ -3895,11 +3916,6 @@ window.PROFILE_FIELDS = [
   };
   if (synth && synth.onvoiceschanged !== undefined) synth.onvoiceschanged = function () {};   // warms up the voice list
   window.addEventListener('hashchange', stop);
-  document.addEventListener('DOMContentLoaded', function () {
-    var b = document.createElement('button');
-    b.id = 'listen'; b.type = 'button'; b.className = 'listen-btn no-print'; b.setAttribute('data-act', 'listen'); b.setAttribute('lang', 'hi');
-    document.body.appendChild(b); setBtn();
-  });
   var _chrome = App.chrome; App.chrome = function (a) { _chrome(a); setBtn(); };   // relabel when language changes
 })();
 
