@@ -193,6 +193,7 @@ html[lang=en] body:not(.is-app) .foot-name{letter-spacing:-.04em}
 html[lang=en] .name{letter-spacing:-.04em}
 .name .l{display:flex;align-items:baseline;gap:0 .2em}
 .name .slot{display:inline-block;flex:none;width:2.1em;height:.72em;border-radius:.1em;overflow:hidden;align-self:baseline;position:relative;top:.02em;background:var(--tint)}
+.name .slot picture{display:block;width:100%;height:100%}
 .name .slot img{width:100%;height:100%;object-fit:cover;transform-origin:center}
 .name .sub{display:block;font-size:var(--s-lead);font-weight:500;letter-spacing:0;color:var(--mut);line-height:1.3;margin-top:.7rem;max-width:34ch}
 .hero2-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.5rem 3rem;align-items:end}
@@ -697,7 +698,7 @@ body:not(.is-app) .foot-name{display:none}
 }
 @media (max-width:640px){
   .hero3 .name{font-size:clamp(2.9rem,14vw,4.2rem)}
-  .hero3 .name .slot{width:100%;height:auto;aspect-ratio:16/9;margin:.15em 0 .2em}
+  .hero3 .name .slot{width:100%;height:auto;aspect-ratio:512/230;margin:.15em 0 .2em}
   .dado-in{flex-direction:column;align-items:stretch}.sign2{min-width:0}.hero3 .wchart{display:none}
   .nline{grid-template-columns:1fr;gap:1.4rem}.nline li{padding:0 0 0 3.6rem}.nline li::before{display:none}
   .nline::before{display:block;left:1.19rem;right:auto;top:0;bottom:0;width:4px;height:auto;transform-origin:top;transform:scaleY(var(--drawn,1))}
@@ -3592,7 +3593,7 @@ window.FAM_FIELDS = {
     hm_sub: 'Free career guidance from the Government of Haryana for students of Class 10 and 12, and their parents.',
     hm_sch_p: 'Plan a counselling period for a whole class on one computer or tablet. Each student takes the assessment in turn, results stay on that device, and you print every report card at the end.',
     hm_cls: 'Run a class session', hm_cls_p: 'Add students, run the assessment one by one, print all report cards.',
-    hm_pick: 'I am in', hm_road_alt: 'A road through yellow mustard fields at sunrise',
+    hm_pick: 'I am in', hm_road_alt: 'Two students in school uniform outside their school, with a scientist, doctor, engineer and officer behind them',
     st1: 'First, tell us about you.', st1d: 'Your class, your subjects and what your family can manage: 11 quick choices.',
     st2: 'Then answer 54 questions.', st2d: 'Interests, aptitude and work style. About 15 minutes, and there are no wrong answers.',
     st3: 'We match you to careers.', st3d: 'Two honest lists: what suits you, and what suits you and your family’s situation.',
@@ -3602,13 +3603,13 @@ window.FAM_FIELDS = {
     hm_sch_lead: 'For schools and counsellors.', sch_p2: 'Names and answers stay on that device. Nothing is uploaded, and one tap deletes the class when you are done.',
     f1: '1 device', f1d: 'computer or tablet', f2: '54 questions', f2d: 'about 15 minutes each', f3: 'Report cards', f3d: 'printed in one go',
     ask1: 'Class 10', ask2: 'or 12?', ask_or: 'or', ask_p: 'Either way you see every road open to you, then take the assessment.',
-    img_credit: 'Pictures are illustrations made with Figma AI, not real students or schools.'
+    img_credit: 'Pictures are AI-generated illustrations, not real students or schools.'
   });
   Object.assign(window.UI.hi, {
     hm_sub: 'हरियाणा सरकार की ओर से कक्षा 10 व 12 के विद्यार्थियों और उनके अभिभावकों के लिए निःशुल्क करियर मार्गदर्शन।',
     hm_sch_p: 'एक कंप्यूटर या टैबलेट पर पूरी कक्षा के लिए करियर परामर्श का पीरियड चलाएँ। हर विद्यार्थी बारी-बारी से आकलन करता है, परिणाम उसी उपकरण पर रहते हैं, और अंत में आप सभी रिपोर्ट कार्ड प्रिंट करते हैं।',
     hm_cls: 'कक्षा सत्र चलाएँ', hm_cls_p: 'विद्यार्थी जोड़ें, एक-एक करके आकलन कराएँ, सभी रिपोर्ट कार्ड प्रिंट करें।',
-    hm_pick: 'मैं हूँ', hm_road_alt: 'सूर्योदय में पीली सरसों के खेतों के बीच से जाती सड़क',
+    hm_pick: 'मैं हूँ', hm_road_alt: 'विद्यालय के बाहर स्कूल यूनिफ़ॉर्म में दो विद्यार्थी, पीछे वैज्ञानिक, डॉक्टर, इंजीनियर और अधिकारी',
     st1: 'पहले, अपने बारे में बताइए।', st1d: 'आपकी कक्षा, विषय और परिवार क्या कर सकता है: 11 छोटे सवाल।',
     st2: 'फिर 54 प्रश्नों के उत्तर दीजिए।', st2d: 'रुचि, अभिरुचि और काम करने का ढंग। लगभग 15 मिनट, कोई उत्तर गलत नहीं।',
     st3: 'हम आपको करियर से मिलाते हैं।', st3d: 'दो ईमानदार सूचियाँ: जो आपको जँचे, और जो आपको व आपके परिवार की स्थिति को जँचे।',
@@ -3618,7 +3619,7 @@ window.FAM_FIELDS = {
     hm_sch_lead: 'स्कूलों व परामर्शदाताओं के लिए।', sch_p2: 'नाम व उत्तर उसी उपकरण पर रहते हैं। कुछ भी अपलोड नहीं होता, और काम पूरा होने पर एक टैप में पूरी कक्षा का डेटा मिट जाता है।',
     f1: '1 उपकरण', f1d: 'कंप्यूटर या टैबलेट', f2: '54 प्रश्न', f2d: 'हर एक को लगभग 15 मिनट', f3: 'रिपोर्ट कार्ड', f3d: 'एक साथ प्रिंट',
     ask1: 'कक्षा 10', ask2: 'या 12?', ask_or: 'या', ask_p: 'दोनों में आप पहले अपने लिए खुले हर रास्ते को देखते हैं, फिर आकलन करते हैं।',
-    img_credit: 'चित्र Figma AI से बने उदाहरण हैं, असली विद्यार्थी या विद्यालय नहीं।'
+    img_credit: 'चित्र AI से बने उदाहरण हैं, असली विद्यार्थी या विद्यालय नहीं।'
   });
   function pic(name, alt, sizes, eager) {
     return '<img src="img/' + name + '-1280.webp" srcset="img/' + name + '-640.webp 640w, img/' + name + '-1280.webp 1280w" sizes="' + sizes + '" alt="' + esc(alt) + '"' + (eager ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + '>';
@@ -3652,7 +3653,7 @@ window.FAM_FIELDS = {
     var MON = App.lang === 'hi' ? ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'] : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var rows = [['tree', 'nav_tree', 'hm_t2', 'cycle'], ['careers', 'nav_careers', 'hm_t4', 'nursing'], ['colleges', 'nav_colleges', 'hm_t5', 'iti'], ['scholarships', 'nav_sch', 'hm_t6', 'classroom']];
     var signs = function () { return '<a class="sign2" href="#/tree" data-act="tree_go" data-v="10"><b>' + t('cls_10') + '</b><small>' + t('hm_c10d') + '</small></a><a class="sign2" href="#/tree" data-act="tree_go" data-v="12"><b>' + t('cls_12') + '</b><small>' + t('hm_c12d') + '</small></a>'; };
-    return '<section class="hero3"><div class="wrap hero3-in"><div><h1 class="name"><span class="l">' + esc(nm[0]) + '</span><span class="l"><span class="slot shut">' + pic('road', t('hm_road_alt'), '(max-width:640px) 100vw, 25vw', true) + '</span><span>' + esc(nm[1] || '') + '</span></span></h1>' +
+    return '<section class="hero3"><div class="wrap hero3-in"><div><h1 class="name"><span class="l">' + esc(nm[0]) + '</span><span class="l"><span class="slot shut">' + '<picture><source media="(min-width:641px)" srcset="img/students-tight.webp" width="306" height="104"><img src="img/students-wide.webp" width="512" height="230" alt="' + esc(t('hm_road_alt')) + '" fetchpriority="high"></picture>' + '</span><span>' + esc(nm[1] || '') + '</span></span></h1>' +
       '<p class="lead">' + t('hm_sub') + '</p>' +
       (ask ? '' : '<div class="cta-row"><a class="btn btn-lg" href="#/assess">' + t('hm_cta1') + ' ' + icon('arrow') + '</a><a class="btn btn-ghost btn-lg" href="#/careers">' + t('hm_cta2') + '</a></div>') + '</div>' +
       '<div>' + ((ask || started) ? resume(ask) : '<div class="wchart"><h2>' + t('chart_t') + '</h2><ol>' + TREE['10'].kids.map(function (n) { return '<li><a href="#/branch/' + n.id + '/10"><b>' + esc(L(n.name)) + '</b>' + icon('arrow') + '</a></li>'; }).join('') + '</ol></div>') + '</div></div></section>' +
@@ -3675,7 +3676,7 @@ window.FAM_FIELDS = {
       '<p class="cta-row"><a class="btn" href="#/class">' + icon('users') + t('hm_cls') + '</a><a class="btn btn-ghost" href="#/school">' + t('hm_school') + '</a></p></div>' +
       '<figure style="margin:0">' + pic('computers', '', '(max-width:960px) 100vw, 40vw') + '</figure></div></section>';
   };
-  /* home motion: the road opens inside the name like a shutter; the number line paints itself once in view.
+  /* home motion: the picture opens inside the name like a shutter; the number line paints itself once in view.
      Classes are added by script only, so the page is complete if this never runs. */
   App.after = App.after || {};
   App.after.home = function () {

@@ -21,7 +21,7 @@ OWN-WORLD: Yellow limewash #f3e7c6 walls with white notice panels, geru (brick r
 
 STORY: The student sees the programme name painted on the wall, picks Class 10 or 12 on the dado or starts the assessment, reads the four steps on a painted number line, opens one of the four roads, checks exam dates on the blackboard, and counsellors find the class session on the green wall.
 
-FIRST VIEWPORT: Top line on limewash: emblem wordmark, five links, language, menu. The name in Khand at about 6vw with the road photo inline; one supporting sentence; the blue-free geru "Start the free assessment" button; the hero ends in a geru dado band (with its painted ink stripe) holding "I am in [Class 10] [Class 12]" as painted white signs. All of it inside 900px.
+FIRST VIEWPORT: Top line on limewash: emblem wordmark, five links, language, menu. The name in Khand at about 6vw with the hero picture (two students) inline; one supporting sentence; the blue-free geru "Start the free assessment" button; the hero ends in a geru dado band (with its painted ink stripe) holding "I am in [Class 10] [Class 12]" as painted white signs. All of it inside 900px.
 
 FORM: User-pinned world from the direction round ("School wall paint", Impeccable's pick card); seed reference from that roll: seed:af3f76231c6ce404. Signature move: the painted number line, a thick ink line with tick marks and numbered geru stops, drawn once as it scrolls in; it also carries assessment progress and the journey.
 

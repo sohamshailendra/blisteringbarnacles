@@ -315,7 +315,7 @@ Status colours are a separate set and never stand in for the palette: `status-ok
 **Character:** Khand is condensed painted-signboard lettering with true Devanagari, so headings read like the name painted over a school gate in both scripts. "Stencil-like" was requested, but no stencil-cut face with Devanagari can be loaded, so condensed sign lettering stands in for it. Anek Devanagari is a sturdy, open text face for long Hindi and English reading on cheap screens.
 
 ### Hierarchy
-- **Display** (Khand 600, `clamp(3.1rem, 1.2rem + 5.6vw, 6.75rem)`, line-height 0.98; on phones `clamp(2.9rem, 14vw, 4.2rem)`): the programme name painted on the home wall, with the road picture set inline in the line.
+- **Display** (Khand 600, `clamp(3.1rem, 1.2rem + 5.6vw, 6.75rem)`, line-height 0.98; on phones `clamp(2.9rem, 14vw, 4.2rem)`): the programme name painted on the home wall, with the hero picture (two students) set inline in the line.
 - **Headline** (Khand 600, `clamp(2rem, 1.5rem + 1.4vw, 2.75rem)`, 1.02): the h1 of each app page, and home section titles (up to 3rem).
 - **Section** (Khand 600, `clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem)`, 1.02): the h2 inside app pages.
 - **Sign** (Khand 600, 1.5rem, 1): words on painted signs and number-line steps (up to 1.85rem), road names on home (1.6rem), and the numerals in stops (1.15–1.5rem).

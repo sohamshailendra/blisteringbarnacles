@@ -576,7 +576,7 @@
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "The programme name painted on the home wall; road picture inline. Phones: clamp(2.9rem, 14vw, 4.2rem)."
+        "purpose": "The programme name painted on the home wall; hero picture inline. Phones: clamp(2.9rem, 14vw, 4.2rem)."
       },
       "headline": {
         "displayName": "Headline",
@@ -653,7 +653,7 @@
       {
         "name": "hero-shutter",
         "value": "clip-path inset(0 100% 0 0)→0 1100ms ease-in-out; image scale 1.12→1 1400ms ease-out",
-        "purpose": "The road picture opening inside the painted name. Reduced motion: shown open."
+        "purpose": "The hero picture opening inside the painted name. Reduced motion: shown open."
       },
       {
         "name": "menu-in",
